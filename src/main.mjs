@@ -166,7 +166,7 @@ const expectedSoundManifestEventMap = new globalThis.Map([
   ["Haze.Smoke.Bomb.End", [[0]]],
   ["Haze.BulletFlurry.Modifier.Lp", [[8]]],
 
-  ["Gigawatt.StormCloud.Lp", [[3]]],
+  ["Gigawatt.StormCloud.Lp", [[-5]]],
 
   ["Kelvin.IcePath.Dur.Lp", [[-8]]],
 
@@ -193,7 +193,7 @@ const expectedSoundManifestEventMap = new globalThis.Map([
   ["Mirage.A4.Teleport.Depart", [[0]]],
   ["Mirage.A4.Teleport.Arrive", [[0]]],
 
-  ["Ability.Nano.RollerMine_Travel_Lp", [[-10]]],
+  ["Calico.Ava.Cast", [[-8]]],
 
   ["Orion.Charged.Shot.Cast", [[-8]]],
   ["Archer.GuidedArrow.Cast", [[3]]],
