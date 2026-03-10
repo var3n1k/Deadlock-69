@@ -19,3 +19,5 @@ lib/**/csgo_addons/**/*
 !.github/**/*
 
 !.gitignore
+
+!.gitattributes
