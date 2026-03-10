@@ -264,6 +264,8 @@ const expectedSoundManifestEventMap = new globalThis.Map([
   ["Shiv.Ability.ShivFlash.Impact_Kill", [[5]]],
 
   ["Unicorn.Dazzling.Orb.Cast", [[0]]],
+  ["Unicorn.Dazzling.Orb.World.Impact", [[-999]]],
+  ["Unicorn.Dazzling.Orb.Hit", [[5]]],
 
   ["Viper.A3.Slide.Lp", [[5]]],
   ["Viper.Petrify.Debuff_Lp", [[3]]],
