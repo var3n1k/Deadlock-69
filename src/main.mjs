@@ -21,7 +21,7 @@ import * as url from "node:url"
  */
 const expectedSoundManifestEventMap = new globalThis.Map([
   ["Abrams.Charge.Cast", [[-5]]],
-  ["Abrams.Charge.Wall.Impact", [[3]]],
+  ["Abrams.Charge.Wall.Impact", [[0]]],
   ["Abrams.A4.Leap.Cast", [[0]]],
   ["Abrams.A4.Leap.Descend", [[0]]],
 
@@ -48,15 +48,15 @@ const expectedSoundManifestEventMap = new globalThis.Map([
   ["Bookworm.Conjure.Dragon.Cast", [[0]]],
   ["Bookworm.Conjure.Dragon.Impact", [[0]]],
 
-  ["Doorman.CallBell.Detonate", [[0]]],
-  ["Doorman.CallBell.Debuff", [[0]]],
+  ["Doorman.CallBell.Detonate", [[-8]]],
+  ["Doorman.CallBell.Debuff", [[-5]]],
   ["Doorman.LuggageCart.Hit", [[3]]],
-  ["Doorman.LuggageCart.Hit.Ally", [[3]]],
-  ["Doorman.Doorway.Open.Door.Red", [[3]]],
-  ["Doorman.Doorway.Open.Door.Blue", [[3]]],
-  ["Doorman.Doorway.Door.Expire", [[3]]],
+  ["Doorman.LuggageCart.Hit.Ally", [[0]]],
+  ["Doorman.Doorway.Open.Door.Red", [[0]]],
+  ["Doorman.Doorway.Open.Door.Blue", [[0]]],
+  ["Doorman.Doorway.Door.Expire", [[0]]],
   ["Doorman.Hotel.Cast", [[0]]],
-  ["Doorman.Hotel.Key.Lp", [[0]]],
+  ["Doorman.Hotel.Key.Lp", [[-5]]],
   ["Doorman.Hotel.Victim.Lp", [[0]]],
 
   ["Astro.A2.BouncePad.Mod.Travel.Lp", [[-5]]],
@@ -182,7 +182,7 @@ const expectedSoundManifestEventMap = new globalThis.Map([
 
   ["Lash.A1.GroundStrike.Explosion", [[-8]]],
   ["Lash.GroundStrike.Hit", [[-8]]],
-  ["Lash.Grapple.Cast", [[0]]],
+  ["Lash.Grapple.Cast", [[-8]]],
   ["Lash.A3.Flog.Impact", [[-3]]],
   ["Lash.A4.Death.Slam.Throw", [[-5]]],
 
@@ -196,15 +196,15 @@ const expectedSoundManifestEventMap = new globalThis.Map([
   ["Calico.Ava.Cast", [[-8]]],
 
   ["Orion.Charged.Shot.Cast", [[-8]]],
-  ["Archer.GuidedArrow.Cast", [[3]]],
+  ["Archer.GuidedArrow.Cast", [[0]]],
   ["Archer.GuidedArrow.Projectile.Lp", [[-5]]],
-  ["Archer.GuidedArrow.Impact", [[3]]],
+  ["Archer.GuidedArrow.Impact", [[0]]],
 
   ["Pocket.Affliction.Cast", [[0]]],
   ["Pocket.Affliction.Debuff.Lp", [[3]]],
 
   ["Priest.Slugshot.Hit", [[0]]],
-  ["Priest.Witching.Hour.Fire", [[5]]],
+  ["Priest.Witching.Hour.Fire", [[3]]],
 
   ["Ivy.StoneForm.Cast", [[0]]],
   ["Ivy.AirDrop.Fly.Lp", [[0]]],
@@ -300,7 +300,7 @@ const expectedSoundManifestEventMap = new globalThis.Map([
   ["Menu.Party.Leave", [[-3]]],
 
 
-  ["Music.MatchIntro.Connecting", [[8]]],
+  ["Music.MatchIntro.Connecting", [[10]]],
 
   ["Music.MatchIntro.HeroReveal", [[0]]],
 
