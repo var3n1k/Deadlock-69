@@ -1,0 +1,405 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	Wrecker.Wpn.Fire = 
+	{
+		base = "Base.Weapon"
+		vsnd_files = 
+		[
+			"sounds/weapons/wrecker/fire/01.vsnd",
+			"sounds/weapons/wrecker/fire/02.vsnd",
+			"sounds/weapons/wrecker/fire/03.vsnd",
+			"sounds/weapons/wrecker/fire/04.vsnd",
+			"sounds/weapons/wrecker/fire/05.vsnd",
+			"sounds/weapons/wrecker/fire/06.vsnd",
+			"sounds/weapons/wrecker/fire/07.vsnd",
+			"sounds/weapons/wrecker/fire/08.vsnd",
+			"sounds/weapons/wrecker/fire/09.vsnd",
+			"sounds/weapons/wrecker/fire/10.vsnd",
+			"sounds/weapons/wrecker/fire/11.vsnd",
+			"sounds/weapons/wrecker/fire/12.vsnd",
+			"sounds/weapons/wrecker/fire/13.vsnd",
+			"sounds/weapons/wrecker/fire/14.vsnd",
+			"sounds/weapons/wrecker/fire/15.vsnd",
+			"sounds/weapons/wrecker/fire/16.vsnd",
+			"sounds/weapons/wrecker/fire/17.vsnd",
+			"sounds/weapons/wrecker/fire/18.vsnd",
+			"sounds/weapons/wrecker/fire/19.vsnd",
+			"sounds/weapons/wrecker/fire/20.vsnd",
+			"sounds/weapons/wrecker/fire/21.vsnd",
+			"sounds/weapons/wrecker/fire/22.vsnd",
+			"sounds/weapons/wrecker/fire/23.vsnd",
+			"sounds/weapons/wrecker/fire/24.vsnd",
+			"sounds/weapons/wrecker/fire/25.vsnd",
+			"sounds/weapons/wrecker/fire/26.vsnd",
+			"sounds/weapons/wrecker/fire/27.vsnd",
+			"sounds/weapons/wrecker/fire/28.vsnd",
+			"sounds/weapons/wrecker/fire/29.vsnd",
+			"sounds/weapons/wrecker/fire/30.vsnd",
+			"sounds/weapons/wrecker/fire/31.vsnd",
+			"sounds/weapons/wrecker/fire/32.vsnd",
+			"sounds/weapons/wrecker/fire/33.vsnd",
+			"sounds/weapons/wrecker/fire/34.vsnd",
+			"sounds/weapons/wrecker/fire/35.vsnd",
+			"sounds/weapons/wrecker/fire/36.vsnd",
+			"sounds/weapons/wrecker/fire/37.vsnd",
+			"sounds/weapons/wrecker/fire/38.vsnd",
+			"sounds/weapons/wrecker/fire/39.vsnd",
+			"sounds/weapons/wrecker/fire/40.vsnd",
+			"sounds/weapons/wrecker/fire/41.vsnd",
+			"sounds/weapons/wrecker/fire/42.vsnd",
+			"sounds/weapons/wrecker/fire/43.vsnd",
+			"sounds/weapons/wrecker/fire/44.vsnd",
+			"sounds/weapons/wrecker/fire/45.vsnd",
+			"sounds/weapons/wrecker/fire/46.vsnd",
+			"sounds/weapons/wrecker/fire/47.vsnd",
+			"sounds/weapons/wrecker/fire/48.vsnd",
+			"sounds/weapons/wrecker/fire/49.vsnd",
+			"sounds/weapons/wrecker/fire/50.vsnd",
+			"sounds/weapons/wrecker/fire/51.vsnd",
+			"sounds/weapons/wrecker/fire/52.vsnd",
+			"sounds/weapons/wrecker/fire/53.vsnd",
+			"sounds/weapons/wrecker/fire/54.vsnd",
+			"sounds/weapons/wrecker/fire/55.vsnd",
+			"sounds/weapons/wrecker/fire/56.vsnd",
+			"sounds/weapons/wrecker/fire/57.vsnd",
+			"sounds/weapons/wrecker/fire/58.vsnd",
+			"sounds/weapons/wrecker/fire/59.vsnd",
+			"sounds/weapons/wrecker/fire/60.vsnd",
+			"sounds/weapons/wrecker/fire/61.vsnd",
+		]
+		vsnd_duration = 2.276104
+	}
+	Wrecker.Wpn.Impact = 
+	{
+		base = "Base.Bullet.Impact"
+		vsnd_files = 
+		[
+			"sounds/weapons/wrecker/wpn_impact/01.vsnd",
+			"sounds/weapons/wrecker/wpn_impact/02.vsnd",
+			"sounds/weapons/wrecker/wpn_impact/03.vsnd",
+			"sounds/weapons/wrecker/wpn_impact/04.vsnd",
+			"sounds/weapons/wrecker/wpn_impact/05.vsnd",
+			"sounds/weapons/wrecker/wpn_impact/06.vsnd",
+			"sounds/weapons/wrecker/wpn_impact/07.vsnd",
+			"sounds/weapons/wrecker/wpn_impact/08.vsnd",
+			"sounds/weapons/wrecker/wpn_impact/09.vsnd",
+			"sounds/weapons/wrecker/wpn_impact/10.vsnd",
+			"sounds/weapons/wrecker/wpn_impact/11.vsnd",
+		]
+		vsnd_duration = 0.325021
+	}
+	Wrecker.Zoom.In = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = -27.000000
+		vsnd_files = "sounds/weapons/wrecker/zoom/in.vsnd"
+		vsnd_duration = 1.323604
+	}
+	Wrecker.Zoom.Out = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = -27.000000
+		vsnd_files = "sounds/weapons/wrecker/zoom/out.vsnd"
+		vsnd_duration = 1.829146
+	}
+	Wrecker.Wrecking.Ball.Cast.Delay = 
+	{
+		base = "Base.Ability"
+		volume = -3.000000
+		vsnd_files = "sounds/abilities/wrecker/a1_wrecking_ball/wrecker_a1_wreckingball_cast_01.vsnd"
+		vsnd_duration = 2.259547
+	}
+	Wrecker.Wrecking.Ball.Cast = 
+	{
+		base = "Base.Ability"
+		volume = 1.000000
+		vsnd_files = "sounds/abilities/wrecker/a1_wrecking_ball/wrecker_a1_wreckingball_throw_01.vsnd"
+		vsnd_duration = 2.182268
+	}
+	Wrecker.Wrecking.Ball.Cast.Impact = 
+	{
+		base = "Base.Ability"
+		volume = 0.000000
+		vsnd_files = "sounds/abilities/wrecker/a1_wrecking_ball/cast_impact.vsnd"
+		vsnd_duration = 1.982271
+	}
+	Wrecker.Wrecking.Ball.Hit.Confirm = 
+	{
+		base = "Base.Ability"
+		volume = 1.000000
+		vsnd_files = "sounds/abilities/wrecker/a1_wrecking_ball/cast_delay_glitch.vsnd"
+		vsnd_duration = 1.224750
+	}
+	Wrecker.Wrecking.Ball.Proj.Lp = 
+	{
+		base = "Base.Ability"
+		vsnd_files = "sounds/abilities/wrecker/a1_wrecking_ball/proj_lp.vsnd"
+		vsnd_duration = 7.994250
+	}
+	Wrecker.Salvage.Cast = 
+	{
+		base = "Base.Ability"
+		volume = -12.000000
+		vsnd_files = "sounds/abilities/wrecker/a2_salvage/wrecker_a2_salvage_cast_01.vsnd"
+		vsnd_duration = 2.796735
+	}
+	Wrecker.Scrap.Blast.Cast = 
+	{
+		base = "Base.Ability"
+		volume = 0.000000
+		vsnd_files = "sounds/abilities/wrecker/a2_scrap_blast/wrecker_a2_scrap_blast_cast_01.vsnd"
+		vsnd_duration = 2.989138
+	}
+	Wrecker.Wrecking.Crew.Grab = 
+	{
+		base = "Base.Ability.Ult"
+		volume = 0.000000
+		vsnd_files = "sounds/abilities/wrecker/a4_wrecking_crew/grab.vsnd"
+		vsnd_duration = 0.876292
+	}
+	Wrecker.Wrecking.Crew.Throw = 
+	{
+		base = "Base.Ability.Ult"
+		volume = 0.000000
+		vsnd_files = "sounds/abilities/wrecker/a4_wrecking_crew/throw.vsnd"
+		vsnd_duration = 2.090354
+	}
+	Wrecker.Wrecking.Crew.End = 
+	{
+		base = "Base.Ability.Ult"
+		volume = -9.000000
+		vsnd_files = "sounds/abilities/wrecker/a4_wrecking_crew/end.vsnd"
+		vsnd_duration = 1.254688
+	}
+	Wrecker.Teleport.Cast = 
+	{
+		base = "Base.Ability.Ult"
+		volume = 0.000000
+		vsnd_files = "sounds/abilities/wrecker/a4_teleport/cast.vsnd"
+		vsnd_duration = 8.121021
+	}
+	Wrecker.Teleport.Proj.Lp = 
+	{
+		base = "Base.Ability.Ult"
+		volume = 0.000000
+		delay_rand_min = 0.000000
+		vsnd_files = "sounds/abilities/wrecker/a4_teleport/proj_lp.vsnd"
+		vsnd_duration = 14.233250
+	}
+	Butcher.TrapShot.Impact = 
+	{
+		base = "Base.Ability"
+		volume = 1.000000
+		vsnd_files = "sounds/abilities/wrecker/trap_shot_impact_lyr2.vsnd"
+		vsnd_duration = 1.693604
+	}
+	Wrecker.Reload.ClipIn = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = -1.000000
+		pitch_rand_min = -0.110000
+		pitch_rand_max = 0.150000
+		vsnd_files = "sounds/weapons/chrono/reload/end.vsnd"
+		vsnd_duration = 0.514943
+	}
+	Wrecker.Reload.ClipOut = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = -1.000000
+		pitch_rand_min = -0.110000
+		pitch_rand_max = 0.150000
+		vsnd_files = "sounds/weapons/chrono/reload/clipout.vsnd"
+		vsnd_duration = 0.320363
+	}
+	Wrecker.Reload.Twirl_01 = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = -2.000000
+		pitch_rand_min = -0.110000
+		pitch_rand_max = 0.000000
+		vsnd_files = "sounds/weapons/chrono/reload/twirl_01.vsnd"
+		vsnd_duration = 0.367166
+	}
+	Wrecker.Reload.Twirl_02 = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = -1.000000
+		pitch_rand_min = 0.000000
+		pitch_rand_max = 0.150000
+		vsnd_files = "sounds/weapons/chrono/reload/twirl_02.vsnd"
+		vsnd_duration = 0.296984
+	}
+	Wrecker.Footstep = 
+	{
+		base = "Base.Footsteps"
+		track_1.vsnd_track_vol_offset_db = -5.000000
+		track_2.vsnd_track_vol_offset_db = -18.000000
+		vsnd_files = 
+		[
+			"sounds/player/footsteps/hero_self/06.vsnd",
+			"sounds/player/footsteps/hero_self/07.vsnd",
+			"sounds/player/footsteps/hero_self/08.vsnd",
+			"sounds/player/footsteps/hero_self/09.vsnd",
+			"sounds/player/footsteps/hero_self/01.vsnd",
+			"sounds/player/footsteps/hero_self/02.vsnd",
+			"sounds/player/footsteps/hero_self/03.vsnd",
+			"sounds/player/footsteps/hero_self/04.vsnd",
+			"sounds/player/footsteps/hero_self/05.vsnd",
+		]
+		track_2.track_vsnd_files = 
+		[
+			"sounds/player/movement/pocket/pocket_movement_foley_short_01.vsnd",
+			"sounds/player/movement/pocket/pocket_movement_foley_short_02.vsnd",
+			"sounds/player/movement/pocket/pocket_movement_foley_short_03.vsnd",
+			"sounds/player/movement/pocket/pocket_movement_foley_short_04.vsnd",
+			"sounds/player/movement/pocket/pocket_movement_foley_short_05.vsnd",
+			"sounds/player/movement/pocket/pocket_movement_foley_short_06.vsnd",
+			"sounds/player/movement/pocket/pocket_movement_foley_short_07.vsnd",
+			"sounds/player/movement/pocket/pocket_movement_foley_short_08.vsnd",
+			"sounds/player/movement/pocket/pocket_movement_foley_short_09.vsnd",
+			"sounds/player/movement/pocket/pocket_movement_foley_short_10.vsnd",
+			"sounds/player/movement/pocket/pocket_movement_foley_short_11.vsnd",
+			"sounds/player/movement/pocket/pocket_movement_foley_short_12.vsnd",
+			"sounds/player/movement/pocket/pocket_movement_foley_short_13.vsnd",
+			"sounds/player/movement/pocket/pocket_movement_foley_short_14.vsnd",
+		]
+		vsnd_duration = 0.581973
+	}
+	Wrecker.JumpLand = 
+	{
+		base = "Base.Footsteps.JumpLand"
+		volume = 0.000000
+		track_2.vsnd_track_vol_offset_db = -5.000000
+		vsnd_files = 
+		[
+			"sounds/player/footsteps/hero_self/06.vsnd",
+			"sounds/player/footsteps/hero_self/07.vsnd",
+			"sounds/player/footsteps/hero_self/08.vsnd",
+			"sounds/player/footsteps/hero_self/09.vsnd",
+			"sounds/player/footsteps/hero_self/01.vsnd",
+			"sounds/player/footsteps/hero_self/02.vsnd",
+			"sounds/player/footsteps/hero_self/03.vsnd",
+			"sounds/player/footsteps/hero_self/04.vsnd",
+			"sounds/player/footsteps/hero_self/05.vsnd",
+		]
+		track_2.track_vsnd_files = 
+		[
+			"sounds/player/movement/generic/foley_light/default_foley_01.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_02.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_03.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_04.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_05.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_06.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_07.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_08.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_09.vsnd",
+		]
+		vsnd_duration = 0.581973
+	}
+	Wrecker.Movement.Long = 
+	{
+		base = "Base.Movement"
+		volume = -5.000000
+	}
+	Wrecker.Movement.Short = 
+	{
+		base = "Base.Movement"
+		volume = -8.000000
+	}
+	Wrecker.Mantle = 
+	{
+		base = "Base.Movement"
+		volume = -5.000000
+	}
+	Wrecker.Melee.Swing = 
+	{
+		base = "Base.Movement.Melee"
+		track_2.vsnd_track_vol_offset_db = -7.000000
+		vsnd_files = 
+		[
+			"sounds/player/melee/shared/swing_short_01.vsnd",
+			"sounds/player/melee/shared/swing_short_02.vsnd",
+			"sounds/player/melee/shared/swing_short_03.vsnd",
+			"sounds/player/melee/shared/swing_short_04.vsnd",
+			"sounds/player/melee/shared/swing_short_05.vsnd",
+			"sounds/player/melee/shared/swing_short_06.vsnd",
+			"sounds/player/melee/shared/swing_short_07.vsnd",
+			"sounds/player/melee/shared/swing_short_08.vsnd",
+			"sounds/player/melee/shared/swing_short_09.vsnd",
+			"sounds/player/melee/shared/swing_short_10.vsnd",
+			"sounds/player/melee/shared/swing_short_11.vsnd",
+			"sounds/player/melee/shared/swing_short_12.vsnd",
+			"sounds/player/melee/shared/swing_short_13.vsnd",
+			"sounds/player/melee/shared/swing_short_14.vsnd",
+			"sounds/player/melee/shared/swing_short_15.vsnd",
+			"sounds/player/melee/shared/swing_short_16.vsnd",
+			"sounds/player/melee/shared/swing_short_17.vsnd",
+			"sounds/player/melee/shared/swing_short_18.vsnd",
+			"sounds/player/melee/shared/swing_short_19.vsnd",
+			"sounds/player/melee/shared/swing_short_20.vsnd",
+			"sounds/player/melee/shared/swing_short_21.vsnd",
+			"sounds/player/melee/shared/swing_short_22.vsnd",
+			"sounds/player/melee/shared/swing_short_23.vsnd",
+			"sounds/player/melee/shared/swing_short_24.vsnd",
+		]
+		track_2.track_vsnd_files = 
+		[
+			"sounds/player/movement/generic/foley_light/default_foley_01.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_02.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_03.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_04.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_05.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_06.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_07.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_08.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_09.vsnd",
+		]
+		vsnd_duration = 1.062208
+	}
+	Wrecker.Melee.Swing.Charged = 
+	{
+		base = "Base.Movement.Melee"
+		track_2.vsnd_track_vol_offset_db = -7.000000
+		vsnd_files = 
+		[
+			"sounds/player/melee/shared/swing_long_01.vsnd",
+			"sounds/player/melee/shared/swing_long_02.vsnd",
+			"sounds/player/melee/shared/swing_long_03.vsnd",
+			"sounds/player/melee/shared/swing_long_04.vsnd",
+			"sounds/player/melee/shared/swing_long_05.vsnd",
+			"sounds/player/melee/shared/swing_long_06.vsnd",
+			"sounds/player/melee/shared/swing_long_07.vsnd",
+			"sounds/player/melee/shared/swing_long_08.vsnd",
+			"sounds/player/melee/shared/swing_long_09.vsnd",
+			"sounds/player/melee/shared/swing_long_10.vsnd",
+			"sounds/player/melee/shared/swing_long_11.vsnd",
+			"sounds/player/melee/shared/swing_long_12.vsnd",
+			"sounds/player/melee/shared/swing_long_13.vsnd",
+			"sounds/player/melee/shared/swing_long_14.vsnd",
+			"sounds/player/melee/shared/swing_long_15.vsnd",
+			"sounds/player/melee/shared/swing_long_16.vsnd",
+			"sounds/player/melee/shared/swing_long_17.vsnd",
+			"sounds/player/melee/shared/swing_long_18.vsnd",
+			"sounds/player/melee/shared/swing_long_19.vsnd",
+			"sounds/player/melee/shared/swing_long_20.vsnd",
+			"sounds/player/melee/shared/swing_long_21.vsnd",
+			"sounds/player/melee/shared/swing_long_22.vsnd",
+			"sounds/player/melee/shared/swing_long_23.vsnd",
+			"sounds/player/melee/shared/swing_long_24.vsnd",
+			"sounds/player/melee/shared/swing_long_25.vsnd",
+		]
+		track_2.track_vsnd_files = 
+		[
+			"sounds/player/movement/generic/foley_light/default_foley_01.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_02.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_03.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_04.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_05.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_06.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_07.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_08.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_09.vsnd",
+		]
+		vsnd_duration = 1.399792
+	}
+}

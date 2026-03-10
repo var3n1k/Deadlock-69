@@ -1,0 +1,740 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	Calico.Wpn.Fire.Main = 
+	{
+		base = "Base.Weapon.MachineGun"
+		volume = 2.000000
+		volume_fade_out = 0.200000
+		low_ammo_vol_offset_db = 2.000000
+		tail_vol_offset_db = -4.000000
+		last_shot_vol_offset_db = 1.000000
+		vsnd_files_low_ammo = 
+		[
+			"sounds/weapons/nano/calico_weapon_fire_mech_01.vsnd",
+			"sounds/weapons/nano/calico_weapon_fire_mech_02.vsnd",
+			"sounds/weapons/nano/calico_weapon_fire_mech_03.vsnd",
+			"sounds/weapons/nano/calico_weapon_fire_mech_04.vsnd",
+			"sounds/weapons/nano/calico_weapon_fire_mech_05.vsnd",
+			"sounds/weapons/nano/calico_weapon_fire_mech_06.vsnd",
+			"sounds/weapons/nano/calico_weapon_fire_mech_07.vsnd",
+			"sounds/weapons/nano/calico_weapon_fire_mech_08.vsnd",
+			"sounds/weapons/nano/calico_weapon_fire_mech_09.vsnd",
+			"sounds/weapons/nano/calico_weapon_fire_mech_10.vsnd",
+		]
+		vsnd_files = 
+		[
+			"sounds/weapons/nano/calico_weapon_fire_main_01.vsnd",
+			"sounds/weapons/nano/calico_weapon_fire_main_02.vsnd",
+			"sounds/weapons/nano/calico_weapon_fire_main_03.vsnd",
+			"sounds/weapons/nano/calico_weapon_fire_main_04.vsnd",
+			"sounds/weapons/nano/calico_weapon_fire_main_05.vsnd",
+			"sounds/weapons/nano/calico_weapon_fire_main_06.vsnd",
+			"sounds/weapons/nano/calico_weapon_fire_main_07.vsnd",
+			"sounds/weapons/nano/calico_weapon_fire_main_08.vsnd",
+			"sounds/weapons/nano/calico_weapon_fire_main_09.vsnd",
+			"sounds/weapons/nano/calico_weapon_fire_main_10.vsnd",
+		]
+		fire_rate_percent_curve_db_offset = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				-0.059997,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				100.000000,
+				-5.999681,
+				-0.059997,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		vsnd_files_last_shot = 
+		[
+			"sounds/weapons/nano/calico_wpn_last_shot_01.vsnd",
+		]
+		vsnd_duration = 0.828231
+	}
+	Calico.Wpn.Fire.First = 
+	{
+		base = "Calico.Wpn.Fire.Main"
+		transient_offset_db = 6.000000
+		limiter_max = 0.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/nano/calico_weapon_fire_first_01.vsnd",
+			"sounds/weapons/nano/calico_weapon_fire_first_02.vsnd",
+			"sounds/weapons/nano/calico_weapon_fire_first_03.vsnd",
+			"sounds/weapons/nano/calico_weapon_fire_first_04.vsnd",
+			"sounds/weapons/nano/calico_weapon_fire_first_05.vsnd",
+			"sounds/weapons/nano/calico_weapon_fire_first_06.vsnd",
+			"sounds/weapons/nano/calico_weapon_fire_first_07.vsnd",
+			"sounds/weapons/nano/calico_weapon_fire_first_08.vsnd",
+			"sounds/weapons/nano/calico_weapon_fire_first_09.vsnd",
+			"sounds/weapons/nano/calico_weapon_fire_first_10.vsnd",
+		]
+		vsnd_duration = 0.828254
+	}
+	Calico.Wpn.Fire.Release = 
+	{
+		base = "Base.Weapon.Tail"
+		volume = -3.000000
+		vsnd_files_tail = 
+		[
+			"sounds/weapons/nano/calico_weapon_fire_release_01.vsnd",
+			"sounds/weapons/nano/calico_weapon_fire_release_02.vsnd",
+			"sounds/weapons/nano/calico_weapon_fire_release_03.vsnd",
+			"sounds/weapons/nano/calico_weapon_fire_release_04.vsnd",
+			"sounds/weapons/nano/calico_weapon_fire_release_05.vsnd",
+			"sounds/weapons/nano/calico_weapon_fire_release_06.vsnd",
+			"sounds/weapons/nano/calico_weapon_fire_release_07.vsnd",
+			"sounds/weapons/nano/calico_weapon_fire_release_08.vsnd",
+			"sounds/weapons/nano/calico_weapon_fire_release_09.vsnd",
+			"sounds/weapons/nano/calico_weapon_fire_release_10.vsnd",
+		]
+		fire_rate_percent_curve_db_offset = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				-0.059997,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				100.000000,
+				-5.999681,
+				-0.059997,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		continuous_fire_time_curve_db_offset = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		vsnd_duration = 1.647732
+	}
+	Calico.Wpn.Impact = 
+	{
+		base = "Base.Bullet.Impact.Shotgun"
+	}
+	Calico.Wpn.ZoomIn = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = -12.000000
+		vsnd_files = "sounds/weapons/nano/zoomin.vsnd"
+		vsnd_duration = 0.247166
+	}
+	Calico.Wpn.ZoomOut = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = -12.000000
+		vsnd_files = "sounds/weapons/nano/zoomout.vsnd"
+		vsnd_duration = 0.418118
+	}
+	Calico.Wpn.Reload.Start = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = -1.000000
+		mono_downmix_enabled = 0.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/nano/calico_wpn_reload_start_01.vsnd",
+			"sounds/weapons/nano/calico_wpn_reload_start_02.vsnd",
+			"sounds/weapons/nano/calico_wpn_reload_start_03.vsnd",
+		]
+		vsnd_duration = 1.836667
+	}
+	Calico.Wpn.Reload.End = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = -1.000000
+		mono_downmix_enabled = 0.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/nano/calico_wpn_reload_end_01.vsnd",
+			"sounds/weapons/nano/calico_wpn_reload_end_02.vsnd",
+			"sounds/weapons/nano/calico_wpn_reload_end_03.vsnd",
+		]
+		vsnd_duration = 1.339388
+	}
+	Calico.Movement.Long = 
+	{
+		base = "Base.Movement"
+		volume = 0.000000
+	}
+	Calico.Movement.Short = 
+	{
+		base = "Base.Movement"
+		volume = -5.000000
+	}
+	Calico.JumpLand = 
+	{
+		base = "Base.Footsteps.JumpLand"
+		volume = -1.000000
+		track_2.vsnd_track_vol_offset_db = -4.000000
+		vsnd_files = 
+		[
+			"sounds/player/footsteps/nano/nano_r_01.vsnd",
+			"sounds/player/footsteps/nano/nano_r_02.vsnd",
+			"sounds/player/footsteps/nano/nano_r_03.vsnd",
+			"sounds/player/footsteps/nano/nano_r_04.vsnd",
+			"sounds/player/footsteps/nano/nano_r_05.vsnd",
+			"sounds/player/footsteps/nano/nano_r_06.vsnd",
+			"sounds/player/footsteps/nano/nano_r_07.vsnd",
+			"sounds/player/footsteps/nano/nano_r_08.vsnd",
+			"sounds/player/footsteps/nano/nano_r_09.vsnd",
+			"sounds/player/footsteps/nano/nano_l_01.vsnd",
+			"sounds/player/footsteps/nano/nano_l_03.vsnd",
+			"sounds/player/footsteps/nano/nano_l_04.vsnd",
+			"sounds/player/footsteps/nano/nano_l_05.vsnd",
+			"sounds/player/footsteps/nano/nano_l_06.vsnd",
+			"sounds/player/footsteps/nano/nano_l_07.vsnd",
+			"sounds/player/footsteps/nano/nano_l_08.vsnd",
+			"sounds/player/footsteps/nano/nano_l_09.vsnd",
+			"sounds/player/footsteps/nano/nano_l_10.vsnd",
+		]
+		track_2.track_vsnd_files = 
+		[
+			"sounds/player/movement/calico/nano_jump_land_01.vsnd",
+			"sounds/player/movement/calico/nano_jump_land_02.vsnd",
+			"sounds/player/movement/calico/nano_jump_land_03.vsnd",
+			"sounds/player/movement/calico/nano_jump_land_04.vsnd",
+			"sounds/player/movement/calico/nano_jump_land_05.vsnd",
+			"sounds/player/movement/calico/nano_jump_land_06.vsnd",
+			"sounds/player/movement/calico/nano_jump_land_07.vsnd",
+			"sounds/player/movement/calico/nano_jump_land_08.vsnd",
+			"sounds/player/movement/calico/nano_jump_land_09.vsnd",
+		]
+		vsnd_duration = 0.404167
+	}
+	Calico.Mantle = 
+	{
+		base = "Base.Movement"
+	}
+	Calico.Melee.Swing = 
+	{
+		base = "Base.Movement.Melee"
+		vsnd_files = 
+		[
+			"sounds/player/melee/shared/swing_short_01.vsnd",
+			"sounds/player/melee/shared/swing_short_02.vsnd",
+			"sounds/player/melee/shared/swing_short_03.vsnd",
+			"sounds/player/melee/shared/swing_short_04.vsnd",
+			"sounds/player/melee/shared/swing_short_05.vsnd",
+			"sounds/player/melee/shared/swing_short_06.vsnd",
+			"sounds/player/melee/shared/swing_short_07.vsnd",
+			"sounds/player/melee/shared/swing_short_08.vsnd",
+			"sounds/player/melee/shared/swing_short_09.vsnd",
+			"sounds/player/melee/shared/swing_short_10.vsnd",
+			"sounds/player/melee/shared/swing_short_11.vsnd",
+			"sounds/player/melee/shared/swing_short_12.vsnd",
+			"sounds/player/melee/shared/swing_short_13.vsnd",
+			"sounds/player/melee/shared/swing_short_14.vsnd",
+			"sounds/player/melee/shared/swing_short_15.vsnd",
+			"sounds/player/melee/shared/swing_short_16.vsnd",
+			"sounds/player/melee/shared/swing_short_17.vsnd",
+			"sounds/player/melee/shared/swing_short_18.vsnd",
+			"sounds/player/melee/shared/swing_short_19.vsnd",
+			"sounds/player/melee/shared/swing_short_20.vsnd",
+			"sounds/player/melee/shared/swing_short_21.vsnd",
+			"sounds/player/melee/shared/swing_short_22.vsnd",
+			"sounds/player/melee/shared/swing_short_23.vsnd",
+			"sounds/player/melee/shared/swing_short_24.vsnd",
+		]
+		vsnd_duration = 1.062208
+	}
+	Calico.Melee.Swing.Charged = 
+	{
+		base = "Base.Movement.Melee"
+		vsnd_files = 
+		[
+			"sounds/player/melee/shared/swing_long_01.vsnd",
+			"sounds/player/melee/shared/swing_long_02.vsnd",
+			"sounds/player/melee/shared/swing_long_03.vsnd",
+			"sounds/player/melee/shared/swing_long_04.vsnd",
+			"sounds/player/melee/shared/swing_long_05.vsnd",
+			"sounds/player/melee/shared/swing_long_06.vsnd",
+			"sounds/player/melee/shared/swing_long_07.vsnd",
+			"sounds/player/melee/shared/swing_long_08.vsnd",
+			"sounds/player/melee/shared/swing_long_09.vsnd",
+			"sounds/player/melee/shared/swing_long_10.vsnd",
+			"sounds/player/melee/shared/swing_long_11.vsnd",
+			"sounds/player/melee/shared/swing_long_12.vsnd",
+			"sounds/player/melee/shared/swing_long_13.vsnd",
+			"sounds/player/melee/shared/swing_long_14.vsnd",
+			"sounds/player/melee/shared/swing_long_15.vsnd",
+			"sounds/player/melee/shared/swing_long_16.vsnd",
+			"sounds/player/melee/shared/swing_long_17.vsnd",
+			"sounds/player/melee/shared/swing_long_18.vsnd",
+			"sounds/player/melee/shared/swing_long_19.vsnd",
+			"sounds/player/melee/shared/swing_long_20.vsnd",
+			"sounds/player/melee/shared/swing_long_21.vsnd",
+			"sounds/player/melee/shared/swing_long_22.vsnd",
+			"sounds/player/melee/shared/swing_long_23.vsnd",
+			"sounds/player/melee/shared/swing_long_24.vsnd",
+			"sounds/player/melee/shared/swing_long_25.vsnd",
+		]
+		vsnd_duration = 1.399792
+	}
+	Calico.Footstep = 
+	{
+		base = "Base.Footsteps"
+		track_1.vsnd_track_vol_offset_db = -7.000000
+		vsnd_files = 
+		[
+			"sounds/player/footsteps/nano/nano_r_01.vsnd",
+			"sounds/player/footsteps/nano/nano_r_02.vsnd",
+			"sounds/player/footsteps/nano/nano_r_03.vsnd",
+			"sounds/player/footsteps/nano/nano_r_04.vsnd",
+			"sounds/player/footsteps/nano/nano_r_05.vsnd",
+			"sounds/player/footsteps/nano/nano_r_06.vsnd",
+			"sounds/player/footsteps/nano/nano_r_07.vsnd",
+			"sounds/player/footsteps/nano/nano_r_08.vsnd",
+			"sounds/player/footsteps/nano/nano_r_09.vsnd",
+			"sounds/player/footsteps/nano/nano_l_01.vsnd",
+			"sounds/player/footsteps/nano/nano_l_03.vsnd",
+			"sounds/player/footsteps/nano/nano_l_04.vsnd",
+			"sounds/player/footsteps/nano/nano_l_05.vsnd",
+			"sounds/player/footsteps/nano/nano_l_06.vsnd",
+			"sounds/player/footsteps/nano/nano_l_07.vsnd",
+			"sounds/player/footsteps/nano/nano_l_08.vsnd",
+			"sounds/player/footsteps/nano/nano_l_09.vsnd",
+			"sounds/player/footsteps/nano/nano_l_10.vsnd",
+		]
+		vsnd_duration = 0.404167
+	}
+	Calico.GloomBomb.Explode = 
+	{
+		base = "Base.Ability.Detached"
+		volume = 2.000000
+		volume_offset_player = -2.000000
+		pitch = 1.100000
+		vsnd_files = 
+		[
+			"sounds/abilities/nano/nano_gloombomb_explode_01.vsnd",
+			"sounds/abilities/nano/nano_gloombomb_explode_02.vsnd",
+			"sounds/abilities/nano/nano_gloombomb_explode_03.vsnd",
+			"sounds/abilities/nano/nano_gloombomb_explode_04.vsnd",
+			"sounds/abilities/nano/nano_gloombomb_explode_05.vsnd",
+			"sounds/abilities/nano/nano_gloombomb_explode_06.vsnd",
+			"sounds/abilities/nano/nano_gloombomb_explode_07.vsnd",
+		]
+		vsnd_duration = 2.351565
+	}
+	Calico.GloomBomb.Cast = 
+	{
+		base = "Base.Ability"
+		volume = 2.000000
+		pitch_rand_min = -0.100000
+		pitch_rand_max = 0.100000
+		vsnd_files = "sounds/abilities/nano/nano_gloombomb_cast.vsnd"
+		vsnd_duration = 0.916213
+	}
+	Calico.GloomBomb.Projectile.Lp = 
+	{
+		base = "Base.Ability.Projectile"
+		volume = -2.000000
+		pitch = 0.870000
+		delay_rand_max = -6.000000
+		param_envelope_enabled = 1.000000
+		volume_fade_in = 0.300000
+		doppler_factor = 1.000000
+		volume_offset_player = -6.000000
+		vsnd_files = "sounds/abilities/nano/nano_gloombomb_proj_lp.vsnd"
+		vsnd_duration = 3.704127
+	}
+	Calico.GloomBomb.Projectile.Timer = 
+	{
+		base = "Base.Ability.Projectile"
+		volume = 2.000000
+		pitch = 0.850000
+		param_envelope_enabled = 1.000000
+		pitch_rand_min = -0.100000
+		volume_fade_in = 0.300000
+		delay = 0.000000
+		delay_rand_min = 0.300000
+		doppler_factor = 3.000000
+		volume_offset_player = -6.000000
+		vsnd_files = "sounds/abilities/nano/nano_gloombomb_timer.vsnd"
+		vsnd_duration = 0.954921
+	}
+	Calico.Gloombomb.Impact_Player = 
+	{
+		base = "Base.Ability.Hit"
+		volume = 6.000000
+		volume_offset_attacker_db = 6.000000
+		pitch = 1.100000
+		vsnd_files = 
+		[
+			"sounds/abilities/nano/nano_gloombomb_stick_01.vsnd",
+			"sounds/abilities/nano/nano_gloombomb_stick_02.vsnd",
+			"sounds/abilities/nano/nano_gloombomb_stick_03.vsnd",
+			"sounds/abilities/nano/nano_gloombomb_stick_04.vsnd",
+			"sounds/abilities/nano/nano_gloombomb_stick_05.vsnd",
+			"sounds/abilities/nano/nano_gloombomb_stick_06.vsnd",
+		]
+		vsnd_duration = 1.204240
+	}
+	Calico.Gloombomb.Impact_World = 
+	{
+		base = "Base.Ability"
+		volume = 2.000000
+		vsnd_files = 
+		[
+			"sounds/abilities/nano/nano_gloombomb_impact_world_01.vsnd",
+			"sounds/abilities/nano/nano_gloombomb_impact_world_02.vsnd",
+			"sounds/abilities/nano/nano_gloombomb_impact_world_04.vsnd",
+			"sounds/abilities/nano/nano_gloombomb_impact_world_05.vsnd",
+			"sounds/abilities/nano/nano_gloombomb_impact_world_06.vsnd",
+		]
+		vsnd_duration = 0.362993
+	}
+	Calico.LeapingSlash.Cast = 
+	{
+		base = "Base.Ability"
+		volume = 1.000000
+		vsnd_files = "sounds/abilities/nano/nano_leapingslash_cast.vsnd"
+		vsnd_duration = 1.997211
+	}
+	Calico.LeapingSlash.Cast.Delay = 
+	{
+		base = "Base.Ability"
+		volume = 0.000000
+		vsnd_files = 
+		[
+			"sounds/abilities/nano/nano_leapingslash_cast_delay_01.vsnd",
+			"sounds/abilities/nano/nano_leapingslash_cast_delay_02.vsnd",
+		]
+		vsnd_duration = 2.317279
+	}
+	Calico.LeapingSlash.Impact = 
+	{
+		base = "Base.Ability.Hit"
+		volume = 8.000000
+		pitch = 0.900000
+		vsnd_files = 
+		[
+			"sounds/abilities/nano/nano_leapingslash_impact_01.vsnd",
+			"sounds/abilities/nano/nano_leapingslash_impact_02.vsnd",
+			"sounds/abilities/nano/nano_leapingslash_impact_03.vsnd",
+			"sounds/abilities/nano/nano_leapingslash_impact_04.vsnd",
+		]
+		vsnd_duration = 0.792608
+	}
+	Calico.Ava.Cast = 
+	{
+		base = "Base.Ability"
+		volume = 0.000000
+		pitch_rand_max = 0.100000
+		pitch_rand_min = -0.100000
+		pitch = 1.100000
+		vsnd_files = 
+		[
+			"sounds/abilities/nano/a3_rollermine/cat_mine_meow_01.vsnd",
+			"sounds/abilities/nano/a3_rollermine/cat_mine_meow_02.vsnd",
+			"sounds/abilities/nano/a3_rollermine/cat_mine_meow_03.vsnd",
+		]
+		vsnd_duration = 2.651950
+	}
+	Calico.Ava.Expire = 
+	{
+		base = "Base.Ability"
+		volume = 0.000000
+		pitch_rand_max = 0.100000
+		pitch_rand_min = -0.100000
+		vsnd_files = "sounds/abilities/nano/a3_rollermine/cat_mine_expire.vsnd"
+	}
+	Calico.Ava.Meow = 
+	{
+		base = "Base.Ability"
+		volume = -19.000000
+		pitch_rand_min = -0.100000
+		pitch_rand_max = 0.100000
+		block_duration = 3.000000
+		position_force_from_player = true
+		vsnd_files = 
+		[
+			"sounds/abilities/nano/nano_ava_meow_01.vsnd",
+			"sounds/abilities/nano/nano_ava_meow_02.vsnd",
+			"sounds/abilities/nano/nano_ava_meow_03.vsnd",
+			"sounds/abilities/nano/nano_ava_meow_04.vsnd",
+			"sounds/abilities/nano/nano_ava_meow_05.vsnd",
+			"sounds/abilities/nano/nano_ava_meow_06.vsnd",
+			"sounds/abilities/nano/nano_ava_meow_07.vsnd",
+			"sounds/abilities/nano/nano_ava_meow_08.vsnd",
+			"sounds/abilities/nano/nano_ava_meow_09.vsnd",
+			"sounds/abilities/nano/nano_ava_meow_10.vsnd",
+			"sounds/abilities/nano/nano_ava_meow_11.vsnd",
+			"sounds/abilities/nano/nano_ava_meow_12.vsnd",
+			"sounds/abilities/nano/nano_ava_meow_13.vsnd",
+			"sounds/abilities/nano/nano_ava_meow_14.vsnd",
+			"sounds/abilities/nano/nano_ava_meow_15.vsnd",
+		]
+		vsnd_duration = 1.605170
+	}
+	Calico.Ava.Meow.Effort = 
+	{
+		base = "Base.Ability"
+		volume = -13.000000
+		pitch_rand_min = -0.100000
+		pitch_rand_max = 0.100000
+		vsnd_files = 
+		[
+			"sounds/abilities/nano/calico_ava_meow_effort_01.vsnd",
+			"sounds/abilities/nano/calico_ava_meow_effort_02.vsnd",
+			"sounds/abilities/nano/calico_ava_meow_effort_03.vsnd",
+			"sounds/abilities/nano/calico_ava_meow_effort_04.vsnd",
+			"sounds/abilities/nano/calico_ava_meow_effort_05.vsnd",
+			"sounds/abilities/nano/calico_ava_meow_effort_06.vsnd",
+		]
+		vsnd_duration = 1.177460
+	}
+	Calico.Ava.Melee = 
+	{
+		base = "Base.Ability"
+		volume = -6.000000
+		pitch_rand_min = -0.100000
+		pitch_rand_max = 0.100000
+		vsnd_files = 
+		[
+			"sounds/abilities/nano/calico_ava_melee_01.vsnd",
+			"sounds/abilities/nano/calico_ava_melee_02.vsnd",
+			"sounds/abilities/nano/calico_ava_melee_03.vsnd",
+			"sounds/abilities/nano/calico_ava_melee_04.vsnd",
+			"sounds/abilities/nano/calico_ava_melee_05.vsnd",
+		]
+		vsnd_duration = 1.424898
+	}
+	Calico.Ava.Movement.Short = 
+	{
+		base = "Base.Movement"
+		volume = -4.000000
+		pitch_rand_max = 0.100000
+		pitch_rand_min = -0.100000
+		vsnd_files = 
+		[
+			"sounds/abilities/nano/calico_ava_movement_short_01.vsnd",
+			"sounds/abilities/nano/calico_ava_movement_short_02.vsnd",
+			"sounds/abilities/nano/calico_ava_movement_short_03.vsnd",
+			"sounds/abilities/nano/calico_ava_movement_short_04.vsnd",
+		]
+		vsnd_duration = 1.226531
+	}
+	Calico.Ava.Movement.Long = 
+	{
+		base = "Base.Movement"
+		volume = -2.000000
+		pitch_rand_max = 0.100000
+		pitch_rand_min = -0.100000
+		vsnd_files = 
+		[
+			"sounds/abilities/nano/calico_ava_movement_long_01.vsnd",
+			"sounds/abilities/nano/calico_ava_movement_long_02.vsnd",
+			"sounds/abilities/nano/calico_ava_movement_long_03.vsnd",
+			"sounds/abilities/nano/calico_ava_movement_long_04.vsnd",
+		]
+		vsnd_duration = 1.429002
+	}
+	Calico.Ava.Footstep = 
+	{
+		base = "Base.Footsteps"
+		volume = -11.000000
+		volume_hideout_offset_db = -6.000000
+		pitch = 0.950000
+		vsnd_files = 
+		[
+			"sounds/abilities/nano/nano_ava_step_01.vsnd",
+			"sounds/abilities/nano/nano_ava_step_02.vsnd",
+			"sounds/abilities/nano/nano_ava_step_03.vsnd",
+			"sounds/abilities/nano/nano_ava_step_04.vsnd",
+			"sounds/abilities/nano/nano_ava_step_05.vsnd",
+			"sounds/abilities/nano/nano_ava_step_07.vsnd",
+			"sounds/abilities/nano/nano_ava_step_08.vsnd",
+			"sounds/abilities/nano/nano_ava_step_09.vsnd",
+			"sounds/abilities/nano/nano_ava_step_10.vsnd",
+			"sounds/abilities/nano/nano_ava_step_11.vsnd",
+		]
+		vsnd_duration = 0.296417
+	}
+	Calico.Ava.Lick_01 = 
+	{
+		base = "Base.Movement"
+		volume_hideout_offset_db = -3.000000
+		volume = -20.000000
+		pitch_rand_max = 0.150000
+		pitch_rand_min = -0.150000
+		volume_offset_opponent = -8.000000
+		vsnd_files = "sounds/abilities/nano/a4_tower/cat_lick_01.vsnd"
+		vsnd_duration = 0.455669
+	}
+	Calico.Ava.Lick_02 = 
+	{
+		base = "Base.Movement"
+		volume_hideout_offset_db = -3.000000
+		volume = -12.000000
+		pitch_rand_max = 0.100000
+		pitch_rand_min = -0.100000
+		pitch = 1.100000
+		volume_offset_opponent = -8.000000
+		vsnd_files = "sounds/abilities/nano/a4_tower/cat_lick_02.vsnd"
+		vsnd_duration = 0.457914
+	}
+	Calico.Ava.Purr = 
+	{
+		base = "Base.Movement"
+		volume = -8.000000
+		pitch_rand_max = 0.100000
+		pitch_rand_min = -0.100000
+		pitch = 1.100000
+		volume_offset_team = 2.000000
+		volume_offset_opponent = -10.000000
+		vsnd_files = 
+		[
+			"sounds/abilities/nano/a4_tower/cat_purr_01.vsnd",
+			"sounds/abilities/nano/a4_tower/cat_purr_02.vsnd",
+			"sounds/abilities/nano/a4_tower/cat_purr_03.vsnd",
+			"sounds/abilities/nano/a4_tower/cat_purr_04.vsnd",
+			"sounds/abilities/nano/a4_tower/cat_purr_05.vsnd",
+		]
+		vsnd_duration = 3.189751
+	}
+	Calico.Shadow.Cast = 
+	{
+		base = "Base.Ability.Ult"
+		volume = 2.000000
+		pitch_rand_min = -0.100000
+		pitch_rand_max = 0.100000
+		vsnd_files = "sounds/abilities/nano/nano_shadow_cast.vsnd"
+		vsnd_duration = 2.914716
+	}
+	Calico.Shadow.Explode = 
+	{
+		base = "Base.Ability.Ult"
+		volume = 0.000000
+		vsnd_files = "sounds/abilities/nano/nano_shadow_explode.vsnd"
+		vsnd_duration = 3.590408
+	}
+	Calico.Shadow.Middle = 
+	{
+		base = "Base.Ability.Ult"
+		volume = 3.000000
+		pitch = 1.000000
+		volume_offset_opponent = 2.000000
+		pitch_rand_min = 0.000000
+		pitch_rand_max = 0.000000
+		delay = 1.000000
+		delay_rand_min = -1.000000
+		delay_rand_max = -1.000000
+		vsnd_files = "sounds/abilities/nano/nano_shadow_middle.vsnd"
+		vsnd_duration = 5.599864
+	}
+	Nano.Progession.Page.Win.VO = 
+	{
+		base = "Base.VO.HeroVictory"
+		context_name = "nano"
+		vsnd_files = 
+		[
+			"sounds/vo/nano/nano_happy_01.vsnd",
+			"sounds/vo/nano/nano_happy_06.vsnd",
+			"sounds/vo/nano/nano_killstreak_mid_02.vsnd",
+		]
+		vsnd_duration = 2.147324
+	}
+	Nano.Progession.Page.Lose.VO = 
+	{
+		base = "Base.VO.HeroVictory"
+		context_name = "nano"
+		vsnd_files = 
+		[
+			"sounds/vo/nano/nano_angry_10.vsnd",
+			"sounds/vo/nano/nano_last_one_standing_01.vsnd",
+		]
+		vsnd_duration = 1.658798
+	}
+	npc_nano_rollermine.Killed = 
+	{
+		base = "Base.Ability"
+		position_force_static = 1.000000
+		pitch_rand_min = -0.100000
+		pitch_rand_max = 0.100000
+		pitch = 1.050000
+		vsnd_files = 
+		[
+			"sounds/abilities/nano/a3_rollermine/cat_mine_explosion_01.vsnd",
+			"sounds/abilities/nano/a3_rollermine/cat_mine_explosion_02.vsnd",
+			"sounds/abilities/nano/a3_rollermine/cat_mine_explosion_03.vsnd",
+		]
+		vsnd_duration = 3.168934
+	}
+	Ability.Nano.RollerMine_Travel_Lp = 
+	{
+		base = "Base.Ability"
+		volume = 0.000000
+		vsnd_files = "sounds/abilities/nano/a3_rollermine/nano_a3_rollermine_travel_lp_01.vsnd"
+		vsnd_duration = 6.306417
+	}
+	Nano.Ritual.Lp = 
+	{
+		base = "Base.Ability"
+		volume = 0.000000
+		spread_min = 44.571430
+		spread_max_value = 0.000000
+		spread_max = 300.000000
+		spread_min_value = 0.000000
+		pitch_rand_min = -0.200000
+		pitch_rand_max = 0.010000
+		vsnd_files = "sounds/abilities/nano/a4_tower/nano_ult_amb_lp2.vsnd"
+		vsnd_duration = 15.333741
+	}
+	Nano.Ritual.Activate = 
+	{
+		base = "Base.Ability"
+		volume = 0.000000
+		spread_min = 0.000000
+		spread_max_value = 0.000000
+		spread_max = 300.000000
+		spread_min_value = 0.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		vsnd_files = 
+		[
+			"sounds/abilities/nano/a4_tower/statue_activate_01.vsnd",
+			"sounds/abilities/nano/a4_tower/statue_activate_02.vsnd",
+			"sounds/abilities/nano/a4_tower/statue_activate_03.vsnd",
+			"sounds/abilities/nano/a4_tower/statue_activate_04.vsnd",
+			"sounds/abilities/nano/a4_tower/statue_activate_05.vsnd",
+			"sounds/abilities/nano/a4_tower/statue_activate_06.vsnd",
+			"sounds/abilities/nano/a4_tower/statue_activate_07.vsnd",
+		]
+		vsnd_duration = 4.172925
+	}
+}

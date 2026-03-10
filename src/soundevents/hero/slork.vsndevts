@@ -1,0 +1,449 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	Slork.Wpn.Fire = 
+	{
+		base = "Base.Weapon"
+		volume = 3.000000
+		limiter_max = 0.000000
+		volume_fade_out = 0.100000
+		vsnd_files = 
+		[
+			"sounds/weapons/pocket/pocket_weapon_fire_01.vsnd",
+			"sounds/weapons/pocket/pocket_weapon_fire_02.vsnd",
+			"sounds/weapons/pocket/pocket_weapon_fire_03.vsnd",
+			"sounds/weapons/pocket/pocket_weapon_fire_04.vsnd",
+			"sounds/weapons/pocket/pocket_weapon_fire_05.vsnd",
+			"sounds/weapons/pocket/pocket_weapon_fire_06.vsnd",
+		]
+		vsnd_duration = 2.632290
+	}
+	Slork.Wpn.Whizby = 
+	{
+		base = "Base.Bullet.Whizby"
+		limiter_max = 1.000000
+		volume = -6.000000
+		limiter_stop_oldest = false
+		vsnd_files = 
+		[
+			"sounds/weapons/pocket/pocket_weapon_whizby_groupA-001.vsnd",
+			"sounds/weapons/pocket/pocket_weapon_whizby_groupA-002.vsnd",
+			"sounds/weapons/pocket/pocket_weapon_whizby_groupA-003.vsnd",
+			"sounds/weapons/pocket/pocket_weapon_whizby_groupA-004.vsnd",
+			"sounds/weapons/pocket/pocket_weapon_whizby_groupA-005.vsnd",
+			"sounds/weapons/pocket/pocket_weapon_whizby_groupA-006.vsnd",
+			"sounds/weapons/pocket/pocket_weapon_whizby_groupA-007.vsnd",
+			"sounds/weapons/pocket/pocket_weapon_whizby_groupA-008.vsnd",
+			"sounds/weapons/pocket/pocket_weapon_whizby_groupA-009.vsnd",
+			"sounds/weapons/pocket/pocket_weapon_whizby_groupA-010.vsnd",
+			"sounds/weapons/pocket/pocket_weapon_whizby_groupB-001.vsnd",
+			"sounds/weapons/pocket/pocket_weapon_whizby_groupB-002.vsnd",
+			"sounds/weapons/pocket/pocket_weapon_whizby_groupB-003.vsnd",
+			"sounds/weapons/pocket/pocket_weapon_whizby_groupB-004.vsnd",
+			"sounds/weapons/pocket/pocket_weapon_whizby_groupB-005.vsnd",
+			"sounds/weapons/pocket/pocket_weapon_whizby_groupB-006.vsnd",
+			"sounds/weapons/pocket/pocket_weapon_whizby_groupB-007.vsnd",
+			"sounds/weapons/pocket/pocket_weapon_whizby_groupB-008.vsnd",
+			"sounds/weapons/pocket/pocket_weapon_whizby_groupB-009.vsnd",
+			"sounds/weapons/pocket/pocket_weapon_whizby_groupB-010.vsnd",
+		]
+		vsnd_duration = 0.601633
+	}
+	Slork.Wpn.Impact = 
+	{
+		base = "Base.Bullet.Impact"
+		vsnd_files = "sounds/common/null.vsnd"
+		vsnd_duration = 0.050023
+	}
+	Slork.Wpn.Reload.Clip.Out = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = -10.000000
+		vsnd_files = "sounds/weapons/abrams/reload/clip_out.vsnd"
+		vsnd_duration = 0.608813
+	}
+	Slork.Wpn.Reload.Clip.In = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = -4.000000
+		vsnd_files = "sounds/weapons/abrams/reload/clip_in.vsnd"
+		vsnd_duration = 1.039146
+	}
+	Slork.Reload.ClipOut = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = 1.000000
+		vsnd_files = "sounds/weapons/slork/reload/clip_in.vsnd"
+	}
+	Slork.Reload.ClipIn = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = 1.000000
+		vsnd_files = "sounds/weapons/slork/reload/clip_in.vsnd"
+	}
+	Slork.Wpn.Zoom.In = 
+	{
+		base = "Base.Weapon.Foley"
+		vsnd_files = "sounds/weapons/orion/zoom/in.vsnd"
+		vsnd_duration = 0.591375
+	}
+	Slork.Wpn.Zoom.Out = 
+	{
+		base = "Base.Weapon.Foley"
+		pitch = 1.200000
+		vsnd_files = "sounds/weapons/orion/zoom/out.vsnd"
+		vsnd_duration = 0.494687
+	}
+	Slork.A1.Scald.PreCast = 
+	{
+		base = "Base.Ability"
+		volume = -6.000000
+		pitch = 1.200000
+		vsnd_files = "sounds/abilities/slork/a1_scald/pre_cast.vsnd"
+	}
+	Slork.A1.Scald.Cast = 
+	{
+		base = "Base.Ability"
+		volume = -3.000000
+		pitch = 0.900000
+		vsnd_files = "sounds/abilities/fathom/a1/fathom_a1_cast.vsnd"
+		vsnd_duration = 2.337982
+	}
+	Slork.Invis.Modifier.Start = 
+	{
+		base = "Base.Ability"
+		volume = -15.000000
+		vsnd_files = "sounds/abilities/haze/a2_smoke_bomb/mod_start_lyr2.vsnd"
+		vsnd_duration = 1.827479
+	}
+	Slork.Invis.Modifier.Lp = 
+	{
+		base = "Base.Ability"
+		volume = -17.000000
+		volume_fade_in = 0.500000
+		volume_fade_out = 0.200000
+		vsnd_files = "sounds/abilities/haze/a2_smoke_bomb/mod_dur_lp_1.vsnd"
+		vsnd_duration = 9.840208
+	}
+	Fathom.Footstep = 
+	{
+		base = "Base.Footsteps"
+		track_1.vsnd_track_vol_offset_db = -3.000000
+		vsnd_files = 
+		[
+			"sounds/player/footsteps/fathom/fathom_footstep_wet_01.vsnd",
+			"sounds/player/footsteps/fathom/fathom_footstep_wet_02.vsnd",
+			"sounds/player/footsteps/fathom/fathom_footstep_wet_03.vsnd",
+			"sounds/player/footsteps/fathom/fathom_footstep_wet_04.vsnd",
+			"sounds/player/footsteps/fathom/fathom_footstep_wet_05.vsnd",
+			"sounds/player/footsteps/fathom/fathom_footstep_wet_07.vsnd",
+			"sounds/player/footsteps/fathom/fathom_footstep_wet_09.vsnd",
+			"sounds/player/footsteps/fathom/fathom_footstep_wet_10.vsnd",
+			"sounds/player/footsteps/fathom/fathom_footstep_wet_11.vsnd",
+			"sounds/player/footsteps/fathom/fathom_footstep_wet_12.vsnd",
+			"sounds/player/footsteps/fathom/fathom_footstep_wet_13.vsnd",
+			"sounds/player/footsteps/fathom/fathom_footstep_wet_14.vsnd",
+			"sounds/player/footsteps/fathom/fathom_footstep_wet_15.vsnd",
+			"sounds/player/footsteps/fathom/fathom_footstep_wet_16.vsnd",
+			"sounds/player/footsteps/fathom/fathom_footstep_wet_17.vsnd",
+			"sounds/player/footsteps/fathom/fathom_footstep_wet_18.vsnd",
+			"sounds/player/footsteps/fathom/fathom_footstep_wet_19.vsnd",
+			"sounds/player/footsteps/fathom/fathom_footstep_wet_20.vsnd",
+			"sounds/player/footsteps/fathom/fathom_footstep_wet_21.vsnd",
+			"sounds/player/footsteps/fathom/fathom_footstep_wet_22.vsnd",
+			"sounds/player/footsteps/fathom/fathom_footstep_wet_23.vsnd",
+			"sounds/player/footsteps/fathom/fathom_footstep_wet_24.vsnd",
+		]
+		vsnd_duration = 1.170181
+	}
+	Fathom.JumpLand = 
+	{
+		base = "Base.Footsteps.JumpLand"
+		volume = 0.000000
+		track_2.vsnd_track_vol_offset_db = -5.000000
+		vsnd_files = 
+		[
+			"sounds/player/footsteps/fathom/fathom_footstep_wet_01.vsnd",
+			"sounds/player/footsteps/fathom/fathom_footstep_wet_02.vsnd",
+			"sounds/player/footsteps/fathom/fathom_footstep_wet_03.vsnd",
+			"sounds/player/footsteps/fathom/fathom_footstep_wet_04.vsnd",
+			"sounds/player/footsteps/fathom/fathom_footstep_wet_05.vsnd",
+			"sounds/player/footsteps/fathom/fathom_footstep_wet_07.vsnd",
+			"sounds/player/footsteps/fathom/fathom_footstep_wet_09.vsnd",
+			"sounds/player/footsteps/fathom/fathom_footstep_wet_10.vsnd",
+			"sounds/player/footsteps/fathom/fathom_footstep_wet_11.vsnd",
+			"sounds/player/footsteps/fathom/fathom_footstep_wet_12.vsnd",
+			"sounds/player/footsteps/fathom/fathom_footstep_wet_13.vsnd",
+			"sounds/player/footsteps/fathom/fathom_footstep_wet_14.vsnd",
+			"sounds/player/footsteps/fathom/fathom_footstep_wet_15.vsnd",
+			"sounds/player/footsteps/fathom/fathom_footstep_wet_16.vsnd",
+			"sounds/player/footsteps/fathom/fathom_footstep_wet_17.vsnd",
+			"sounds/player/footsteps/fathom/fathom_footstep_wet_18.vsnd",
+			"sounds/player/footsteps/fathom/fathom_footstep_wet_19.vsnd",
+			"sounds/player/footsteps/fathom/fathom_footstep_wet_20.vsnd",
+			"sounds/player/footsteps/fathom/fathom_footstep_wet_21.vsnd",
+			"sounds/player/footsteps/fathom/fathom_footstep_wet_22.vsnd",
+			"sounds/player/footsteps/fathom/fathom_footstep_wet_23.vsnd",
+			"sounds/player/footsteps/fathom/fathom_footstep_wet_24.vsnd",
+		]
+		track_2.track_vsnd_files = 
+		[
+			"sounds/player/movement/generic/foley_light/default_foley_01.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_02.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_03.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_04.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_05.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_06.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_07.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_08.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_09.vsnd",
+		]
+		vsnd_duration = 1.170181
+	}
+	Fathom.Movement.Long = 
+	{
+		base = "Base.Movement"
+		volume = -5.000000
+	}
+	Fathom.Movement.Short = 
+	{
+		base = "Base.Movement"
+		volume = -8.000000
+	}
+	Fathom.Mantle = 
+	{
+		base = "Base.Movement"
+		volume = -5.000000
+	}
+	Fathom.Melee.Swing = 
+	{
+		base = "Base.Movement.Melee"
+		track_2.vsnd_track_vol_offset_db = -7.000000
+		vsnd_files = 
+		[
+			"sounds/player/melee/shared/swing_short_01.vsnd",
+			"sounds/player/melee/shared/swing_short_02.vsnd",
+			"sounds/player/melee/shared/swing_short_03.vsnd",
+			"sounds/player/melee/shared/swing_short_04.vsnd",
+			"sounds/player/melee/shared/swing_short_05.vsnd",
+			"sounds/player/melee/shared/swing_short_06.vsnd",
+			"sounds/player/melee/shared/swing_short_07.vsnd",
+			"sounds/player/melee/shared/swing_short_08.vsnd",
+			"sounds/player/melee/shared/swing_short_09.vsnd",
+			"sounds/player/melee/shared/swing_short_10.vsnd",
+			"sounds/player/melee/shared/swing_short_11.vsnd",
+			"sounds/player/melee/shared/swing_short_12.vsnd",
+			"sounds/player/melee/shared/swing_short_13.vsnd",
+			"sounds/player/melee/shared/swing_short_14.vsnd",
+			"sounds/player/melee/shared/swing_short_15.vsnd",
+			"sounds/player/melee/shared/swing_short_16.vsnd",
+			"sounds/player/melee/shared/swing_short_17.vsnd",
+			"sounds/player/melee/shared/swing_short_18.vsnd",
+			"sounds/player/melee/shared/swing_short_19.vsnd",
+			"sounds/player/melee/shared/swing_short_20.vsnd",
+			"sounds/player/melee/shared/swing_short_21.vsnd",
+			"sounds/player/melee/shared/swing_short_22.vsnd",
+			"sounds/player/melee/shared/swing_short_23.vsnd",
+			"sounds/player/melee/shared/swing_short_24.vsnd",
+		]
+		track_2.track_vsnd_files = 
+		[
+			"sounds/player/movement/generic/foley_light/default_foley_01.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_02.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_03.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_04.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_05.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_06.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_07.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_08.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_09.vsnd",
+		]
+		vsnd_duration = 1.062208
+	}
+	Fathom.Melee.Swing.Charged = 
+	{
+		base = "Base.Movement.Melee"
+		track_2.vsnd_track_vol_offset_db = -7.000000
+		vsnd_files = 
+		[
+			"sounds/player/melee/shared/swing_long_01.vsnd",
+			"sounds/player/melee/shared/swing_long_02.vsnd",
+			"sounds/player/melee/shared/swing_long_03.vsnd",
+			"sounds/player/melee/shared/swing_long_04.vsnd",
+			"sounds/player/melee/shared/swing_long_05.vsnd",
+			"sounds/player/melee/shared/swing_long_06.vsnd",
+			"sounds/player/melee/shared/swing_long_07.vsnd",
+			"sounds/player/melee/shared/swing_long_08.vsnd",
+			"sounds/player/melee/shared/swing_long_09.vsnd",
+			"sounds/player/melee/shared/swing_long_10.vsnd",
+			"sounds/player/melee/shared/swing_long_11.vsnd",
+			"sounds/player/melee/shared/swing_long_12.vsnd",
+			"sounds/player/melee/shared/swing_long_13.vsnd",
+			"sounds/player/melee/shared/swing_long_14.vsnd",
+			"sounds/player/melee/shared/swing_long_15.vsnd",
+			"sounds/player/melee/shared/swing_long_16.vsnd",
+			"sounds/player/melee/shared/swing_long_17.vsnd",
+			"sounds/player/melee/shared/swing_long_18.vsnd",
+			"sounds/player/melee/shared/swing_long_19.vsnd",
+			"sounds/player/melee/shared/swing_long_20.vsnd",
+			"sounds/player/melee/shared/swing_long_21.vsnd",
+			"sounds/player/melee/shared/swing_long_22.vsnd",
+			"sounds/player/melee/shared/swing_long_23.vsnd",
+			"sounds/player/melee/shared/swing_long_24.vsnd",
+			"sounds/player/melee/shared/swing_long_25.vsnd",
+		]
+		track_2.track_vsnd_files = 
+		[
+			"sounds/player/movement/generic/foley_light/default_foley_01.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_02.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_03.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_04.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_05.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_06.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_07.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_08.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_09.vsnd",
+		]
+		vsnd_duration = 1.399792
+	}
+	Slork.A1.Scald.Ambient.Lp = 
+	{
+		base = "Base.Ability"
+		volume = -12.000000
+		pitch = 1.000000
+		volume_fade_in = 0.100000
+		volume_fade_out = 0.300000
+		vsnd_files = "sounds/abilities/fathom/a1/fathom_a1_ambient_lp.vsnd"
+		vsnd_duration = 2.983923
+	}
+	Slork.A1.Scald.Target.Lp = 
+	{
+		base = "Base.Ability.StatusEffect"
+		volume = 4.000000
+		volume_offset_opponent = 2.000000
+		pitch = 1.000000
+		volume_fade_in = 0.100000
+		volume_fade_out = 0.170000
+		limiter_on = 1.000000
+		limiter_max = 2.000000
+		limiter_stop_oldest = false
+		delay_rand_min = -2.000000
+		delay_rand_max = 0.000000
+		vsnd_files = "sounds/abilities/fathom/a1/fathom_a1_target_lp.vsnd"
+		vsnd_duration = 4.405760
+	}
+	Slork.A1.Scald.Target.End = 
+	{
+		base = "Base.Ability"
+		volume = 0.000000
+		limiter_on = 1.000000
+		vsnd_files = "sounds/abilities/fathom/a1/fathom_a1_target_end.vsnd"
+		vsnd_duration = 2.289614
+	}
+	Slork.A1.Scald.Ambient.End = 
+	{
+		base = "Base.Ability"
+		volume = -14.000000
+		pitch = 1.100000
+		vsnd_files = "sounds/abilities/fathom/a1/fathom_a1_ambient_end.vsnd"
+		vsnd_duration = 2.785352
+	}
+	Slork.A2.Breach.Cast = 
+	{
+		base = "Base.Ability"
+		volume = 1.000000
+		volume_offset_opponent = 3.000000
+		volume_enemy_targeting_boost = 1.000000
+		vsnd_files = "sounds/abilities/fathom/a2/fathom_a2_cast.vsnd"
+		vsnd_duration = 2.276485
+	}
+	Slork.A2.Breach.Impact = 
+	{
+		base = "Base.Ability"
+		volume = 1.500000
+		vsnd_files = "sounds/abilities/fathom/a2/fathom_a2_impact.vsnd"
+		vsnd_duration = 2.091224
+	}
+	Slork.A3.Harpoon.Cast = 
+	{
+		base = "Base.Ability"
+		volume = -2.000000
+		vsnd_files = "sounds/abilities/fathom/a3/fathom_a3_harpoon_cast.vsnd"
+		vsnd_duration = 1.974376
+	}
+	Slork.A3.Harpoon.Impact = 
+	{
+		base = "Base.Ability"
+		volume = 1.000000
+		vsnd_files = "sounds/abilities/fathom/a3/fathom_a3_harpoon_impact.vsnd"
+		vsnd_duration = 1.301157
+	}
+	Slork.A3.Harpoon.Projectile.Lp = 
+	{
+		base = "Base.Ability.Projectile"
+		volume = 0.000000
+		volume_fade_in = 0.050000
+		volume_fade_out = 0.500000
+		delay_rand_min = -0.700000
+		delay_rand_max = 0.000000
+		vsnd_files = "sounds/abilities/fathom/a3/fathom_a3_harpoon_projectile_lp.vsnd"
+		vsnd_duration = 1.563673
+	}
+	Slork.A3.Harpoon.Swap = 
+	{
+		base = "Base.Ability"
+		volume = -3.500000
+		pitch = 0.900000
+		limiter_on = 1.000000
+		limiter_max = 0.000000
+		vsnd_files = "sounds/abilities/fathom/a3/fathom_a3_harpoon_swap.vsnd"
+		vsnd_duration = 1.837619
+	}
+	Slork.A4.Ambush.Channel = 
+	{
+		base = "Base.Ability"
+		volume = 0.000000
+		vsnd_files = "sounds/abilities/fathom/a4/fathom_a4_ambush_channel_start.vsnd"
+		vsnd_duration = 3.951610
+	}
+	Slork.A4.Ambush.Channel.Lp = 
+	{
+		base = "Base.Ability"
+		volume = -4.000000
+		volume_fade_in = 0.050000
+		volume_fade_out = 0.200000
+		vsnd_files = "sounds/abilities/fathom/a4/fathom_a4_ambush_channel_lp.vsnd"
+		vsnd_duration = 4.423470
+	}
+	Slork.A4.Ambush.Impact = 
+	{
+		base = "Base.Ability.Detached"
+		volume = -3.000000
+		pitch_rand_max = 0.200000
+		pitch_rand_min = -0.200000
+		limiter_on = 1.000000
+		limiter_max = 2.000000
+		vsnd_files = 
+		[
+			"sounds/abilities/fathom/a4/fathom_a4_ambush_impact_01.vsnd",
+			"sounds/abilities/fathom/a4/fathom_a4_ambush_impact_02.vsnd",
+			"sounds/abilities/fathom/a4/fathom_a4_ambush_impact_03.vsnd",
+		]
+		vsnd_duration = 2.289456
+	}
+	Slork.A4.Ambush.Fire = 
+	{
+		base = "Base.Ability"
+		volume = -2.000000
+		limiter_max = 0.000000
+		vsnd_files = 
+		[
+			"sounds/abilities/fathom/a4/fathom_a4_ambush_fire_01.vsnd",
+			"sounds/abilities/fathom/a4/fathom_a4_ambush_fire_02.vsnd",
+			"sounds/abilities/fathom/a4/fathom_a4_ambush_fire_03.vsnd",
+			"sounds/abilities/fathom/a4/fathom_a4_ambush_fire_04.vsnd",
+			"sounds/abilities/fathom/a4/fathom_a4_ambush_fire_05.vsnd",
+			"sounds/abilities/fathom/a4/fathom_a4_ambush_fire_06.vsnd",
+		]
+		vsnd_duration = 2.726893
+	}
+}

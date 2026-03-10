@@ -1,0 +1,699 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	Holliday.Wpn.Fire = 
+	{
+		base = "Base.Weapon.Revolver"
+		volume = 4.000000
+		last_shot_vol_offset_db = 4.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/astro/astro_wpn_fire_main_01.vsnd",
+			"sounds/weapons/astro/astro_wpn_fire_main_02.vsnd",
+			"sounds/weapons/astro/astro_wpn_fire_main_03.vsnd",
+			"sounds/weapons/astro/astro_wpn_fire_main_04.vsnd",
+			"sounds/weapons/astro/astro_wpn_fire_main_05.vsnd",
+			"sounds/weapons/astro/astro_wpn_fire_main_06.vsnd",
+		]
+		vsnd_files_tail = 
+		[
+			"sounds/weapons/astro/astro_wpn_fire_tail_ext_01.vsnd",
+			"sounds/weapons/astro/astro_wpn_fire_tail_ext_02.vsnd",
+			"sounds/weapons/astro/astro_wpn_fire_tail_ext_03.vsnd",
+			"sounds/weapons/astro/astro_wpn_fire_tail_ext_04.vsnd",
+			"sounds/weapons/astro/astro_wpn_fire_tail_ext_05.vsnd",
+			"sounds/weapons/astro/astro_wpn_fire_tail_ext_06.vsnd",
+		]
+		vsnd_files_last_shot = 
+		[
+			"sounds/weapons/astro/holliday_wpn_last_shot_01.vsnd",
+		]
+		vsnd_duration = 2.317687
+	}
+	Holliday.Wpn.Fire.First = 
+	{
+		base = "Holliday.Wpn.Fire"
+		limiter_max = 0.000000
+		transient_offset_db = 3.000000
+	}
+	Holliday.Wpn.Whizby = 
+	{
+		base = "Base.Bullet.Whizby"
+		volume = -3.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/astro/holliday_weapon_whizby_groupA-001.vsnd",
+			"sounds/weapons/astro/holliday_weapon_whizby_groupA-002.vsnd",
+			"sounds/weapons/astro/holliday_weapon_whizby_groupA-003.vsnd",
+			"sounds/weapons/astro/holliday_weapon_whizby_groupA-004.vsnd",
+			"sounds/weapons/astro/holliday_weapon_whizby_groupA-005.vsnd",
+			"sounds/weapons/astro/holliday_weapon_whizby_groupA-006.vsnd",
+			"sounds/weapons/astro/holliday_weapon_whizby_groupA-007.vsnd",
+			"sounds/weapons/astro/holliday_weapon_whizby_groupA-008.vsnd",
+			"sounds/weapons/astro/holliday_weapon_whizby_groupA-009.vsnd",
+			"sounds/weapons/astro/holliday_weapon_whizby_groupA-010.vsnd",
+			"sounds/weapons/astro/holliday_weapon_whizby_groupB-001.vsnd",
+			"sounds/weapons/astro/holliday_weapon_whizby_groupB-002.vsnd",
+			"sounds/weapons/astro/holliday_weapon_whizby_groupB-003.vsnd",
+			"sounds/weapons/astro/holliday_weapon_whizby_groupB-004.vsnd",
+			"sounds/weapons/astro/holliday_weapon_whizby_groupB-005.vsnd",
+			"sounds/weapons/astro/holliday_weapon_whizby_groupB-006.vsnd",
+			"sounds/weapons/astro/holliday_weapon_whizby_groupB-007.vsnd",
+			"sounds/weapons/astro/holliday_weapon_whizby_groupB-008.vsnd",
+			"sounds/weapons/astro/holliday_weapon_whizby_groupB-009.vsnd",
+			"sounds/weapons/astro/holliday_weapon_whizby_groupB-010.vsnd",
+		]
+		vsnd_duration = 0.690522
+	}
+	Holliday.Wpn.Impact = 
+	{
+		base = "Base.Bullet.Impact"
+		volume = 2.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/astro/wpn_impact/layer/astro_wpn_impact_01.vsnd",
+			"sounds/weapons/astro/wpn_impact/layer/astro_wpn_impact_02.vsnd",
+			"sounds/weapons/astro/wpn_impact/layer/astro_wpn_impact_03.vsnd",
+			"sounds/weapons/astro/wpn_impact/layer/astro_wpn_impact_04.vsnd",
+			"sounds/weapons/astro/wpn_impact/layer/astro_wpn_impact_05.vsnd",
+			"sounds/weapons/astro/wpn_impact/layer/astro_wpn_impact_06.vsnd",
+			"sounds/weapons/astro/wpn_impact/layer/astro_wpn_impact_07.vsnd",
+			"sounds/weapons/astro/wpn_impact/layer/astro_wpn_impact_08.vsnd",
+			"sounds/weapons/astro/wpn_impact/layer/astro_wpn_impact_09.vsnd",
+			"sounds/weapons/astro/wpn_impact/layer/astro_wpn_impact_10.vsnd",
+			"sounds/weapons/astro/wpn_impact/layer/astro_wpn_impact_11.vsnd",
+		]
+		vsnd_duration = 1.202562
+	}
+	Holliday.Wpn.ZoomIn = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = -29.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/astro/zoom/astro_wpn_zoom_in_01.vsnd",
+			"sounds/weapons/astro/zoom/astro_wpn_zoom_in_02.vsnd",
+			"sounds/weapons/astro/zoom/astro_wpn_zoom_in_03.vsnd",
+		]
+		vsnd_duration = 1.523605
+	}
+	Holliday.Wpn.ZoomOut = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = -30.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/astro/zoom/astro_wpn_zoom_out_01.vsnd",
+			"sounds/weapons/astro/zoom/astro_wpn_zoom_out_02.vsnd",
+			"sounds/weapons/astro/zoom/astro_wpn_zoom_out_03.vsnd",
+		]
+		vsnd_duration = 2.029138
+	}
+	Holliday.Wpn.Reload.Start = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = -2.000000
+		mono_downmix_enabled = 0.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/astro/reload/holliday_wpn_reload_start_01.vsnd",
+			"sounds/weapons/astro/reload/holliday_wpn_reload_start_02.vsnd",
+			"sounds/weapons/astro/reload/holliday_wpn_reload_start_03.vsnd",
+		]
+		vsnd_duration = 1.539841
+	}
+	Holliday.Wpn.Reload.Mid = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = -2.000000
+		mono_downmix_enabled = 0.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/astro/reload/holliday_wpn_reload_mid_01.vsnd",
+			"sounds/weapons/astro/reload/holliday_wpn_reload_mid_02.vsnd",
+			"sounds/weapons/astro/reload/holliday_wpn_reload_mid_03.vsnd",
+		]
+		vsnd_duration = 0.488639
+	}
+	Holliday.Wpn.Reload.End = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = -2.000000
+		mono_downmix_enabled = 0.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/astro/reload/holliday_wpn_reload_end_01.vsnd",
+			"sounds/weapons/astro/reload/holliday_wpn_reload_end_02.vsnd",
+			"sounds/weapons/astro/reload/holliday_wpn_reload_end_03.vsnd",
+		]
+		vsnd_duration = 0.364989
+	}
+	Astro.ExplosiveBarrel.Cast = 
+	{
+		base = "Base.Ability"
+		volume = -1.000000
+		vsnd_files = "sounds/abilities/astro/a1_exp_barrels/launch.vsnd"
+		vsnd_duration = 2.492625
+	}
+	Ability.Astro.ExpBarrels.Explode = 
+	{
+		base = "Base.Ability.Detached"
+		volume = -2.500000
+		pitch_rand_min = -0.200000
+		pitch_rand_max = 0.200000
+		limiter_on = 1.000000
+		limiter_max = 2.000000
+		limiter_stop_oldest = true
+		vsnd_files = "sounds/abilities/astro/a1_exp_barrels/holliday_a1_barrel_explode.vsnd"
+		vsnd_duration = 2.376961
+	}
+	Astro.A1.Barrel.Armed = 
+	{
+		base = "Base.Ability.Projectile"
+		volume = -4.500000
+		vsnd_files = "sounds/abilities/astro/a1_exp_barrels/holliday_a1_barrel_armed.vsnd"
+		vsnd_duration = 2.982018
+	}
+	Astro.A1.Barrel.Lp = 
+	{
+		base = "Base.Ability.Projectile"
+		volume = -5.000000
+		delay_rand_min = -0.500000
+		delay_rand_max = 0.100000
+		volume_fade_in = 0.050000
+		volume_fade_out = 0.100000
+		vsnd_files = "sounds/abilities/astro/a1_exp_barrels/holliday_a1_barrel_lp.vsnd"
+		vsnd_duration = 3.847800
+	}
+	Astro.A1.Barrel.MeleeHit = 
+	{
+		base = "Base.Ability"
+		volume = 2.000000
+		volume_offset_player = 4.000000
+		volume_enemy_targeting_boost = 4.000000
+		pitch = 1.000000
+		vsnd_files = "sounds/abilities/astro/a1_exp_barrels/holliday_a1_barrel_melee.vsnd"
+		vsnd_duration = 2.483356
+	}
+	Astro.A1.Barrel.Cast = 
+	{
+		base = "Base.Ability"
+		volume = 0.000000
+		pitch = 1.200000
+		vsnd_files = "sounds/abilities/astro/a1_exp_barrels/holliday_a1_barrel_cast.vsnd"
+		vsnd_duration = 2.269728
+	}
+	Ability.Astro.BouncePad.Solo = 
+	{
+		base = "Base.Ability"
+		pitch_rand_min = -0.005000
+		pitch_rand_max = 0.005000
+		volume = -9.000000
+		vsnd_files = "sounds/abilities/astro/a2_bounce_pad/solo.vsnd"
+		vsnd_duration = 3.844687
+	}
+	Astro.BouncePad.CastDelay = 
+	{
+		base = "Base.Ability"
+		volume = -0.500000
+		pitch_rand_max = 0.020000
+		pitch_rand_min = -0.050000
+		pitch = 1.100000
+		vsnd_files = "sounds/abilities/astro/a2_bounce_pad/holliday_a2_bounce_pad_cast_delay.vsnd"
+		vsnd_duration = 2.533129
+	}
+	Ability.Astro.BouncePad.Impact = 
+	{
+		base = "Base.Ability"
+		volume = -2.000000
+		pitch = 1.100000
+		block_duration = 0.600000
+		vsnd_files = "sounds/abilities/astro/a2_bounce_pad/holliday_a2_bounce_pad_stomp.vsnd"
+		vsnd_duration = 3.658730
+	}
+	Astro.BouncePad.Expire = 
+	{
+		base = "Base.Ability.Detached"
+		volume = -6.500000
+		pitch_rand_min = -0.075000
+		pitch_rand_max = 0.075000
+		vsnd_files = "sounds/abilities/astro/a2_bounce_pad/holliday_a2_bounce_pad_expire.vsnd"
+		vsnd_duration = 1.684649
+	}
+	Astro.A2.BouncePad.Launch.Buffed = 
+	{
+		base = "Base.Ability"
+		volume = -2.000000
+		vsnd_files = 
+		[
+			"sounds/abilities/astro/a2_bounce_pad/holliday_a2_bounce_pad_launch_01.vsnd",
+			"sounds/abilities/astro/a2_bounce_pad/holliday_a2_bounce_pad_launch_02.vsnd",
+			"sounds/abilities/astro/a2_bounce_pad/holliday_a2_bounce_pad_launch_03.vsnd",
+			"sounds/abilities/astro/a2_bounce_pad/holliday_a2_bounce_pad_launch_04.vsnd",
+			"sounds/abilities/astro/a2_bounce_pad/holliday_a2_bounce_pad_launch_05.vsnd",
+			"sounds/abilities/astro/a2_bounce_pad/holliday_a2_bounce_pad_launch_06.vsnd",
+		]
+		vsnd_duration = 4.793628
+	}
+	Astro.A2.BouncePad.Launch.Basic = 
+	{
+		base = "Base.Ability"
+		volume = -2.000000
+		block_duration = 0.600000
+		vsnd_files = 
+		[
+			"sounds/abilities/astro/a2_bounce_pad/holliday_a2_bounce_pad_launch_basic_01.vsnd",
+			"sounds/abilities/astro/a2_bounce_pad/holliday_a2_bounce_pad_launch_basic_02.vsnd",
+			"sounds/abilities/astro/a2_bounce_pad/holliday_a2_bounce_pad_launch_basic_03.vsnd",
+			"sounds/abilities/astro/a2_bounce_pad/holliday_a2_bounce_pad_launch_basic_04.vsnd",
+			"sounds/abilities/astro/a2_bounce_pad/holliday_a2_bounce_pad_launch_basic_05.vsnd",
+			"sounds/abilities/astro/a2_bounce_pad/holliday_a2_bounce_pad_launch_basic_06.vsnd",
+		]
+		vsnd_duration = 1.925941
+	}
+	Astro.A2.BouncePad.Barrel.Launch = 
+	{
+		base = "Base.Ability"
+		volume = -3.000000
+		pitch = 0.900000
+		vsnd_files = 
+		[
+			"sounds/abilities/astro/a2_bounce_pad/holliday_a2_jump_pad_barrel_launch_01.vsnd",
+			"sounds/abilities/astro/a2_bounce_pad/holliday_a2_jump_pad_barrel_launch_02.vsnd",
+			"sounds/abilities/astro/a2_bounce_pad/holliday_a2_jump_pad_barrel_launch_03.vsnd",
+			"sounds/abilities/astro/a2_bounce_pad/holliday_a2_jump_pad_barrel_launch_04.vsnd",
+			"sounds/abilities/astro/a2_bounce_pad/holliday_a2_jump_pad_barrel_launch_05.vsnd",
+			"sounds/abilities/astro/a2_bounce_pad/holliday_a2_jump_pad_barrel_launch_06.vsnd",
+		]
+		vsnd_duration = 2.365578
+	}
+	Astro.A2.BouncePad.Mod.Travel.Lp = 
+	{
+		base = "Base.Ability"
+		volume = -9.000000
+		doppler_on = 1.000000
+		doppler_factor = 4.000000
+		volume_offset_opponent = 9.000000
+		volume_offset_team = -7.500000
+		volume_enemy_targeting_boost = 3.000000
+		volume_fade_in = 0.300000
+		volume_fade_out = 0.250000
+		vsnd_files = "sounds/abilities/astro/a2_bounce_pad/holliday_a2_mod_travel_lp.vsnd"
+		volume_falloff_curve_db_opponent = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				433.522736,
+				0.000000,
+				0.000000,
+				-0.008466,
+				0.000000,
+				2.000000,
+			],
+			
+			[
+				1841.477295,
+				-15.151516,
+				-0.023088,
+				-0.007922,
+				2.000000,
+				1.000000,
+			],
+			
+			[
+				3034.659180,
+				-20.606062,
+				-0.009524,
+				-0.009524,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3500.000000,
+				-60.000000,
+				-0.035318,
+				-0.035318,
+				2.000000,
+				3.000000,
+			],
+		]
+		vsnd_duration = 6.183129
+	}
+	Holliday.A4.Lasso.Select.Lp = 
+	{
+		base = "Base.Ability"
+		volume = -5.000000
+		volume_fade_in = 0.300000
+		volume_fade_out = 0.200000
+		volume_enemy_targeting_boost = 5.000000
+		vsnd_files = "sounds/abilities/astro/a4_lasso/holliday_a4_lasso_select_lp.vsnd"
+		vsnd_duration = 3.553696
+	}
+	Holliday.A4.Lasso.Select = 
+	{
+		base = "Base.Ability.Ult"
+		volume = -6.000000
+		volume_fade_out = 0.200000
+		volume_enemy_targeting_boost = 4.000000
+		vsnd_files = "sounds/abilities/astro/a4_lasso/holliday_a4_lasso_cast_delay.vsnd"
+		vsnd_duration = 2.566553
+	}
+	Holliday.A4.Lasso.Unselect = 
+	{
+		base = "Base.Ability"
+		volume = -6.000000
+		vsnd_files = "sounds/abilities/astro/a4_lasso/holliday_a4_lasso_unselect.vsnd"
+		vsnd_duration = 1.497324
+	}
+	Holliday.A4.Lasso.Captured.Lp = 
+	{
+		base = "Base.Ability.StatusEffect"
+		volume = 0.000000
+		volume_fade_in = 0.100000
+		volume_fade_out = 0.200000
+		param_envelope_enabled = 1.000000
+		pitch_envelope_scale_min = 0.800000
+		pitch_envelope_scale_max = 1.500000
+		limiter_on = 1.000000
+		limiter_max = 0.000000
+		delay_rand_min = -2.000000
+		vsnd_files = "sounds/abilities/astro/a4_lasso/holliday_a4_lasso_captured_lp.vsnd"
+		vsnd_duration = 2.799093
+	}
+	Holliday.A4.Lasso.Expire = 
+	{
+		base = "Base.Ability.StatusEffect"
+		volume = -7.000000
+		limiter_on = 1.000000
+		limiter_max = 0.000000
+		vsnd_files = "sounds/abilities/astro/a4_lasso/holliday_a4_lasso_expire.vsnd"
+		vsnd_duration = 2.865760
+	}
+	Holliday.A4.Lasso.Cast = 
+	{
+		base = "Base.Ability.Ult"
+		volume = 2.000000
+		vsnd_files = "sounds/abilities/astro/a4_lasso/holliday_a4_lasso_throw.vsnd"
+		vsnd_duration = 3.029592
+	}
+	Holliday.A4.Lasso.Capture = 
+	{
+		base = "Base.Ability.Hit"
+		volume = 2.000000
+		filter_include_others = true
+		vsnd_files = "sounds/abilities/astro/a4_lasso/holliday_a4_lasso_impact.vsnd"
+		vsnd_duration = 4.337959
+	}
+	Holliday.A3.Crackshot.Ready = 
+	{
+		base = "Base.Ability.Telegraph"
+		volume = -1.000000
+		volume_offset_team = -6.000000
+		volume_enemy_targeting_boost = 4.000000
+		vsnd_files = "sounds/abilities/astro/a3_target_practice/holliday_a3_crackshot_ready.vsnd"
+		vsnd_duration = 1.888322
+	}
+	Holliday.A3.Crackshot.Headshot.Confirm.Player = 
+	{
+		base = "Base.Ability"
+		volume = -4.500000
+		vsnd_files = "sounds/abilities/astro/a3_target_practice/holliday_a3_crackshot_headshot_confirmation_player.vsnd"
+		vsnd_duration = 2.436100
+	}
+	Holliday.A3.Crackshot.Headshot.Confirm.Victim = 
+	{
+		base = "Base.Ability.StatusEffect"
+		volume = -4.500000
+		pitch = 0.900000
+		vsnd_files = "sounds/abilities/astro/a3_target_practice/holliday_a3_crackshot_headshot_confirmation_victim.vsnd"
+		vsnd_duration = 2.244014
+	}
+	Holliday.Footstep = 
+	{
+		base = "Base.Footsteps"
+		track_1.vsnd_track_vol_offset_db = -5.000000
+		track_2.vsnd_track_vol_offset_db = -12.000000
+		vsnd_files = 
+		[
+			"sounds/player/footsteps/holliday/holliday_footstep_01.vsnd",
+			"sounds/player/footsteps/holliday/holliday_footstep_02.vsnd",
+			"sounds/player/footsteps/holliday/holliday_footstep_03.vsnd",
+			"sounds/player/footsteps/holliday/holliday_footstep_04.vsnd",
+			"sounds/player/footsteps/holliday/holliday_footstep_05.vsnd",
+			"sounds/player/footsteps/holliday/holliday_footstep_06.vsnd",
+			"sounds/player/footsteps/holliday/holliday_footstep_07.vsnd",
+			"sounds/player/footsteps/holliday/holliday_footstep_08.vsnd",
+			"sounds/player/footsteps/holliday/holliday_footstep_09.vsnd",
+			"sounds/player/footsteps/holliday/holliday_footstep_10.vsnd",
+			"sounds/player/footsteps/holliday/holliday_footstep_11.vsnd",
+			"sounds/player/footsteps/holliday/holliday_footstep_12.vsnd",
+			"sounds/player/footsteps/holliday/holliday_footstep_13.vsnd",
+			"sounds/player/footsteps/holliday/holliday_footstep_14.vsnd",
+		]
+		track_2.track_vsnd_files = 
+		[
+			"sounds/player/movement/holliday/astro_foley_short_01.vsnd",
+			"sounds/player/movement/holliday/astro_foley_short_02.vsnd",
+			"sounds/player/movement/holliday/astro_foley_short_03.vsnd",
+			"sounds/player/movement/holliday/astro_foley_short_04.vsnd",
+			"sounds/player/movement/holliday/astro_foley_short_05.vsnd",
+			"sounds/player/movement/holliday/astro_foley_short_06.vsnd",
+			"sounds/player/movement/holliday/astro_foley_short_07.vsnd",
+			"sounds/player/movement/holliday/astro_foley_short_08.vsnd",
+			"sounds/player/movement/holliday/astro_foley_short_09.vsnd",
+			"sounds/player/movement/holliday/astro_foley_short_10.vsnd",
+			"sounds/player/movement/holliday/astro_foley_short_11.vsnd",
+			"sounds/player/movement/holliday/astro_foley_short_12.vsnd",
+			"sounds/player/movement/holliday/astro_foley_short_13.vsnd",
+			"sounds/player/movement/holliday/astro_foley_short_14.vsnd",
+			"sounds/player/movement/holliday/astro_foley_short_15.vsnd",
+			"sounds/player/movement/holliday/astro_foley_short_16.vsnd",
+		]
+		vsnd_duration = 0.835102
+	}
+	Holliday.Movement.Long = 
+	{
+		base = "Base.Movement"
+		volume = -3.000000
+		vsnd_files = 
+		[
+			"sounds/player/movement/holliday/astro_foley_long_01.vsnd",
+			"sounds/player/movement/holliday/astro_foley_long_02.vsnd",
+			"sounds/player/movement/holliday/astro_foley_long_03.vsnd",
+			"sounds/player/movement/holliday/astro_foley_long_04.vsnd",
+			"sounds/player/movement/holliday/astro_foley_long_05.vsnd",
+			"sounds/player/movement/holliday/astro_foley_long_06.vsnd",
+			"sounds/player/movement/holliday/astro_foley_long_07.vsnd",
+			"sounds/player/movement/holliday/astro_foley_long_08.vsnd",
+			"sounds/player/movement/holliday/astro_foley_long_09.vsnd",
+			"sounds/player/movement/holliday/astro_foley_long_10.vsnd",
+			"sounds/player/movement/holliday/astro_foley_long_11.vsnd",
+			"sounds/player/movement/holliday/astro_foley_long_12.vsnd",
+		]
+		vsnd_duration = 0.830000
+	}
+	Holliday.Movement.Short = 
+	{
+		base = "Base.Movement"
+		volume = -5.000000
+		vsnd_files = 
+		[
+			"sounds/player/movement/holliday/astro_foley_short_01.vsnd",
+			"sounds/player/movement/holliday/astro_foley_short_02.vsnd",
+			"sounds/player/movement/holliday/astro_foley_short_03.vsnd",
+			"sounds/player/movement/holliday/astro_foley_short_04.vsnd",
+			"sounds/player/movement/holliday/astro_foley_short_05.vsnd",
+			"sounds/player/movement/holliday/astro_foley_short_06.vsnd",
+			"sounds/player/movement/holliday/astro_foley_short_07.vsnd",
+			"sounds/player/movement/holliday/astro_foley_short_08.vsnd",
+			"sounds/player/movement/holliday/astro_foley_short_09.vsnd",
+			"sounds/player/movement/holliday/astro_foley_short_10.vsnd",
+			"sounds/player/movement/holliday/astro_foley_short_11.vsnd",
+			"sounds/player/movement/holliday/astro_foley_short_12.vsnd",
+			"sounds/player/movement/holliday/astro_foley_short_13.vsnd",
+			"sounds/player/movement/holliday/astro_foley_short_14.vsnd",
+			"sounds/player/movement/holliday/astro_foley_short_15.vsnd",
+			"sounds/player/movement/holliday/astro_foley_short_16.vsnd",
+		]
+		vsnd_duration = 0.835102
+	}
+	Holliday.JumpLand = 
+	{
+		base = "Base.Footsteps.JumpLand"
+		volume = 2.000000
+		track_2.vsnd_track_vol_offset_db = -5.000000
+		vsnd_files = 
+		[
+			"sounds/player/footsteps/holliday/holliday_footstep_01.vsnd",
+			"sounds/player/footsteps/holliday/holliday_footstep_02.vsnd",
+			"sounds/player/footsteps/holliday/holliday_footstep_03.vsnd",
+			"sounds/player/footsteps/holliday/holliday_footstep_04.vsnd",
+			"sounds/player/footsteps/holliday/holliday_footstep_05.vsnd",
+			"sounds/player/footsteps/holliday/holliday_footstep_06.vsnd",
+			"sounds/player/footsteps/holliday/holliday_footstep_07.vsnd",
+			"sounds/player/footsteps/holliday/holliday_footstep_08.vsnd",
+			"sounds/player/footsteps/holliday/holliday_footstep_09.vsnd",
+			"sounds/player/footsteps/holliday/holliday_footstep_10.vsnd",
+			"sounds/player/footsteps/holliday/holliday_footstep_11.vsnd",
+			"sounds/player/footsteps/holliday/holliday_footstep_12.vsnd",
+			"sounds/player/footsteps/holliday/holliday_footstep_13.vsnd",
+			"sounds/player/footsteps/holliday/holliday_footstep_14.vsnd",
+		]
+		track_2.track_vsnd_files = 
+		[
+			"sounds/player/movement/generic/foley_light/default_foley_01.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_02.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_03.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_04.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_05.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_06.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_07.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_08.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_09.vsnd",
+		]
+		vsnd_duration = 0.835102
+	}
+	Holliday.Mantle = 
+	{
+		base = "Base.Movement"
+		volume = -3.000000
+	}
+	Holliday.Melee.Swing = 
+	{
+		base = "Base.Movement.Melee"
+		vsnd_files = 
+		[
+			"sounds/player/melee/shared/swing_short_01.vsnd",
+			"sounds/player/melee/shared/swing_short_02.vsnd",
+			"sounds/player/melee/shared/swing_short_03.vsnd",
+			"sounds/player/melee/shared/swing_short_04.vsnd",
+			"sounds/player/melee/shared/swing_short_05.vsnd",
+			"sounds/player/melee/shared/swing_short_06.vsnd",
+			"sounds/player/melee/shared/swing_short_07.vsnd",
+			"sounds/player/melee/shared/swing_short_08.vsnd",
+			"sounds/player/melee/shared/swing_short_09.vsnd",
+			"sounds/player/melee/shared/swing_short_10.vsnd",
+			"sounds/player/melee/shared/swing_short_11.vsnd",
+			"sounds/player/melee/shared/swing_short_12.vsnd",
+			"sounds/player/melee/shared/swing_short_13.vsnd",
+			"sounds/player/melee/shared/swing_short_14.vsnd",
+			"sounds/player/melee/shared/swing_short_15.vsnd",
+			"sounds/player/melee/shared/swing_short_16.vsnd",
+			"sounds/player/melee/shared/swing_short_17.vsnd",
+			"sounds/player/melee/shared/swing_short_18.vsnd",
+			"sounds/player/melee/shared/swing_short_19.vsnd",
+			"sounds/player/melee/shared/swing_short_20.vsnd",
+			"sounds/player/melee/shared/swing_short_21.vsnd",
+			"sounds/player/melee/shared/swing_short_22.vsnd",
+			"sounds/player/melee/shared/swing_short_23.vsnd",
+			"sounds/player/melee/shared/swing_short_24.vsnd",
+		]
+		track_2.track_vsnd_files = 
+		[
+			"sounds/player/movement/holliday/astro_foley_short_01.vsnd",
+			"sounds/player/movement/holliday/astro_foley_short_02.vsnd",
+			"sounds/player/movement/holliday/astro_foley_short_03.vsnd",
+			"sounds/player/movement/holliday/astro_foley_short_04.vsnd",
+			"sounds/player/movement/holliday/astro_foley_short_05.vsnd",
+			"sounds/player/movement/holliday/astro_foley_short_06.vsnd",
+			"sounds/player/movement/holliday/astro_foley_short_07.vsnd",
+			"sounds/player/movement/holliday/astro_foley_short_08.vsnd",
+			"sounds/player/movement/holliday/astro_foley_short_09.vsnd",
+			"sounds/player/movement/holliday/astro_foley_short_10.vsnd",
+			"sounds/player/movement/holliday/astro_foley_short_11.vsnd",
+			"sounds/player/movement/holliday/astro_foley_short_12.vsnd",
+			"sounds/player/movement/holliday/astro_foley_short_13.vsnd",
+			"sounds/player/movement/holliday/astro_foley_short_14.vsnd",
+			"sounds/player/movement/holliday/astro_foley_short_15.vsnd",
+			"sounds/player/movement/holliday/astro_foley_short_16.vsnd",
+		]
+		vsnd_duration = 1.062208
+	}
+	Holliday.Melee.Swing.Charged = 
+	{
+		base = "Base.Movement.Melee"
+		vsnd_files = 
+		[
+			"sounds/player/melee/shared/swing_long_01.vsnd",
+			"sounds/player/melee/shared/swing_long_02.vsnd",
+			"sounds/player/melee/shared/swing_long_03.vsnd",
+			"sounds/player/melee/shared/swing_long_04.vsnd",
+			"sounds/player/melee/shared/swing_long_05.vsnd",
+			"sounds/player/melee/shared/swing_long_06.vsnd",
+			"sounds/player/melee/shared/swing_long_07.vsnd",
+			"sounds/player/melee/shared/swing_long_08.vsnd",
+			"sounds/player/melee/shared/swing_long_09.vsnd",
+			"sounds/player/melee/shared/swing_long_10.vsnd",
+			"sounds/player/melee/shared/swing_long_11.vsnd",
+			"sounds/player/melee/shared/swing_long_12.vsnd",
+			"sounds/player/melee/shared/swing_long_13.vsnd",
+			"sounds/player/melee/shared/swing_long_14.vsnd",
+			"sounds/player/melee/shared/swing_long_15.vsnd",
+			"sounds/player/melee/shared/swing_long_16.vsnd",
+			"sounds/player/melee/shared/swing_long_17.vsnd",
+			"sounds/player/melee/shared/swing_long_18.vsnd",
+			"sounds/player/melee/shared/swing_long_19.vsnd",
+			"sounds/player/melee/shared/swing_long_20.vsnd",
+			"sounds/player/melee/shared/swing_long_21.vsnd",
+			"sounds/player/melee/shared/swing_long_22.vsnd",
+			"sounds/player/melee/shared/swing_long_23.vsnd",
+			"sounds/player/melee/shared/swing_long_24.vsnd",
+			"sounds/player/melee/shared/swing_long_25.vsnd",
+		]
+		track_2.track_vsnd_files = 
+		[
+			"sounds/player/movement/holliday/astro_foley_short_01.vsnd",
+			"sounds/player/movement/holliday/astro_foley_short_02.vsnd",
+			"sounds/player/movement/holliday/astro_foley_short_03.vsnd",
+			"sounds/player/movement/holliday/astro_foley_short_04.vsnd",
+			"sounds/player/movement/holliday/astro_foley_short_05.vsnd",
+			"sounds/player/movement/holliday/astro_foley_short_06.vsnd",
+			"sounds/player/movement/holliday/astro_foley_short_07.vsnd",
+			"sounds/player/movement/holliday/astro_foley_short_08.vsnd",
+			"sounds/player/movement/holliday/astro_foley_short_09.vsnd",
+			"sounds/player/movement/holliday/astro_foley_short_10.vsnd",
+			"sounds/player/movement/holliday/astro_foley_short_11.vsnd",
+			"sounds/player/movement/holliday/astro_foley_short_12.vsnd",
+			"sounds/player/movement/holliday/astro_foley_short_13.vsnd",
+			"sounds/player/movement/holliday/astro_foley_short_14.vsnd",
+			"sounds/player/movement/holliday/astro_foley_short_15.vsnd",
+			"sounds/player/movement/holliday/astro_foley_short_16.vsnd",
+		]
+		vsnd_duration = 1.399792
+	}
+	Astro.Progession.Page.Win.VO = 
+	{
+		base = "Base.VO.HeroVictory"
+		context_name = "astro"
+		vsnd_files = 
+		[
+			"sounds/vo/astro/astro_kill_anyhero_03.vsnd",
+			"sounds/vo/astro/astro_kill_anyhero_05.vsnd",
+			"sounds/vo/astro/astro_happy_05.vsnd",
+			"sounds/vo/astro/astro_congrats_03.vsnd",
+			"sounds/vo/astro/astro_congrats_05.vsnd",
+		]
+		vsnd_duration = 2.273107
+	}
+	Astro.Progession.Page.Lose.VO = 
+	{
+		base = "Base.VO.HeroVictory"
+		context_name = "astro"
+		vsnd_files = 
+		[
+			"sounds/vo/astro/astro_near_miss_01.vsnd",
+			"sounds/vo/astro/astro_near_miss_03.vsnd",
+			"sounds/vo/astro/astro_near_miss_05.vsnd",
+		]
+		vsnd_duration = 2.215465
+	}
+}

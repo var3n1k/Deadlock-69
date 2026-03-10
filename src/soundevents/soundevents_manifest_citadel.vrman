@@ -1,0 +1,85 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	resourceManifest = 
+	[
+		"soundevents/base/citadel_volume_falloff.vsndevts",
+	]
+	resourceManifest1 = 
+	[
+		"soundevents/base/citadel_base_events.vsndevts",
+	]
+	resourceManifest2 = 
+	[
+		"soundevents/soundevents_voip.vsndevts",
+	]
+	resourceManifest3 = 
+	[
+		"soundevents/base/world.vsndevts",
+		"soundevents/damage.vsndevts",
+		"soundevents/base/test.vsndevts",
+		"soundevents/convars.vsndevts",
+	]
+	resourceManifest4 = 
+	[
+		"soundevents/base/dialog_base_events.vsndevts",
+	]
+	resourceManifest5 = 
+	[
+		"soundevents/base/weapons_shared.vsndevts",
+	]
+	resourceManifest6 = 
+	[
+		"soundevents/base/ui.vsndevts",
+	]
+	resourceManifest7 = 
+	[
+		"soundevents/base/music.vsndevts",
+		"soundevents/base/ambience.vsndevts",
+	]
+	resourceManifest8 = 
+	[
+		"soundevents/vo/generated_vo_misc.vsndevts",
+		"soundevents/hero/_shared.vsndevts",
+		"soundevents/npc/guardians.vsndevts",
+		"soundevents/npc/neut_camps.vsndevts",
+		"soundevents/npc/titan.vsndevts",
+		"soundevents/npc/troopers.vsndevts",
+		"soundevents/npc/shrines.vsndevts",
+		"soundevents/npc/watchers.vsndevts",
+		"soundevents/npc/walkers.vsndevts",
+		"soundevents/npc/neut_vaults.vsndevts",
+		"soundevents/npc/neut_gargoyle.vsndevts",
+		"soundevents/breakables.vsndevts",
+		"soundevents/mods/armor.vsndevts",
+		"soundevents/mods/tech.vsndevts",
+		"soundevents/mods/weapon.vsndevts",
+		"soundevents/vo/announcer.vsndevts",
+		"soundevents/chat_wheel.vsndevts",
+		"soundevents/gameplay.vsndevts",
+		"soundevents/generated_vo_hero_pick_vo.vsndevts",
+		"soundevents/generated_vo_hero_death_vo.vsndevts",
+		"soundevents/music.vsndevts",
+		"soundevents/music_arpeggiator.vsndevts",
+		"soundevents/player.vsndevts",
+		"soundevents/powerups.vsndevts",
+		"soundevents/status_effects.vsndevts",
+		"soundevents/ui.vsndevts",
+		"soundevents/utility.vsndevts",
+		"soundevents/world.vsndevts",
+		"soundevents/ziplines.vsndevts",
+		"soundevents/world_ambient_emitters.vsndevts",
+		"soundevents/vo/vo_npc_shopkeeper.vsndevts",
+		"soundevents/new_player_vo.vsndevts",
+		"soundevents/vo/hero_vote_reveal.vsndevts",
+	]
+	resourceManifest9 = 
+	[
+		"soundevents/soundevents_manifest_heroes.vrman",
+		"soundevents/ambience/teambase.vsndevts",
+		"soundevents/ambience/lanes.vsndevts",
+		"soundevents/ambience/mid.vsndevts",
+		"soundevents/ambience/interiors.vsndevts",
+		"soundevents/ambience/ambience_hideout.vsndevts",
+		"soundevents/cosmetics.vsndevts",
+	]
+}

@@ -1,0 +1,187 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	Operative.Wpn.Fire = 
+	{
+		base = "Base.Weapon.Pistol"
+		volume = 4.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/operative/operative_weapon_fire_01.vsnd",
+			"sounds/weapons/operative/operative_weapon_fire_02.vsnd",
+			"sounds/weapons/operative/operative_weapon_fire_03.vsnd",
+			"sounds/weapons/operative/operative_weapon_fire_04.vsnd",
+			"sounds/weapons/operative/operative_weapon_fire_05.vsnd",
+			"sounds/weapons/operative/operative_weapon_fire_06.vsnd",
+		]
+		vsnd_duration = 0.809955
+	}
+	Operative.Umbrella.Cast = 
+	{
+		base = "Base.Ability"
+		volume = 4.000000
+		vsnd_files = "sounds/abilities/operative/operative_umbrella_fire.vsnd"
+		vsnd_duration = 1.446667
+	}
+	Operative.Umbrella.Charge = 
+	{
+		base = "Base.Ability"
+		volume = 4.000000
+		vsnd_files = "sounds/abilities/operative/operative_umbrella_charge.vsnd"
+		vsnd_duration = 1.555850
+	}
+	Raven.Mantle = 
+	{
+		base = "Base.Movement"
+		volume = -3.000000
+	}
+	Raven.JumpLand = 
+	{
+		base = "Base.Footsteps.JumpLand"
+		volume = 3.000000
+		track_2.vsnd_track_vol_offset_db = -5.000000
+		vsnd_files = 
+		[
+			"sounds/player/footsteps/hero_self/06.vsnd",
+			"sounds/player/footsteps/hero_self/07.vsnd",
+			"sounds/player/footsteps/hero_self/08.vsnd",
+			"sounds/player/footsteps/hero_self/09.vsnd",
+			"sounds/player/footsteps/hero_self/01.vsnd",
+			"sounds/player/footsteps/hero_self/02.vsnd",
+			"sounds/player/footsteps/hero_self/03.vsnd",
+			"sounds/player/footsteps/hero_self/04.vsnd",
+			"sounds/player/footsteps/hero_self/05.vsnd",
+		]
+		track_2.track_vsnd_files = 
+		[
+			"sounds/player/movement/generic/foley_light/default_foley_01.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_02.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_03.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_04.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_05.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_06.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_07.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_08.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_09.vsnd",
+		]
+		vsnd_duration = 0.581973
+	}
+	Raven.Movement.Short = 
+	{
+		base = "Base.Movement"
+		volume = -9.000000
+	}
+	Raven.Movement.Long = 
+	{
+		base = "Base.Movement"
+		volume = -5.000000
+	}
+	Raven.Footstep = 
+	{
+		base = "Base.Footsteps"
+		track_1.vsnd_track_vol_offset_db = -5.000000
+		vsnd_files = 
+		[
+			"sounds/player/footsteps/hero_self/06.vsnd",
+			"sounds/player/footsteps/hero_self/07.vsnd",
+			"sounds/player/footsteps/hero_self/08.vsnd",
+			"sounds/player/footsteps/hero_self/09.vsnd",
+			"sounds/player/footsteps/hero_self/01.vsnd",
+			"sounds/player/footsteps/hero_self/02.vsnd",
+			"sounds/player/footsteps/hero_self/03.vsnd",
+			"sounds/player/footsteps/hero_self/04.vsnd",
+			"sounds/player/footsteps/hero_self/05.vsnd",
+		]
+		vsnd_duration = 0.581973
+	}
+	Raven.Melee.Swing = 
+	{
+		base = "Base.Movement.Melee"
+		track_2.vsnd_track_vol_offset_db = -5.000000
+		vsnd_files = 
+		[
+			"sounds/player/melee/shared/swing_short_01.vsnd",
+			"sounds/player/melee/shared/swing_short_02.vsnd",
+			"sounds/player/melee/shared/swing_short_03.vsnd",
+			"sounds/player/melee/shared/swing_short_04.vsnd",
+			"sounds/player/melee/shared/swing_short_05.vsnd",
+			"sounds/player/melee/shared/swing_short_06.vsnd",
+			"sounds/player/melee/shared/swing_short_07.vsnd",
+			"sounds/player/melee/shared/swing_short_08.vsnd",
+			"sounds/player/melee/shared/swing_short_09.vsnd",
+			"sounds/player/melee/shared/swing_short_10.vsnd",
+			"sounds/player/melee/shared/swing_short_11.vsnd",
+			"sounds/player/melee/shared/swing_short_12.vsnd",
+			"sounds/player/melee/shared/swing_short_13.vsnd",
+			"sounds/player/melee/shared/swing_short_14.vsnd",
+			"sounds/player/melee/shared/swing_short_15.vsnd",
+			"sounds/player/melee/shared/swing_short_16.vsnd",
+			"sounds/player/melee/shared/swing_short_17.vsnd",
+			"sounds/player/melee/shared/swing_short_18.vsnd",
+			"sounds/player/melee/shared/swing_short_19.vsnd",
+			"sounds/player/melee/shared/swing_short_20.vsnd",
+			"sounds/player/melee/shared/swing_short_21.vsnd",
+			"sounds/player/melee/shared/swing_short_22.vsnd",
+			"sounds/player/melee/shared/swing_short_23.vsnd",
+			"sounds/player/melee/shared/swing_short_24.vsnd",
+		]
+		track_2.track_vsnd_files = 
+		[
+			"sounds/player/movement/generic/foley_light/default_foley_01.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_02.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_03.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_04.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_05.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_06.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_07.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_08.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_09.vsnd",
+		]
+		vsnd_duration = 1.062208
+	}
+	Raven.Melee.Swing.Charged = 
+	{
+		base = "Base.Movement.Melee"
+		track_2.vsnd_track_vol_offset_db = -5.000000
+		vsnd_files = 
+		[
+			"sounds/player/melee/shared/swing_long_01.vsnd",
+			"sounds/player/melee/shared/swing_long_02.vsnd",
+			"sounds/player/melee/shared/swing_long_03.vsnd",
+			"sounds/player/melee/shared/swing_long_04.vsnd",
+			"sounds/player/melee/shared/swing_long_05.vsnd",
+			"sounds/player/melee/shared/swing_long_06.vsnd",
+			"sounds/player/melee/shared/swing_long_07.vsnd",
+			"sounds/player/melee/shared/swing_long_08.vsnd",
+			"sounds/player/melee/shared/swing_long_09.vsnd",
+			"sounds/player/melee/shared/swing_long_10.vsnd",
+			"sounds/player/melee/shared/swing_long_11.vsnd",
+			"sounds/player/melee/shared/swing_long_12.vsnd",
+			"sounds/player/melee/shared/swing_long_13.vsnd",
+			"sounds/player/melee/shared/swing_long_14.vsnd",
+			"sounds/player/melee/shared/swing_long_15.vsnd",
+			"sounds/player/melee/shared/swing_long_16.vsnd",
+			"sounds/player/melee/shared/swing_long_17.vsnd",
+			"sounds/player/melee/shared/swing_long_18.vsnd",
+			"sounds/player/melee/shared/swing_long_19.vsnd",
+			"sounds/player/melee/shared/swing_long_20.vsnd",
+			"sounds/player/melee/shared/swing_long_21.vsnd",
+			"sounds/player/melee/shared/swing_long_22.vsnd",
+			"sounds/player/melee/shared/swing_long_23.vsnd",
+			"sounds/player/melee/shared/swing_long_24.vsnd",
+			"sounds/player/melee/shared/swing_long_25.vsnd",
+		]
+		track_2.track_vsnd_files = 
+		[
+			"sounds/player/movement/generic/foley_light/default_foley_01.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_02.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_03.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_04.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_05.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_06.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_07.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_08.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_09.vsnd",
+		]
+		vsnd_duration = 1.399792
+	}
+}

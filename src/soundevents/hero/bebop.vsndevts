@@ -1,0 +1,569 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	Bebop.Wpn.Fire = 
+	{
+		base = "Base.Weapon"
+		volume = 0.000000
+		last_shot_vol_offset_db = 3.000000
+		low_ammo_threshold = 8.000000
+		vsnd_files = 
+		[
+			"sounds/common/null.vsnd",
+		]
+		vsnd_files_last_shot = 
+		[
+			"sounds/weapons/bebop/bebop_wpn_last_shot_01.vsnd",
+		]
+		vsnd_duration = 0.552018
+	}
+	Bebop.Weapon.Start = 
+	{
+		base = "Base.Weapon"
+		volume = 1.000000
+		volume_fade_out = 0.100000
+		vsnd_files = "sounds/weapons/bebop/bebop_primaryweapon_start.vsnd"
+		vsnd_duration = 1.862313
+	}
+	Bebop.Weapon.Laser.Loop = 
+	{
+		base = "Base.Weapon"
+		volume = 1.000000
+		delay = 0.000000
+		delay_rand_min = -1.000000
+		volume_fade_in = 0.100000
+		volume_fade_out = 0.100000
+		delay_rand_max = 0.000000
+		pitch = 1.400000
+		vsnd_files = "sounds/weapons/bebop/bebop_primaryweapon_loop.vsnd"
+		vsnd_duration = 3.615782
+	}
+	Bebop.Wpn.Impact = 
+	{
+		base = "Base.Bullet.Impact"
+		vsnd_files = "sounds/common/null.vsnd"
+		vsnd_duration = 0.050023
+	}
+	Bebop.Weapon.WindUp = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = -2.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/bebop/bebop_wpn_windup_01.vsnd",
+			"sounds/weapons/bebop/bebop_wpn_windup_02.vsnd",
+			"sounds/weapons/bebop/bebop_wpn_windup_03.vsnd",
+		]
+		vsnd_duration = 1.738639
+	}
+	Bebop.ZoomIn = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = -24.000000
+		vsnd_files = "sounds/weapons/bebop/zoom/in.vsnd"
+		vsnd_duration = 1.917125
+	}
+	Bebop.ZoomOut = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = -25.000000
+		vsnd_files = "sounds/weapons/bebop/foley/stop.vsnd"
+		vsnd_duration = 0.825782
+	}
+	Bebop.Weapon.End = 
+	{
+		base = "Base.Weapon"
+		volume = -60.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/bebop/bebop_primaryweapon_jazz_a_end.vsnd",
+			"sounds/weapons/bebop/bebop_primaryweapon_jazz_b_end.vsnd",
+			"sounds/weapons/bebop/bebop_primaryweapon_jazz_c_end.vsnd",
+			"sounds/weapons/bebop/bebop_primaryweapon_jazz_d_end.vsnd",
+			"sounds/weapons/bebop/bebop_primaryweapon_jazz_e_end.vsnd",
+			"sounds/weapons/bebop/bebop_primaryweapon_jazz_f_end.vsnd",
+			"sounds/weapons/bebop/bebop_primaryweapon_jazz_g_end.vsnd",
+			"sounds/weapons/bebop/bebop_primaryweapon_jazz_h_end.vsnd",
+		]
+		vsnd_duration = 1.148345
+	}
+	Bebop.Wpn.Reload.Start = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = -3.000000
+		mono_downmix_enabled = 0.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/bebop/reload/bebop_wpn_reload_start_01.vsnd",
+			"sounds/weapons/bebop/reload/bebop_wpn_reload_start_02.vsnd",
+		]
+		vsnd_duration = 1.734104
+	}
+	Bebop.Wpn.Reload.Mid = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = -3.000000
+		mono_downmix_enabled = 0.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/bebop/reload/bebop_wpn_reload_mid_01.vsnd",
+			"sounds/weapons/bebop/reload/bebop_wpn_reload_mid_02.vsnd",
+		]
+		vsnd_duration = 0.932698
+	}
+	Bebop.Wpn.Reload.End = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = -2.000000
+		mono_downmix_enabled = 0.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/bebop/reload/bebop_wpn_reload_end_01.vsnd",
+			"sounds/weapons/bebop/reload/bebop_wpn_reload_end_02.vsnd",
+		]
+		vsnd_duration = 1.441633
+	}
+	Bebop.Uppercut.Cast = 
+	{
+		base = "Base.Ability"
+		volume = 2.000000
+		vsnd_files = "sounds/abilities/bebop/bebop_uppercut_01.vsnd"
+		vsnd_duration = 2.442903
+	}
+	Bebop.Uppercut.Hit = 
+	{
+		base = "Base.Ability.Hit"
+		volume = 1.000000
+		vsnd_files = 
+		[
+			"sounds/abilities/bebop/bebop_uppercut_hit_confirm_01.vsnd",
+			"sounds/abilities/bebop/bebop_uppercut_hit_confirm_02.vsnd",
+			"sounds/abilities/bebop/bebop_uppercut_hit_confirm_03.vsnd",
+		]
+		vsnd_duration = 1.184898
+	}
+	Bebop.Uppercut.Impact = 
+	{
+		base = "Base.Ability.StatusEffect"
+		volume = -2.000000
+		pitch = 1.100000
+		pitch_rand_max = 0.050000
+		pitch_rand_min = -0.050000
+		vsnd_files = "sounds/abilities/astro/a2_bounce_pad/holliday_a2_bounce_pad_stomp.vsnd"
+		vsnd_duration = 3.658730
+	}
+	Bebop.Uppercut.Travel = 
+	{
+		base = "Base.Ability.StatusEffect"
+		volume = -6.000000
+		vsnd_files = "sounds/abilities/bebop/a1_exp_uppercut/uppercutted.vsnd"
+		vsnd_duration = 3.259104
+	}
+	Bebop.StickyBomb.Cast = 
+	{
+		base = "Base.Ability"
+		volume = 0.000000
+		vsnd_files = "sounds/abilities/bebop/bebop_stickybomb_attach.vsnd"
+		vsnd_duration = 0.853243
+	}
+	Bebop.StickyBomb.Select = 
+	{
+		base = "Base.Ability"
+		volume = 0.000000
+		vsnd_files = "sounds/abilities/bebop/bebop_stickybomb_prepare.vsnd"
+		vsnd_duration = 1.182472
+	}
+	Bebop.StickyBomb.Deselect = 
+	{
+		base = "Base.Ability"
+		volume = 0.000000
+		vsnd_files = "sounds/abilities/bebop/bebop_stickybomb_packaway.vsnd"
+		vsnd_duration = 1.341111
+	}
+	Bebop.StickyBomb.Loop = 
+	{
+		base = "Base.Ability.StatusEffect"
+		volume = -9.000000
+		vsnd_files = "sounds/abilities/bebop/bebop_stickybomb_alarm_loop.vsnd"
+		vsnd_duration = 1.246939
+	}
+	Bebop.StickyBomb.Detonate = 
+	{
+		base = "Base.Ability.StatusEffect"
+		volume = -11.000000
+		vsnd_files = "sounds/abilities/bebop/bebop_stickybomb_alarm_urgent.vsnd"
+		vsnd_duration = 1.190499
+	}
+	Bebop.StickyBomb.Explode = 
+	{
+		base = "Base.Ability.StatusEffect"
+		volume = -2.000000
+		vsnd_files = 
+		[
+			"sounds/abilities/bebop/a2_sticky_bomb/explode_01.vsnd",
+			"sounds/abilities/bebop/a2_sticky_bomb/explode_02.vsnd",
+		]
+		vsnd_duration = 1.952018
+	}
+	Bebop.Hook.Cast = 
+	{
+		base = "Base.Ability"
+		volume = 1.000000
+		vsnd_files = "sounds/abilities/bebop/bebop_hook_shoot.vsnd"
+		vsnd_duration = 2.268073
+	}
+	Bebop.Hook.Proj.Lp = 
+	{
+		base = "Base.Ability.Projectile"
+		volume = -3.000000
+		pitch = 1.080000
+		volume_fade_in = 0.400000
+		volume_fade_out = 0.100000
+		delay_rand_min = -1.000000
+		vsnd_files = "sounds/abilities/bebop/a3_hook/proj_mono_lp.vsnd"
+		vsnd_duration = 0.865188
+	}
+	Bebop.Hook.Retract = 
+	{
+		base = "Base.Ability.Detached"
+		volume = 0.000000
+		vsnd_files = "sounds/abilities/bebop/bebop_hook_yank.vsnd"
+		vsnd_duration = 1.961859
+	}
+	Bebop.Hook.Retracting.Lp = 
+	{
+		base = "Base.Ability.StatusEffect"
+		volume = 1.000000
+		volume_fade_in = 0.400000
+		volume_fade_out = 0.100000
+		delay_rand_min = -6.000000
+		param_envelope_enabled = 1.000000
+		param_envelope_duration = 10.000000
+		pitch_envelope_scale_min = 1.000000
+		pitch_envelope_scale_max = 1.300000
+		vsnd_files = "sounds/abilities/bebop/bebop_hook_retracting_lp_01.vsnd"
+		vsnd_duration = 7.036735
+	}
+	Bebop.Hook.RetractEnd = 
+	{
+		base = "Base.Ability.StatusEffect"
+		volume = -6.000000
+		vsnd_files = 
+		[
+			"sounds/abilities/bebop/bebop_hook_retract_end_01.vsnd",
+			"sounds/abilities/bebop/bebop_hook_retract_end_02.vsnd",
+			"sounds/abilities/bebop/bebop_hook_retract_end_03.vsnd",
+		]
+		vsnd_duration = 1.168844
+	}
+	Bebop.Hook.Player = 
+	{
+		base = "Base.Ability.Hit"
+		filter_include_others = true
+		volume = 1.000000
+		vsnd_files = "sounds/abilities/bebop/a3_hook/bebop_a3_hook_impact_success_01.vsnd"
+		vsnd_duration = 1.935760
+	}
+	Bebop.Hook.NPC = 
+	{
+		base = "Base.Ability.Detached"
+		volume = -4.000000
+		vsnd_files = "sounds/abilities/bebop/a3_hook/bebop_a3_hook_impact_success_01.vsnd"
+		vsnd_duration = 1.935760
+	}
+	Bebop.HyperBeam.Windup = 
+	{
+		base = "Base.Ability.Ult"
+		volume = 0.000000
+		pitch_rand_min = -0.025000
+		pitch_rand_max = 0.025000
+		mono_downmix_min_distance = 400.000000
+		mono_downmix_max_distance = 500.000000
+		vsnd_files = 
+		[
+			"sounds/abilities/bebop/a4_hyper_beam/bebop_a4_hyperbeam_windup_01.vsnd",
+			"sounds/abilities/bebop/a4_hyper_beam/bebop_a4_hyperbeam_windup_02.vsnd",
+		]
+		vsnd_duration = 3.658911
+	}
+	Bebop.HyperBeam.Hit = 
+	{
+		base = "Base.Ability.Hit"
+		volume = -7.000000
+		vsnd_files = 
+		[
+			"sounds/abilities/bebop/a4_hyper_beam/hit_01.vsnd",
+			"sounds/abilities/bebop/a4_hyper_beam/hit_02.vsnd",
+			"sounds/abilities/bebop/a4_hyper_beam/hit_03.vsnd",
+			"sounds/abilities/bebop/a4_hyper_beam/hit_04.vsnd",
+			"sounds/abilities/bebop/a4_hyper_beam/hit_05.vsnd",
+		]
+		vsnd_duration = 0.374376
+	}
+	Bebop.HyperBeam.End = 
+	{
+		base = "Base.Ability.Ult"
+		volume = 0.000000
+		vsnd_files = 
+		[
+			"sounds/abilities/bebop/a4_hyper_beam/bebop_a4_hyperbeam_end_01.vsnd",
+			"sounds/abilities/bebop/a4_hyper_beam/bebop_a4_hyperbeam_end_02.vsnd",
+			"sounds/abilities/bebop/a4_hyper_beam/bebop_a4_hyperbeam_end_03.vsnd",
+			"sounds/abilities/bebop/a4_hyper_beam/bebop_a4_hyperbeam_end_04.vsnd",
+			"sounds/abilities/bebop/a4_hyper_beam/bebop_a4_hyperbeam_end_05.vsnd",
+			"sounds/abilities/bebop/a4_hyper_beam/bebop_a4_hyperbeam_end_06.vsnd",
+			"sounds/abilities/bebop/a4_hyper_beam/bebop_a4_hyperbeam_end_07.vsnd",
+			"sounds/abilities/bebop/a4_hyper_beam/bebop_a4_hyperbeam_end_08.vsnd",
+		]
+		vsnd_duration = 3.497914
+	}
+	Bebop.HyperBeam.Fire = 
+	{
+		base = "Base.Ability.Ult"
+		volume = 1.000000
+		mono_downmix_min_distance = 400.000000
+		mono_downmix_max_distance = 500.000000
+		vsnd_files = "sounds/abilities/bebop/bebop_hyperbeam_launch.vsnd"
+		vsnd_duration = 2.420272
+	}
+	Bebop.HyperBeam.Loop = 
+	{
+		base = "Base.Ability.Ult"
+		volume = 0.000000
+		mono_downmix_min_distance = 400.000000
+		mono_downmix_max_distance = 500.000000
+		vsnd_files = 
+		[
+			"sounds/abilities/bebop/a4_hyper_beam/bebop_a4_hyperbeam_lp_01.vsnd",
+			"sounds/abilities/bebop/a4_hyper_beam/bebop_a4_hyperbeam_lp_02.vsnd",
+			"sounds/abilities/bebop/a4_hyper_beam/bebop_a4_hyperbeam_lp_03.vsnd",
+			"sounds/abilities/bebop/a4_hyper_beam/bebop_a4_hyperbeam_lp_04.vsnd",
+			"sounds/abilities/bebop/a4_hyper_beam/bebop_a4_hyperbeam_lp_05.vsnd",
+			"sounds/abilities/bebop/a4_hyper_beam/bebop_a4_hyperbeam_lp_06.vsnd",
+			"sounds/abilities/bebop/a4_hyper_beam/bebop_a4_hyperbeam_lp_07.vsnd",
+			"sounds/abilities/bebop/a4_hyper_beam/bebop_a4_hyperbeam_lp_08.vsnd",
+		]
+		vsnd_duration = 11.461429
+	}
+	Bebop.Footstep = 
+	{
+		base = "Base.Footsteps"
+		track_1.vsnd_track_vol_offset_db = -4.000000
+		track_2.vsnd_track_vol_offset_db = -15.000000
+		vsnd_files = 
+		[
+			"sounds/player/footsteps/bebop/bebop_footstep_01.vsnd",
+			"sounds/player/footsteps/bebop/bebop_footstep_02.vsnd",
+			"sounds/player/footsteps/bebop/bebop_footstep_03.vsnd",
+			"sounds/player/footsteps/bebop/bebop_footstep_04.vsnd",
+			"sounds/player/footsteps/bebop/bebop_footstep_05.vsnd",
+			"sounds/player/footsteps/bebop/bebop_footstep_06.vsnd",
+			"sounds/player/footsteps/bebop/bebop_footstep_07.vsnd",
+			"sounds/player/footsteps/bebop/bebop_footstep_08.vsnd",
+			"sounds/player/footsteps/bebop/bebop_footstep_09.vsnd",
+			"sounds/player/footsteps/bebop/bebop_footstep_10.vsnd",
+			"sounds/player/footsteps/bebop/bebop_footstep_11.vsnd",
+			"sounds/player/footsteps/bebop/bebop_footstep_12.vsnd",
+		]
+		track_2.track_vsnd_files = 
+		[
+			"sounds/player/movement/bebop/bebop_foley_01.vsnd",
+			"sounds/player/movement/bebop/bebop_foley_02.vsnd",
+			"sounds/player/movement/bebop/bebop_foley_03.vsnd",
+			"sounds/player/movement/bebop/bebop_foley_04.vsnd",
+			"sounds/player/movement/bebop/bebop_foley_05.vsnd",
+			"sounds/player/movement/bebop/bebop_foley_06.vsnd",
+			"sounds/player/movement/bebop/bebop_foley_07.vsnd",
+			"sounds/player/movement/bebop/bebop_foley_08.vsnd",
+			"sounds/player/movement/bebop/bebop_foley_09.vsnd",
+			"sounds/player/movement/bebop/bebop_foley_10.vsnd",
+			"sounds/player/movement/bebop/bebop_foley_11.vsnd",
+			"sounds/player/movement/bebop/bebop_foley_12.vsnd",
+		]
+		vsnd_duration = 0.912812
+	}
+	Bebop.Movement.Short = 
+	{
+		base = "Base.Movement"
+		volume = -12.000000
+		vsnd_files = 
+		[
+			"sounds/player/movement/bebop/bebop_foley_01.vsnd",
+			"sounds/player/movement/bebop/bebop_foley_02.vsnd",
+			"sounds/player/movement/bebop/bebop_foley_03.vsnd",
+			"sounds/player/movement/bebop/bebop_foley_04.vsnd",
+			"sounds/player/movement/bebop/bebop_foley_05.vsnd",
+			"sounds/player/movement/bebop/bebop_foley_06.vsnd",
+			"sounds/player/movement/bebop/bebop_foley_07.vsnd",
+			"sounds/player/movement/bebop/bebop_foley_08.vsnd",
+			"sounds/player/movement/bebop/bebop_foley_09.vsnd",
+			"sounds/player/movement/bebop/bebop_foley_10.vsnd",
+			"sounds/player/movement/bebop/bebop_foley_11.vsnd",
+			"sounds/player/movement/bebop/bebop_foley_12.vsnd",
+		]
+		vsnd_duration = 1.561542
+	}
+	Bebop.Movement.Long = 
+	{
+		base = "Base.Movement"
+		volume = -12.000000
+		vsnd_files = 
+		[
+			"sounds/player/movement/bebop/bebop_foley_01.vsnd",
+			"sounds/player/movement/bebop/bebop_foley_02.vsnd",
+			"sounds/player/movement/bebop/bebop_foley_03.vsnd",
+			"sounds/player/movement/bebop/bebop_foley_04.vsnd",
+			"sounds/player/movement/bebop/bebop_foley_05.vsnd",
+			"sounds/player/movement/bebop/bebop_foley_06.vsnd",
+			"sounds/player/movement/bebop/bebop_foley_07.vsnd",
+			"sounds/player/movement/bebop/bebop_foley_08.vsnd",
+			"sounds/player/movement/bebop/bebop_foley_09.vsnd",
+			"sounds/player/movement/bebop/bebop_foley_10.vsnd",
+			"sounds/player/movement/bebop/bebop_foley_11.vsnd",
+			"sounds/player/movement/bebop/bebop_foley_12.vsnd",
+		]
+		vsnd_duration = 1.561542
+	}
+	Bebop.JumpLand = 
+	{
+		base = "Base.Footsteps.JumpLand"
+		volume = -6.000000
+		vsnd_files = 
+		[
+			"sounds/player/movement/bebop/bebop_jumpland_01.vsnd",
+			"sounds/player/movement/bebop/bebop_jumpland_02.vsnd",
+			"sounds/player/movement/bebop/bebop_jumpland_03.vsnd",
+			"sounds/player/movement/bebop/bebop_jumpland_04.vsnd",
+		]
+		vsnd_duration = 1.170839
+	}
+	Bebop.Mantle = 
+	{
+		base = "Base.Movement"
+	}
+	Bebop.Melee.Swing = 
+	{
+		base = "Base.Movement.Melee"
+		vsnd_files = 
+		[
+			"sounds/player/melee/shared/swing_short_01.vsnd",
+			"sounds/player/melee/shared/swing_short_02.vsnd",
+			"sounds/player/melee/shared/swing_short_03.vsnd",
+			"sounds/player/melee/shared/swing_short_04.vsnd",
+			"sounds/player/melee/shared/swing_short_05.vsnd",
+			"sounds/player/melee/shared/swing_short_06.vsnd",
+			"sounds/player/melee/shared/swing_short_07.vsnd",
+			"sounds/player/melee/shared/swing_short_08.vsnd",
+			"sounds/player/melee/shared/swing_short_09.vsnd",
+			"sounds/player/melee/shared/swing_short_10.vsnd",
+			"sounds/player/melee/shared/swing_short_11.vsnd",
+			"sounds/player/melee/shared/swing_short_12.vsnd",
+			"sounds/player/melee/shared/swing_short_13.vsnd",
+			"sounds/player/melee/shared/swing_short_14.vsnd",
+			"sounds/player/melee/shared/swing_short_15.vsnd",
+			"sounds/player/melee/shared/swing_short_16.vsnd",
+			"sounds/player/melee/shared/swing_short_17.vsnd",
+			"sounds/player/melee/shared/swing_short_18.vsnd",
+			"sounds/player/melee/shared/swing_short_19.vsnd",
+			"sounds/player/melee/shared/swing_short_20.vsnd",
+			"sounds/player/melee/shared/swing_short_21.vsnd",
+			"sounds/player/melee/shared/swing_short_22.vsnd",
+			"sounds/player/melee/shared/swing_short_23.vsnd",
+			"sounds/player/melee/shared/swing_short_24.vsnd",
+		]
+		track_2.track_vsnd_files = 
+		[
+			"sounds/player/movement/bebop/bebop_foley_01.vsnd",
+			"sounds/player/movement/bebop/bebop_foley_02.vsnd",
+			"sounds/player/movement/bebop/bebop_foley_03.vsnd",
+			"sounds/player/movement/bebop/bebop_foley_04.vsnd",
+			"sounds/player/movement/bebop/bebop_foley_05.vsnd",
+			"sounds/player/movement/bebop/bebop_foley_06.vsnd",
+			"sounds/player/movement/bebop/bebop_foley_07.vsnd",
+			"sounds/player/movement/bebop/bebop_foley_08.vsnd",
+			"sounds/player/movement/bebop/bebop_foley_09.vsnd",
+			"sounds/player/movement/bebop/bebop_foley_10.vsnd",
+			"sounds/player/movement/bebop/bebop_foley_11.vsnd",
+			"sounds/player/movement/bebop/bebop_foley_12.vsnd",
+		]
+		vsnd_duration = 1.062208
+	}
+	Bebop.Melee.Swing.Charged = 
+	{
+		base = "Base.Movement.Melee"
+		vsnd_files = 
+		[
+			"sounds/player/melee/shared/swing_long_01.vsnd",
+			"sounds/player/melee/shared/swing_long_02.vsnd",
+			"sounds/player/melee/shared/swing_long_03.vsnd",
+			"sounds/player/melee/shared/swing_long_04.vsnd",
+			"sounds/player/melee/shared/swing_long_05.vsnd",
+			"sounds/player/melee/shared/swing_long_06.vsnd",
+			"sounds/player/melee/shared/swing_long_07.vsnd",
+			"sounds/player/melee/shared/swing_long_08.vsnd",
+			"sounds/player/melee/shared/swing_long_09.vsnd",
+			"sounds/player/melee/shared/swing_long_10.vsnd",
+			"sounds/player/melee/shared/swing_long_11.vsnd",
+			"sounds/player/melee/shared/swing_long_12.vsnd",
+			"sounds/player/melee/shared/swing_long_13.vsnd",
+			"sounds/player/melee/shared/swing_long_14.vsnd",
+			"sounds/player/melee/shared/swing_long_15.vsnd",
+			"sounds/player/melee/shared/swing_long_16.vsnd",
+			"sounds/player/melee/shared/swing_long_17.vsnd",
+			"sounds/player/melee/shared/swing_long_18.vsnd",
+			"sounds/player/melee/shared/swing_long_19.vsnd",
+			"sounds/player/melee/shared/swing_long_20.vsnd",
+			"sounds/player/melee/shared/swing_long_21.vsnd",
+			"sounds/player/melee/shared/swing_long_22.vsnd",
+			"sounds/player/melee/shared/swing_long_23.vsnd",
+			"sounds/player/melee/shared/swing_long_24.vsnd",
+			"sounds/player/melee/shared/swing_long_25.vsnd",
+		]
+		track_2.track_vsnd_files = 
+		[
+			"sounds/player/movement/bebop/bebop_foley_01.vsnd",
+			"sounds/player/movement/bebop/bebop_foley_02.vsnd",
+			"sounds/player/movement/bebop/bebop_foley_03.vsnd",
+			"sounds/player/movement/bebop/bebop_foley_04.vsnd",
+			"sounds/player/movement/bebop/bebop_foley_05.vsnd",
+			"sounds/player/movement/bebop/bebop_foley_06.vsnd",
+			"sounds/player/movement/bebop/bebop_foley_07.vsnd",
+			"sounds/player/movement/bebop/bebop_foley_08.vsnd",
+			"sounds/player/movement/bebop/bebop_foley_09.vsnd",
+			"sounds/player/movement/bebop/bebop_foley_10.vsnd",
+			"sounds/player/movement/bebop/bebop_foley_11.vsnd",
+			"sounds/player/movement/bebop/bebop_foley_12.vsnd",
+		]
+		vsnd_duration = 1.399792
+	}
+	Bebop.Weapon.Close = 
+	{
+		base = "Base.Movement"
+		volume = -9.000000
+		vsnd_files = "sounds/weapons/bebop/bebop_primaryweapon_packaway.vsnd"
+		vsnd_duration = 1.305510
+	}
+	Bebop.Progession.Page.Win.VO = 
+	{
+		base = "Base.VO.HeroVictory"
+		context_name = "bebop"
+		vsnd_files = 
+		[
+			"sounds/vo/bebop/bebop_killstreak_mid_01.vsnd",
+			"sounds/vo/bebop/bebop_happy_01.vsnd",
+			"sounds/vo/bebop/bebop_happy_03.vsnd",
+			"sounds/vo/bebop/bebop_killstreak_mid_03.vsnd",
+		]
+		vsnd_duration = 2.359206
+	}
+	Bebop.Progession.Page.Lose.VO = 
+	{
+		base = "Base.VO.HeroVictory"
+		context_name = "bebop"
+		vsnd_files = 
+		[
+			"sounds/vo/bebop/bebop_use_tech_purge_03.vsnd",
+			"sounds/vo/bebop/bebop_angry_01.vsnd",
+		]
+		vsnd_duration = 1.460136
+	}
+}

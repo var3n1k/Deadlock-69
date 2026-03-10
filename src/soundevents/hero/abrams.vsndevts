@@ -1,0 +1,403 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	Abrams.Wpn.Fire.Main = 
+	{
+		base = "Base.Weapon.Shotgun"
+		volume = 3.000000
+		volume_fade_out = 0.250000
+		tail_vol_offset_db = 0.000000
+		last_shot_vol_offset_db = 2.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/abrams/abrams_weapon_fire_mid_01.vsnd",
+			"sounds/weapons/abrams/abrams_weapon_fire_mid_02.vsnd",
+			"sounds/weapons/abrams/abrams_weapon_fire_mid_03.vsnd",
+			"sounds/weapons/abrams/abrams_weapon_fire_mid_04.vsnd",
+			"sounds/weapons/abrams/abrams_weapon_fire_mid_05.vsnd",
+			"sounds/weapons/abrams/abrams_weapon_fire_mid_06.vsnd",
+		]
+		vsnd_files_tail = 
+		[
+			"sounds/weapons/abrams/abrams_weapon_fire_tail_01.vsnd",
+			"sounds/weapons/abrams/abrams_weapon_fire_tail_02.vsnd",
+			"sounds/weapons/abrams/abrams_weapon_fire_tail_03.vsnd",
+			"sounds/weapons/abrams/abrams_weapon_fire_tail_04.vsnd",
+			"sounds/weapons/abrams/abrams_weapon_fire_tail_05.vsnd",
+			"sounds/weapons/abrams/abrams_weapon_fire_tail_06.vsnd",
+		]
+		vsnd_files_last_shot = 
+		[
+			"sounds/weapons/abrams/reload/abrams_wpn_last_shot_01.vsnd",
+		]
+		vsnd_duration = 2.715374
+	}
+	Abrams.Wpn.Fire.First = 
+	{
+		base = "Abrams.Wpn.Fire.Main"
+		transient_offset_db = 3.000000
+		limiter_max = 0.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/abrams/abrams_weapon_fire_first_01.vsnd",
+			"sounds/weapons/abrams/abrams_weapon_fire_first_02.vsnd",
+			"sounds/weapons/abrams/abrams_weapon_fire_first_03.vsnd",
+			"sounds/weapons/abrams/abrams_weapon_fire_first_04.vsnd",
+			"sounds/weapons/abrams/abrams_weapon_fire_first_05.vsnd",
+			"sounds/weapons/abrams/abrams_weapon_fire_first_06.vsnd",
+		]
+		vsnd_duration = 1.183787
+	}
+	Abrams.Wpn.Whizby = 
+	{
+		base = "Base.Bullet.Whizby.Shotgun"
+	}
+	Abrams.Wpn.Impact = 
+	{
+		base = "Base.Bullet.Impact.Shotgun"
+	}
+	Abrams.Wpn.ZoomIn = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = -19.000000
+		vsnd_files = "sounds/weapons/astro/zoom/in.vsnd"
+		vsnd_duration = 1.323604
+	}
+	Abrams.Wpn.ZoomOut = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = -21.000000
+		vsnd_files = "sounds/weapons/astro/zoom/out.vsnd"
+		vsnd_duration = 1.829146
+	}
+	Abrams.Wpn.Reload.Start = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = -3.000000
+		mono_downmix_enabled = 0.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/abrams/reload/abram_wpn_reload_start_01.vsnd",
+			"sounds/weapons/abrams/reload/abram_wpn_reload_start_02.vsnd",
+			"sounds/weapons/abrams/reload/abram_wpn_reload_start_03.vsnd",
+		]
+		vsnd_duration = 1.535442
+	}
+	Abrams.Wpn.Reload.Round = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = -8.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/abrams/reload/abram_wpn_reload_bullet_01.vsnd",
+			"sounds/weapons/abrams/reload/abram_wpn_reload_bullet_02.vsnd",
+			"sounds/weapons/abrams/reload/abram_wpn_reload_bullet_03.vsnd",
+			"sounds/weapons/abrams/reload/abram_wpn_reload_bullet_04.vsnd",
+			"sounds/weapons/abrams/reload/abram_wpn_reload_bullet_05.vsnd",
+		]
+		vsnd_duration = 0.264694
+	}
+	Abrams.Wpn.Reload.End = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = -3.000000
+		mono_downmix_enabled = 0.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/abrams/reload/abram_wpn_reload_end_01.vsnd",
+			"sounds/weapons/abrams/reload/abram_wpn_reload_end_02.vsnd",
+			"sounds/weapons/abrams/reload/abram_wpn_reload_end_03.vsnd",
+		]
+		vsnd_duration = 0.621655
+	}
+	Abrams.Charge.Cast = 
+	{
+		base = "Base.Ability"
+		volume = 5.000000
+		vsnd_files = "sounds/abilities/abrams/abrams_a2_charge_cast_01.vsnd"
+		vsnd_duration = 4.475420
+	}
+	Abrams.Charge.HitEnemy = 
+	{
+		base = "Base.Ability.Hit"
+		volume = -2.000000
+		volume_offset_attacker_db = 6.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		vsnd_files = 
+		[
+			"sounds/abilities/abrams/a2_charge/abrams_charge_hero_impact_01.vsnd",
+			"sounds/abilities/abrams/a2_charge/abrams_charge_hero_impact_02.vsnd",
+			"sounds/abilities/abrams/a2_charge/abrams_charge_hero_impact_03.vsnd",
+		]
+		vsnd_duration = 1.919116
+	}
+	Abrams.Charge.Wall.Impact = 
+	{
+		base = "Base.Ability.Hit"
+		filter_include_others = true
+		volume = 3.000000
+		volume_offset_victim_db = 2.000000
+		vsnd_files = "sounds/abilities/abrams/a2_charge/abrams_a2_charge_wall_impact.vsnd"
+		vsnd_duration = 2.982676
+	}
+	Ability.Abrams.Charge.Step = 
+	{
+		base = "Base.Ability"
+		volume = 5.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		vsnd_files = 
+		[
+			"sounds/abilities/abrams/abrams_a2_charge_step_01.vsnd",
+			"sounds/abilities/abrams/abrams_a2_charge_step_02.vsnd",
+			"sounds/abilities/abrams/abrams_a2_charge_step_03.vsnd",
+			"sounds/abilities/abrams/abrams_a2_charge_step_04.vsnd",
+			"sounds/abilities/abrams/abrams_a2_charge_step_05.vsnd",
+			"sounds/abilities/abrams/abrams_a2_charge_step_06.vsnd",
+			"sounds/abilities/abrams/abrams_a2_charge_step_07.vsnd",
+			"sounds/abilities/abrams/abrams_a2_charge_step_08.vsnd",
+		]
+		vsnd_duration = 1.139161
+	}
+	Abrams.A1.SiphonLife.Cast = 
+	{
+		base = "Base.Ability"
+		volume = 1.000000
+		vsnd_files = "sounds/abilities/abrams/abrams_a1_siphonlife_cast.vsnd"
+		vsnd_duration = 2.971814
+	}
+	Abrams.A1.SiphonLife.Loop = 
+	{
+		base = "Base.Ability"
+		volume = -3.000000
+		vsnd_files = "sounds/abilities/abrams/abrams_a1_siphonlife_loop.vsnd"
+		vsnd_duration = 13.406576
+	}
+	Abrams.A1.SiphonLife.End = 
+	{
+		base = "Base.Ability"
+		volume = 1.000000
+		vsnd_files = "sounds/abilities/abrams/abrams_a1_siphonlife_end.vsnd"
+		vsnd_duration = 0.999977
+	}
+	Abrams.A4.Leap.Impact = 
+	{
+		base = "Base.Ability.Ult"
+		volume = 0.000000
+		vsnd_files = "sounds/abilities/abrams/a4_leap/abrams_a4_slam_impact.vsnd"
+		vsnd_duration = 3.903991
+	}
+	Abrams.A4.Leap.Cast = 
+	{
+		base = "Base.Ability.Ult"
+		volume = 2.000000
+		mono_downmix_min_distance = 300.000000
+		vsnd_files = "sounds/abilities/abrams/a4_leap/abrams_a4_slam_cast.vsnd"
+		vsnd_duration = 5.117211
+	}
+	Abrams.A4.Leap.Descend = 
+	{
+		base = "Base.Ability.Ult"
+		volume = 3.000000
+		volume_enemy_targeting_boost = 4.000000
+		vsnd_files = "sounds/abilities/abrams/a4_leap/abrams_a4_slam_descend.vsnd"
+		vsnd_duration = 3.766077
+	}
+	Abrams.A4.Leap.Float.Lp = 
+	{
+		base = "Base.Ability.Ult"
+		volume = -9.000000
+		volume_offset_team = -6.000000
+		volume_offset_opponent = 3.000000
+		volume_enemy_targeting_boost = 7.000000
+		vsnd_files = "sounds/abilities/abrams/a4_leap/abrams_a4_slam_float_lp.vsnd"
+		vsnd_duration = 2.543424
+	}
+	Abrams.Footstep = 
+	{
+		base = "Base.Footsteps"
+		track_1.vsnd_track_vol_offset_db = -6.000000
+		track_2.vsnd_track_vol_offset_db = -20.000000
+		vsnd_files = 
+		[
+			"sounds/player/footsteps/abrams/abrams_footstep_01.vsnd",
+			"sounds/player/footsteps/abrams/abrams_footstep_02.vsnd",
+			"sounds/player/footsteps/abrams/abrams_footstep_03.vsnd",
+			"sounds/player/footsteps/abrams/abrams_footstep_04.vsnd",
+			"sounds/player/footsteps/abrams/abrams_footstep_05.vsnd",
+			"sounds/player/footsteps/abrams/abrams_footstep_06.vsnd",
+			"sounds/player/footsteps/abrams/abrams_footstep_07.vsnd",
+			"sounds/player/footsteps/abrams/abrams_footstep_08.vsnd",
+		]
+		track_2.track_vsnd_files = 
+		[
+			"sounds/player/movement/abrams/abrams_movement_foley_short_01.vsnd",
+			"sounds/player/movement/abrams/abrams_movement_foley_short_02.vsnd",
+			"sounds/player/movement/abrams/abrams_movement_foley_short_03.vsnd",
+			"sounds/player/movement/abrams/abrams_movement_foley_short_04.vsnd",
+			"sounds/player/movement/abrams/abrams_movement_foley_short_05.vsnd",
+			"sounds/player/movement/abrams/abrams_movement_foley_short_06.vsnd",
+			"sounds/player/movement/abrams/abrams_movement_foley_short_07.vsnd",
+			"sounds/player/movement/abrams/abrams_movement_foley_short_08.vsnd",
+		]
+		vsnd_duration = 0.300590
+	}
+	Abrams.Movement.Short = 
+	{
+		volume = -7.000000
+		base = "Base.Movement"
+		vsnd_files = 
+		[
+			"sounds/player/movement/abrams/abrams_movement_foley_short_01.vsnd",
+			"sounds/player/movement/abrams/abrams_movement_foley_short_02.vsnd",
+			"sounds/player/movement/abrams/abrams_movement_foley_short_03.vsnd",
+			"sounds/player/movement/abrams/abrams_movement_foley_short_04.vsnd",
+			"sounds/player/movement/abrams/abrams_movement_foley_short_05.vsnd",
+			"sounds/player/movement/abrams/abrams_movement_foley_short_06.vsnd",
+			"sounds/player/movement/abrams/abrams_movement_foley_short_07.vsnd",
+			"sounds/player/movement/abrams/abrams_movement_foley_short_08.vsnd",
+		]
+		vsnd_duration = 0.458163
+	}
+	Abrams.Movement.Long = 
+	{
+		base = "Base.Movement"
+		volume = 0.000000
+	}
+	Abrams.JumpLand = 
+	{
+		base = "Base.Footsteps.JumpLand"
+		track_2.vsnd_track_vol_offset_db = -5.000000
+		vsnd_files = 
+		[
+			"sounds/player/footsteps/abrams/abrams_footstep_01.vsnd",
+			"sounds/player/footsteps/abrams/abrams_footstep_02.vsnd",
+			"sounds/player/footsteps/abrams/abrams_footstep_03.vsnd",
+			"sounds/player/footsteps/abrams/abrams_footstep_04.vsnd",
+			"sounds/player/footsteps/abrams/abrams_footstep_05.vsnd",
+			"sounds/player/footsteps/abrams/abrams_footstep_06.vsnd",
+			"sounds/player/footsteps/abrams/abrams_footstep_07.vsnd",
+			"sounds/player/footsteps/abrams/abrams_footstep_08.vsnd",
+		]
+		track_2.track_vsnd_files = 
+		[
+			"sounds/player/movement/generic/foley_light/default_foley_01.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_02.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_03.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_04.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_05.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_06.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_07.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_08.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_09.vsnd",
+		]
+		vsnd_duration = 0.300590
+	}
+	Abrams.Mantle = 
+	{
+		base = "Base.Movement"
+	}
+	Abrams.Melee.Swing = 
+	{
+		base = "Base.Movement.Melee"
+		vsnd_files = 
+		[
+			"sounds/player/melee/shared/swing_short_01.vsnd",
+			"sounds/player/melee/shared/swing_short_02.vsnd",
+			"sounds/player/melee/shared/swing_short_03.vsnd",
+			"sounds/player/melee/shared/swing_short_04.vsnd",
+			"sounds/player/melee/shared/swing_short_05.vsnd",
+			"sounds/player/melee/shared/swing_short_06.vsnd",
+			"sounds/player/melee/shared/swing_short_07.vsnd",
+			"sounds/player/melee/shared/swing_short_08.vsnd",
+			"sounds/player/melee/shared/swing_short_09.vsnd",
+			"sounds/player/melee/shared/swing_short_10.vsnd",
+			"sounds/player/melee/shared/swing_short_11.vsnd",
+			"sounds/player/melee/shared/swing_short_12.vsnd",
+			"sounds/player/melee/shared/swing_short_13.vsnd",
+			"sounds/player/melee/shared/swing_short_14.vsnd",
+			"sounds/player/melee/shared/swing_short_15.vsnd",
+			"sounds/player/melee/shared/swing_short_16.vsnd",
+			"sounds/player/melee/shared/swing_short_17.vsnd",
+			"sounds/player/melee/shared/swing_short_18.vsnd",
+			"sounds/player/melee/shared/swing_short_19.vsnd",
+			"sounds/player/melee/shared/swing_short_20.vsnd",
+			"sounds/player/melee/shared/swing_short_21.vsnd",
+			"sounds/player/melee/shared/swing_short_22.vsnd",
+			"sounds/player/melee/shared/swing_short_23.vsnd",
+			"sounds/player/melee/shared/swing_short_24.vsnd",
+		]
+		vsnd_duration = 1.062208
+	}
+	Abrams.Melee.Swing.Charged = 
+	{
+		base = "Base.Movement.Melee"
+		vsnd_files = 
+		[
+			"sounds/player/melee/shared/swing_long_01.vsnd",
+			"sounds/player/melee/shared/swing_long_02.vsnd",
+			"sounds/player/melee/shared/swing_long_03.vsnd",
+			"sounds/player/melee/shared/swing_long_04.vsnd",
+			"sounds/player/melee/shared/swing_long_05.vsnd",
+			"sounds/player/melee/shared/swing_long_06.vsnd",
+			"sounds/player/melee/shared/swing_long_07.vsnd",
+			"sounds/player/melee/shared/swing_long_08.vsnd",
+			"sounds/player/melee/shared/swing_long_09.vsnd",
+			"sounds/player/melee/shared/swing_long_10.vsnd",
+			"sounds/player/melee/shared/swing_long_11.vsnd",
+			"sounds/player/melee/shared/swing_long_12.vsnd",
+			"sounds/player/melee/shared/swing_long_13.vsnd",
+			"sounds/player/melee/shared/swing_long_14.vsnd",
+			"sounds/player/melee/shared/swing_long_15.vsnd",
+			"sounds/player/melee/shared/swing_long_16.vsnd",
+			"sounds/player/melee/shared/swing_long_17.vsnd",
+			"sounds/player/melee/shared/swing_long_18.vsnd",
+			"sounds/player/melee/shared/swing_long_19.vsnd",
+			"sounds/player/melee/shared/swing_long_20.vsnd",
+			"sounds/player/melee/shared/swing_long_21.vsnd",
+			"sounds/player/melee/shared/swing_long_22.vsnd",
+			"sounds/player/melee/shared/swing_long_23.vsnd",
+			"sounds/player/melee/shared/swing_long_24.vsnd",
+			"sounds/player/melee/shared/swing_long_25.vsnd",
+		]
+		vsnd_duration = 1.399792
+	}
+	Atlas.Progession.Page.Win.VO = 
+	{
+		base = "Base.VO.HeroVictory"
+		context_name = "atlas"
+		vsnd_files = 
+		[
+			"sounds/vo/atlas/atlas_win_01.vsnd",
+			"sounds/vo/atlas/atlas_win_03.vsnd",
+			"sounds/vo/atlas/atlas_win_early_01.vsnd",
+			"sounds/vo/atlas/atlas_win_early_02.vsnd",
+			"sounds/vo/atlas/atlas_win_early_03.vsnd",
+			"sounds/vo/atlas/atlas_win_late_04.vsnd",
+			"sounds/vo/atlas/atlas_win_late_05.vsnd",
+		]
+		vsnd_duration = 3.323107
+	}
+	Atlas.Progession.Page.Lose.VO = 
+	{
+		base = "Base.VO.HeroVictory"
+		context_name = "atlas"
+		vsnd_files = 
+		[
+			"sounds/vo/atlas/atlas_lose_01.vsnd",
+			"sounds/vo/atlas/atlas_lose_04.vsnd",
+			"sounds/vo/atlas/atlas_lose_05.vsnd",
+			"sounds/vo/atlas/atlas_lose_early_01.vsnd",
+			"sounds/vo/atlas/atlas_lose_early_02.vsnd",
+			"sounds/vo/atlas/atlas_lose_early_03.vsnd",
+			"sounds/vo/atlas/atlas_lose_early_04.vsnd",
+			"sounds/vo/atlas/atlas_lose_early_05.vsnd",
+			"sounds/vo/atlas/atlas_lose_late_01.vsnd",
+			"sounds/vo/atlas/atlas_lose_late_02.vsnd",
+			"sounds/vo/atlas/atlas_lose_late_03.vsnd",
+			"sounds/vo/atlas/atlas_lose_late_04.vsnd",
+			"sounds/vo/atlas/atlas_lose_late_05.vsnd",
+		]
+		vsnd_duration = 3.796939
+	}
+}

@@ -1,0 +1,703 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	Wraith.Wpn.Fire.Main = 
+	{
+		base = "Base.Weapon.MachineGun"
+		volume = 0.000000
+		volume_fade_out = 0.250000
+		tail_vol_offset_db = -5.000000
+		low_ammo_threshold = 8.000000
+		last_shot_vol_offset_db = 3.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/wraith/wraith_weapon_fire_main_01.vsnd",
+			"sounds/weapons/wraith/wraith_weapon_fire_main_02.vsnd",
+			"sounds/weapons/wraith/wraith_weapon_fire_main_03.vsnd",
+			"sounds/weapons/wraith/wraith_weapon_fire_main_04.vsnd",
+			"sounds/weapons/wraith/wraith_weapon_fire_main_05.vsnd",
+			"sounds/weapons/wraith/wraith_weapon_fire_main_06.vsnd",
+		]
+		vsnd_files_low_ammo = 
+		[
+			"sounds/weapons/wraith/wraith_weapon_fire_mech_01.vsnd",
+			"sounds/weapons/wraith/wraith_weapon_fire_mech_02.vsnd",
+			"sounds/weapons/wraith/wraith_weapon_fire_mech_03.vsnd",
+			"sounds/weapons/wraith/wraith_weapon_fire_mech_04.vsnd",
+			"sounds/weapons/wraith/wraith_weapon_fire_mech_05.vsnd",
+			"sounds/weapons/wraith/wraith_weapon_fire_mech_06.vsnd",
+		]
+		fire_rate_percent_curve_db_offset = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				-0.059997,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				100.000000,
+				-5.999681,
+				-0.059997,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		continuous_fire_time_curve_db_offset = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				1.440422,
+				0.000000,
+				0.000000,
+				-0.646341,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				5.000000,
+				-2.300702,
+				-0.276190,
+				-0.276190,
+				2.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_last_shot = 
+		[
+			"sounds/weapons/wraith/wraith_wpn_last_shot_01.vsnd",
+		]
+		vsnd_duration = 1.000000
+	}
+	Wraith.Wpn.Fire.First = 
+	{
+		base = "Base.Weapon.MachineGun"
+		volume = 6.000000
+		volume_fade_out = 0.250000
+		low_ammo_vol_offset_db = -2.000000
+		tail_vol_offset_db = -5.000000
+		limiter_max = 0.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/wraith/wraith_weapon_fire_first_01.vsnd",
+			"sounds/weapons/wraith/wraith_weapon_fire_first_02.vsnd",
+			"sounds/weapons/wraith/wraith_weapon_fire_first_03.vsnd",
+			"sounds/weapons/wraith/wraith_weapon_fire_first_04.vsnd",
+			"sounds/weapons/wraith/wraith_weapon_fire_first_05.vsnd",
+			"sounds/weapons/wraith/wraith_weapon_fire_first_06.vsnd",
+		]
+		fire_rate_percent_curve_db_offset = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				-0.030522,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				100.000000,
+				-3.052233,
+				-0.030522,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		continuous_fire_time_curve_db_offset = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		vsnd_duration = 0.351043
+	}
+	Wraith.Wpn.Fire.Release = 
+	{
+		base = "Base.Weapon.Tail"
+		volume = -1.000000
+		vsnd_files_tail = 
+		[
+			"sounds/weapons/wraith/wraith_weapon_fire_tail_01.vsnd",
+			"sounds/weapons/wraith/wraith_weapon_fire_tail_02.vsnd",
+			"sounds/weapons/wraith/wraith_weapon_fire_tail_03.vsnd",
+			"sounds/weapons/wraith/wraith_weapon_fire_tail_04.vsnd",
+			"sounds/weapons/wraith/wraith_weapon_fire_tail_05.vsnd",
+			"sounds/weapons/wraith/wraith_weapon_fire_tail_06.vsnd",
+		]
+		fire_rate_percent_curve_db_offset = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				-0.059997,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				100.000000,
+				-5.999681,
+				-0.059997,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		vsnd_duration = 1.884762
+	}
+	Wraith.Wpn.Whizby = 
+	{
+		base = "Base.Bullet.Whizby"
+		volume = -2.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/wraith/wraith_weapon_whizby_groupA-001.vsnd",
+			"sounds/weapons/wraith/wraith_weapon_whizby_groupA-002.vsnd",
+			"sounds/weapons/wraith/wraith_weapon_whizby_groupA-003.vsnd",
+			"sounds/weapons/wraith/wraith_weapon_whizby_groupA-004.vsnd",
+			"sounds/weapons/wraith/wraith_weapon_whizby_groupA-005.vsnd",
+			"sounds/weapons/wraith/wraith_weapon_whizby_groupA-006.vsnd",
+			"sounds/weapons/wraith/wraith_weapon_whizby_groupA-007.vsnd",
+			"sounds/weapons/wraith/wraith_weapon_whizby_groupA-008.vsnd",
+			"sounds/weapons/wraith/wraith_weapon_whizby_groupA-009.vsnd",
+			"sounds/weapons/wraith/wraith_weapon_whizby_groupA-010.vsnd",
+			"sounds/weapons/wraith/wraith_weapon_whizby_groupB-001.vsnd",
+			"sounds/weapons/wraith/wraith_weapon_whizby_groupB-002.vsnd",
+			"sounds/weapons/wraith/wraith_weapon_whizby_groupB-003.vsnd",
+			"sounds/weapons/wraith/wraith_weapon_whizby_groupB-004.vsnd",
+			"sounds/weapons/wraith/wraith_weapon_whizby_groupB-005.vsnd",
+			"sounds/weapons/wraith/wraith_weapon_whizby_groupB-006.vsnd",
+			"sounds/weapons/wraith/wraith_weapon_whizby_groupB-007.vsnd",
+			"sounds/weapons/wraith/wraith_weapon_whizby_groupB-008.vsnd",
+			"sounds/weapons/wraith/wraith_weapon_whizby_groupB-009.vsnd",
+			"sounds/weapons/wraith/wraith_weapon_whizby_groupB-010.vsnd",
+			"sounds/weapons/wraith/wraith_weapon_whizby_groupC-001.vsnd",
+			"sounds/weapons/wraith/wraith_weapon_whizby_groupC-002.vsnd",
+			"sounds/weapons/wraith/wraith_weapon_whizby_groupC-003.vsnd",
+			"sounds/weapons/wraith/wraith_weapon_whizby_groupC-004.vsnd",
+			"sounds/weapons/wraith/wraith_weapon_whizby_groupC-005.vsnd",
+			"sounds/weapons/wraith/wraith_weapon_whizby_groupC-006.vsnd",
+			"sounds/weapons/wraith/wraith_weapon_whizby_groupC-007.vsnd",
+			"sounds/weapons/wraith/wraith_weapon_whizby_groupC-008.vsnd",
+			"sounds/weapons/wraith/wraith_weapon_whizby_groupC-009.vsnd",
+			"sounds/weapons/wraith/wraith_weapon_whizby_groupC-010.vsnd",
+		]
+		vsnd_duration = 0.516485
+	}
+	Wraith.Wpn.Impact = 
+	{
+		base = "Base.Bullet.Impact"
+	}
+	Wraith.Wpn.Zoom.In = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = -20.000000
+		vsnd_files = "sounds/weapons/wraith/zoom/in.vsnd"
+		vsnd_duration = 1.323604
+	}
+	Wraith.Wpn.Zoom.Out = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = -20.000000
+		vsnd_files = "sounds/weapons/wraith/zoom/out.vsnd"
+		vsnd_duration = 1.829146
+	}
+	Wraith.Wpn.Reload.Start = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = -4.000000
+		mono_downmix_enabled = 0.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/wraith/reload/wraith_wpn_reload_start_01.vsnd",
+			"sounds/weapons/wraith/reload/wraith_wpn_reload_start_02.vsnd",
+			"sounds/weapons/wraith/reload/wraith_wpn_reload_start_03.vsnd",
+		]
+		vsnd_duration = 2.449365
+	}
+	Wraith.Wpn.Reload.End = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = -2.000000
+		mono_downmix_enabled = 0.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/wraith/reload/wraith_wpn_reload_end_01.vsnd",
+			"sounds/weapons/wraith/reload/wraith_wpn_reload_end_02.vsnd",
+			"sounds/weapons/wraith/reload/wraith_wpn_reload_end_03.vsnd",
+		]
+		vsnd_duration = 1.363084
+	}
+	Wraith.Wpn.Reload.Clip.Out = 
+	{
+		base = "Base.Weapon.Foley"
+		vsnd_files = "sounds/weapons/wraith/reload/clip_out.vsnd"
+		vsnd_duration = 0.608813
+	}
+	Wraith.Wpn.Reload.Clip.In = 
+	{
+		base = "Base.Weapon.Foley"
+		vsnd_files = "sounds/weapons/wraith/reload/clip_in.vsnd"
+		vsnd_duration = 1.039146
+	}
+	Wraith.CardTrick.Proc = 
+	{
+		base = "Base.Ability"
+		volume = 4.500000
+		track_1.vsnd_selection_type = "index"
+		vsnd_files = 
+		[
+			"sounds/abilities/wraith/wraith_cardtrick_summon_club.vsnd",
+			"sounds/abilities/wraith/wraith_cardtrick_summon_diamond.vsnd",
+			"sounds/abilities/wraith/wraith_cardtrick_summon_heart.vsnd",
+			"sounds/abilities/wraith/wraith_cardtrick_summon_spade.vsnd",
+			"sounds/abilities/wraith/wraith_cardtrick_summon_joker.vsnd",
+			"sounds/abilities/wraith/wraith_cardtrick_summon_default.vsnd",
+		]
+		vsnd_duration = 2.223719
+	}
+	Wraith.CardTrick.Cast = 
+	{
+		base = "Base.Ability"
+		volume = 0.000000
+		pitch_rand_min = -0.020000
+		pitch_rand_max = 0.020000
+		track_1.vsnd_selection_type = "index"
+		vsnd_files = 
+		[
+			"sounds/abilities/wraith/wraith_card_trick_cast_club.vsnd",
+			"sounds/abilities/wraith/wraith_card_trick_cast_diamond.vsnd",
+			"sounds/abilities/wraith/wraith_card_trick_cast_heart.vsnd",
+			"sounds/abilities/wraith/wraith_card_trick_cast_spade.vsnd",
+			"sounds/abilities/wraith/wraith_card_trick_cast_joker.vsnd",
+			"sounds/abilities/wraith/wraith_card_trick_cast_spade.vsnd",
+		]
+		vsnd_duration = 2.160748
+	}
+	Wraith.CardTrick.Proj.Lp = 
+	{
+		base = "Base.Ability.Projectile"
+		pitch = 0.900000
+		volume = 8.000000
+		delay_rand_min = -3.000000
+		volume_fade_in = 0.100000
+		volume_fade_out = 0.100000
+		vsnd_files = "sounds/abilities/wraith/royalflush_proj.vsnd"
+		vsnd_duration = 2.793991
+	}
+	Wraith.CardTrick.Proj.Impact = 
+	{
+		base = "Base.Ability.Projectile"
+		volume = 4.000000
+		vsnd_files = 
+		[
+			"sounds/abilities/wraith/wraith_card_trick_proj_impact_01.vsnd",
+			"sounds/abilities/wraith/wraith_card_trick_proj_impact_02.vsnd",
+			"sounds/abilities/wraith/wraith_card_trick_proj_impact_03.vsnd",
+		]
+		vsnd_duration = 1.860726
+	}
+	Wraith.CardTrick.Hit = 
+	{
+		base = "Base.Ability.Hit"
+		volume = 2.000000
+		vsnd_files = 
+		[
+			"sounds/abilities/wraith/wraith_card_trick_hit_01.vsnd",
+			"sounds/abilities/wraith/wraith_card_trick_hit_02.vsnd",
+			"sounds/abilities/wraith/wraith_card_trick_hit_03.vsnd",
+		]
+		vsnd_duration = 1.362336
+	}
+	Wraith.ProjectMind.Select = 
+	{
+		base = "Base.Ability"
+		volume = 0.000000
+		pitch = 0.960000
+		vsnd_files = 
+		[
+			"sounds/abilities/wraith/projectmind_select_01.vsnd",
+			"sounds/abilities/wraith/projectmind_select_02.vsnd",
+			"sounds/abilities/wraith/projectmind_select_03.vsnd",
+			"sounds/abilities/wraith/projectmind_select_04.vsnd",
+			"sounds/abilities/wraith/projectmind_select_05.vsnd",
+			"sounds/abilities/wraith/projectmind_select_06.vsnd",
+		]
+		vsnd_duration = 0.926236
+	}
+	Wraith.ProjectMind.Deselect = 
+	{
+		base = "Base.Ability"
+		volume = 0.000000
+		vsnd_files = 
+		[
+			"sounds/abilities/wraith/projectmind_deselect_01.vsnd",
+			"sounds/abilities/wraith/projectmind_deselect_02.vsnd",
+			"sounds/abilities/wraith/projectmind_deselect_03.vsnd",
+			"sounds/abilities/wraith/projectmind_deselect_04.vsnd",
+			"sounds/abilities/wraith/projectmind_deselect_05.vsnd",
+			"sounds/abilities/wraith/projectmind_deselect_06.vsnd",
+			"sounds/abilities/wraith/projectmind_deselect_07.vsnd",
+		]
+		vsnd_duration = 0.878209
+	}
+	Wraith.ProjectMind.Cast = 
+	{
+		base = "Base.Ability"
+		volume = 2.000000
+		vsnd_files = "sounds/abilities/wraith/projectmind_travel.vsnd"
+		vsnd_duration = 1.880612
+	}
+	Wraith.ProjectMind.Arrive = 
+	{
+		base = "Base.Ability"
+		volume = 1.000000
+		vsnd_files = 
+		[
+			"sounds/abilities/wraith/projectmind_arrive_01.vsnd",
+			"sounds/abilities/wraith/projectmind_arrive_02.vsnd",
+			"sounds/abilities/wraith/projectmind_arrive_03.vsnd",
+			"sounds/abilities/wraith/projectmind_arrive_04.vsnd",
+			"sounds/abilities/wraith/projectmind_arrive_05.vsnd",
+			"sounds/abilities/wraith/projectmind_arrive_06.vsnd",
+		]
+		vsnd_duration = 1.390000
+	}
+	Wraith.RapidFire.Cast = 
+	{
+		base = "Base.Ability"
+		volume = 5.000000
+		pitch = 0.950000
+		vsnd_files = "sounds/abilities/wraith/wraith_psychicpulse_cast.vsnd"
+		vsnd_duration = 4.690249
+	}
+	Wraith.Telekinesis.Victim.Alert = 
+	{
+		base = "Base.Ability.StatusEffect"
+		volume = 2.000000
+		pitch = 1.100000
+		vsnd_files = "sounds/abilities/wraith/psychic_lift_victim.vsnd"
+		vsnd_duration = 2.740917
+	}
+	Wraith.Telekenisis.Proj.Lp = 
+	{
+		base = "Base.Ability.Ult"
+		play_from_listener_player = 0.000000
+		delay_rand_min = -2.000000
+		volume_fade_out = 0.100000
+		volume_fade_in = 0.100000
+		pitch = 1.020000
+		volume = 4.000000
+		vsnd_files = "sounds/abilities/wraith/telekinesis_travel_lp.vsnd"
+		vsnd_duration = 1.772109
+	}
+	Wraith.Telekinesis.Hit = 
+	{
+		base = "Base.Ability.Hit"
+		volume = 2.000000
+		filter_include_others = true
+		vsnd_files = "sounds/abilities/wraith/psychic_lift_impact.vsnd"
+		vsnd_duration = 2.714208
+	}
+	Wraith.Telekenisis.Select.Lp = 
+	{
+		base = "Base.Ability"
+		volume = -3.000000
+		delay_rand_min = -2.000000
+		volume_fade_in = 0.200000
+		volume_fade_out = 0.200000
+		vsnd_files = "sounds/abilities/wraith/telekinesis_select_lp.vsnd"
+		vsnd_duration = 6.273197
+	}
+	Wraith.Telekenisis.Select = 
+	{
+		base = "Base.Ability"
+		volume = -2.000000
+		vsnd_files = "sounds/abilities/wraith/telekinesis_select.vsnd"
+		vsnd_duration = 1.571429
+	}
+	Wraith.Telekenisis.Cast.Delay = 
+	{
+		base = "Base.Ability.Ult.CC"
+		volume = 4.000000
+		volume_offset_opponent = 3.000000
+		vsnd_files = "sounds/abilities/wraith/telekinesis_cast_start.vsnd"
+		vsnd_duration = 2.635533
+	}
+	Wraith.Telekenisis.Cast = 
+	{
+		base = "Base.Ability.Ult"
+		volume = 4.000000
+		vsnd_files = "sounds/abilities/wraith/telekinesis_travel_start.vsnd"
+		vsnd_duration = 1.039932
+	}
+	Wraith.Telekenisis.Slam = 
+	{
+		base = "Base.Ability.Hit"
+		volume = 0.000000
+		filter_include_others = true
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.100000
+		vsnd_files = 
+		[
+			"sounds/abilities/lash/a4_death_slam/lash_death_slam_impact_01.vsnd",
+			"sounds/abilities/lash/a4_death_slam/lash_death_slam_impact_02.vsnd",
+			"sounds/abilities/lash/a4_death_slam/lash_death_slam_impact_03.vsnd",
+		]
+		vsnd_duration = 2.585465
+	}
+	Wraith.Movement.Long = 
+	{
+		base = "Base.Movement"
+	}
+	Wraith.Movement.Short = 
+	{
+		base = "Base.Movement"
+		volume = -5.000000
+		track_1.vsnd_track_vol_offset_db = -5.000000
+		vsnd_files = 
+		[
+			"sounds/player/movement/wraith/wraith_movement_foley_short_01.vsnd",
+			"sounds/player/movement/wraith/wraith_movement_foley_short_02.vsnd",
+			"sounds/player/movement/wraith/wraith_movement_foley_short_03.vsnd",
+			"sounds/player/movement/wraith/wraith_movement_foley_short_04.vsnd",
+			"sounds/player/movement/wraith/wraith_movement_foley_short_05.vsnd",
+			"sounds/player/movement/wraith/wraith_movement_foley_short_06.vsnd",
+			"sounds/player/movement/wraith/wraith_movement_foley_short_07.vsnd",
+			"sounds/player/movement/wraith/wraith_movement_foley_short_08.vsnd",
+			"sounds/player/movement/wraith/wraith_movement_foley_short_09.vsnd",
+			"sounds/player/movement/wraith/wraith_movement_foley_short_10.vsnd",
+			"sounds/player/movement/wraith/wraith_movement_foley_short_11.vsnd",
+			"sounds/player/movement/wraith/wraith_movement_foley_short_12.vsnd",
+			"sounds/player/movement/wraith/wraith_movement_foley_short_13.vsnd",
+			"sounds/player/movement/wraith/wraith_movement_foley_short_14.vsnd",
+			"sounds/player/movement/wraith/wraith_movement_foley_short_15.vsnd",
+		]
+		track_2.track_vsnd_files = 
+		[
+			"sounds/player/footsteps/wraith/wraith_foley_paper_01.vsnd",
+			"sounds/player/footsteps/wraith/wraith_foley_paper_02.vsnd",
+			"sounds/player/footsteps/wraith/wraith_foley_paper_03.vsnd",
+			"sounds/player/footsteps/wraith/wraith_foley_paper_04.vsnd",
+			"sounds/player/footsteps/wraith/wraith_foley_paper_05.vsnd",
+			"sounds/player/footsteps/wraith/wraith_foley_paper_06.vsnd",
+			"sounds/player/footsteps/wraith/wraith_foley_paper_07.vsnd",
+			"sounds/player/footsteps/wraith/wraith_foley_paper_08.vsnd",
+			"sounds/player/footsteps/wraith/wraith_foley_paper_09.vsnd",
+			"sounds/player/footsteps/wraith/wraith_foley_paper_10.vsnd",
+			"sounds/player/footsteps/wraith/wraith_foley_paper_11.vsnd",
+			"sounds/player/footsteps/wraith/wraith_foley_paper_12.vsnd",
+			"sounds/player/footsteps/wraith/wraith_foley_paper_13.vsnd",
+			"sounds/player/footsteps/wraith/wraith_foley_paper_14.vsnd",
+			"sounds/player/footsteps/wraith/wraith_foley_paper_15.vsnd",
+			"sounds/player/footsteps/wraith/wraith_foley_paper_16.vsnd",
+			"sounds/player/footsteps/wraith/wraith_foley_paper_17.vsnd",
+		]
+		vsnd_duration = 0.305714
+	}
+	Wraith.JumpLand = 
+	{
+		base = "Base.Footsteps.JumpLand"
+		volume = -1.000000
+		track_2.vsnd_track_vol_offset_db = -3.000000
+		vsnd_files = 
+		[
+			"sounds/player/movement/wraith/wraith_jump_land_01.vsnd",
+			"sounds/player/movement/wraith/wraith_jump_land_02.vsnd",
+			"sounds/player/movement/wraith/wraith_jump_land_03.vsnd",
+			"sounds/player/movement/wraith/wraith_jump_land_04.vsnd",
+			"sounds/player/movement/wraith/wraith_jump_land_05.vsnd",
+			"sounds/player/movement/wraith/wraith_jump_land_06.vsnd",
+			"sounds/player/movement/wraith/wraith_jump_land_07.vsnd",
+			"sounds/player/movement/wraith/wraith_jump_land_08.vsnd",
+			"sounds/player/movement/wraith/wraith_jump_land_09.vsnd",
+		]
+		track_2.track_vsnd_files = 
+		[
+			"sounds/player/footsteps/wraith/wraith_footstep_01.vsnd",
+			"sounds/player/footsteps/wraith/wraith_footstep_02.vsnd",
+			"sounds/player/footsteps/wraith/wraith_footstep_04.vsnd",
+			"sounds/player/footsteps/wraith/wraith_footstep_06.vsnd",
+			"sounds/player/footsteps/wraith/wraith_footstep_07.vsnd",
+			"sounds/player/footsteps/wraith/wraith_footstep_08.vsnd",
+			"sounds/player/footsteps/wraith/wraith_footstep_09.vsnd",
+			"sounds/player/footsteps/wraith/wraith_footstep_10.vsnd",
+			"sounds/player/footsteps/wraith/wraith_footstep_11.vsnd",
+			"sounds/player/footsteps/wraith/wraith_footstep_13.vsnd",
+			"sounds/player/footsteps/wraith/wraith_footstep_14.vsnd",
+		]
+		vsnd_duration = 0.729500
+	}
+	Wraith.Mantle = 
+	{
+		base = "Base.Movement"
+	}
+	Wraith.Melee.Charged = 
+	{
+		base = "Base.Movement.Melee"
+		delay = 0.000000
+		vsnd_files = 
+		[
+			"sounds/player/melee/shared/swing_charged_01.vsnd",
+			"sounds/player/melee/shared/swing_charged_02.vsnd",
+			"sounds/player/melee/shared/swing_charged_03.vsnd",
+			"sounds/player/melee/shared/swing_charged_06.vsnd",
+			"sounds/player/melee/shared/swing_charged_07.vsnd",
+		]
+		vsnd_duration = 1.717664
+	}
+	Wraith.Melee.Swing = 
+	{
+		base = "Base.Movement.Melee"
+		vsnd_files = 
+		[
+			"sounds/player/melee/shared/swing_short_01.vsnd",
+			"sounds/player/melee/shared/swing_short_02.vsnd",
+			"sounds/player/melee/shared/swing_short_03.vsnd",
+			"sounds/player/melee/shared/swing_short_04.vsnd",
+			"sounds/player/melee/shared/swing_short_05.vsnd",
+			"sounds/player/melee/shared/swing_short_06.vsnd",
+			"sounds/player/melee/shared/swing_short_07.vsnd",
+			"sounds/player/melee/shared/swing_short_08.vsnd",
+			"sounds/player/melee/shared/swing_short_09.vsnd",
+			"sounds/player/melee/shared/swing_short_10.vsnd",
+			"sounds/player/melee/shared/swing_short_11.vsnd",
+			"sounds/player/melee/shared/swing_short_12.vsnd",
+			"sounds/player/melee/shared/swing_short_13.vsnd",
+			"sounds/player/melee/shared/swing_short_14.vsnd",
+			"sounds/player/melee/shared/swing_short_15.vsnd",
+			"sounds/player/melee/shared/swing_short_16.vsnd",
+			"sounds/player/melee/shared/swing_short_17.vsnd",
+			"sounds/player/melee/shared/swing_short_18.vsnd",
+			"sounds/player/melee/shared/swing_short_19.vsnd",
+			"sounds/player/melee/shared/swing_short_20.vsnd",
+			"sounds/player/melee/shared/swing_short_21.vsnd",
+			"sounds/player/melee/shared/swing_short_22.vsnd",
+			"sounds/player/melee/shared/swing_short_23.vsnd",
+			"sounds/player/melee/shared/swing_short_24.vsnd",
+		]
+		vsnd_duration = 1.062208
+	}
+	Wraith.Footstep = 
+	{
+		base = "Base.Footsteps"
+		track_1.vsnd_track_vol_offset_db = -5.000000
+		track_2.vsnd_track_vol_offset_db = -19.000000
+		track_3.vsnd_track_vol_offset_db = -7.000000
+		track_3.track_percent_chance_to_play = 0.600000
+		vsnd_files = 
+		[
+			"sounds/player/footsteps/wraith/wraith_footstep_01.vsnd",
+			"sounds/player/footsteps/wraith/wraith_footstep_02.vsnd",
+			"sounds/player/footsteps/wraith/wraith_footstep_04.vsnd",
+			"sounds/player/footsteps/wraith/wraith_footstep_06.vsnd",
+			"sounds/player/footsteps/wraith/wraith_footstep_07.vsnd",
+			"sounds/player/footsteps/wraith/wraith_footstep_08.vsnd",
+			"sounds/player/footsteps/wraith/wraith_footstep_09.vsnd",
+			"sounds/player/footsteps/wraith/wraith_footstep_10.vsnd",
+			"sounds/player/footsteps/wraith/wraith_footstep_11.vsnd",
+			"sounds/player/footsteps/wraith/wraith_footstep_13.vsnd",
+			"sounds/player/footsteps/wraith/wraith_footstep_14.vsnd",
+		]
+		track_2.track_vsnd_files = 
+		[
+			"sounds/player/movement/wraith/wraith_movement_foley_short_01.vsnd",
+			"sounds/player/movement/wraith/wraith_movement_foley_short_02.vsnd",
+			"sounds/player/movement/wraith/wraith_movement_foley_short_03.vsnd",
+			"sounds/player/movement/wraith/wraith_movement_foley_short_04.vsnd",
+			"sounds/player/movement/wraith/wraith_movement_foley_short_05.vsnd",
+			"sounds/player/movement/wraith/wraith_movement_foley_short_06.vsnd",
+			"sounds/player/movement/wraith/wraith_movement_foley_short_07.vsnd",
+			"sounds/player/movement/wraith/wraith_movement_foley_short_08.vsnd",
+			"sounds/player/movement/wraith/wraith_movement_foley_short_09.vsnd",
+			"sounds/player/movement/wraith/wraith_movement_foley_short_10.vsnd",
+			"sounds/player/movement/wraith/wraith_movement_foley_short_11.vsnd",
+			"sounds/player/movement/wraith/wraith_movement_foley_short_12.vsnd",
+			"sounds/player/movement/wraith/wraith_movement_foley_short_13.vsnd",
+			"sounds/player/movement/wraith/wraith_movement_foley_short_14.vsnd",
+			"sounds/player/movement/wraith/wraith_movement_foley_short_15.vsnd",
+		]
+		track_3.track_vsnd_files = 
+		[
+			"sounds/player/footsteps/wraith/wraith_foley_paper_01.vsnd",
+			"sounds/player/footsteps/wraith/wraith_foley_paper_02.vsnd",
+			"sounds/player/footsteps/wraith/wraith_foley_paper_03.vsnd",
+			"sounds/player/footsteps/wraith/wraith_foley_paper_04.vsnd",
+			"sounds/player/footsteps/wraith/wraith_foley_paper_05.vsnd",
+			"sounds/player/footsteps/wraith/wraith_foley_paper_06.vsnd",
+			"sounds/player/footsteps/wraith/wraith_foley_paper_07.vsnd",
+			"sounds/player/footsteps/wraith/wraith_foley_paper_08.vsnd",
+			"sounds/player/footsteps/wraith/wraith_foley_paper_09.vsnd",
+			"sounds/player/footsteps/wraith/wraith_foley_paper_10.vsnd",
+			"sounds/player/footsteps/wraith/wraith_foley_paper_11.vsnd",
+			"sounds/player/footsteps/wraith/wraith_foley_paper_12.vsnd",
+			"sounds/player/footsteps/wraith/wraith_foley_paper_13.vsnd",
+			"sounds/player/footsteps/wraith/wraith_foley_paper_14.vsnd",
+			"sounds/player/footsteps/wraith/wraith_foley_paper_15.vsnd",
+			"sounds/player/footsteps/wraith/wraith_foley_paper_16.vsnd",
+			"sounds/player/footsteps/wraith/wraith_foley_paper_17.vsnd",
+		]
+		vsnd_duration = 0.296803
+	}
+	Wraith.Progession.Page.Win.VO = 
+	{
+		base = "Base.VO.HeroVictory"
+		context_name = "wraith"
+		vsnd_files = 
+		[
+			"sounds/vo/wraith/wraith_kill_anyhero_08.vsnd",
+			"sounds/vo/wraith/wraith_kill_anyhero_10.vsnd",
+			"sounds/vo/wraith/wraith_happy_02.vsnd",
+			"sounds/vo/wraith/wraith_happy_04.vsnd",
+			"sounds/vo/wraith/wraith_killstreak_start_01.vsnd",
+		]
+		vsnd_duration = 2.068073
+	}
+	Wraith.Progession.Page.Lose.VO = 
+	{
+		base = "Base.VO.HeroVictory"
+		context_name = "wraith"
+		vsnd_files = 
+		[
+			"sounds/vo/wraith/wraith_concerned_10.vsnd",
+			"sounds/vo/wraith/wraith_near_miss_03.vsnd",
+			"sounds/vo/wraith/wraith_concerned_08.vsnd",
+		]
+		vsnd_duration = 1.905374
+	}
+}

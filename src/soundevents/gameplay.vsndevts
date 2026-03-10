@@ -1,0 +1,592 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	CurrencyChanged = 
+	{
+		base = "Base.UI"
+		mixer_mixgroup = "Currency"
+		volume = -3.000000
+		delay = 0.150000
+		spread_min_value = 1.000000
+		spread_max_value = 1.000000
+		limiter_max = 0.000000
+		hrtf_on = 0.000000
+		pitch = 1.000000
+		pitch_modulation_max = 1.250000
+		pitch_modulation_attack = 4.000000
+		pitch_modulation_release = 0.500000
+		pitch_modulation_namespace = "CurrencyChanged"
+		vsnd_files = 
+		[
+			"sounds/ui/ui_get_gold_01.vsnd",
+			"sounds/ui/ui_get_gold_02.vsnd",
+			"sounds/ui/ui_get_gold_03.vsnd",
+			"sounds/ui/ui_get_gold_04.vsnd",
+			"sounds/ui/ui_get_gold_05.vsnd",
+			"sounds/ui/ui_get_gold_06.vsnd",
+			"sounds/ui/ui_get_gold_07.vsnd",
+			"sounds/ui/ui_get_gold_08.vsnd",
+			"sounds/ui/ui_get_gold_09.vsnd",
+			"sounds/ui/ui_get_gold_10.vsnd",
+			"sounds/ui/ui_get_gold_11.vsnd",
+		]
+		vsnd_duration = 1.505782
+	}
+	CurrencyChanged.Large = 
+	{
+		base = "Base.UI"
+		mixer_mixgroup = "Currency"
+		volume = -8.000000
+		block_duration = 1.000000
+		delay = 0.300000
+		spread_min_value = 1.000000
+		spread_max_value = 1.000000
+		limiter_max = 0.000000
+		hrtf_on = 0.000000
+		pitch = 1.000000
+		vsnd_files = 
+		[
+			"sounds/ui/ui_get_gold_large_01.vsnd",
+			"sounds/ui/ui_get_gold_large_02.vsnd",
+			"sounds/ui/ui_get_gold_large_03.vsnd",
+			"sounds/ui/ui_get_gold_large_04.vsnd",
+		]
+		vsnd_duration = 2.286485
+	}
+	Player.GetGold = 
+	{
+		base = "Base.XP"
+		volume = -12.000000
+		pitch = 1.000000
+		pitch_modulation_max = 1.950000
+		pitch_modulation_attack = 4.000000
+		pitch_modulation_release = 0.500000
+		pitch_modulation_namespace = "gold"
+		vsnd_files = 
+		[
+			"sounds/ui/ui_get_gold_01.vsnd",
+			"sounds/ui/ui_get_gold_02.vsnd",
+			"sounds/ui/ui_get_gold_03.vsnd",
+			"sounds/ui/ui_get_gold_04.vsnd",
+			"sounds/ui/ui_get_gold_05.vsnd",
+			"sounds/ui/ui_get_gold_06.vsnd",
+			"sounds/ui/ui_get_gold_07.vsnd",
+			"sounds/ui/ui_get_gold_08.vsnd",
+			"sounds/ui/ui_get_gold_09.vsnd",
+			"sounds/ui/ui_get_gold_10.vsnd",
+			"sounds/ui/ui_get_gold_11.vsnd",
+		]
+		vsnd_duration = 1.505782
+	}
+	Player.ClaimOrb = 
+	{
+		base = "Player.GetGold"
+		volume = -6.000000
+		pitch_modulation_namespace = "orbs"
+		vsnd_files = 
+		[
+			"sounds/gameplay/orbs/xp_orbs_acquire_01.vsnd",
+			"sounds/gameplay/orbs/xp_orbs_acquire_02.vsnd",
+			"sounds/gameplay/orbs/xp_orbs_acquire_03.vsnd",
+			"sounds/gameplay/orbs/xp_orbs_acquire_04.vsnd",
+			"sounds/gameplay/orbs/xp_orbs_acquire_05.vsnd",
+			"sounds/gameplay/orbs/xp_orbs_acquire_06.vsnd",
+			"sounds/gameplay/orbs/xp_orbs_acquire_07.vsnd",
+		]
+		instance_attenuator_enabled = 1.000000
+		instance_count_offset_amount_db = 
+		[
+			
+			[
+				1.018276,
+				0.000000,
+				0.000000,
+				-3.480865,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				7.913113,
+				-24.000000,
+				-3.480865,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		vsnd_duration = 1.867302
+	}
+	Player.ClaimOrb.Hit = 
+	{
+		base = "Base.XP"
+		volume = 4.000000
+		vsnd_files = 
+		[
+			"sounds/gameplay/orbs/xp_orb_hit_01.vsnd",
+			"sounds/gameplay/orbs/xp_orb_hit_02.vsnd",
+			"sounds/gameplay/orbs/xp_orb_hit_03.vsnd",
+			"sounds/gameplay/orbs/xp_orb_hit_04.vsnd",
+			"sounds/gameplay/orbs/xp_orb_hit_05.vsnd",
+			"sounds/gameplay/orbs/xp_orb_hit_06.vsnd",
+		]
+		vsnd_duration = 0.699138
+	}
+	Player.Deny = 
+	{
+		base = "Player.GetGold"
+		volume = 0.000000
+		vsnd_files = 
+		[
+			"sounds/gameplay/orbs/xp_orbs_acquire_01.vsnd",
+			"sounds/gameplay/orbs/xp_orbs_acquire_02.vsnd",
+			"sounds/gameplay/orbs/xp_orbs_acquire_03.vsnd",
+			"sounds/gameplay/orbs/xp_orbs_acquire_04.vsnd",
+			"sounds/gameplay/orbs/xp_orbs_acquire_05.vsnd",
+			"sounds/gameplay/orbs/xp_orbs_acquire_06.vsnd",
+			"sounds/gameplay/orbs/xp_orbs_acquire_07.vsnd",
+		]
+		vsnd_duration = 1.867302
+	}
+	Player.Denied = 
+	{
+		base = "Player.GetGold"
+		pitch_modulation_namespace = "deny"
+		volume = 0.000000
+		limiter_on = 1.000000
+		limiter_max = 1.000000
+		volume_fade_out = 0.100000
+		block_distance_max = 2500.000000
+		max_distance_recipient_filter = 2500.000000
+		vsnd_files = 
+		[
+			"sounds/gameplay/orbs/xp_orbs_deny_01.vsnd",
+			"sounds/gameplay/orbs/xp_orbs_deny_02.vsnd",
+			"sounds/gameplay/orbs/xp_orbs_deny_03.vsnd",
+			"sounds/gameplay/orbs/xp_orbs_deny_04.vsnd",
+			"sounds/gameplay/orbs/xp_orbs_deny_05.vsnd",
+			"sounds/gameplay/orbs/xp_orbs_deny_06.vsnd",
+		]
+		vsnd_duration = 2.619274
+	}
+	Player.AcquireAp = 
+	{
+		base = "Base.UI"
+		block_duration = 1.000000
+		volume = -3.000000
+		pitch = 1.250000
+		vsnd_files = 
+		[
+			"sounds/ui/ui_hud_acquire_ap_01.vsnd",
+			"sounds/ui/ui_hud_acquire_ap_02.vsnd",
+			"sounds/ui/ui_hud_acquire_ap_03.vsnd",
+			"sounds/ui/ui_hud_acquire_ap_04.vsnd",
+		]
+		vsnd_duration = 6.149116
+	}
+	LastHit.Default = 
+	{
+		base = "Base.XP"
+		limiter_max = 0.000000
+		limiter_on = 1.000000
+		volume = 1.000000
+		vsnd_files = 
+		[
+			"sounds/hit_indicators/damage_send_lethal_01.vsnd",
+			"sounds/hit_indicators/damage_send_lethal_02.vsnd",
+			"sounds/hit_indicators/damage_send_lethal_03.vsnd",
+			"sounds/hit_indicators/damage_send_lethal_04.vsnd",
+			"sounds/hit_indicators/damage_send_lethal_05.vsnd",
+			"sounds/hit_indicators/damage_send_lethal_06.vsnd",
+		]
+		vsnd_duration = 1.550499
+	}
+	Teammate.ClaimOrb = 
+	{
+		base = "Player.GetGold"
+		volume = -15.000000
+		vsnd_files = "sounds/common/null.vsnd"
+		vsnd_duration = 0.050023
+	}
+	Neutral.Bounty.Pickup = 
+	{
+		base = "Base.UI"
+		volume = -1.000000
+		limiter_max = 0.000000
+		limiter_on = 1.000000
+		vsnd_files = "sounds/common/null.vsnd"
+		vsnd_duration = 0.050023
+	}
+	Player.Negative.Interact = 
+	{
+		base = "Base.UI"
+		volume = -4.000000
+		pitch = 1.000000
+		volume_fade_out = 0.050000
+		limiter_on = 1.000000
+		limiter_max = 0.000000
+		limiter_stop_oldest = true
+		recency_bias_max_scale = 1.000000
+		recency_bias_min_scale = 0.350000
+		vsnd_files = 
+		[
+			"sounds/ui/ui_meepmop_01.vsnd",
+			"sounds/ui/ui_meepmop_02.vsnd",
+			"sounds/ui/ui_meepmop_03.vsnd",
+			"sounds/ui/ui_meepmop_04.vsnd",
+			"sounds/ui/ui_meepmop_05.vsnd",
+			"sounds/ui/ui_meepmop_06.vsnd",
+		]
+		vsnd_duration = 0.967460
+	}
+	Player.Negative.Interact.Silenced = 
+	{
+		base = "Base.UI"
+		volume = 6.000000
+		volume_fade_out = 0.390000
+		limiter_on = 1.000000
+		limiter_max = 0.000000
+		limiter_stop_oldest = true
+		vsnd_files = "sounds/gameplay/silence_emp.vsnd"
+		vsnd_duration = 1.810952
+	}
+	Player.WpnReload.Shared.Clip.Out = 
+	{
+		base = "Base.Weapon.Foley"
+		vsnd_files = "sounds/gameplay/shared_reloads/shared_reload_clip_out.vsnd"
+		vsnd_duration = 0.710113
+	}
+	Player.WpnReload.Shared.Clip.In = 
+	{
+		base = "Base.Weapon.Foley"
+		vsnd_files = "sounds/gameplay/shared_reloads/shared_reload_clip_in.vsnd"
+		vsnd_duration = 1.292426
+	}
+	Rejuv.Pickup = 
+	{
+		base = "Base.MapObjective"
+		volume = -3.000000
+		mixer_trigger_input = "Envelope"
+		vsnd_files = "sounds/gameplay/rejuv_shatter.vsnd"
+		vsnd_duration = 9.389569
+	}
+	Rejuv.Rebirth.Start = 
+	{
+		base = "Base.Ability.Ult"
+		volume = 3.000000
+		vsnd_files = "sounds/gameplay/rejuv/rejuv_respawn_start_01.vsnd"
+		vsnd_duration = 3.037801
+	}
+	Rejuv.Rebirth.Revive = 
+	{
+		base = "Base.Ability.Ult"
+		volume = 3.000000
+		vsnd_files = "sounds/gameplay/rejuv/rejuv_respawn_explosion_01.vsnd"
+		vsnd_duration = 4.236077
+	}
+	MidBoss.Arrive = 
+	{
+		base = "Base.MapObjective"
+		volume = -7.000000
+		mixer_trigger_input = "Envelope"
+		vsnd_files = "sounds/gameplay/midboss_arrive.vsnd"
+		vsnd_duration = 10.468957
+	}
+	MidBoss.LowHealth = 
+	{
+		base = "Base.MapObjective"
+		volume = -5.000000
+		mixer_trigger_input = "Envelope"
+		vsnd_files = "sounds/gameplay/midboss_lowhealth.vsnd"
+		vsnd_duration = 9.539365
+	}
+	MidBoss.Death = 
+	{
+		base = "Base.MapObjective"
+		volume = -9.000000
+		mixer_trigger_input = "Envelope"
+		vsnd_files = "sounds/gameplay/midboss_death.vsnd"
+		vsnd_duration = 16.475079
+	}
+	Rope.Climb.Lp = 
+	{
+		base = "Base.Ability"
+		volume = 0.000000
+		pitch = 0.900000
+		play_from_listener_player = 0.000000
+		delay_rand_max = -15.000000
+		volume_fade_out = 0.100000
+		volume_fade_in = 0.100000
+		position_force_from_input = true
+		cull_at_distance = 2000.000000
+		volume_filter_amount = 0.500000
+		hrtf_on_player = 1.000000
+		vsnd_files = "sounds/gameplay/rope_climb_lp.vsnd"
+		vsnd_duration = 17.041634
+	}
+	Player.WpnLowAmmo.Shared = 
+	{
+		base = "Base.Weapon.Foley"
+		preload_vsnds = 10
+		volume = -3.000000
+		block_duration = 0.000000
+		play_from_listener_player = 1.000000
+		mono_downmix_max_distance = 300.000000
+		mono_downmix_min_distance = 250.000000
+		volume_offset_opponent = 3.000000
+		vsnd_files = 
+		[
+			"sounds/gameplay/low_ammo_indicator_01.vsnd",
+			"sounds/gameplay/low_ammo_indicator_02.vsnd",
+			"sounds/gameplay/low_ammo_indicator_03.vsnd",
+			"sounds/gameplay/low_ammo_indicator_04.vsnd",
+			"sounds/gameplay/low_ammo_indicator_05.vsnd",
+			"sounds/gameplay/low_ammo_indicator_06.vsnd",
+			"sounds/gameplay/low_ammo_indicator_07.vsnd",
+			"sounds/gameplay/low_ammo_indicator_08.vsnd",
+			"sounds/gameplay/low_ammo_indicator_09.vsnd",
+		]
+		vsnd_duration = 0.565102
+	}
+	Modifier.Prevent = 
+	{
+		base = "Base.Ability.Hit"
+		volume = 2.000000
+		block_duration = 0.500000
+		filter_include_others = true
+		vsnd_files = 
+		[
+			"sounds/gameplay/purge_debuff_01.vsnd",
+			"sounds/gameplay/purge_debuff_02.vsnd",
+			"sounds/gameplay/purge_debuff_03.vsnd",
+			"sounds/gameplay/purge_debuff_04.vsnd",
+			"sounds/gameplay/purge_debuff_05.vsnd",
+		]
+		vsnd_duration = 3.693447
+	}
+	HideoutBall.Kick = 
+	{
+		base = "Base.Hideout.Toy"
+		volume = -3.000000
+		block_duration = 0.500000
+		pitch_rand_min = -0.100000
+		pitch_rand_max = 0.100000
+		vsnd_files = 
+		[
+			"sounds/gameplay/hideout_ball/hideout_ball_kick_01.vsnd",
+			"sounds/gameplay/hideout_ball/hideout_ball_kick_02.vsnd",
+			"sounds/gameplay/hideout_ball/hideout_ball_kick_03.vsnd",
+			"sounds/gameplay/hideout_ball/hideout_ball_kick_04.vsnd",
+			"sounds/gameplay/hideout_ball/hideout_ball_kick_05.vsnd",
+			"sounds/gameplay/hideout_ball/hideout_ball_kick_06.vsnd",
+			"sounds/gameplay/hideout_ball/hideout_ball_kick_07.vsnd",
+		]
+		vsnd_duration = 0.382132
+	}
+	HideoutBall.Arc = 
+	{
+		base = "Base.Hideout.Toy"
+		volume = -3.000000
+		pitch = 1.000000
+		block_duration = 0.300000
+		pitch_increment_count_max = 35.000000
+		incremental_pitch_offset = 0.020000
+		vsnd_files = "sounds/gameplay/hideout_ball/hideout_ball_apex.vsnd"
+		vsnd_duration = 3.774104
+	}
+	Snowball.Cast = 
+	{
+		base = "Base.Ability"
+		volume = 1.000000
+		vsnd_files = 
+		[
+			"sounds/seasonal/winter/snowball/snowball_cast_01.vsnd",
+			"sounds/seasonal/winter/snowball/snowball_cast_02.vsnd",
+			"sounds/seasonal/winter/snowball/snowball_cast_03.vsnd",
+			"sounds/seasonal/winter/snowball/snowball_cast_04.vsnd",
+			"sounds/seasonal/winter/snowball/snowball_cast_05.vsnd",
+			"sounds/seasonal/winter/snowball/snowball_cast_06.vsnd",
+			"sounds/seasonal/winter/snowball/snowball_cast_07.vsnd",
+		]
+		vsnd_duration = 1.292336
+	}
+	Snowball.Projectile.Impact = 
+	{
+		base = "Base.Bullet.Impact"
+		volume = 3.000000
+		filter_include_others = true
+		volume_falloff_curve_db = 
+		[
+			
+			[
+				0.000000,
+				0.300000,
+				1.083000,
+				1.083000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				500.000000,
+				0.300000,
+				0.000000,
+				-0.030150,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				2500.000000,
+				-60.000000,
+				-0.030150,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		vsnd_files = 
+		[
+			"sounds/seasonal/winter/snowball/snowball_impact_01.vsnd",
+			"sounds/seasonal/winter/snowball/snowball_impact_02.vsnd",
+			"sounds/seasonal/winter/snowball/snowball_impact_03.vsnd",
+			"sounds/seasonal/winter/snowball/snowball_impact_04.vsnd",
+			"sounds/seasonal/winter/snowball/snowball_impact_05.vsnd",
+			"sounds/seasonal/winter/snowball/snowball_impact_06.vsnd",
+			"sounds/seasonal/winter/snowball/snowball_impact_07.vsnd",
+			"sounds/seasonal/winter/snowball/snowball_impact_08.vsnd",
+			"sounds/seasonal/winter/snowball/snowball_impact_09.vsnd",
+			"sounds/seasonal/winter/snowball/snowball_impact_10.vsnd",
+			"sounds/seasonal/winter/snowball/snowball_impact_11.vsnd",
+		]
+		vsnd_duration = 1.939410
+	}
+	Snowball.Projectile.Whizby = 
+	{
+		base = "Base.Bullet.Whizby"
+		volume = 0.000000
+		vsnd_files = 
+		[
+			"sounds/seasonal/winter/snowball/snowball_whizby_01.vsnd",
+			"sounds/seasonal/winter/snowball/snowball_whizby_02.vsnd",
+			"sounds/seasonal/winter/snowball/snowball_whizby_03.vsnd",
+			"sounds/seasonal/winter/snowball/snowball_whizby_04.vsnd",
+			"sounds/seasonal/winter/snowball/snowball_whizby_05.vsnd",
+			"sounds/seasonal/winter/snowball/snowball_whizby_06.vsnd",
+			"sounds/seasonal/winter/snowball/snowball_whizby_07.vsnd",
+			"sounds/seasonal/winter/snowball/snowball_whizby_08.vsnd",
+			"sounds/seasonal/winter/snowball/snowball_whizby_09.vsnd",
+			"sounds/seasonal/winter/snowball/snowball_whizby_10.vsnd",
+			"sounds/seasonal/winter/snowball/snowball_whizby_11.vsnd",
+		]
+		vsnd_duration = 1.443968
+	}
+	Seasonal.NyeCelebrate.Fireworks.Bed = 
+	{
+		base = "Base.MapObjective"
+		limiter_global_event_distance_on = true
+		limiter_global_event_distance_max = 1.000000
+		volume = 4.000000
+		distance_hpf_on = 0.000000
+		occlusion_scale = 0.000000
+		volume_fade_out = 3.000000
+		spread_max_value = 0.000000
+		spread_min_value = 0.000000
+		vsnd_files = 
+		[
+			"sounds/seasonal/new_year/fireworks/seasonal_fireworks_bed.vsnd",
+		]
+		vsnd_duration = 123.891586
+	}
+	Seasonal.NyeCelebrate.Fireworks.BoomBig = 
+	{
+		base = "Base.MapObjective"
+		volume = -9.000000
+		pitch_rand_min = -0.100000
+		pitch_rand_max = 0.300000
+		distance_hpf_on = 0.000000
+		occlusion_scale = 0.200000
+		spread_max_value = 0.000000
+		spread_min_value = 0.000000
+		limiter_max = 5.000000
+		volume_fade_out = 0.250000
+		vsnd_files = 
+		[
+			"sounds/seasonal/new_year/fireworks/seasonal_fireworks_boom_01.vsnd",
+			"sounds/seasonal/new_year/fireworks/seasonal_fireworks_boom_02.vsnd",
+			"sounds/seasonal/new_year/fireworks/seasonal_fireworks_boom_03.vsnd",
+			"sounds/seasonal/new_year/fireworks/seasonal_fireworks_boom_04.vsnd",
+			"sounds/seasonal/new_year/fireworks/seasonal_fireworks_boom_05.vsnd",
+			"sounds/seasonal/new_year/fireworks/seasonal_fireworks_boom_06.vsnd",
+			"sounds/seasonal/new_year/fireworks/seasonal_fireworks_boom_07.vsnd",
+			"sounds/seasonal/new_year/fireworks/seasonal_fireworks_boom_08.vsnd",
+		]
+		vsnd_duration = 5.306190
+	}
+	Seasonal.NyeCelebrate.Fireworks.BoomMed = 
+	{
+		base = "Base.MapObjective"
+		volume = -9.000000
+		pitch = 1.500000
+		pitch_rand_min = -0.100000
+		pitch_rand_max = 0.100000
+		distance_hpf_on = 0.000000
+		occlusion_scale = 0.200000
+		spread_max_value = 0.000000
+		spread_min_value = 0.000000
+		hrtf_on = 1.000000
+		limiter_max = 5.000000
+		volume_fade_out = 0.250000
+		vsnd_files = 
+		[
+			"sounds/seasonal/new_year/fireworks/seasonal_fireworks_boom_01.vsnd",
+			"sounds/seasonal/new_year/fireworks/seasonal_fireworks_boom_02.vsnd",
+			"sounds/seasonal/new_year/fireworks/seasonal_fireworks_boom_03.vsnd",
+			"sounds/seasonal/new_year/fireworks/seasonal_fireworks_boom_04.vsnd",
+			"sounds/seasonal/new_year/fireworks/seasonal_fireworks_boom_05.vsnd",
+			"sounds/seasonal/new_year/fireworks/seasonal_fireworks_boom_06.vsnd",
+			"sounds/seasonal/new_year/fireworks/seasonal_fireworks_boom_07.vsnd",
+			"sounds/seasonal/new_year/fireworks/seasonal_fireworks_boom_08.vsnd",
+		]
+		vsnd_duration = 5.306190
+	}
+	Seasonal.NyeCelebrate.Fireworks.Rand = 
+	{
+		type = "citadel_seasonal_fireworks"
+		base = 
+		[
+			
+			{
+				event_name = "Base.MapObjective"
+				field_name = "citadel_default_3d"
+			},
+		]
+		distance_hpf_on = 0.000000
+		occlusion_scale = 0.200000
+		spread_max_value = 0.000000
+		spread_min_value = 0.000000
+		limiter_max = 10.000000
+		volume_fade_out = 0.250000
+		probability_block = 0.400000
+		probability_big = 0.250000
+		vol_big_db = -9.000000
+		vol_med_db = -9.000000
+		pitch_big = 1.000000
+		pitch_rand_max_big = 0.300000
+		pitch_rand_min_big = -0.100000
+		pitch_med = 1.500000
+		pitch_rand_max_med = 0.100000
+		pitch_rand_min_med = -0.100000
+		vsnd_files = 
+		[
+			"sounds/seasonal/new_year/fireworks/seasonal_fireworks_boom_01.vsnd",
+			"sounds/seasonal/new_year/fireworks/seasonal_fireworks_boom_02.vsnd",
+			"sounds/seasonal/new_year/fireworks/seasonal_fireworks_boom_03.vsnd",
+			"sounds/seasonal/new_year/fireworks/seasonal_fireworks_boom_04.vsnd",
+			"sounds/seasonal/new_year/fireworks/seasonal_fireworks_boom_05.vsnd",
+			"sounds/seasonal/new_year/fireworks/seasonal_fireworks_boom_06.vsnd",
+			"sounds/seasonal/new_year/fireworks/seasonal_fireworks_boom_07.vsnd",
+			"sounds/seasonal/new_year/fireworks/seasonal_fireworks_boom_08.vsnd",
+		]
+		vsnd_duration = 5.306190
+	}
+}

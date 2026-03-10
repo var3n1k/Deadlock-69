@@ -1,0 +1,581 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	Lash.Wpn.Fire = 
+	{
+		base = "Base.Weapon.Pistol"
+		low_ammo_threshold = 6.000000
+		volume = 2.000000
+		tail_vol_offset_db = -6.000000
+		tail_interior_vol_offset_db = -8.000000
+		last_shot_vol_offset_db = 2.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/lash/lash_weapon_fire_01.vsnd",
+			"sounds/weapons/lash/lash_weapon_fire_02.vsnd",
+			"sounds/weapons/lash/lash_weapon_fire_03.vsnd",
+			"sounds/weapons/lash/lash_weapon_fire_04.vsnd",
+			"sounds/weapons/lash/lash_weapon_fire_05.vsnd",
+			"sounds/weapons/lash/lash_weapon_fire_06.vsnd",
+			"sounds/weapons/lash/lash_weapon_fire_07.vsnd",
+			"sounds/weapons/lash/lash_weapon_fire_08.vsnd",
+		]
+		vsnd_files_last_shot = 
+		[
+			"sounds/weapons/lash/lash_wpn_last_shot_01.vsnd",
+		]
+		vsnd_duration = 1.480000
+	}
+	Lash.Wpn.Fire.First = 
+	{
+		base = "Base.Weapon.Pistol"
+		limiter_max = 0.000000
+		transient_offset_db = 3.000000
+	}
+	Lash.Wpn.BulletWhizby = 
+	{
+		base = "Base.Bullet.Whizby"
+		volume = -3.000000
+		limiter_max = 1.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/lash/lash_weapon_whizby_groupA-001.vsnd",
+			"sounds/weapons/lash/lash_weapon_whizby_groupA-002.vsnd",
+			"sounds/weapons/lash/lash_weapon_whizby_groupA-003.vsnd",
+			"sounds/weapons/lash/lash_weapon_whizby_groupA-004.vsnd",
+			"sounds/weapons/lash/lash_weapon_whizby_groupA-005.vsnd",
+			"sounds/weapons/lash/lash_weapon_whizby_groupA-006.vsnd",
+			"sounds/weapons/lash/lash_weapon_whizby_groupA-007.vsnd",
+			"sounds/weapons/lash/lash_weapon_whizby_groupA-008.vsnd",
+			"sounds/weapons/lash/lash_weapon_whizby_groupA-009.vsnd",
+			"sounds/weapons/lash/lash_weapon_whizby_groupA-010.vsnd",
+		]
+		vsnd_duration = 0.599478
+	}
+	Lash.Wpn.Impact = 
+	{
+		base = "Base.Bullet.Impact"
+		vsnd_files = "sounds/common/null.vsnd"
+		vsnd_duration = 0.050023
+	}
+	Lash.Wpn.Reload.Start = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = -2.000000
+		mono_downmix_enabled = 0.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/lash/reload/lash_wpn_reload_start_01.vsnd",
+			"sounds/weapons/lash/reload/lash_wpn_reload_start_02.vsnd",
+			"sounds/weapons/lash/reload/lash_wpn_reload_start_03.vsnd",
+		]
+		vsnd_duration = 1.159410
+	}
+	Lash.Wpn.Reload.Mid = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = -2.000000
+		mono_downmix_enabled = 0.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/lash/reload/lash_wpn_reload_mid_01.vsnd",
+			"sounds/weapons/lash/reload/lash_wpn_reload_mid_02.vsnd",
+			"sounds/weapons/lash/reload/lash_wpn_reload_mid_03.vsnd",
+		]
+		vsnd_duration = 0.442313
+	}
+	Lash.Wpn.Reload.End = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = -2.000000
+		mono_downmix_enabled = 0.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/lash/reload/lash_wpn_reload_end_01.vsnd",
+			"sounds/weapons/lash/reload/lash_wpn_reload_end_02.vsnd",
+			"sounds/weapons/lash/reload/lash_wpn_reload_end_03.vsnd",
+		]
+		vsnd_duration = 0.433946
+	}
+	Lash.Wpn.Zoom.In = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = -20.000000
+		vsnd_files = "sounds/weapons/wraith/zoom/in.vsnd"
+		vsnd_duration = 1.323604
+	}
+	Lash.Wpn.Zoom.Out = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = -20.000000
+		vsnd_files = "sounds/weapons/wraith/zoom/out.vsnd"
+		vsnd_duration = 1.829146
+	}
+	Lash.A1.GroundStrike.Explosion = 
+	{
+		base = "Base.Ability"
+		volume = 0.000000
+		vsnd_files = "sounds/abilities/lash/a1_ground_strike/lash_ground_strike_impact.vsnd"
+		vsnd_duration = 2.485714
+	}
+	Lash.A1.GroundStrike.DownStrike.Start = 
+	{
+		base = "Base.Ability.Telegraph"
+		volume = -3.000000
+		vsnd_files = "sounds/abilities/lash/a1_ground_strike/lash_ground_strike_downstrike_whoosh.vsnd"
+		vsnd_duration = 2.382676
+	}
+	Lash.A1.Ground.Strike.Mod.Lp = 
+	{
+		base = "Base.Ability"
+		volume = -4.000000
+		volume_fade_in = 0.050000
+		volume_fade_out = 0.100000
+		pitch = 1.250000
+		delay_rand_min = -0.750000
+		volume_offset_opponent = 4.000000
+		vsnd_files = "sounds/abilities/lash/a1_ground_strike/lash_ground_strike_mod_lp.vsnd"
+		vsnd_duration = 1.715669
+	}
+	Lash.GroundStrike.Hit = 
+	{
+		base = "Base.Ability.Hit"
+		limiter_on = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 0.000000
+		volume = 3.000000
+		pitch_rand_max = 0.100000
+		pitch_rand_min = -0.050000
+		vsnd_files = 
+		[
+			"sounds/abilities/lash/a1_ground_strike/lash_ground_strike_hit_01.vsnd",
+			"sounds/abilities/lash/a1_ground_strike/lash_ground_strike_hit_02.vsnd",
+			"sounds/abilities/lash/a1_ground_strike/lash_ground_strike_hit_03.vsnd",
+		]
+		vsnd_duration = 1.697324
+	}
+	Lash.Grapple.Cast = 
+	{
+		base = "Base.Ability"
+		volume = 3.000000
+		volume_offset_opponent = 3.000000
+		vsnd_files = "sounds/abilities/lash/a2_grapple/lash_a2_grapple_cast.vsnd"
+		vsnd_duration = 2.467302
+	}
+	Lash.Grapple.Target = 
+	{
+		base = "Base.Ability.StatusEffect"
+		volume = 2.000000
+		volume_offset_player = 4.000000
+		pitch = 0.800000
+		vsnd_files = "sounds/abilities/lash/a2_grapple/lash_a2_grapple_target.vsnd"
+		vsnd_duration = 1.328662
+	}
+	Lash.Grapple.Self_Lp = 
+	{
+		base = "Base.Ability"
+		volume = 0.000000
+		vsnd_files = "sounds/abilities/lash/a2_grapple/lash_a2_grapple_self_lp.vsnd"
+		vsnd_duration = 2.239456
+	}
+	Lash.Grapple.End = 
+	{
+		base = "Base.Ability"
+		volume = 0.000000
+		vsnd_files = "sounds/abilities/lash/a2_grapple/lash_a2_grapple_end.vsnd"
+		vsnd_duration = 0.765306
+	}
+	Lash.Lash.Impact = 
+	{
+		base = "Base.Ability"
+		pitch = 1.000000
+		volume = 0.000000
+		vsnd_files = "sounds/abilities/lash/a2_grapple/target_impact.vsnd"
+		vsnd_duration = 2.121146
+	}
+	Lash.A3.Flog.Impact = 
+	{
+		base = "Base.Ability.Hit"
+		volume = 0.000000
+		pitch = 1.000000
+		limiter_on = 1.000000
+		limiter_max = 2.000000
+		limiter_match_entity = 0.000000
+		pitch_rand_min = -0.300000
+		pitch_rand_max = 0.100000
+		volume_offset_attacker_db = 2.000000
+		volume_offset_victim_db = -1.000000
+		vsnd_files = 
+		[
+			"sounds/abilities/lash/a3_flog/lash_a3_flog_impact_01.vsnd",
+			"sounds/abilities/lash/a3_flog/lash_a3_flog_impact_02.vsnd",
+			"sounds/abilities/lash/a3_flog/lash_a3_flog_impact_03.vsnd",
+		]
+		instance_count_offset_amount_db = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				-0.293897,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				-0.293897,
+				-3.243744,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				10.000000,
+				-10.000000,
+				-3.243744,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		vsnd_duration = 2.820499
+	}
+	Lash.A3.Flog.Cast.Delay = 
+	{
+		base = "Base.Ability"
+		volume = -3.500000
+		vsnd_files = "sounds/abilities/lash/a3_flog/lash_a3_flog_cast.vsnd"
+		vsnd_duration = 2.215828
+	}
+	Lash.A4.Death.Slam.Cast.Delay = 
+	{
+		base = "Base.Ability.Ult"
+		volume = 0.000000
+		vsnd_files = "sounds/abilities/lash/a4_death_slam/lash_death_slam_cast_delay.vsnd"
+		vsnd_duration = 4.778390
+	}
+	Lash.A4.Death.Slam.Lockon = 
+	{
+		base = "Base.Ability.Ult"
+		volume = 5.000000
+		pitch_rand_min = -0.025000
+		pitch_rand_max = 0.100000
+		block_duration = 0.050000
+		vsnd_files = 
+		[
+			"sounds/abilities/lash/a4_death_slam/lash_death_slam_lockon_01.vsnd",
+			"sounds/abilities/lash/a4_death_slam/lash_death_slam_lockon_02.vsnd",
+			"sounds/abilities/lash/a4_death_slam/lash_death_slam_lockon_03.vsnd",
+		]
+		vsnd_duration = 1.933537
+	}
+	Lash.A4.Death.Slam.Lockon.Victim = 
+	{
+		base = "Base.Ability.StatusEffect"
+		volume = 2.000000
+		vsnd_files = "sounds/abilities/lash/a4_death_slam/lash_death_slam_lockon_victim.vsnd"
+		vsnd_duration = 2.315102
+	}
+	Lash.A4.Death.Slam.Grab = 
+	{
+		base = "Base.Ability.Ult"
+		volume = 0.000000
+		vsnd_files = "sounds/abilities/lash/a4_death_slam/lash_death_slam_cast.vsnd"
+		vsnd_duration = 2.893061
+	}
+	Lash.A4.Death.Slam.Throw = 
+	{
+		base = "Base.Ability.Ult"
+		volume = 2.000000
+		vsnd_files = "sounds/abilities/lash/a4_death_slam/lash_death_slam_launch.vsnd"
+		vsnd_duration = 4.942767
+	}
+	Lash.A4.Death.Slam.Impact = 
+	{
+		base = "Base.Ability.Ult.Detached"
+		volume = 3.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.100000
+		spread_max_value_opponent = 0.600000
+		limiter_on = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 0.000000
+		vsnd_files = 
+		[
+			"sounds/abilities/lash/a4_death_slam/lash_death_slam_impact_01.vsnd",
+			"sounds/abilities/lash/a4_death_slam/lash_death_slam_impact_02.vsnd",
+			"sounds/abilities/lash/a4_death_slam/lash_death_slam_impact_03.vsnd",
+		]
+		vsnd_duration = 2.585465
+	}
+	Lash.A4.Death.Slam.Channel.Lp = 
+	{
+		base = "Base.Ability.Ult"
+		volume = -6.000000
+		volume_offset_opponent = 2.000000
+		volume_enemy_targeting_boost = 6.000000
+		volume_fade_in = 0.150000
+		volume_fade_out = 0.250000
+		param_envelope_enabled = 1.000000
+		param_envelope_duration = 4.000000
+		pitch_envelope_scale_min = 0.700000
+		pitch_envelope_scale_max = 1.500000
+		delay_rand_min = -3.000000
+		vsnd_files = "sounds/abilities/lash/a4_death_slam/lash_death_slam_channel_lp.vsnd"
+		vsnd_duration = 8.957823
+	}
+	Lash.A4.Death.Slam.Miss = 
+	{
+		base = "Base.Ability.Ult"
+		volume = -6.000000
+		volume_offset_opponent = 6.000000
+		vsnd_files = "sounds/abilities/lash/a4_death_slam/lash_death_slam_miss.vsnd"
+		vsnd_duration = 2.512812
+	}
+	Lash.Movement.Long = 
+	{
+		base = "Base.Movement"
+		volume = -4.000000
+	}
+	Lash.Movement.Short = 
+	{
+		base = "Base.Movement"
+		volume = -2.000000
+		vsnd_files = 
+		[
+			"sounds/player/movement/lash/lash_movement_foley_short_01.vsnd",
+			"sounds/player/movement/lash/lash_movement_foley_short_02.vsnd",
+			"sounds/player/movement/lash/lash_movement_foley_short_03.vsnd",
+			"sounds/player/movement/lash/lash_movement_foley_short_04.vsnd",
+			"sounds/player/movement/lash/lash_movement_foley_short_05.vsnd",
+			"sounds/player/movement/lash/lash_movement_foley_short_06.vsnd",
+			"sounds/player/movement/lash/lash_movement_foley_short_07.vsnd",
+			"sounds/player/movement/lash/lash_movement_foley_short_08.vsnd",
+			"sounds/player/movement/lash/lash_movement_foley_short_09.vsnd",
+			"sounds/player/movement/lash/lash_movement_foley_short_10.vsnd",
+			"sounds/player/movement/lash/lash_movement_foley_short_11.vsnd",
+			"sounds/player/movement/lash/lash_movement_foley_short_12.vsnd",
+			"sounds/player/movement/lash/lash_movement_foley_short_13.vsnd",
+			"sounds/player/movement/lash/lash_movement_foley_short_14.vsnd",
+			"sounds/player/movement/lash/lash_movement_foley_short_15.vsnd",
+		]
+		vsnd_duration = 0.305714
+	}
+	Lash.JumpLand = 
+	{
+		base = "Base.Footsteps.JumpLand"
+		track_2.vsnd_track_vol_offset_db = -4.000000
+		vsnd_files = 
+		[
+			"sounds/player/footsteps/lash/lash_footstep_01.vsnd",
+			"sounds/player/footsteps/lash/lash_footstep_02.vsnd",
+			"sounds/player/footsteps/lash/lash_footstep_03.vsnd",
+			"sounds/player/footsteps/lash/lash_footstep_04.vsnd",
+			"sounds/player/footsteps/lash/lash_footstep_05.vsnd",
+			"sounds/player/footsteps/lash/lash_footstep_06.vsnd",
+			"sounds/player/footsteps/lash/lash_footstep_07.vsnd",
+			"sounds/player/footsteps/lash/lash_footstep_08.vsnd",
+			"sounds/player/footsteps/lash/lash_footstep_09.vsnd",
+			"sounds/player/footsteps/lash/lash_footstep_10.vsnd",
+			"sounds/player/footsteps/lash/lash_footstep_11.vsnd",
+			"sounds/player/footsteps/lash/lash_footstep_12.vsnd",
+			"sounds/player/footsteps/lash/lash_footstep_13.vsnd",
+			"sounds/player/footsteps/lash/lash_footstep_14.vsnd",
+			"sounds/player/footsteps/lash/lash_footstep_15.vsnd",
+		]
+		track_2.track_vsnd_files = 
+		[
+			"sounds/player/movement/generic/foley_light/default_foley_01.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_02.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_03.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_04.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_05.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_06.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_07.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_08.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_09.vsnd",
+		]
+		vsnd_duration = 0.805714
+	}
+	Lash.Mantle = 
+	{
+		base = "Base.Movement"
+		volume = -4.000000
+	}
+	Lash.Melee.Swing = 
+	{
+		base = "Base.Movement.Melee"
+		track_2.vsnd_track_vol_offset_db = -5.000000
+		vsnd_files = 
+		[
+			"sounds/player/melee/shared/swing_short_01.vsnd",
+			"sounds/player/melee/shared/swing_short_02.vsnd",
+			"sounds/player/melee/shared/swing_short_03.vsnd",
+			"sounds/player/melee/shared/swing_short_04.vsnd",
+			"sounds/player/melee/shared/swing_short_05.vsnd",
+			"sounds/player/melee/shared/swing_short_06.vsnd",
+			"sounds/player/melee/shared/swing_short_07.vsnd",
+			"sounds/player/melee/shared/swing_short_08.vsnd",
+			"sounds/player/melee/shared/swing_short_09.vsnd",
+			"sounds/player/melee/shared/swing_short_10.vsnd",
+			"sounds/player/melee/shared/swing_short_11.vsnd",
+			"sounds/player/melee/shared/swing_short_12.vsnd",
+			"sounds/player/melee/shared/swing_short_13.vsnd",
+			"sounds/player/melee/shared/swing_short_14.vsnd",
+			"sounds/player/melee/shared/swing_short_15.vsnd",
+			"sounds/player/melee/shared/swing_short_16.vsnd",
+			"sounds/player/melee/shared/swing_short_17.vsnd",
+			"sounds/player/melee/shared/swing_short_18.vsnd",
+			"sounds/player/melee/shared/swing_short_19.vsnd",
+			"sounds/player/melee/shared/swing_short_20.vsnd",
+			"sounds/player/melee/shared/swing_short_21.vsnd",
+			"sounds/player/melee/shared/swing_short_22.vsnd",
+			"sounds/player/melee/shared/swing_short_23.vsnd",
+			"sounds/player/melee/shared/swing_short_24.vsnd",
+		]
+		track_2.track_vsnd_files = 
+		[
+			"sounds/player/movement/lash/lash_movement_foley_short_01.vsnd",
+			"sounds/player/movement/lash/lash_movement_foley_short_02.vsnd",
+			"sounds/player/movement/lash/lash_movement_foley_short_03.vsnd",
+			"sounds/player/movement/lash/lash_movement_foley_short_04.vsnd",
+			"sounds/player/movement/lash/lash_movement_foley_short_05.vsnd",
+			"sounds/player/movement/lash/lash_movement_foley_short_06.vsnd",
+			"sounds/player/movement/lash/lash_movement_foley_short_07.vsnd",
+			"sounds/player/movement/lash/lash_movement_foley_short_08.vsnd",
+			"sounds/player/movement/lash/lash_movement_foley_short_09.vsnd",
+			"sounds/player/movement/lash/lash_movement_foley_short_10.vsnd",
+			"sounds/player/movement/lash/lash_movement_foley_short_11.vsnd",
+			"sounds/player/movement/lash/lash_movement_foley_short_12.vsnd",
+			"sounds/player/movement/lash/lash_movement_foley_short_13.vsnd",
+			"sounds/player/movement/lash/lash_movement_foley_short_14.vsnd",
+			"sounds/player/movement/lash/lash_movement_foley_short_15.vsnd",
+		]
+		vsnd_duration = 1.062208
+	}
+	Lash.Melee.Swing.Charged = 
+	{
+		base = "Base.Movement.Melee"
+		track_2.vsnd_track_vol_offset_db = -5.000000
+		vsnd_files = 
+		[
+			"sounds/player/melee/shared/swing_long_01.vsnd",
+			"sounds/player/melee/shared/swing_long_02.vsnd",
+			"sounds/player/melee/shared/swing_long_03.vsnd",
+			"sounds/player/melee/shared/swing_long_04.vsnd",
+			"sounds/player/melee/shared/swing_long_05.vsnd",
+			"sounds/player/melee/shared/swing_long_06.vsnd",
+			"sounds/player/melee/shared/swing_long_07.vsnd",
+			"sounds/player/melee/shared/swing_long_08.vsnd",
+			"sounds/player/melee/shared/swing_long_09.vsnd",
+			"sounds/player/melee/shared/swing_long_10.vsnd",
+			"sounds/player/melee/shared/swing_long_11.vsnd",
+			"sounds/player/melee/shared/swing_long_12.vsnd",
+			"sounds/player/melee/shared/swing_long_13.vsnd",
+			"sounds/player/melee/shared/swing_long_14.vsnd",
+			"sounds/player/melee/shared/swing_long_15.vsnd",
+			"sounds/player/melee/shared/swing_long_16.vsnd",
+			"sounds/player/melee/shared/swing_long_17.vsnd",
+			"sounds/player/melee/shared/swing_long_18.vsnd",
+			"sounds/player/melee/shared/swing_long_19.vsnd",
+			"sounds/player/melee/shared/swing_long_20.vsnd",
+			"sounds/player/melee/shared/swing_long_21.vsnd",
+			"sounds/player/melee/shared/swing_long_22.vsnd",
+			"sounds/player/melee/shared/swing_long_23.vsnd",
+			"sounds/player/melee/shared/swing_long_24.vsnd",
+			"sounds/player/melee/shared/swing_long_25.vsnd",
+		]
+		track_2.track_vsnd_files = 
+		[
+			"sounds/player/movement/lash/lash_movement_foley_short_01.vsnd",
+			"sounds/player/movement/lash/lash_movement_foley_short_02.vsnd",
+			"sounds/player/movement/lash/lash_movement_foley_short_03.vsnd",
+			"sounds/player/movement/lash/lash_movement_foley_short_04.vsnd",
+			"sounds/player/movement/lash/lash_movement_foley_short_05.vsnd",
+			"sounds/player/movement/lash/lash_movement_foley_short_06.vsnd",
+			"sounds/player/movement/lash/lash_movement_foley_short_07.vsnd",
+			"sounds/player/movement/lash/lash_movement_foley_short_08.vsnd",
+			"sounds/player/movement/lash/lash_movement_foley_short_09.vsnd",
+			"sounds/player/movement/lash/lash_movement_foley_short_10.vsnd",
+			"sounds/player/movement/lash/lash_movement_foley_short_11.vsnd",
+			"sounds/player/movement/lash/lash_movement_foley_short_12.vsnd",
+			"sounds/player/movement/lash/lash_movement_foley_short_13.vsnd",
+			"sounds/player/movement/lash/lash_movement_foley_short_14.vsnd",
+			"sounds/player/movement/lash/lash_movement_foley_short_15.vsnd",
+		]
+		vsnd_duration = 1.399792
+	}
+	Lash.Footstep = 
+	{
+		base = "Base.Footsteps"
+		track_1.vsnd_track_vol_offset_db = -5.000000
+		track_2.vsnd_track_vol_offset_db = -13.000000
+		vsnd_files = 
+		[
+			"sounds/player/footsteps/lash/lash_footstep_01.vsnd",
+			"sounds/player/footsteps/lash/lash_footstep_02.vsnd",
+			"sounds/player/footsteps/lash/lash_footstep_03.vsnd",
+			"sounds/player/footsteps/lash/lash_footstep_04.vsnd",
+			"sounds/player/footsteps/lash/lash_footstep_05.vsnd",
+			"sounds/player/footsteps/lash/lash_footstep_06.vsnd",
+			"sounds/player/footsteps/lash/lash_footstep_07.vsnd",
+			"sounds/player/footsteps/lash/lash_footstep_08.vsnd",
+			"sounds/player/footsteps/lash/lash_footstep_09.vsnd",
+			"sounds/player/footsteps/lash/lash_footstep_10.vsnd",
+			"sounds/player/footsteps/lash/lash_footstep_11.vsnd",
+			"sounds/player/footsteps/lash/lash_footstep_12.vsnd",
+			"sounds/player/footsteps/lash/lash_footstep_13.vsnd",
+			"sounds/player/footsteps/lash/lash_footstep_14.vsnd",
+			"sounds/player/footsteps/lash/lash_footstep_15.vsnd",
+		]
+		track_2.track_vsnd_files = 
+		[
+			"sounds/player/movement/lash/lash_movement_foley_short_01.vsnd",
+			"sounds/player/movement/lash/lash_movement_foley_short_02.vsnd",
+			"sounds/player/movement/lash/lash_movement_foley_short_03.vsnd",
+			"sounds/player/movement/lash/lash_movement_foley_short_04.vsnd",
+			"sounds/player/movement/lash/lash_movement_foley_short_05.vsnd",
+			"sounds/player/movement/lash/lash_movement_foley_short_06.vsnd",
+			"sounds/player/movement/lash/lash_movement_foley_short_07.vsnd",
+			"sounds/player/movement/lash/lash_movement_foley_short_08.vsnd",
+			"sounds/player/movement/lash/lash_movement_foley_short_09.vsnd",
+			"sounds/player/movement/lash/lash_movement_foley_short_10.vsnd",
+			"sounds/player/movement/lash/lash_movement_foley_short_11.vsnd",
+			"sounds/player/movement/lash/lash_movement_foley_short_12.vsnd",
+			"sounds/player/movement/lash/lash_movement_foley_short_13.vsnd",
+			"sounds/player/movement/lash/lash_movement_foley_short_14.vsnd",
+			"sounds/player/movement/lash/lash_movement_foley_short_15.vsnd",
+		]
+		vsnd_duration = 0.805714
+	}
+	Lash.Progession.Page.Win.VO = 
+	{
+		base = "Base.VO.HeroVictory"
+		context_name = "lash"
+		vsnd_files = 
+		[
+			"sounds/vo/lash/lash_kill_anyhero_02.vsnd",
+			"sounds/vo/lash/lash_happy_06.vsnd",
+			"sounds/vo/lash/lash_happy_07.vsnd",
+			"sounds/vo/lash/lash_congrats_04.vsnd",
+			"sounds/vo/lash/lash_killstreak_start_03.vsnd",
+			"sounds/vo/lash/lash_melee_kill_04.vsnd",
+		]
+		vsnd_duration = 2.133991
+	}
+	Lash.Progession.Page.Lose.VO = 
+	{
+		base = "Base.VO.HeroVictory"
+		context_name = "lash"
+		vsnd_files = 
+		[
+			"sounds/vo/lash/lash_sad_06.vsnd",
+			"sounds/vo/lash/lash_concerned_10.vsnd",
+			"sounds/vo/lash/lash_close_call_03.vsnd",
+			"sounds/vo/lash/lash_near_miss_01.vsnd",
+		]
+		vsnd_duration = 3.100930
+	}
+}

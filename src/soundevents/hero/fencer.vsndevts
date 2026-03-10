@@ -1,0 +1,723 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	Fencer.Wpn.Fire = 
+	{
+		base = "Base.Weapon"
+		volume = 3.000000
+		last_shot_vol_offset_db = 2.000000
+		pitch_rand_min = -0.020000
+		pitch_rand_max = 0.020000
+		tail_vol_offset_db = -7.500000
+		source_reverb_level = 2.500000
+		low_ammo_vol_offset_db = 4.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/fencer/fencer_wpn_fire_01.vsnd",
+			"sounds/weapons/fencer/fencer_wpn_fire_02.vsnd",
+			"sounds/weapons/fencer/fencer_wpn_fire_03.vsnd",
+			"sounds/weapons/fencer/fencer_wpn_fire_04.vsnd",
+			"sounds/weapons/fencer/fencer_wpn_fire_05.vsnd",
+		]
+		vsnd_files_tail = 
+		[
+			"sounds/weapons/fencer/fencer_weapon_tail_01.vsnd",
+			"sounds/weapons/fencer/fencer_weapon_tail_02.vsnd",
+			"sounds/weapons/fencer/fencer_weapon_tail_03.vsnd",
+			"sounds/weapons/fencer/fencer_weapon_tail_04.vsnd",
+			"sounds/weapons/fencer/fencer_weapon_tail_05.vsnd",
+			"sounds/weapons/fencer/fencer_weapon_tail_06.vsnd",
+			"sounds/weapons/fencer/fencer_weapon_tail_07.vsnd",
+		]
+		low_ammo_progress_offset_db = 
+		[
+			
+			[
+				0.000000,
+				-30.035713,
+				0.000000,
+				77.711655,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				0.171651,
+				-3.696429,
+				17.035713,
+				17.035713,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				4.462405,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		fire_rate_percent_curve_db_offset = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				-0.059997,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				100.000000,
+				-4.500000,
+				-0.059997,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		vsnd_files_low_ammo = 
+		[
+			"sounds/weapons/fencer/fencer_weapon_mech_01.vsnd",
+			"sounds/weapons/fencer/fencer_weapon_mech_02.vsnd",
+			"sounds/weapons/fencer/fencer_weapon_mech_03.vsnd",
+			"sounds/weapons/fencer/fencer_weapon_mech_04.vsnd",
+			"sounds/weapons/fencer/fencer_weapon_mech_05.vsnd",
+			"sounds/weapons/fencer/fencer_weapon_mech_06.vsnd",
+		]
+		vsnd_files_last_shot = 
+		[
+			"sounds/weapons/fencer/fencer_last_shot_01.vsnd",
+		]
+		vsnd_duration = 2.319388
+	}
+	Fencer.Wpn.Reload.Start = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = 3.000000
+		mono_downmix_enabled = 0.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/fencer/reload/fencer_reload_start_01.vsnd",
+			"sounds/weapons/fencer/reload/fencer_reload_start_02.vsnd",
+			"sounds/weapons/fencer/reload/fencer_reload_start_03.vsnd",
+		]
+		vsnd_duration = 2.500839
+	}
+	Fencer.Wpn.Reload.Mid = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = 3.000000
+		mono_downmix_enabled = 0.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/fencer/reload/fencer_reload_mid_01.vsnd",
+			"sounds/weapons/fencer/reload/fencer_reload_mid_02.vsnd",
+			"sounds/weapons/fencer/reload/fencer_reload_mid_03.vsnd",
+		]
+		vsnd_duration = 2.011723
+	}
+	Fencer.Wpn.Reload.End = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = -1.000000
+		mono_downmix_enabled = 0.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/fencer/reload/fencer_reload_end_01.vsnd",
+			"sounds/weapons/fencer/reload/fencer_reload_end_02.vsnd",
+			"sounds/weapons/fencer/reload/fencer_reload_end_03.vsnd",
+		]
+		vsnd_duration = 1.795782
+	}
+	Fencer.Sigil.Cast = 
+	{
+		base = "Base.Ability"
+		volume = -8.000000
+		pitch_rand_min = -0.020000
+		pitch_rand_max = 0.020000
+		vsnd_files = "sounds/abilities/fencer/sigil/fencer_sigil_cast_01.vsnd"
+		vsnd_duration = 1.216621
+	}
+	Fencer.Sigil.Cast.Delay = 
+	{
+		base = "Base.Ability"
+		volume = 0.000000
+		volume_offset_opponent = 3.000000
+		pitch_rand_min = -0.020000
+		pitch_rand_max = 0.020000
+		vsnd_files = "sounds/abilities/fencer/sigil/fencer_sigil_cast_delay.vsnd"
+		vsnd_duration = 1.144921
+	}
+	Fencer.Sigil.AOE.Warning = 
+	{
+		base = "Base.Ability.Detached"
+		volume = -4.000000
+		pitch = 1.100000
+		volume_offset_opponent = 3.000000
+		volume_offset_team = -6.000000
+		volume_fade_out = 0.600000
+		vsnd_files = "sounds/abilities/fencer/sigil/fencer_sigil_aoe_warning.vsnd"
+		vsnd_duration = 2.967551
+	}
+	Fencer.Sigil.AOE.End = 
+	{
+		base = "Base.Ability.Detached"
+		volume = -1.000000
+		pitch_rand_min = -0.020000
+		pitch_rand_max = 0.020000
+		vsnd_files = "sounds/abilities/fencer/sigil/fencer_sigil_aoe_end.vsnd"
+		vsnd_duration = 2.954195
+	}
+	Fencer.Sigil.Hit = 
+	{
+		base = "Base.Ability.Hit"
+		volume = 1.000000
+		limiter_max = 3.000000
+		pitch_rand_min = -0.030000
+		pitch_rand_max = 0.030000
+		vsnd_files = 
+		[
+			"sounds/abilities/fencer/sigil/fencer_sigil_hit_confirm_01.vsnd",
+			"sounds/abilities/fencer/sigil/fencer_sigil_hit_confirm_02.vsnd",
+			"sounds/abilities/fencer/sigil/fencer_sigil_hit_confirm_03.vsnd",
+		]
+		vsnd_duration = 1.830363
+	}
+	Fencer.Lunge.Cast.Delay = 
+	{
+		base = "Base.Ability"
+		volume = 1.000000
+		volume_offset_opponent = 3.000000
+		vsnd_files = 
+		[
+			"sounds/abilities/fencer/lunge/fencer_lunge_cast_delay_01.vsnd",
+			"sounds/abilities/fencer/lunge/fencer_lunge_cast_delay_02.vsnd",
+			"sounds/abilities/fencer/lunge/fencer_lunge_cast_delay_03.vsnd",
+		]
+		vsnd_duration = 1.640249
+	}
+	Fencer.Lunge.Cast = 
+	{
+		base = "Base.Ability"
+		volume = 2.000000
+		pitch_rand_min = -0.020000
+		pitch_rand_max = 0.020000
+		vsnd_files = 
+		[
+			"sounds/abilities/fencer/lunge/fencer_lunge_cast_01.vsnd",
+			"sounds/abilities/fencer/lunge/fencer_lunge_cast_02.vsnd",
+			"sounds/abilities/fencer/lunge/fencer_lunge_cast_03.vsnd",
+		]
+		vsnd_duration = 1.996599
+	}
+	Fencer.Lunge.MaxHold.Sweetener = 
+	{
+		base = "Base.Ability"
+		volume = 3.000000
+		pitch_rand_min = -0.020000
+		pitch_rand_max = 0.020000
+		vsnd_files = 
+		[
+			"sounds/abilities/fencer/lunge/fencer_lunge_maxhold_01.vsnd",
+			"sounds/abilities/fencer/lunge/fencer_lunge_maxhold_02.vsnd",
+			"sounds/abilities/fencer/lunge/fencer_lunge_maxhold_03.vsnd",
+		]
+		vsnd_duration = 1.560726
+	}
+	Fencer.Lunge.HitConfirm = 
+	{
+		base = "Base.Ability.Hit"
+		volume = 4.000000
+		volume_offset_attacker_db = 5.000000
+		pitch_rand_min = -0.020000
+		pitch_rand_max = 0.020000
+		vsnd_files = 
+		[
+			"sounds/abilities/fencer/lunge/fencer_lunge_hit_confirm_01.vsnd",
+			"sounds/abilities/fencer/lunge/fencer_lunge_hit_confirm_02.vsnd",
+			"sounds/abilities/fencer/lunge/fencer_lunge_hit_confirm_03.vsnd",
+		]
+		vsnd_duration = 1.799841
+	}
+	Fencer.Lunge.HitConfirm.Perfect = 
+	{
+		base = "Base.Ability.Hit"
+		volume = 4.000000
+		volume_offset_attacker_db = 6.000000
+		pitch_rand_min = -0.020000
+		pitch_rand_max = 0.020000
+		vsnd_files = 
+		[
+			"sounds/abilities/fencer/lunge/fencer_lunge_perfect_hit_01.vsnd",
+			"sounds/abilities/fencer/lunge/fencer_lunge_perfect_hit_02.vsnd",
+			"sounds/abilities/fencer/lunge/fencer_lunge_perfect_hit_03.vsnd",
+		]
+		vsnd_duration = 1.835737
+	}
+	Fencer.Lunge.MaxStacks.Proc = 
+	{
+		base = "Base.Ability.StatusEffect"
+		volume = 1.000000
+		vsnd_files = "sounds/mods/weapon/blood_tribute/blood_tribute_activate_01.vsnd"
+		vsnd_duration = 2.007687
+	}
+	Fencer.Lunge.Charge.Lp = 
+	{
+		base = "Base.Ability.StatusEffect"
+		volume = 0.000000
+		volume_fade_in = 0.125000
+		volume_fade_out = 0.300000
+		vsnd_files = "sounds/abilities/fencer/lunge/fencer_lunge_charge.vsnd"
+		vsnd_duration = 2.134377
+	}
+	Fencer.Lunge.Charge.Glint = 
+	{
+		base = "Base.Ability.StatusEffect"
+		volume = 0.000000
+		vsnd_files = "sounds/abilities/fencer/lunge/fencer_lunge_charge_glint.vsnd"
+		vsnd_duration = 1.387143
+	}
+	Fencer.Riposte.Cast = 
+	{
+		base = "Base.Ability"
+		volume = 3.000000
+		volume_offset_opponent = 3.000000
+		pitch_rand_min = -0.020000
+		pitch_rand_max = 0.020000
+		vsnd_files = "sounds/abilities/fencer/riposte/fencer_riposte_cast.vsnd"
+		vsnd_duration = 2.221179
+	}
+	Fencer.Riposte.Success = 
+	{
+		base = "Base.Ability"
+		volume = 6.000000
+		volume_offset_opponent = 3.000000
+		pitch_rand_min = -0.020000
+		pitch_rand_max = 0.020000
+		vsnd_files = "sounds/abilities/fencer/riposte/fencer_riposte_success.vsnd"
+		vsnd_duration = 2.641066
+	}
+	Fencer.Riposte.Counterattack.Cast = 
+	{
+		base = "Base.Ability"
+		volume = 4.000000
+		pitch = 1.100000
+		vsnd_files = 
+		[
+			"sounds/abilities/fencer/riposte/fencer_riposte_counterattack_cast_01.vsnd",
+			"sounds/abilities/fencer/riposte/fencer_riposte_counterattack_cast_02.vsnd",
+			"sounds/abilities/fencer/riposte/fencer_riposte_counterattack_cast_03.vsnd",
+		]
+		vsnd_duration = 2.336304
+	}
+	Fencer.Riposte.Counterattack.Impact = 
+	{
+		base = "Base.Ability.Hit"
+		filter_include_others = true
+		volume = 5.000000
+		volume_offset_attacker_db = 3.000000
+		vsnd_files = "sounds/abilities/fencer/riposte/fencer_riposte_counterattack_impact.vsnd"
+		vsnd_duration = 2.641066
+	}
+	Fencer.Riposte.Counterattack.Mod.Lp = 
+	{
+		base = "Base.Ability.StatusEffect"
+		volume = 1.000000
+		volume_fade_in = 0.050000
+		volume_fade_out = 0.200000
+		delay_rand_min = -4.000000
+		volume_offset_team = -6.000000
+		param_envelope_enabled = 1.000000
+		pitch_envelope_scale_min = 0.500000
+		pitch_envelope_scale_max = 1.500000
+		vsnd_files = "sounds/abilities/fencer/riposte/fencer_riposte_counterattack_mod_lp.vsnd"
+		vsnd_duration = 4.162631
+	}
+	Fencer.Riposte.Counterattack.Mod.Expire = 
+	{
+		base = "Base.Ability.StatusEffect"
+		volume = 2.000000
+		volume_offset_team = -6.000000
+		vsnd_files = "sounds/abilities/fencer/riposte/fencer_riposte_counterattack_mod_expire.vsnd"
+		vsnd_duration = 2.023356
+	}
+	Fencer.Super.Slash.Cast.Delay = 
+	{
+		base = "Base.Ability.Ult"
+		volume = 4.000000
+		volume_offset_opponent = 2.000000
+		vsnd_files = "sounds/abilities/fencer/super_slash/fencer_super_slash_cast_delay.vsnd"
+		vsnd_duration = 3.646417
+	}
+	Fencer.Super.Slash.Cast = 
+	{
+		base = "Base.Ability.Ult"
+		volume = 5.000000
+		volume_offset_opponent = 3.000000
+		vsnd_files = "sounds/abilities/fencer/super_slash/fencer_super_slash_cast.vsnd"
+		vsnd_duration = 4.372744
+	}
+	Fencer.Super.Slash.Channel = 
+	{
+		base = "Base.Ability.Ult"
+		volume = 5.000000
+		volume_fade_in = 0.200000
+		volume_fade_out = 1.000000
+		volume_enemy_targeting_boost = 4.000000
+		vsnd_files = "sounds/abilities/fencer/super_slash/fencer_super_slash_channel.vsnd"
+		vsnd_duration = 3.611089
+	}
+	Fencer.Super.Slash.Channel.Lp = 
+	{
+		base = "Base.Ability.Ult"
+		volume = -5.000000
+		volume_fade_in = 0.100000
+		volume_fade_out = 0.300000
+		pitch = 1.250000
+		volume_enemy_targeting_boost = 4.000000
+		vsnd_files = "sounds/abilities/fencer/super_slash/fencer_super_slash_caster_arrival_mod_lp.vsnd"
+		vsnd_duration = 4.162631
+	}
+	Fencer.Super.Slash.Hit = 
+	{
+		base = "Base.Ability.Hit"
+		filter_include_others = true
+		volume = 4.000000
+		volume_offset_attacker_db = 4.000000
+		volume_offset_victim_db = 4.000000
+		pitch = 0.900000
+		limiter_max = 6.000000
+		pitch_increment_count_max = 8.000000
+		incremental_pitch_offset = 0.125000
+		vsnd_files = 
+		[
+			"sounds/abilities/fencer/super_slash/fencer_super_slash_hit_confirm_01.vsnd",
+			"sounds/abilities/fencer/super_slash/fencer_super_slash_hit_confirm_02.vsnd",
+			"sounds/abilities/fencer/super_slash/fencer_super_slash_hit_confirm_03.vsnd",
+		]
+		instance_count_offset_amount_db = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				-0.293897,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				-0.300000,
+				-3.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				4.000000,
+				-3.000000,
+				-0.300000,
+				-30,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				7.000000,
+				-8.000000,
+				-3.243744,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		vsnd_duration = 2.992268
+	}
+	Fencer.Super.Slash.Target.Mod.Lp = 
+	{
+		base = "Base.Ability.StatusEffect"
+		volume = 1.000000
+		vsnd_files = "sounds/abilities/fencer/super_slash/fencer_super_slash_victim_mod_timer.vsnd"
+		vsnd_duration = 2.530612
+	}
+	Fencer.Super.Slash.Target.Mod.Expire = 
+	{
+		base = "Base.Ability.StatusEffect"
+		volume = 4.000000
+		volume_offset_opponent = 3.000000
+		volume_offset_player = 3.000000
+		pitch_rand_min = -0.040000
+		pitch_rand_max = 0.040000
+		limiter_max = 8.000000
+		vsnd_files = 
+		[
+			"sounds/abilities/fencer/super_slash/fencer_super_slash_victim_mod_end_01.vsnd",
+			"sounds/abilities/fencer/super_slash/fencer_super_slash_victim_mod_end_02.vsnd",
+			"sounds/abilities/fencer/super_slash/fencer_super_slash_victim_mod_end_03.vsnd",
+		]
+		instance_count_offset_amount_db = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				-0.293897,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				-0.300000,
+				-3.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				5.000000,
+				-5.000000,
+				-0.300000,
+				-30,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				8.000000,
+				-14.000000,
+				-3.243744,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		vsnd_duration = 3.305578
+	}
+	Fencer.Super.Slash.Caster.Arrival.Mod.Lp = 
+	{
+		base = "Base.Ability.StatusEffect"
+		volume = 2.000000
+		volume_fade_in = 0.100000
+		volume_fade_out = 0.500000
+		block_opponent = true
+		vsnd_files = "sounds/abilities/fencer/super_slash/fencer_super_slash_caster_mod_timer.vsnd"
+		vsnd_duration = 4.034807
+	}
+	Fencer.Super.Slash.Caster.Mod.Expire = 
+	{
+		base = "Base.Ability.StatusEffect"
+		volume = -4.000000
+		vsnd_files = "sounds/abilities/fencer/super_slash/fencer_super_slash_caster_arrival_mod_end.vsnd"
+		vsnd_duration = 2.971111
+	}
+	Fencer.JumpLand = 
+	{
+		base = "Base.Footsteps.JumpLand"
+		volume = -8.000000
+		track_2.vsnd_track_vol_offset_db = 6.000000
+		vsnd_files = 
+		[
+			"sounds/player/footsteps/fencer/fencer_footstep_01.vsnd",
+			"sounds/player/footsteps/fencer/fencer_footstep_02.vsnd",
+			"sounds/player/footsteps/fencer/fencer_footstep_03.vsnd",
+			"sounds/player/footsteps/fencer/fencer_footstep_04.vsnd",
+			"sounds/player/footsteps/fencer/fencer_footstep_05.vsnd",
+			"sounds/player/footsteps/fencer/fencer_footstep_06.vsnd",
+			"sounds/player/footsteps/fencer/fencer_footstep_07.vsnd",
+			"sounds/player/footsteps/fencer/fencer_footstep_08.vsnd",
+			"sounds/player/footsteps/fencer/fencer_footstep_09.vsnd",
+			"sounds/player/footsteps/fencer/fencer_footstep_10.vsnd",
+			"sounds/player/footsteps/fencer/fencer_footstep_11.vsnd",
+			"sounds/player/footsteps/fencer/fencer_footstep_12.vsnd",
+		]
+		track_2.track_vsnd_files = 
+		[
+			"sounds/player/movement/holliday/astro_foley_light_01.vsnd",
+			"sounds/player/movement/holliday/astro_foley_light_02.vsnd",
+			"sounds/player/movement/holliday/astro_foley_light_03.vsnd",
+			"sounds/player/movement/holliday/astro_foley_light_04.vsnd",
+			"sounds/player/movement/holliday/astro_foley_light_05.vsnd",
+			"sounds/player/movement/holliday/astro_foley_light_06.vsnd",
+			"sounds/player/movement/holliday/astro_foley_light_07.vsnd",
+			"sounds/player/movement/holliday/astro_foley_light_08.vsnd",
+			"sounds/player/movement/holliday/astro_foley_light_09.vsnd",
+		]
+		vsnd_duration = 0.295533
+	}
+	Fencer.Movement.Short = 
+	{
+		base = "Base.Movement"
+		volume = -11.000000
+		track_2.track_vsnd_files = 
+		[
+			"sounds/player/movement/holliday/astro_foley_light_01.vsnd",
+			"sounds/player/movement/holliday/astro_foley_light_02.vsnd",
+			"sounds/player/movement/holliday/astro_foley_light_03.vsnd",
+			"sounds/player/movement/holliday/astro_foley_light_04.vsnd",
+			"sounds/player/movement/holliday/astro_foley_light_05.vsnd",
+			"sounds/player/movement/holliday/astro_foley_light_06.vsnd",
+			"sounds/player/movement/holliday/astro_foley_light_07.vsnd",
+			"sounds/player/movement/holliday/astro_foley_light_08.vsnd",
+			"sounds/player/movement/holliday/astro_foley_light_09.vsnd",
+		]
+	}
+	Fencer.Movement.Long = 
+	{
+		base = "Base.Movement"
+		volume = -9.000000
+	}
+	Fencer.Melee.Swing = 
+	{
+		base = "Base.Movement.Melee"
+		track_2.vsnd_track_vol_offset_db = -6.000000
+		vsnd_files = 
+		[
+			"sounds/player/melee/shared/swing_short_01.vsnd",
+			"sounds/player/melee/shared/swing_short_02.vsnd",
+			"sounds/player/melee/shared/swing_short_03.vsnd",
+			"sounds/player/melee/shared/swing_short_04.vsnd",
+			"sounds/player/melee/shared/swing_short_05.vsnd",
+			"sounds/player/melee/shared/swing_short_06.vsnd",
+			"sounds/player/melee/shared/swing_short_07.vsnd",
+			"sounds/player/melee/shared/swing_short_08.vsnd",
+			"sounds/player/melee/shared/swing_short_09.vsnd",
+			"sounds/player/melee/shared/swing_short_10.vsnd",
+			"sounds/player/melee/shared/swing_short_11.vsnd",
+			"sounds/player/melee/shared/swing_short_12.vsnd",
+			"sounds/player/melee/shared/swing_short_13.vsnd",
+			"sounds/player/melee/shared/swing_short_14.vsnd",
+			"sounds/player/melee/shared/swing_short_15.vsnd",
+			"sounds/player/melee/shared/swing_short_16.vsnd",
+			"sounds/player/melee/shared/swing_short_17.vsnd",
+			"sounds/player/melee/shared/swing_short_18.vsnd",
+			"sounds/player/melee/shared/swing_short_19.vsnd",
+			"sounds/player/melee/shared/swing_short_20.vsnd",
+			"sounds/player/melee/shared/swing_short_21.vsnd",
+			"sounds/player/melee/shared/swing_short_22.vsnd",
+			"sounds/player/melee/shared/swing_short_23.vsnd",
+			"sounds/player/melee/shared/swing_short_24.vsnd",
+		]
+		track_2.track_vsnd_files = 
+		[
+			"sounds/player/movement/holliday/astro_foley_light_01.vsnd",
+			"sounds/player/movement/holliday/astro_foley_light_02.vsnd",
+			"sounds/player/movement/holliday/astro_foley_light_03.vsnd",
+			"sounds/player/movement/holliday/astro_foley_light_04.vsnd",
+			"sounds/player/movement/holliday/astro_foley_light_05.vsnd",
+			"sounds/player/movement/holliday/astro_foley_light_06.vsnd",
+			"sounds/player/movement/holliday/astro_foley_light_07.vsnd",
+			"sounds/player/movement/holliday/astro_foley_light_08.vsnd",
+			"sounds/player/movement/holliday/astro_foley_light_09.vsnd",
+		]
+		vsnd_duration = 1.062208
+	}
+	Fencer.Melee.Swing.Charged = 
+	{
+		base = "Base.Movement.Melee"
+		track_2.vsnd_track_vol_offset_db = -6.000000
+		vsnd_files = 
+		[
+			"sounds/player/melee/shared/swing_long_01.vsnd",
+			"sounds/player/melee/shared/swing_long_02.vsnd",
+			"sounds/player/melee/shared/swing_long_03.vsnd",
+			"sounds/player/melee/shared/swing_long_04.vsnd",
+			"sounds/player/melee/shared/swing_long_05.vsnd",
+			"sounds/player/melee/shared/swing_long_06.vsnd",
+			"sounds/player/melee/shared/swing_long_07.vsnd",
+			"sounds/player/melee/shared/swing_long_08.vsnd",
+			"sounds/player/melee/shared/swing_long_09.vsnd",
+			"sounds/player/melee/shared/swing_long_10.vsnd",
+			"sounds/player/melee/shared/swing_long_11.vsnd",
+			"sounds/player/melee/shared/swing_long_12.vsnd",
+			"sounds/player/melee/shared/swing_long_13.vsnd",
+			"sounds/player/melee/shared/swing_long_14.vsnd",
+			"sounds/player/melee/shared/swing_long_15.vsnd",
+			"sounds/player/melee/shared/swing_long_16.vsnd",
+			"sounds/player/melee/shared/swing_long_17.vsnd",
+			"sounds/player/melee/shared/swing_long_18.vsnd",
+			"sounds/player/melee/shared/swing_long_19.vsnd",
+			"sounds/player/melee/shared/swing_long_20.vsnd",
+			"sounds/player/melee/shared/swing_long_21.vsnd",
+			"sounds/player/melee/shared/swing_long_22.vsnd",
+			"sounds/player/melee/shared/swing_long_23.vsnd",
+			"sounds/player/melee/shared/swing_long_24.vsnd",
+			"sounds/player/melee/shared/swing_long_25.vsnd",
+		]
+		track_2.track_vsnd_files = 
+		[
+			"sounds/player/movement/holliday/astro_foley_light_01.vsnd",
+			"sounds/player/movement/holliday/astro_foley_light_02.vsnd",
+			"sounds/player/movement/holliday/astro_foley_light_03.vsnd",
+			"sounds/player/movement/holliday/astro_foley_light_04.vsnd",
+			"sounds/player/movement/holliday/astro_foley_light_05.vsnd",
+			"sounds/player/movement/holliday/astro_foley_light_06.vsnd",
+			"sounds/player/movement/holliday/astro_foley_light_07.vsnd",
+			"sounds/player/movement/holliday/astro_foley_light_08.vsnd",
+			"sounds/player/movement/holliday/astro_foley_light_09.vsnd",
+		]
+		vsnd_duration = 1.399792
+	}
+	Fencer.Footstep = 
+	{
+		base = "Base.Footsteps"
+		track_1.vsnd_track_vol_offset_db = -10.000000
+		track_2.vsnd_track_vol_offset_db = -6.000000
+		vsnd_files = 
+		[
+			"sounds/player/footsteps/fencer/fencer_footstep_01.vsnd",
+			"sounds/player/footsteps/fencer/fencer_footstep_02.vsnd",
+			"sounds/player/footsteps/fencer/fencer_footstep_03.vsnd",
+			"sounds/player/footsteps/fencer/fencer_footstep_04.vsnd",
+			"sounds/player/footsteps/fencer/fencer_footstep_05.vsnd",
+			"sounds/player/footsteps/fencer/fencer_footstep_06.vsnd",
+			"sounds/player/footsteps/fencer/fencer_footstep_07.vsnd",
+			"sounds/player/footsteps/fencer/fencer_footstep_08.vsnd",
+			"sounds/player/footsteps/fencer/fencer_footstep_09.vsnd",
+			"sounds/player/footsteps/fencer/fencer_footstep_10.vsnd",
+			"sounds/player/footsteps/fencer/fencer_footstep_11.vsnd",
+			"sounds/player/footsteps/fencer/fencer_footstep_12.vsnd",
+		]
+		track_2.track_vsnd_files = 
+		[
+			"sounds/player/movement/holliday/astro_foley_light_01.vsnd",
+			"sounds/player/movement/holliday/astro_foley_light_02.vsnd",
+			"sounds/player/movement/holliday/astro_foley_light_03.vsnd",
+			"sounds/player/movement/holliday/astro_foley_light_04.vsnd",
+			"sounds/player/movement/holliday/astro_foley_light_05.vsnd",
+			"sounds/player/movement/holliday/astro_foley_light_06.vsnd",
+			"sounds/player/movement/holliday/astro_foley_light_07.vsnd",
+			"sounds/player/movement/holliday/astro_foley_light_08.vsnd",
+			"sounds/player/movement/holliday/astro_foley_light_09.vsnd",
+		]
+		vsnd_duration = 0.295533
+	}
+	Fencer.Mantle = 
+	{
+		base = "Base.Movement"
+		volume = -3.000000
+	}
+	Fencer.Progession.Page.Win.VO = 
+	{
+		base = "Base.VO.HeroVictory"
+		context_name = "fencer"
+		vsnd_files = 
+		[
+			"sounds/vo/fencer/ping/fencer_ping_post_game_02.vsnd",
+			"sounds/vo/fencer/ping/fencer_ping_post_game_03.vsnd",
+			"sounds/vo/fencer/ping/fencer_ping_post_game_04.vsnd",
+			"sounds/vo/fencer/ping/fencer_ping_post_game_05.vsnd",
+			"sounds/vo/fencer/ping/fencer_ping_post_game_06.vsnd",
+		]
+		vsnd_duration = 4.090083
+	}
+}

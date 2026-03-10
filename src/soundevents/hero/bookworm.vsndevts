@@ -1,0 +1,560 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	Bookworm.Wpn.Fire = 
+	{
+		base = "Base.Weapon.Pistol"
+		volume = 2.000000
+		tail_vol_offset_db = -5.000000
+		tail_interior_vol_offset_db = -7.000000
+		last_shot_vol_offset_db = -1.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/bookworm/bookworm_wpn_fire_01.vsnd",
+			"sounds/weapons/bookworm/bookworm_wpn_fire_02.vsnd",
+			"sounds/weapons/bookworm/bookworm_wpn_fire_03.vsnd",
+			"sounds/weapons/bookworm/bookworm_wpn_fire_04.vsnd",
+			"sounds/weapons/bookworm/bookworm_wpn_fire_05.vsnd",
+			"sounds/weapons/bookworm/bookworm_wpn_fire_06.vsnd",
+		]
+		vsnd_files_last_shot = 
+		[
+			"sounds/weapons/bookworm/bookworm_wpn_last_shot_01.vsnd",
+		]
+		vsnd_duration = 1.901655
+	}
+	Bookworm.Wpn.Reload.Start = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = -2.000000
+		mono_downmix_enabled = 0.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/bookworm/bookworm_wpn_reload_start_01.vsnd",
+			"sounds/weapons/bookworm/bookworm_wpn_reload_start_02.vsnd",
+			"sounds/weapons/bookworm/bookworm_wpn_reload_start_03.vsnd",
+		]
+		vsnd_duration = 2.338073
+	}
+	Bookworm.Wpn.Reload.End = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = -2.000000
+		mono_downmix_enabled = 0.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/bookworm/bookworm_wpn_reload_end_01.vsnd",
+			"sounds/weapons/bookworm/bookworm_wpn_reload_end_02.vsnd",
+			"sounds/weapons/bookworm/bookworm_wpn_reload_end_03.vsnd",
+		]
+		vsnd_duration = 1.280136
+	}
+	Bookworm.Wpn.Whizby = 
+	{
+		base = "Base.Bullet.Whizby"
+		volume = -3.000000
+		whizby_time_to_peak = 0.150000
+		vsnd_files = 
+		[
+			"sounds/weapons/bookworm/whizbys/bookworm_weapon_whizby_01.vsnd",
+			"sounds/weapons/bookworm/whizbys/bookworm_weapon_whizby_02.vsnd",
+			"sounds/weapons/bookworm/whizbys/bookworm_weapon_whizby_03.vsnd",
+			"sounds/weapons/bookworm/whizbys/bookworm_weapon_whizby_04.vsnd",
+			"sounds/weapons/bookworm/whizbys/bookworm_weapon_whizby_05.vsnd",
+			"sounds/weapons/bookworm/whizbys/bookworm_weapon_whizby_06.vsnd",
+			"sounds/weapons/bookworm/whizbys/bookworm_weapon_whizby_07.vsnd",
+			"sounds/weapons/bookworm/whizbys/bookworm_weapon_whizby_08.vsnd",
+			"sounds/weapons/bookworm/whizbys/bookworm_weapon_whizby_09.vsnd",
+			"sounds/weapons/bookworm/whizbys/bookworm_weapon_whizby_10.vsnd",
+		]
+		vsnd_duration = 1.045488
+	}
+	Bookworm.Footstep = 
+	{
+		base = "Base.Footsteps"
+		track_1.vsnd_track_vol_offset_db = -5.000000
+		vsnd_files = 
+		[
+			"sounds/player/footsteps/wraith/wraith_footstep_01.vsnd",
+			"sounds/player/footsteps/wraith/wraith_footstep_02.vsnd",
+			"sounds/player/footsteps/wraith/wraith_footstep_04.vsnd",
+			"sounds/player/footsteps/wraith/wraith_footstep_06.vsnd",
+			"sounds/player/footsteps/wraith/wraith_footstep_07.vsnd",
+			"sounds/player/footsteps/wraith/wraith_footstep_08.vsnd",
+			"sounds/player/footsteps/wraith/wraith_footstep_09.vsnd",
+			"sounds/player/footsteps/wraith/wraith_footstep_10.vsnd",
+			"sounds/player/footsteps/wraith/wraith_footstep_11.vsnd",
+			"sounds/player/footsteps/wraith/wraith_footstep_13.vsnd",
+			"sounds/player/footsteps/wraith/wraith_footstep_14.vsnd",
+		]
+		vsnd_duration = 0.296803
+	}
+	Bookworm.Movement.Long = 
+	{
+		base = "Base.Movement"
+		volume = -4.000000
+	}
+	Bookworm.Movement.Short = 
+	{
+		base = "Base.Movement"
+		volume = -2.000000
+	}
+	Bookworm.JumpLand = 
+	{
+		base = "Base.Footsteps.JumpLand"
+		track_2.vsnd_track_vol_offset_db = -5.000000
+		vsnd_files = 
+		[
+			"sounds/player/footsteps/wraith/wraith_footstep_01.vsnd",
+			"sounds/player/footsteps/wraith/wraith_footstep_02.vsnd",
+			"sounds/player/footsteps/wraith/wraith_footstep_04.vsnd",
+			"sounds/player/footsteps/wraith/wraith_footstep_06.vsnd",
+			"sounds/player/footsteps/wraith/wraith_footstep_07.vsnd",
+			"sounds/player/footsteps/wraith/wraith_footstep_08.vsnd",
+			"sounds/player/footsteps/wraith/wraith_footstep_09.vsnd",
+			"sounds/player/footsteps/wraith/wraith_footstep_10.vsnd",
+			"sounds/player/footsteps/wraith/wraith_footstep_11.vsnd",
+			"sounds/player/footsteps/wraith/wraith_footstep_13.vsnd",
+			"sounds/player/footsteps/wraith/wraith_footstep_14.vsnd",
+		]
+		track_2.track_vsnd_files = 
+		[
+			"sounds/player/movement/generic/foley_light/default_foley_01.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_02.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_03.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_04.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_05.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_06.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_07.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_08.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_09.vsnd",
+		]
+		vsnd_duration = 0.296803
+	}
+	Bookworm.Mantle = 
+	{
+		base = "Base.Movement"
+		volume = -4.000000
+	}
+	Bookworm.Melee.Swing = 
+	{
+		base = "Base.Movement.Melee"
+		track_2.vsnd_track_vol_offset_db = -5.000000
+		vsnd_files = 
+		[
+			"sounds/player/melee/shared/swing_short_01.vsnd",
+			"sounds/player/melee/shared/swing_short_02.vsnd",
+			"sounds/player/melee/shared/swing_short_03.vsnd",
+			"sounds/player/melee/shared/swing_short_04.vsnd",
+			"sounds/player/melee/shared/swing_short_05.vsnd",
+			"sounds/player/melee/shared/swing_short_06.vsnd",
+			"sounds/player/melee/shared/swing_short_07.vsnd",
+			"sounds/player/melee/shared/swing_short_08.vsnd",
+			"sounds/player/melee/shared/swing_short_09.vsnd",
+			"sounds/player/melee/shared/swing_short_10.vsnd",
+			"sounds/player/melee/shared/swing_short_11.vsnd",
+			"sounds/player/melee/shared/swing_short_12.vsnd",
+			"sounds/player/melee/shared/swing_short_13.vsnd",
+			"sounds/player/melee/shared/swing_short_14.vsnd",
+			"sounds/player/melee/shared/swing_short_15.vsnd",
+			"sounds/player/melee/shared/swing_short_16.vsnd",
+			"sounds/player/melee/shared/swing_short_17.vsnd",
+			"sounds/player/melee/shared/swing_short_18.vsnd",
+			"sounds/player/melee/shared/swing_short_19.vsnd",
+			"sounds/player/melee/shared/swing_short_20.vsnd",
+			"sounds/player/melee/shared/swing_short_21.vsnd",
+			"sounds/player/melee/shared/swing_short_22.vsnd",
+			"sounds/player/melee/shared/swing_short_23.vsnd",
+			"sounds/player/melee/shared/swing_short_24.vsnd",
+		]
+		track_2.track_vsnd_files = 
+		[
+			"sounds/player/movement/generic/foley_light/default_foley_01.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_02.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_03.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_04.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_05.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_06.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_07.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_08.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_09.vsnd",
+		]
+		vsnd_duration = 1.062208
+	}
+	Bookworm.Melee.Swing.Charged = 
+	{
+		base = "Base.Movement.Melee"
+		track_2.vsnd_track_vol_offset_db = -5.000000
+		vsnd_files = 
+		[
+			"sounds/player/melee/shared/swing_long_01.vsnd",
+			"sounds/player/melee/shared/swing_long_02.vsnd",
+			"sounds/player/melee/shared/swing_long_03.vsnd",
+			"sounds/player/melee/shared/swing_long_04.vsnd",
+			"sounds/player/melee/shared/swing_long_05.vsnd",
+			"sounds/player/melee/shared/swing_long_06.vsnd",
+			"sounds/player/melee/shared/swing_long_07.vsnd",
+			"sounds/player/melee/shared/swing_long_08.vsnd",
+			"sounds/player/melee/shared/swing_long_09.vsnd",
+			"sounds/player/melee/shared/swing_long_10.vsnd",
+			"sounds/player/melee/shared/swing_long_11.vsnd",
+			"sounds/player/melee/shared/swing_long_12.vsnd",
+			"sounds/player/melee/shared/swing_long_13.vsnd",
+			"sounds/player/melee/shared/swing_long_14.vsnd",
+			"sounds/player/melee/shared/swing_long_15.vsnd",
+			"sounds/player/melee/shared/swing_long_16.vsnd",
+			"sounds/player/melee/shared/swing_long_17.vsnd",
+			"sounds/player/melee/shared/swing_long_18.vsnd",
+			"sounds/player/melee/shared/swing_long_19.vsnd",
+			"sounds/player/melee/shared/swing_long_20.vsnd",
+			"sounds/player/melee/shared/swing_long_21.vsnd",
+			"sounds/player/melee/shared/swing_long_22.vsnd",
+			"sounds/player/melee/shared/swing_long_23.vsnd",
+			"sounds/player/melee/shared/swing_long_24.vsnd",
+			"sounds/player/melee/shared/swing_long_25.vsnd",
+		]
+		track_2.track_vsnd_files = 
+		[
+			"sounds/player/movement/generic/foley_light/default_foley_01.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_02.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_03.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_04.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_05.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_06.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_07.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_08.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_09.vsnd",
+		]
+		vsnd_duration = 1.399792
+	}
+	Bookworm.Dash.Sweetener = 
+	{
+		base = "Base.Movement"
+		volume = 2.500000
+		pitch_rand_min = -0.020000
+		pitch_rand_max = 0.020000
+		vsnd_files = 
+		[
+			"sounds/player/movement/bookworm/bookworm_dash_sweetener_01.vsnd",
+			"sounds/player/movement/bookworm/bookworm_dash_sweetener_02.vsnd",
+			"sounds/player/movement/bookworm/bookworm_dash_sweetener_03.vsnd",
+			"sounds/player/movement/bookworm/bookworm_dash_sweetener_04.vsnd",
+			"sounds/player/movement/bookworm/bookworm_dash_sweetener_05.vsnd",
+			"sounds/player/movement/bookworm/bookworm_dash_sweetener_06.vsnd",
+		]
+		vsnd_duration = 2.561179
+	}
+	Bookworm.Melee.Sweetener = 
+	{
+		base = "Base.Movement.Melee"
+		volume = 0.000000
+		volume_offset_opponent = -3.000000
+		pitch_rand_min = -0.020000
+		pitch_rand_max = 0.020000
+		vsnd_files = 
+		[
+			"sounds/player/movement/bookworm/bookworm_melee_sweetener_01.vsnd",
+			"sounds/player/movement/bookworm/bookworm_melee_sweetener_02.vsnd",
+			"sounds/player/movement/bookworm/bookworm_melee_sweetener_03.vsnd",
+		]
+		vsnd_duration = 1.403855
+	}
+	Bookworm.Conjure.Dragon.Lp = 
+	{
+		base = "Base.Ability.Projectile"
+		volume = 1.000000
+		volume_offset_team = -7.000000
+		delay_rand_min = -3.000000
+		delay_rand_max = -0.200000
+		volume_fade_in = 0.200000
+		volume_fade_out = 0.500000
+		vsnd_files = "sounds/abilities/bookworm/a1_conjure_dragon/bookworm_conjure_dragon_lp.vsnd"
+		vsnd_duration = 4.774875
+	}
+	Bookworm.Conjure.Dragon.Proj.Lp = 
+	{
+		base = "Base.Ability.Projectile"
+		volume = -2.000000
+		volume_offset_team = -7.000000
+		volume_fade_in = 0.100000
+		volume_fade_out = 0.200000
+		vsnd_files = "sounds/abilities/bookworm/a1_conjure_dragon/bookworm_conjure_dragon_proj_lp.vsnd"
+		vsnd_duration = 2.438027
+	}
+	Bookworm.Conjure.Dragon.Cast = 
+	{
+		base = "Base.Ability"
+		volume = 1.000000
+		volume_offset_team = -6.000000
+		vsnd_files = "sounds/abilities/bookworm/a1_conjure_dragon/bookworm_conjure_dragon_cast.vsnd"
+		vsnd_duration = 2.430975
+	}
+	Bookworm.Conjure.Dragon.Impact = 
+	{
+		base = "Base.Ability.Detached"
+		volume = 1.000000
+		block_duration = 2.000000
+		volume_offset_team = -4.000000
+		vsnd_files = 
+		[
+			"sounds/abilities/bookworm/a1_conjure_dragon/bookworm_conjure_dragon_impact_01.vsnd",
+			"sounds/abilities/bookworm/a1_conjure_dragon/bookworm_conjure_dragon_impact_02.vsnd",
+			"sounds/abilities/bookworm/a1_conjure_dragon/bookworm_conjure_dragon_impact_03.vsnd",
+		]
+		vsnd_duration = 3.555986
+	}
+	Bookworm.Conjure.Dragon.Expire = 
+	{
+		base = "Base.Ability.Detached"
+		volume = 0.000000
+		volume_offset_team = -4.000000
+		vsnd_files = "sounds/abilities/bookworm/a1_conjure_dragon/bookworm_conjure_dragon_expire.vsnd"
+		vsnd_duration = 3.343991
+	}
+	Bookworm.Conjure.Dragon.Burn.Start = 
+	{
+		base = "Base.Ability.Hit"
+		volume = 0.000000
+		instance_attenuator_enabled = 1.000000
+		vsnd_files = 
+		[
+			"sounds/abilities/bookworm/a1_conjure_dragon/bookworm_conjure_dragon_burn_start_01.vsnd",
+			"sounds/abilities/bookworm/a1_conjure_dragon/bookworm_conjure_dragon_burn_start_02.vsnd",
+			"sounds/abilities/bookworm/a1_conjure_dragon/bookworm_conjure_dragon_burn_start_03.vsnd",
+		]
+		instance_count_offset_amount_db = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				-0.293897,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				-0.293897,
+				-3.243744,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				3.000000,
+				-3.000000,
+				-3.243744,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				6.000000,
+				-6.000000,
+				-3.243744,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		vsnd_duration = 2.785465
+	}
+	Bookworm.Conjure.Dragon.Burn.Lp = 
+	{
+		base = "Base.Ability.StatusEffect"
+		volume = -6.000000
+		volume_fade_in = 0.150000
+		volume_fade_out = 0.500000
+		vsnd_files = "sounds/abilities/bookworm/a1_conjure_dragon/bookworm_conjure_dragon_burn_lp.vsnd"
+		vsnd_duration = 3.138209
+	}
+	Bookworm.Conjure.Dragon.Burn.Expire = 
+	{
+		base = "Base.Ability.StatusEffect"
+		volume = -7.000000
+		pitch_rand_min = -0.100000
+		pitch_rand_max = 0.100000
+		vsnd_files = "sounds/abilities/bookworm/a1_conjure_dragon/bookworm_conjure_dragon_burn_expire.vsnd"
+		vsnd_duration = 3.272245
+	}
+	Bookworm.Barrier.Cast = 
+	{
+		base = "Base.Ability"
+		volume = 3.000000
+		vsnd_files = "sounds/abilities/bookworm/a2_barrier/bookworm_barrier_cast.vsnd"
+		vsnd_duration = 2.895011
+	}
+	Bookworm.Barrier.Shield.Start = 
+	{
+		base = "Base.Ability.Hit"
+		volume = -4.000000
+		vsnd_files = "sounds/abilities/bookworm/a2_barrier/bookworm_barrier_shield_start.vsnd"
+		vsnd_duration = 3.367868
+	}
+	Bookworm.Barrier.Shield.Expire = 
+	{
+		base = "Base.Ability.StatusEffect"
+		volume = -3.000000
+		block_team = 1.000000
+		block_opponent = 1.000000
+		vsnd_files = "sounds/abilities/bookworm/a2_barrier/bookworm_barrier_shield_expire.vsnd"
+		vsnd_duration = 2.759161
+	}
+	Bookworm.Barrier.Select = 
+	{
+		base = "Base.Ability"
+		volume = -8.000000
+		vsnd_files = "sounds/abilities/bookworm/a2_barrier/bookworm_barrier_select.vsnd"
+		vsnd_duration = 2.808571
+	}
+	Bookworm.Barrier.Unselect = 
+	{
+		base = "Base.Ability"
+		volume = -8.000000
+		vsnd_files = "sounds/abilities/bookworm/a2_barrier/bookworm_barrier_unselect.vsnd"
+		vsnd_duration = 2.808571
+	}
+	Bookworm.Barrier.Lp = 
+	{
+		base = "Base.Ability.StatusEffect"
+		volume = -9.000000
+		volume_fade_in = 0.200000
+		volume_fade_out = 0.400000
+		vsnd_files = "sounds/abilities/bookworm/a2_barrier/bookworm_barrier_mod_lp.vsnd"
+		vsnd_duration = 11.993833
+	}
+	Bookworm.AOEMagic.Cast = 
+	{
+		base = "Base.Ability"
+		volume = -1.000000
+		vsnd_files = "sounds/abilities/bookworm/a3_aoe/bookworm_aoe_cast.vsnd"
+		vsnd_duration = 3.049093
+	}
+	Bookworm.AOEMagic.Buildup = 
+	{
+		base = "Base.Ability.Detached"
+		volume = -3.000000
+		volume_offset_opponent = 4.000000
+		vsnd_files = "sounds/abilities/bookworm/a3_aoe/bookworm_aoe_buildup.vsnd"
+		vsnd_duration = 2.750726
+	}
+	Bookworm.AOEMagic.End = 
+	{
+		base = "Base.Ability.Detached"
+		volume = 1.000000
+		vsnd_files = "sounds/abilities/bookworm/a3_aoe/bookworm_aoe_end.vsnd"
+		vsnd_duration = 2.853719
+	}
+	Bookworm.AOEMagic.Root.Proc = 
+	{
+		base = "Base.Ability.Hit"
+		filter_include_others = true
+		volume = 4.000000
+		pitch_rand_min = -0.030000
+		pitch_rand_max = 0.050000
+		limiter_on = 1.000000
+		limiter_max = 5.000000
+		limiter_match_entity = 0.000000
+		instance_attenuator_enabled = 1.000000
+		vsnd_files = 
+		[
+			"sounds/abilities/bookworm/a3_aoe/bookworm_aoe_root_01.vsnd",
+			"sounds/abilities/bookworm/a3_aoe/bookworm_aoe_root_02.vsnd",
+			"sounds/abilities/bookworm/a3_aoe/bookworm_aoe_root_03.vsnd",
+		]
+		instance_count_offset_amount_db = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				-0.293897,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				-0.293897,
+				-3.243744,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				3.000000,
+				-3.000000,
+				-3.243744,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				6.000000,
+				-6.000000,
+				-3.243744,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		vsnd_duration = 1.594989
+	}
+	Bookworm.Rallying.Charge.Cast = 
+	{
+		base = "Base.Ability.Ult"
+		volume = 2.500000
+		vsnd_files = "sounds/abilities/bookworm/a4_rallying_charge/bookworm_rallying_charge_cast.vsnd"
+		vsnd_duration = 5.242086
+	}
+	Bookworm.Rallying.Charge.Cast.Global = 
+	{
+		base = "Base.Ability.Ult.Global"
+		volume = 4.000000
+		send_distance_to_blend_container = true
+		vsnd_files = "sounds/abilities/bookworm/a4_rallying_charge/bookworm_rallying_charge_global_blend.vsnd"
+	}
+	Bookworm.Rallying.Charge.Horse.Lp = 
+	{
+		base = "Base.Ability.Ult.Detached"
+		volume = 3.000000
+		volume_fade_in = 0.200000
+		volume_fade_out = 1.000000
+		volume_falloff_floor = 0.750000
+		volume_offset_opponent = 3.000000
+		send_distance_to_blend_container = true
+		vsnd_files = "sounds/abilities/bookworm/a4_rallying_charge/bookworm_rallying_charge_lp_blend.vsnd"
+	}
+	Bookworm.Rallying.Charge.Impact = 
+	{
+		base = "Base.Ability.Hit"
+		volume = 4.000000
+		filter_include_others = true
+		vsnd_files = "sounds/mods/tech/immobilize/slowinghex_hit.vsnd"
+		vsnd_duration = 2.681814
+	}
+	Bookworm.Rallying.Charge.Horse.Expire = 
+	{
+		base = "Base.Ability.Ult.Detached"
+		volume = -6.000000
+		block_duration = 0.500000
+		vsnd_files = "sounds/abilities/bookworm/a4_rallying_charge/bookworm_rallying_charge_expire.vsnd"
+		vsnd_duration = 4.193878
+	}
+	Bookworm.Progession.Page.Win.VO = 
+	{
+		base = "Base.VO.HeroVictory"
+		context_name = "bookworm"
+		vsnd_files = 
+		[
+			"sounds/vo/bookworm/ping/bookworm_ping_post_game_04.vsnd",
+		]
+		vsnd_duration = 1.370792
+	}
+}

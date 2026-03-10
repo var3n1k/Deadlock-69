@@ -1,0 +1,602 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	Yamato.Wpn.Fire = 
+	{
+		base = "Base.Weapon"
+		last_shot_vol_offset_db = 2.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/yamato/fire/01.vsnd",
+			"sounds/weapons/yamato/fire/02.vsnd",
+			"sounds/weapons/yamato/fire/03.vsnd",
+			"sounds/weapons/yamato/fire/04.vsnd",
+			"sounds/weapons/yamato/fire/05.vsnd",
+			"sounds/weapons/yamato/fire/06.vsnd",
+			"sounds/weapons/yamato/fire/07.vsnd",
+			"sounds/weapons/yamato/fire/08.vsnd",
+			"sounds/weapons/yamato/fire/09.vsnd",
+			"sounds/weapons/yamato/fire/10.vsnd",
+			"sounds/weapons/yamato/fire/11.vsnd",
+			"sounds/weapons/yamato/fire/12.vsnd",
+			"sounds/weapons/yamato/fire/13.vsnd",
+			"sounds/weapons/yamato/fire/14.vsnd",
+			"sounds/weapons/yamato/fire/15.vsnd",
+			"sounds/weapons/yamato/fire/16.vsnd",
+			"sounds/weapons/yamato/fire/17.vsnd",
+			"sounds/weapons/yamato/fire/18.vsnd",
+			"sounds/weapons/yamato/fire/19.vsnd",
+			"sounds/weapons/yamato/fire/20.vsnd",
+			"sounds/weapons/yamato/fire/21.vsnd",
+			"sounds/weapons/yamato/fire/22.vsnd",
+			"sounds/weapons/yamato/fire/23.vsnd",
+			"sounds/weapons/yamato/fire/24.vsnd",
+			"sounds/weapons/yamato/fire/25.vsnd",
+			"sounds/weapons/yamato/fire/26.vsnd",
+			"sounds/weapons/yamato/fire/27.vsnd",
+			"sounds/weapons/yamato/fire/28.vsnd",
+			"sounds/weapons/yamato/fire/29.vsnd",
+			"sounds/weapons/yamato/fire/30.vsnd",
+			"sounds/weapons/yamato/fire/31.vsnd",
+			"sounds/weapons/yamato/fire/32.vsnd",
+			"sounds/weapons/yamato/fire/33.vsnd",
+			"sounds/weapons/yamato/fire/34.vsnd",
+			"sounds/weapons/yamato/fire/35.vsnd",
+			"sounds/weapons/yamato/fire/36.vsnd",
+			"sounds/weapons/yamato/fire/37.vsnd",
+			"sounds/weapons/yamato/fire/38.vsnd",
+			"sounds/weapons/yamato/fire/39.vsnd",
+			"sounds/weapons/yamato/fire/40.vsnd",
+			"sounds/weapons/yamato/fire/41.vsnd",
+			"sounds/weapons/yamato/fire/42.vsnd",
+			"sounds/weapons/yamato/fire/43.vsnd",
+		]
+		vsnd_files_last_shot = 
+		[
+			"sounds/weapons/yamato/yamato_wpn_last_shot_01.vsnd",
+		]
+		vsnd_duration = 1.510292
+	}
+	Yamato.Wpn.Zoom.In = 
+	{
+		base = "Base.Weapon.Foley"
+		vsnd_files = "sounds/weapons/yamato/zoom/in.vsnd"
+		vsnd_duration = 0.591375
+	}
+	Yamato.Wpn.Zoom.Out = 
+	{
+		base = "Base.Weapon.Foley"
+		vsnd_files = "sounds/weapons/yamato/zoom/out.vsnd"
+		vsnd_duration = 0.494687
+	}
+	Yamato.Wpn.Reload.Start = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = -2.000000
+		mono_downmix_enabled = 0.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/yamato/reload/yamato_wpn_reload_start_01.vsnd",
+			"sounds/weapons/yamato/reload/yamato_wpn_reload_start_02.vsnd",
+			"sounds/weapons/yamato/reload/yamato_wpn_reload_start_03.vsnd",
+		]
+		vsnd_duration = 1.507642
+	}
+	Yamato.Wpn.Reload.End = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = -2.000000
+		mono_downmix_enabled = 0.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/yamato/reload/yamato_wpn_reload_end_01.vsnd",
+			"sounds/weapons/yamato/reload/yamato_wpn_reload_end_02.vsnd",
+			"sounds/weapons/yamato/reload/yamato_wpn_reload_end_03.vsnd",
+		]
+		vsnd_duration = 1.462132
+	}
+	Yamato.Wpn.Whizby = 
+	{
+		base = "Base.Bullet.Whizby.Shotgun"
+		pitch_rand_min = -0.005000
+		pitch_rand_max = 0.401500
+		volume = -6.000000
+		volume_fade_out = 0.001000
+		vsnd_files = 
+		[
+			"sounds/weapons/yamato/whizby/01.vsnd",
+			"sounds/weapons/yamato/whizby/02.vsnd",
+			"sounds/weapons/yamato/whizby/03.vsnd",
+			"sounds/weapons/yamato/whizby/04.vsnd",
+			"sounds/weapons/yamato/whizby/05.vsnd",
+			"sounds/weapons/yamato/whizby/06.vsnd",
+			"sounds/weapons/yamato/whizby/07.vsnd",
+			"sounds/weapons/yamato/whizby/08.vsnd",
+			"sounds/weapons/yamato/whizby/09.vsnd",
+			"sounds/weapons/yamato/whizby/10.vsnd",
+			"sounds/weapons/yamato/whizby/11.vsnd",
+			"sounds/weapons/yamato/whizby/12.vsnd",
+			"sounds/weapons/yamato/whizby/13.vsnd",
+			"sounds/weapons/yamato/whizby/14.vsnd",
+			"sounds/weapons/yamato/whizby/15.vsnd",
+			"sounds/weapons/yamato/whizby/16.vsnd",
+			"sounds/weapons/yamato/whizby/17.vsnd",
+		]
+		vsnd_duration = 1.309208
+	}
+	Yamato.WpnAlt.Fire = 
+	{
+		base = "Base.Weapon"
+		volume = 0.000000
+		track_2.vsnd_track_vol_offset_db = -5.000000
+		vsnd_files = 
+		[
+			"sounds/player/melee/shared/swing_short_01.vsnd",
+			"sounds/player/melee/shared/swing_short_02.vsnd",
+			"sounds/player/melee/shared/swing_short_03.vsnd",
+			"sounds/player/melee/shared/swing_short_04.vsnd",
+			"sounds/player/melee/shared/swing_short_05.vsnd",
+			"sounds/player/melee/shared/swing_short_06.vsnd",
+			"sounds/player/melee/shared/swing_short_07.vsnd",
+			"sounds/player/melee/shared/swing_short_08.vsnd",
+			"sounds/player/melee/shared/swing_short_09.vsnd",
+			"sounds/player/melee/shared/swing_short_10.vsnd",
+			"sounds/player/melee/shared/swing_short_11.vsnd",
+			"sounds/player/melee/shared/swing_short_12.vsnd",
+			"sounds/player/melee/shared/swing_short_13.vsnd",
+			"sounds/player/melee/shared/swing_short_14.vsnd",
+			"sounds/player/melee/shared/swing_short_15.vsnd",
+			"sounds/player/melee/shared/swing_short_16.vsnd",
+			"sounds/player/melee/shared/swing_short_17.vsnd",
+			"sounds/player/melee/shared/swing_short_18.vsnd",
+			"sounds/player/melee/shared/swing_short_19.vsnd",
+			"sounds/player/melee/shared/swing_short_20.vsnd",
+			"sounds/player/melee/shared/swing_short_21.vsnd",
+			"sounds/player/melee/shared/swing_short_22.vsnd",
+			"sounds/player/melee/shared/swing_short_23.vsnd",
+			"sounds/player/melee/shared/swing_short_24.vsnd",
+		]
+		track_2.track_vsnd_files = 
+		[
+			"sounds/player/movement/generic/foley_light/default_foley_01.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_02.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_03.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_04.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_05.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_06.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_07.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_08.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_09.vsnd",
+		]
+		vsnd_duration = 1.062208
+	}
+	Yamato.WpnAlt.Proj.Lp = 
+	{
+		base = "Base.Ability.Projectile"
+		volume = -6.000000
+		pitch = 0.900000
+		volume_fade_in = 0.050000
+		volume_fade_out = 0.050000
+		delay_rand_min = -1.500000
+		delay_rand_max = 0.000000
+		vsnd_files = "sounds/weapons/yamato/alt/yamato_wpn_alt_proj_lp.vsnd"
+		vsnd_duration = 2.724240
+	}
+	Yamato.WpnAlt.Explosion = 
+	{
+		base = "Base.Ability.Detached"
+		volume = 3.000000
+		pitch = 1.300000
+		vsnd_files = "sounds/mods/weapon/thermal_det/exp_base.vsnd"
+		vsnd_duration = 2.291361
+	}
+	Yamato.PowerSlash.HitConfirmation = 
+	{
+		base = "Base.Ability.Hit.AOE"
+		volume = 1.000000
+		pitch_rand_max = 0.400000
+		pitch_rand_min = -0.100000
+		volume_falloff_max_attacker = 2000.000000
+		volume_offset_attacker_db = 5.000000
+		vsnd_files = "sounds/abilities/yamato/a1_power_slash/new/yamato_power_slash_hitconfirm.vsnd"
+		vsnd_duration = 2.413031
+	}
+	Yamato.PowerSlash.Whizby = 
+	{
+		base = "Base.Bullet.Whizby"
+		pitch_rand_max = 0.100000
+		volume = -1.000000
+		volume_fade_out = 0.001000
+		whizby_time_to_peak = 0.200000
+		vsnd_files = 
+		[
+			"sounds/abilities/yamato/a1_power_slash/whizby/01.vsnd",
+			"sounds/abilities/yamato/a1_power_slash/whizby/02.vsnd",
+			"sounds/abilities/yamato/a1_power_slash/whizby/03.vsnd",
+			"sounds/abilities/yamato/a1_power_slash/whizby/04.vsnd",
+			"sounds/abilities/yamato/a1_power_slash/whizby/05.vsnd",
+			"sounds/abilities/yamato/a1_power_slash/whizby/06.vsnd",
+			"sounds/abilities/yamato/a1_power_slash/whizby/07.vsnd",
+			"sounds/abilities/yamato/a1_power_slash/whizby/08.vsnd",
+			"sounds/abilities/yamato/a1_power_slash/whizby/09.vsnd",
+			"sounds/abilities/yamato/a1_power_slash/whizby/10.vsnd",
+			"sounds/abilities/yamato/a1_power_slash/whizby/11.vsnd",
+			"sounds/abilities/yamato/a1_power_slash/whizby/12.vsnd",
+			"sounds/abilities/yamato/a1_power_slash/whizby/13.vsnd",
+			"sounds/abilities/yamato/a1_power_slash/whizby/14.vsnd",
+			"sounds/abilities/yamato/a1_power_slash/whizby/15.vsnd",
+			"sounds/abilities/yamato/a1_power_slash/whizby/16.vsnd",
+			"sounds/abilities/yamato/a1_power_slash/whizby/17.vsnd",
+		]
+		vsnd_duration = 2.028375
+	}
+	Yamato.PoisonGas.Cast = 
+	{
+		base = "Base.Ability"
+		vsnd_files = "sounds/abilities/yamato/power_slash_cast.vsnd"
+		vsnd_duration = 1.480104
+	}
+	Yamato.PowerStance.Cast = 
+	{
+		base = "Base.Ability"
+		vsnd_files = "sounds/abilities/yamato/power_stance_enter.vsnd"
+		vsnd_duration = 2.119354
+	}
+	Yamato.CrimsonSlash.Cast = 
+	{
+		base = "Base.Ability"
+		volume = 0.000000
+		vsnd_files = "sounds/abilities/yamato/yamato_crimson_slash_cast.vsnd"
+		vsnd_duration = 2.204150
+	}
+	Yamato.Decimate.Cast = 
+	{
+		base = "Base.Ability"
+		vsnd_files = "sounds/abilities/yamato/decimate_strike.vsnd"
+		vsnd_duration = 4.987146
+	}
+	Yamato.Movement.Long = 
+	{
+		base = "Base.Movement"
+		volume = -3.000000
+	}
+	Yamato.Movement.Short = 
+	{
+		base = "Base.Movement"
+		volume = -8.000000
+	}
+	Yamato.JumpLand = 
+	{
+		base = "Base.Footsteps.JumpLand.Soft"
+		volume = 0.000000
+		track_2.vsnd_track_vol_offset_db = -5.000000
+		vsnd_files = 
+		[
+			"sounds/player/footsteps/hero_self/06.vsnd",
+			"sounds/player/footsteps/hero_self/07.vsnd",
+			"sounds/player/footsteps/hero_self/08.vsnd",
+			"sounds/player/footsteps/hero_self/09.vsnd",
+			"sounds/player/footsteps/hero_self/01.vsnd",
+			"sounds/player/footsteps/hero_self/02.vsnd",
+			"sounds/player/footsteps/hero_self/03.vsnd",
+			"sounds/player/footsteps/hero_self/04.vsnd",
+			"sounds/player/footsteps/hero_self/05.vsnd",
+		]
+		track_2.track_vsnd_files = 
+		[
+			"sounds/player/movement/generic/foley_light/default_foley_01.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_02.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_03.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_04.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_05.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_06.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_07.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_08.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_09.vsnd",
+		]
+		vsnd_duration = 0.581973
+	}
+	Yamato.Mantle = 
+	{
+		base = "Base.Movement"
+		volume = -3.000000
+	}
+	Yamato.Melee.Swing = 
+	{
+		base = "Base.Movement.Melee"
+		track_2.vsnd_track_vol_offset_db = -5.000000
+		vsnd_files = 
+		[
+			"sounds/player/melee/shared/swing_short_01.vsnd",
+			"sounds/player/melee/shared/swing_short_02.vsnd",
+			"sounds/player/melee/shared/swing_short_03.vsnd",
+			"sounds/player/melee/shared/swing_short_04.vsnd",
+			"sounds/player/melee/shared/swing_short_05.vsnd",
+			"sounds/player/melee/shared/swing_short_06.vsnd",
+			"sounds/player/melee/shared/swing_short_07.vsnd",
+			"sounds/player/melee/shared/swing_short_08.vsnd",
+			"sounds/player/melee/shared/swing_short_09.vsnd",
+			"sounds/player/melee/shared/swing_short_10.vsnd",
+			"sounds/player/melee/shared/swing_short_11.vsnd",
+			"sounds/player/melee/shared/swing_short_12.vsnd",
+			"sounds/player/melee/shared/swing_short_13.vsnd",
+			"sounds/player/melee/shared/swing_short_14.vsnd",
+			"sounds/player/melee/shared/swing_short_15.vsnd",
+			"sounds/player/melee/shared/swing_short_16.vsnd",
+			"sounds/player/melee/shared/swing_short_17.vsnd",
+			"sounds/player/melee/shared/swing_short_18.vsnd",
+			"sounds/player/melee/shared/swing_short_19.vsnd",
+			"sounds/player/melee/shared/swing_short_20.vsnd",
+			"sounds/player/melee/shared/swing_short_21.vsnd",
+			"sounds/player/melee/shared/swing_short_22.vsnd",
+			"sounds/player/melee/shared/swing_short_23.vsnd",
+			"sounds/player/melee/shared/swing_short_24.vsnd",
+		]
+		track_2.track_vsnd_files = 
+		[
+			"sounds/player/movement/generic/foley_light/default_foley_01.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_02.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_03.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_04.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_05.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_06.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_07.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_08.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_09.vsnd",
+		]
+		vsnd_duration = 1.062208
+	}
+	Yamato.Melee.Swing.Charged = 
+	{
+		base = "Base.Movement.Melee"
+		track_2.vsnd_track_vol_offset_db = -5.000000
+		vsnd_files = 
+		[
+			"sounds/player/melee/shared/swing_long_01.vsnd",
+			"sounds/player/melee/shared/swing_long_02.vsnd",
+			"sounds/player/melee/shared/swing_long_03.vsnd",
+			"sounds/player/melee/shared/swing_long_04.vsnd",
+			"sounds/player/melee/shared/swing_long_05.vsnd",
+			"sounds/player/melee/shared/swing_long_06.vsnd",
+			"sounds/player/melee/shared/swing_long_07.vsnd",
+			"sounds/player/melee/shared/swing_long_08.vsnd",
+			"sounds/player/melee/shared/swing_long_09.vsnd",
+			"sounds/player/melee/shared/swing_long_10.vsnd",
+			"sounds/player/melee/shared/swing_long_11.vsnd",
+			"sounds/player/melee/shared/swing_long_12.vsnd",
+			"sounds/player/melee/shared/swing_long_13.vsnd",
+			"sounds/player/melee/shared/swing_long_14.vsnd",
+			"sounds/player/melee/shared/swing_long_15.vsnd",
+			"sounds/player/melee/shared/swing_long_16.vsnd",
+			"sounds/player/melee/shared/swing_long_17.vsnd",
+			"sounds/player/melee/shared/swing_long_18.vsnd",
+			"sounds/player/melee/shared/swing_long_19.vsnd",
+			"sounds/player/melee/shared/swing_long_20.vsnd",
+			"sounds/player/melee/shared/swing_long_21.vsnd",
+			"sounds/player/melee/shared/swing_long_22.vsnd",
+			"sounds/player/melee/shared/swing_long_23.vsnd",
+			"sounds/player/melee/shared/swing_long_24.vsnd",
+			"sounds/player/melee/shared/swing_long_25.vsnd",
+		]
+		track_2.track_vsnd_files = 
+		[
+			"sounds/player/movement/generic/foley_light/default_foley_01.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_02.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_03.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_04.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_05.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_06.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_07.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_08.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_09.vsnd",
+		]
+		vsnd_duration = 1.399792
+	}
+	Yamato.Footstep = 
+	{
+		base = "Base.Footsteps.Soft"
+		track_1.vsnd_track_vol_offset_db = -7.000000
+		vsnd_files = 
+		[
+			"sounds/player/footsteps/hero_self/06.vsnd",
+			"sounds/player/footsteps/hero_self/07.vsnd",
+			"sounds/player/footsteps/hero_self/08.vsnd",
+			"sounds/player/footsteps/hero_self/09.vsnd",
+			"sounds/player/footsteps/hero_self/01.vsnd",
+			"sounds/player/footsteps/hero_self/02.vsnd",
+			"sounds/player/footsteps/hero_self/03.vsnd",
+			"sounds/player/footsteps/hero_self/04.vsnd",
+			"sounds/player/footsteps/hero_self/05.vsnd",
+		]
+		vsnd_duration = 0.581973
+	}
+	Yamato.Wpn.Impact = 
+	{
+		base = "Base.Bullet.Impact"
+		vsnd_files = 
+		[
+			"sounds/weapons/yamato/impacts/yamato_wpn_impact_01.vsnd",
+			"sounds/weapons/yamato/impacts/yamato_wpn_impact_02.vsnd",
+			"sounds/weapons/yamato/impacts/yamato_wpn_impact_03.vsnd",
+			"sounds/weapons/yamato/impacts/yamato_wpn_impact_04.vsnd",
+			"sounds/weapons/yamato/impacts/yamato_wpn_impact_05.vsnd",
+			"sounds/weapons/yamato/impacts/yamato_wpn_impact_06.vsnd",
+		]
+		vsnd_duration = 1.031729
+	}
+	Yamato.A1.PowerSlash.Cast = 
+	{
+		base = "Base.Ability"
+		volume = 2.000000
+		vsnd_files = "sounds/abilities/yamato/a1_power_slash/new/yamato_power_slash_cast.vsnd"
+		vsnd_duration = 2.314437
+	}
+	Yamato.A1.PowerSlash.Start = 
+	{
+		base = "Base.Ability"
+		volume = 4.000000
+		vsnd_files = "sounds/abilities/yamato/a1_power_slash/new/yamato_power_slash_start.vsnd"
+		vsnd_duration = 3.271896
+	}
+	Yamato.A1.PowerSlash.Cast.Max = 
+	{
+		base = "Base.Ability"
+		volume = 2.000000
+		vsnd_files = "sounds/abilities/yamato/a1_power_slash/new/yamato_power_slash_cast_max.vsnd"
+		vsnd_duration = 2.314437
+	}
+	Yamato.A1.PowerSlash.PowerupTick01 = 
+	{
+		base = "Base.Ability.Telegraph"
+		volume = -5.000000
+		vsnd_files = "sounds/abilities/yamato/a1_power_slash/new/yamato_power_slash_powerup_tick01.vsnd"
+		vsnd_duration = 1.580125
+	}
+	Yamato.A1.PowerSlash.PowerupTick02 = 
+	{
+		base = "Base.Ability.Telegraph"
+		volume = -4.000000
+		vsnd_files = "sounds/abilities/yamato/a1_power_slash/new/yamato_power_slash_powerup_tick02.vsnd"
+		vsnd_duration = 1.366042
+	}
+	Yamato.A1.PowerSlash.PowerupTick03 = 
+	{
+		base = "Base.Ability.Telegraph"
+		volume = -6.000000
+		vsnd_files = "sounds/abilities/yamato/a1_power_slash/new/yamato_power_slash_powerup_tick03.vsnd"
+		vsnd_duration = 2.246375
+	}
+	Yamato.A2.FlyingStrike.Attack = 
+	{
+		base = "Base.Ability"
+		volume = 1.000000
+		vsnd_files = "sounds/abilities/yamato/a2_flying_strike/yamato_flying_strike_attack.vsnd"
+		vsnd_duration = 2.958277
+	}
+	Yamato.A2.FlyingStrike.Cast = 
+	{
+		base = "Base.Ability"
+		volume = 2.000000
+		vsnd_files = "sounds/abilities/yamato/a2_flying_strike/yamato_flying_strike_cast.vsnd"
+		vsnd_duration = 1.084150
+	}
+	Yamato.A2.FlyingStrike.Hook = 
+	{
+		base = "Base.Ability.Detached"
+		volume = 2.000000
+		vsnd_files = "sounds/abilities/yamato/a2_flying_strike/yamato_flying_strike_hook.vsnd"
+		vsnd_duration = 1.410340
+	}
+	Yamato.A2.FlyingStrike.Jump = 
+	{
+		base = "Base.Ability"
+		volume = 2.000000
+		volume_mult = 0.850000
+		vsnd_files = "sounds/abilities/yamato/a2_flying_strike/yamato_flying_strike_spin.vsnd"
+		vsnd_duration = 1.509932
+	}
+	Yamato.A4.ShadowForm.Delay = 
+	{
+		base = "Base.Ability.Ult"
+		volume = 2.000000
+		vsnd_files = "sounds/abilities/yamato/a4_shadow_form/yamato_shadow_form_delay.vsnd"
+		vsnd_duration = 5.466485
+	}
+	Yamato.A4.ShadowForm.Cast = 
+	{
+		base = "Base.Ability.Ult"
+		volume = 1.000000
+		vsnd_files = "sounds/abilities/yamato/a4_shadow_form/yamato_shadow_form_cast.vsnd"
+		vsnd_duration = 5.194445
+	}
+	Yamato.A1.PowerSlash.Select = 
+	{
+		base = "Base.Ability.Telegraph"
+		volume = 2.000000
+		vsnd_files = "sounds/abilities/yamato/a1_power_slash/new/yamato_power_slash_select.vsnd"
+		vsnd_duration = 2.623802
+	}
+	Yamato.A2.FlyingStrike.Projectile.Lp = 
+	{
+		base = "Base.Ability.Projectile"
+		volume = 0.000000
+		vsnd_files = "sounds/abilities/yamato/a2_flying_strike/yamato_flying_strike_projectile_lp.vsnd"
+		vsnd_duration = 0.670091
+	}
+	Yamato.A2.FlyingStrike.Flying.Lp = 
+	{
+		base = "Base.Ability"
+		volume = -3.000000
+		vsnd_files = "sounds/abilities/yamato/a2_flying_strike/yamato_flying_strike_flying_lp.vsnd"
+		vsnd_duration = 1.255261
+	}
+	Yamato.A4.ShadowForm.Lp = 
+	{
+		base = "Base.Ability.Ult"
+		volume = -12.000000
+		volume_fade_out = 1.000000
+		delay_rand_max = -10.000000
+		param_envelope_enabled = 1.000000
+		pitch_envelope_scale_min = 0.950000
+		pitch_envelope_scale_max = 1.500000
+		vsnd_files = "sounds/abilities/yamato/a4_shadow_form/yamato_shadow_transformation_lp.vsnd"
+		vsnd_duration = 7.221587
+	}
+	Yamato.A4.ShadowForm.Expired = 
+	{
+		base = "Base.Ability.Ult"
+		volume = 2.000000
+		vsnd_files = "sounds/abilities/yamato/a4_shadow_form/yamato_shadow_form_expire.vsnd"
+		vsnd_duration = 4.191859
+	}
+	Yamato.A2.FlyingStrike.Select = 
+	{
+		base = "Base.Ability"
+		volume = -5.000000
+		pitch = 1.300000
+		vsnd_files = "sounds/abilities/yamato/a2_flying_strike/yamato_flying_strike_select.vsnd"
+		vsnd_duration = 2.124717
+	}
+	Yamato.A2.FlyingStrike.Unselect = 
+	{
+		base = "Base.Ability"
+		volume = -6.000000
+		pitch = 1.000000
+		vsnd_files = "sounds/abilities/yamato/a2_flying_strike/yamato_flying_strike_unselect.vsnd"
+		vsnd_duration = 1.342018
+	}
+	Yamato.A2.FlyingStrike.Select.Lp = 
+	{
+		base = "Base.Ability"
+		volume = -6.000000
+		pitch = 1.000000
+		volume_fade_in = 0.380000
+		volume_fade_out = 0.200000
+		volume_enemy_targeting_boost = 4.000000
+		vsnd_files = "sounds/abilities/yamato/a2_flying_strike/yamato_flying_strike_select_lp.vsnd"
+		vsnd_duration = 5.599297
+	}
+	Yamato.Progession.Page.Win.VO = 
+	{
+		base = "Base.VO.HeroVictory"
+		context_name = "yamato"
+		vsnd_files = 
+		[
+			"sounds/vo/yamato/yamato_kill_astro_02.vsnd",
+			"sounds/vo/yamato/yamato_kill_bebop_05.vsnd",
+			"sounds/vo/yamato/yamato_kill_anyhero_06.vsnd",
+			"sounds/vo/yamato/yamato_kill_anyhero_04.vsnd",
+			"sounds/vo/yamato/yamato_kill_anyhero_01.vsnd",
+		]
+		vsnd_duration = 2.740479
+	}
+	Yamato.Progession.Page.Lose.VO = 
+	{
+		base = "Base.VO.HeroVictory"
+		context_name = "yamato"
+		vsnd_files = 
+		[
+			"sounds/vo/yamato/yamato_upgrade_power3_07.vsnd",
+		]
+		vsnd_duration = 3.379990
+	}
+}

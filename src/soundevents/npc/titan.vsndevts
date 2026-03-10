@@ -1,0 +1,117 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	Patron.Phase1.Transform.Start = 
+	{
+		volume = 0.000000
+		base = "Base.MapObjective"
+		vsnd_files = "sounds/npc/patron/patron_transform_start_01.vsnd"
+		vsnd_duration = 10.579139
+	}
+	Patron.Mother.Reforming.Lp = 
+	{
+		base = "Base.NPC.Patron"
+		volume = 0.000000
+		volume_fade_out = 0.100000
+		vsnd_files = "sounds/npc/patron/patron_mother_reforming_lp_01.vsnd"
+		vsnd_duration = 4.418753
+	}
+	Patron.King.Reforming.Lp = 
+	{
+		base = "Base.NPC.Patron"
+		volume = 0.000000
+		volume_fade_out = 0.100000
+		vsnd_files = "sounds/npc/patron/patron_king_reforming_lp_01.vsnd"
+		vsnd_duration = 4.651156
+	}
+	Patron.Mother.Reform = 
+	{
+		base = "Base.NPC.Patron"
+		volume = 1.000000
+		vsnd_files = "sounds/npc/patron/patron_transforming_reform_01.vsnd"
+		vsnd_duration = 2.636712
+	}
+	Patron.King.Reform = 
+	{
+		base = "Base.NPC.Patron"
+		volume = 1.000000
+		vsnd_files = "sounds/npc/patron/patron_transforming_reform_01.vsnd"
+		vsnd_duration = 2.636712
+	}
+	Patron.Mother.Effigy.Explode = 
+	{
+		base = "Base.NPC.Patron"
+		volume = 1.000000
+		vsnd_files = "sounds/npc/patron/patron_mother_effigy_explode_01.vsnd"
+		vsnd_duration = 4.352812
+	}
+	Patron.King.Effigy.Explode = 
+	{
+		base = "Base.NPC.Patron"
+		volume = 1.000000
+		vsnd_files = "sounds/npc/patron/patron_king_effigy_explode_01.vsnd"
+		vsnd_duration = 3.673447
+	}
+	Patron.Phase2.Wpn.Pulse = 
+	{
+		base = "Base.NPC.Patron.Close"
+		volume = -6.000000
+		vsnd_files = 
+		[
+			"sounds/npc/patron/patron_phase2_pulse_fire_01.vsnd",
+			"sounds/npc/patron/patron_phase2_pulse_fire_02.vsnd",
+			"sounds/npc/patron/patron_phase2_pulse_fire_03.vsnd",
+			"sounds/npc/patron/patron_phase2_pulse_fire_04.vsnd",
+			"sounds/npc/patron/patron_phase2_pulse_fire_05.vsnd",
+			"sounds/npc/patron/patron_phase2_pulse_fire_06.vsnd",
+		]
+		vsnd_duration = 1.423651
+	}
+	Patron.Mother.AOE.Warning = 
+	{
+		base = "Base.NPC.Patron.AOE"
+		volume = 1.000000
+		vsnd_files = 
+		[
+			"sounds/npc/patron/patron_sapphire_aoe_warning_01.vsnd",
+			"sounds/npc/patron/patron_sapphire_aoe_warning_02.vsnd",
+			"sounds/npc/patron/patron_sapphire_aoe_warning_03.vsnd",
+		]
+		vsnd_duration = 4.050385
+	}
+	Patron.King.AOE.Warning = 
+	{
+		base = "Base.NPC.Patron.AOE"
+		volume = 1.000000
+		vsnd_files = 
+		[
+			"sounds/npc/patron/patron_amber_aoe_warning_01.vsnd",
+			"sounds/npc/patron/patron_amber_aoe_warning_02.vsnd",
+			"sounds/npc/patron/patron_amber_aoe_warning_03.vsnd",
+		]
+		vsnd_duration = 4.221474
+	}
+	Patron.King.AOE.Impact = 
+	{
+		base = "Base.NPC.Patron.AOE"
+		volume = 0.000000
+		vsnd_files = 
+		[
+			"sounds/npc/patron/patron_amber_aoe_impact_01.vsnd",
+			"sounds/npc/patron/patron_amber_aoe_impact_02.vsnd",
+			"sounds/npc/patron/patron_amber_aoe_impact_03.vsnd",
+		]
+		vsnd_duration = 2.807596
+	}
+	Patron.Mother.AOE.Impact = 
+	{
+		base = "Base.NPC.Patron.AOE"
+		volume = 0.000000
+		vsnd_files = 
+		[
+			"sounds/npc/patron/patron_sapphire_aoe_impact_01.vsnd",
+			"sounds/npc/patron/patron_sapphire_aoe_impact_02.vsnd",
+			"sounds/npc/patron/patron_sapphire_aoe_impact_03.vsnd",
+		]
+		vsnd_duration = 3.101905
+	}
+}

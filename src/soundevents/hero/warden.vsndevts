@@ -1,0 +1,562 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	Warden.Wpn.Fire = 
+	{
+		base = "Base.Weapon.Rifle"
+		volume = 2.000000
+		last_shot_vol_offset_db = 2.000000
+		tail_vol_offset_db = -9.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/warden/warden_weapon_fire_01.vsnd",
+			"sounds/weapons/warden/warden_weapon_fire_02.vsnd",
+			"sounds/weapons/warden/warden_weapon_fire_03.vsnd",
+			"sounds/weapons/warden/warden_weapon_fire_04.vsnd",
+			"sounds/weapons/warden/warden_weapon_fire_05.vsnd",
+		]
+		vsnd_files_last_shot = 
+		[
+			"sounds/weapons/warden/warden_wpn_last_shot_01.vsnd",
+		]
+		fire_rate_percent_curve_db_offset = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				-0.059997,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				100.000000,
+				-4.000000,
+				-0.059997,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		continuous_fire_time_curve_db_offset = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				-1.001785,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				3.000000,
+				-2.000000,
+				-1.001785,
+				-1.001785,
+				0.000000,
+				1.000000,
+			],
+		]
+		vsnd_duration = 1.899864
+	}
+	Warden.Wpn.Impact = 
+	{
+		base = "Base.Bullet.Impact"
+		vsnd_files = "sounds/common/null.vsnd"
+		vsnd_duration = 0.050023
+	}
+	Warden.Wpn.Zoom.In = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = -19.000000
+		vsnd_files = "sounds/weapons/warden/zoom/in.vsnd"
+		vsnd_duration = 1.323604
+	}
+	Warden.Wpn.Zoom.Out = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = -19.000000
+		vsnd_files = "sounds/weapons/warden/zoom/out.vsnd"
+		vsnd_duration = 1.829146
+	}
+	Warden.Wpn.Whizby = 
+	{
+		base = "Base.Bullet.Whizby"
+		volume = -9.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/warden/whizby/warden_weapon_whizby_groupc-001.vsnd",
+			"sounds/weapons/warden/whizby/warden_weapon_whizby_groupc-002.vsnd",
+			"sounds/weapons/warden/whizby/warden_weapon_whizby_groupc-003.vsnd",
+			"sounds/weapons/warden/whizby/warden_weapon_whizby_groupc-004.vsnd",
+			"sounds/weapons/warden/whizby/warden_weapon_whizby_groupc-005.vsnd",
+			"sounds/weapons/warden/whizby/warden_weapon_whizby_groupc-006.vsnd",
+			"sounds/weapons/warden/whizby/warden_weapon_whizby_groupc-007.vsnd",
+			"sounds/weapons/warden/whizby/warden_weapon_whizby_groupc-008.vsnd",
+			"sounds/weapons/warden/whizby/warden_weapon_whizby_groupc-009.vsnd",
+			"sounds/weapons/warden/whizby/warden_weapon_whizby_groupc-010.vsnd",
+		]
+		vsnd_duration = 0.462290
+	}
+	Warden.Wpn.Reload.Start = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = -2.000000
+		mono_downmix_enabled = 0.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/warden/reload/warden_wpn_reload_start_01.vsnd",
+			"sounds/weapons/warden/reload/warden_wpn_reload_start_02.vsnd",
+			"sounds/weapons/Warden/reload/warden_wpn_reload_start_03.vsnd",
+		]
+		vsnd_duration = 1.462812
+	}
+	Warden.Wpn.Reload.Mid = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = -2.000000
+		mono_downmix_enabled = 0.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/Warden/reload/warden_wpn_reload_mid_01.vsnd",
+			"sounds/weapons/Warden/reload/warden_wpn_reload_mid_02.vsnd",
+			"sounds/weapons/Warden/reload/warden_wpn_reload_mid_03.vsnd",
+		]
+		vsnd_duration = 0.583469
+	}
+	Warden.Wpn.Reload.End = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = -2.000000
+		mono_downmix_enabled = 0.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/Warden/reload/warden_wpn_reload_end_01.vsnd",
+			"sounds/weapons/Warden/reload/warden_wpn_reload_end_02.vsnd",
+			"sounds/weapons/Warden/reload/warden_wpn_reload_end_03.vsnd",
+		]
+		vsnd_duration = 0.602086
+	}
+	Warden.Flask.Cast = 
+	{
+		base = "Base.Ability"
+		volume = 0.000000
+		volume_offset_opponent = 3.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		vsnd_files = 
+		[
+			"sounds/abilities/warden/warden_flask_cast_01.vsnd",
+			"sounds/abilities/warden/warden_flask_cast_02.vsnd",
+			"sounds/abilities/warden/warden_flask_cast_03.vsnd",
+		]
+		vsnd_duration = 1.895601
+	}
+	Warden.Flask.Proj.Lp = 
+	{
+		base = "Base.Ability.Projectile"
+		volume = -4.000000
+		volume_fade_in = 0.150000
+		volume_fade_out = 0.100000
+		pitch_rand_min = -0.100000
+		pitch_rand_max = 0.100000
+		volume_offset_opponent = 4.000000
+		vsnd_files = "sounds/abilities/warden/warden_a1_flask_proj_lp.vsnd"
+		vsnd_duration = 2.667959
+	}
+	Warden.Flask.Proj.Impact = 
+	{
+		base = "Base.Ability.Detached"
+		volume = 1.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		volume_offset_player = -4.000000
+		vsnd_files = 
+		[
+			"sounds/abilities/warden/warden_flask_impact_01.vsnd",
+			"sounds/abilities/warden/warden_flask_impact_02.vsnd",
+			"sounds/abilities/warden/warden_flask_impact_03.vsnd",
+		]
+		vsnd_duration = 1.613333
+	}
+	Warden.Flask.Hit = 
+	{
+		base = "Base.Ability.Hit"
+		limiter_max = 1.000000
+		volume = 3.000000
+		volume_offset_attacker_db = 3.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		vsnd_files = 
+		[
+			"sounds/abilities/warden/warden_flask_hit_01.vsnd",
+			"sounds/abilities/warden/warden_flask_hit_02.vsnd",
+			"sounds/abilities/warden/warden_flask_hit_03.vsnd",
+		]
+		vsnd_duration = 2.093220
+	}
+	Warden.Willpower.Cast = 
+	{
+		base = "Base.Ability"
+		volume = 4.000000
+		vsnd_files = "sounds/abilities/warden/warden_willpower_cast.vsnd"
+		vsnd_duration = 2.435555
+	}
+	Warden.HighAlert.Lp = 
+	{
+		base = "Base.Ability.StatusEffect"
+		volume = -8.000000
+		volume_fade_out = 0.250000
+		volume_fade_in = 0.100000
+		delay_rand_min = -4.000000
+		vsnd_files = "sounds/abilities/warden/warden_willpower_lp.vsnd"
+		vsnd_duration = 4.308753
+	}
+	Warden.HighAlert.End = 
+	{
+		base = "Base.Ability"
+		volume = -6.000000
+		vsnd_files = "sounds/abilities/warden/warden_willpower_expire.vsnd"
+		vsnd_duration = 2.398934
+	}
+	Warden.LockDown.Selected = 
+	{
+		base = "Base.Ability"
+		vsnd_files = "sounds/abilities/warden/warden_binding_word_select.vsnd"
+		vsnd_duration = 0.711429
+	}
+	Warden.LockDown.Unselected = 
+	{
+		base = "Base.Ability"
+		vsnd_files = "sounds/abilities/warden/warden_binding_word_unselect.vsnd"
+		vsnd_duration = 0.461701
+	}
+	Warden.LockDown.CastDelay = 
+	{
+		base = "Base.Ability"
+		volume = -2.000000
+		vsnd_files = "sounds/abilities/warden/lockdown_cast.vsnd"
+		vsnd_duration = 1.956000
+	}
+	Warden.LockDown.Debuff.Lp = 
+	{
+		base = "Base.Ability.StatusEffect"
+		volume = 4.000000
+		volume_offset_opponent = 2.000000
+		vsnd_files = "sounds/abilities/warden/lockdown_foley.vsnd"
+		vsnd_duration = 3.118889
+	}
+	Warden.LockDown.Expire = 
+	{
+		base = "Base.Ability.StatusEffect"
+		volume = -1.000000
+		volume_offset_opponent = 3.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		vsnd_files = 
+		[
+			"sounds/abilities/warden/warden_binding_word_expire_01.vsnd",
+			"sounds/abilities/warden/warden_binding_word_expire_02.vsnd",
+			"sounds/abilities/warden/warden_binding_word_expire_03.vsnd",
+		]
+		vsnd_duration = 1.870862
+	}
+	Warden.LockDown.Hit = 
+	{
+		base = "Base.Ability.Hit"
+		volume = 8.000000
+		filter_include_others = true
+		vsnd_files = "sounds/abilities/warden/lockdown_impact.vsnd"
+		vsnd_duration = 1.796576
+	}
+	Warden.RiotProtocol.PreCast = 
+	{
+		base = "Base.Ability.Ult"
+		volume = 3.000000
+		vsnd_files = "sounds/abilities/warden/warden_a4_riot_protocol_precast_01.vsnd"
+		vsnd_duration = 4.264399
+	}
+	Warden.RiotProtocol.Cast = 
+	{
+		base = "Base.Ability.Ult"
+		volume = 4.000000
+		vsnd_files = "sounds/abilities/warden/warden_last_stand_cast.vsnd"
+		vsnd_duration = 3.165737
+	}
+	Warden.RiotProtocol.Expire = 
+	{
+		base = "Base.Ability.Ult"
+		volume = 3.000000
+		vsnd_files = "sounds/abilities/warden/warden_last_stand_expire.vsnd"
+		vsnd_duration = 3.037460
+	}
+	Warden.RiotProtocol.Lp = 
+	{
+		base = "Base.Ability.Ult"
+		volume = -3.000000
+		volume_fade_in = 0.100000
+		volume_fade_out = 0.200000
+		pitch = 1.000000
+		vsnd_files = "sounds/abilities/warden/riot_protocol_lp.vsnd"
+		vsnd_duration = 4.979070
+	}
+	Warden.RiotProtocol.Hit = 
+	{
+		base = "Base.Ability.Hit"
+		volume = 2.000000
+		limiter_max = 1.000000
+		limiter_on = 1.000000
+		limiter_match_entity = 0.000000
+		vsnd_files = 
+		[
+			"sounds/abilities/warden/warden_last_stand_hit_01.vsnd",
+			"sounds/abilities/warden/warden_last_stand_hit_02.vsnd",
+			"sounds/abilities/warden/warden_last_stand_hit_03.vsnd",
+			"sounds/abilities/warden/warden_last_stand_hit_04.vsnd",
+			"sounds/abilities/warden/warden_last_stand_hit_05.vsnd",
+			"sounds/abilities/warden/warden_last_stand_hit_06.vsnd",
+		]
+		vsnd_duration = 0.642336
+	}
+	Warden.Melee.Swing = 
+	{
+		base = "Base.Movement.Melee"
+		vsnd_files = 
+		[
+			"sounds/player/melee/shared/swing_short_01.vsnd",
+			"sounds/player/melee/shared/swing_short_02.vsnd",
+			"sounds/player/melee/shared/swing_short_03.vsnd",
+			"sounds/player/melee/shared/swing_short_04.vsnd",
+			"sounds/player/melee/shared/swing_short_05.vsnd",
+			"sounds/player/melee/shared/swing_short_06.vsnd",
+			"sounds/player/melee/shared/swing_short_07.vsnd",
+			"sounds/player/melee/shared/swing_short_08.vsnd",
+			"sounds/player/melee/shared/swing_short_09.vsnd",
+			"sounds/player/melee/shared/swing_short_10.vsnd",
+			"sounds/player/melee/shared/swing_short_11.vsnd",
+			"sounds/player/melee/shared/swing_short_12.vsnd",
+			"sounds/player/melee/shared/swing_short_13.vsnd",
+			"sounds/player/melee/shared/swing_short_14.vsnd",
+			"sounds/player/melee/shared/swing_short_15.vsnd",
+			"sounds/player/melee/shared/swing_short_16.vsnd",
+			"sounds/player/melee/shared/swing_short_17.vsnd",
+			"sounds/player/melee/shared/swing_short_18.vsnd",
+			"sounds/player/melee/shared/swing_short_19.vsnd",
+			"sounds/player/melee/shared/swing_short_20.vsnd",
+			"sounds/player/melee/shared/swing_short_21.vsnd",
+			"sounds/player/melee/shared/swing_short_22.vsnd",
+			"sounds/player/melee/shared/swing_short_23.vsnd",
+			"sounds/player/melee/shared/swing_short_24.vsnd",
+		]
+		track_2.track_vsnd_files = 
+		[
+			"sounds/player/movement/warden/warden_foley_short_01.vsnd",
+			"sounds/player/movement/warden/warden_foley_short_02.vsnd",
+			"sounds/player/movement/warden/warden_foley_short_03.vsnd",
+			"sounds/player/movement/warden/warden_foley_short_04.vsnd",
+			"sounds/player/movement/warden/warden_foley_short_05.vsnd",
+			"sounds/player/movement/warden/warden_foley_short_06.vsnd",
+			"sounds/player/movement/warden/warden_foley_short_07.vsnd",
+			"sounds/player/movement/warden/warden_foley_short_08.vsnd",
+			"sounds/player/movement/warden/warden_foley_short_09.vsnd",
+		]
+		vsnd_duration = 1.062208
+	}
+	Warden.Melee.Swing.Charged = 
+	{
+		base = "Base.Movement.Melee"
+		vsnd_files = 
+		[
+			"sounds/player/melee/shared/swing_long_01.vsnd",
+			"sounds/player/melee/shared/swing_long_02.vsnd",
+			"sounds/player/melee/shared/swing_long_03.vsnd",
+			"sounds/player/melee/shared/swing_long_04.vsnd",
+			"sounds/player/melee/shared/swing_long_05.vsnd",
+			"sounds/player/melee/shared/swing_long_06.vsnd",
+			"sounds/player/melee/shared/swing_long_07.vsnd",
+			"sounds/player/melee/shared/swing_long_08.vsnd",
+			"sounds/player/melee/shared/swing_long_09.vsnd",
+			"sounds/player/melee/shared/swing_long_10.vsnd",
+			"sounds/player/melee/shared/swing_long_11.vsnd",
+			"sounds/player/melee/shared/swing_long_12.vsnd",
+			"sounds/player/melee/shared/swing_long_13.vsnd",
+			"sounds/player/melee/shared/swing_long_14.vsnd",
+			"sounds/player/melee/shared/swing_long_15.vsnd",
+			"sounds/player/melee/shared/swing_long_16.vsnd",
+			"sounds/player/melee/shared/swing_long_17.vsnd",
+			"sounds/player/melee/shared/swing_long_18.vsnd",
+			"sounds/player/melee/shared/swing_long_19.vsnd",
+			"sounds/player/melee/shared/swing_long_20.vsnd",
+			"sounds/player/melee/shared/swing_long_21.vsnd",
+			"sounds/player/melee/shared/swing_long_22.vsnd",
+			"sounds/player/melee/shared/swing_long_23.vsnd",
+			"sounds/player/melee/shared/swing_long_24.vsnd",
+			"sounds/player/melee/shared/swing_long_25.vsnd",
+		]
+		track_2.track_vsnd_files = 
+		[
+			"sounds/player/movement/warden/warden_foley_short_01.vsnd",
+			"sounds/player/movement/warden/warden_foley_short_02.vsnd",
+			"sounds/player/movement/warden/warden_foley_short_03.vsnd",
+			"sounds/player/movement/warden/warden_foley_short_04.vsnd",
+			"sounds/player/movement/warden/warden_foley_short_05.vsnd",
+			"sounds/player/movement/warden/warden_foley_short_06.vsnd",
+			"sounds/player/movement/warden/warden_foley_short_07.vsnd",
+			"sounds/player/movement/warden/warden_foley_short_08.vsnd",
+			"sounds/player/movement/warden/warden_foley_short_09.vsnd",
+		]
+		vsnd_duration = 1.399792
+	}
+	Warden.JumpLand = 
+	{
+		base = "Base.Footsteps.JumpLand"
+		volume = 0.000000
+		track_2.vsnd_track_vol_offset_db = 0.000000
+		vsnd_files = 
+		[
+			"sounds/player/footsteps/warden/warden_step_01.vsnd",
+			"sounds/player/footsteps/warden/warden_step_02.vsnd",
+			"sounds/player/footsteps/warden/warden_step_03.vsnd",
+			"sounds/player/footsteps/warden/warden_step_04.vsnd",
+			"sounds/player/footsteps/warden/warden_step_05.vsnd",
+			"sounds/player/footsteps/warden/warden_step_06.vsnd",
+			"sounds/player/footsteps/warden/warden_step_07.vsnd",
+			"sounds/player/footsteps/warden/warden_step_08.vsnd",
+			"sounds/player/footsteps/warden/warden_step_09.vsnd",
+			"sounds/player/footsteps/warden/warden_step_10.vsnd",
+			"sounds/player/footsteps/warden/warden_step_11.vsnd",
+			"sounds/player/footsteps/warden/warden_step_12.vsnd",
+			"sounds/player/footsteps/warden/warden_step_13.vsnd",
+			"sounds/player/footsteps/warden/warden_step_14.vsnd",
+			"sounds/player/footsteps/warden/warden_step_15.vsnd",
+		]
+		track_2.track_vsnd_files = 
+		[
+			"sounds/player/movement/warden/warden_jump_land_01.vsnd",
+			"sounds/player/movement/warden/warden_jump_land_02.vsnd",
+			"sounds/player/movement/warden/warden_jump_land_03.vsnd",
+			"sounds/player/movement/warden/warden_jump_land_04.vsnd",
+			"sounds/player/movement/warden/warden_jump_land_05.vsnd",
+			"sounds/player/movement/warden/warden_jump_land_06.vsnd",
+			"sounds/player/movement/warden/warden_jump_land_07.vsnd",
+			"sounds/player/movement/warden/warden_jump_land_08.vsnd",
+			"sounds/player/movement/warden/warden_jump_land_09.vsnd",
+		]
+		vsnd_duration = 0.291020
+	}
+	Warden.Mantle = 
+	{
+		base = "Base.Movement"
+		volume = -3.000000
+	}
+	Warden.Movement.Long = 
+	{
+		base = "Base.Movement"
+		volume = -8.000000
+		vsnd_files = 
+		[
+			"sounds/player/movement/warden/warden_foley_long_1.vsnd",
+			"sounds/player/movement/warden/warden_foley_long_2.vsnd",
+			"sounds/player/movement/warden/warden_foley_long_3.vsnd",
+			"sounds/player/movement/warden/warden_foley_long_4.vsnd",
+			"sounds/player/movement/warden/warden_foley_long_5.vsnd",
+			"sounds/player/movement/warden/warden_foley_long_6.vsnd",
+		]
+		vsnd_duration = 0.830454
+	}
+	Warden.Movement.Short = 
+	{
+		base = "Base.Movement"
+		volume = -7.000000
+		vsnd_files = 
+		[
+			"sounds/player/movement/warden/warden_foley_short_01.vsnd",
+			"sounds/player/movement/warden/warden_foley_short_02.vsnd",
+			"sounds/player/movement/warden/warden_foley_short_03.vsnd",
+			"sounds/player/movement/warden/warden_foley_short_04.vsnd",
+			"sounds/player/movement/warden/warden_foley_short_05.vsnd",
+			"sounds/player/movement/warden/warden_foley_short_06.vsnd",
+			"sounds/player/movement/warden/warden_foley_short_07.vsnd",
+			"sounds/player/movement/warden/warden_foley_short_08.vsnd",
+			"sounds/player/movement/warden/warden_foley_short_09.vsnd",
+		]
+		vsnd_duration = 0.305125
+	}
+	Warden.Footstep = 
+	{
+		base = "Base.Footsteps"
+		track_1.vsnd_track_vol_offset_db = -4.000000
+		track_2.vsnd_track_vol_offset_db = -22.000000
+		vsnd_files = 
+		[
+			"sounds/player/footsteps/warden/warden_step_01.vsnd",
+			"sounds/player/footsteps/warden/warden_step_02.vsnd",
+			"sounds/player/footsteps/warden/warden_step_03.vsnd",
+			"sounds/player/footsteps/warden/warden_step_04.vsnd",
+			"sounds/player/footsteps/warden/warden_step_05.vsnd",
+			"sounds/player/footsteps/warden/warden_step_06.vsnd",
+			"sounds/player/footsteps/warden/warden_step_07.vsnd",
+			"sounds/player/footsteps/warden/warden_step_08.vsnd",
+			"sounds/player/footsteps/warden/warden_step_09.vsnd",
+			"sounds/player/footsteps/warden/warden_step_10.vsnd",
+			"sounds/player/footsteps/warden/warden_step_11.vsnd",
+			"sounds/player/footsteps/warden/warden_step_12.vsnd",
+			"sounds/player/footsteps/warden/warden_step_13.vsnd",
+			"sounds/player/footsteps/warden/warden_step_14.vsnd",
+			"sounds/player/footsteps/warden/warden_step_15.vsnd",
+		]
+		track_2.track_vsnd_files = 
+		[
+			"sounds/player/movement/warden/warden_movement_foley_short_01.vsnd",
+			"sounds/player/movement/warden/warden_movement_foley_short_02.vsnd",
+			"sounds/player/movement/warden/warden_movement_foley_short_03.vsnd",
+			"sounds/player/movement/warden/warden_movement_foley_short_04.vsnd",
+			"sounds/player/movement/warden/warden_movement_foley_short_05.vsnd",
+			"sounds/player/movement/warden/warden_movement_foley_short_06.vsnd",
+			"sounds/player/movement/warden/warden_movement_foley_short_07.vsnd",
+			"sounds/player/movement/warden/warden_movement_foley_short_08.vsnd",
+			"sounds/player/movement/warden/warden_movement_foley_short_09.vsnd",
+			"sounds/player/movement/warden/warden_movement_foley_short_10.vsnd",
+			"sounds/player/movement/warden/warden_movement_foley_short_11.vsnd",
+			"sounds/player/movement/warden/warden_movement_foley_short_12.vsnd",
+			"sounds/player/movement/warden/warden_movement_foley_short_13.vsnd",
+			"sounds/player/movement/warden/warden_movement_foley_short_14.vsnd",
+			"sounds/player/movement/warden/warden_movement_foley_short_15.vsnd",
+		]
+		vsnd_duration = 0.291020
+	}
+	Warden.Progession.Page.Win.VO = 
+	{
+		base = "Base.VO.HeroVictory"
+		context_name = "warden"
+		vsnd_files = 
+		[
+			"sounds/vo/warden/warden_killstreak_mid_02.vsnd",
+			"sounds/vo/warden/warden_kill_anyhero_04.vsnd",
+		]
+		vsnd_duration = 2.219000
+	}
+	Warden.Progession.Page.Lose.VO = 
+	{
+		base = "Base.VO.HeroVictory"
+		context_name = "warden"
+		vsnd_files = 
+		[
+			"sounds/vo/warden/warden_concerned_10.vsnd",
+			"sounds/vo/warden/warden_near_miss_03.vsnd",
+		]
+		vsnd_duration = 1.810396
+	}
+}

@@ -1,0 +1,546 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	Dynamo.Wpn.Fire.Main = 
+	{
+		base = "Base.Weapon.Pistol"
+		volume = 1.000000
+		volume_fade_out = 0.200000
+		low_ammo_vol_offset_db = 1.000000
+		tail_vol_offset_db = -1.000000
+		last_shot_vol_offset_db = 1.000000
+		vsnd_files_low_ammo = 
+		[
+			"sounds/weapons/dynamo/dynamo_weapon_fire_mech_01.vsnd",
+			"sounds/weapons/dynamo/dynamo_weapon_fire_mech_02.vsnd",
+			"sounds/weapons/dynamo/dynamo_weapon_fire_mech_03.vsnd",
+			"sounds/weapons/dynamo/dynamo_weapon_fire_mech_04.vsnd",
+			"sounds/weapons/dynamo/dynamo_weapon_fire_mech_05.vsnd",
+			"sounds/weapons/dynamo/dynamo_weapon_fire_mech_06.vsnd",
+			"sounds/weapons/dynamo/dynamo_weapon_fire_mech_07.vsnd",
+			"sounds/weapons/dynamo/dynamo_weapon_fire_mech_08.vsnd",
+			"sounds/weapons/dynamo/dynamo_weapon_fire_mech_09.vsnd",
+			"sounds/weapons/dynamo/dynamo_weapon_fire_mech_10.vsnd",
+		]
+		vsnd_files = 
+		[
+			"sounds/weapons/dynamo/dynamo_weapon_fire_main_01.vsnd",
+			"sounds/weapons/dynamo/dynamo_weapon_fire_main_02.vsnd",
+			"sounds/weapons/dynamo/dynamo_weapon_fire_main_03.vsnd",
+			"sounds/weapons/dynamo/dynamo_weapon_fire_main_04.vsnd",
+			"sounds/weapons/dynamo/dynamo_weapon_fire_main_05.vsnd",
+			"sounds/weapons/dynamo/dynamo_weapon_fire_main_06.vsnd",
+			"sounds/weapons/dynamo/dynamo_weapon_fire_main_07.vsnd",
+			"sounds/weapons/dynamo/dynamo_weapon_fire_main_08.vsnd",
+			"sounds/weapons/dynamo/dynamo_weapon_fire_main_09.vsnd",
+			"sounds/weapons/dynamo/dynamo_weapon_fire_main_10.vsnd",
+		]
+		vsnd_files_tail = 
+		[
+			"sounds/weapons/dynamo/dynamo_weapon_fire_tail_01.vsnd",
+			"sounds/weapons/dynamo/dynamo_weapon_fire_tail_02.vsnd",
+			"sounds/weapons/dynamo/dynamo_weapon_fire_tail_03.vsnd",
+			"sounds/weapons/dynamo/dynamo_weapon_fire_tail_04.vsnd",
+			"sounds/weapons/dynamo/dynamo_weapon_fire_tail_05.vsnd",
+			"sounds/weapons/dynamo/dynamo_weapon_fire_tail_06.vsnd",
+			"sounds/weapons/dynamo/dynamo_weapon_fire_tail_07.vsnd",
+			"sounds/weapons/dynamo/dynamo_weapon_fire_tail_08.vsnd",
+			"sounds/weapons/dynamo/dynamo_weapon_fire_tail_09.vsnd",
+			"sounds/weapons/dynamo/dynamo_weapon_fire_tail_10.vsnd",
+		]
+		fire_rate_percent_curve_db_offset = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				-0.059997,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				100.000000,
+				-5.999681,
+				-0.059997,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		vsnd_files_last_shot = 
+		[
+			"sounds/weapons/dynamo/dynamo_wpn_last_shot_01.vsnd",
+		]
+		vsnd_duration = 1.376667
+	}
+	Dynamo.Wpn.Fire.First = 
+	{
+		base = "Dynamo.Wpn.Fire.Main"
+		transient_offset_db = 4.000000
+		limiter_max = 0.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/dynamo/dynamo_weapon_fire_first_01.vsnd",
+			"sounds/weapons/dynamo/dynamo_weapon_fire_first_02.vsnd",
+			"sounds/weapons/dynamo/dynamo_weapon_fire_first_03.vsnd",
+			"sounds/weapons/dynamo/dynamo_weapon_fire_first_04.vsnd",
+			"sounds/weapons/dynamo/dynamo_weapon_fire_first_05.vsnd",
+			"sounds/weapons/dynamo/dynamo_weapon_fire_first_06.vsnd",
+			"sounds/weapons/dynamo/dynamo_weapon_fire_first_07.vsnd",
+			"sounds/weapons/dynamo/dynamo_weapon_fire_first_08.vsnd",
+			"sounds/weapons/dynamo/dynamo_weapon_fire_first_09.vsnd",
+			"sounds/weapons/dynamo/dynamo_weapon_fire_first_10.vsnd",
+		]
+		vsnd_duration = 1.041655
+	}
+	Dynamo.Wpn.Impact = 
+	{
+		base = "Base.Bullet.Impact"
+		volume = -2.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/dynamo/dynamo_weapon_impacts_groupA_soft-001.vsnd",
+			"sounds/weapons/dynamo/dynamo_weapon_impacts_groupA_soft-002.vsnd",
+			"sounds/weapons/dynamo/dynamo_weapon_impacts_groupA_soft-003.vsnd",
+			"sounds/weapons/dynamo/dynamo_weapon_impacts_groupA_soft-004.vsnd",
+			"sounds/weapons/dynamo/dynamo_weapon_impacts_groupA_soft-005.vsnd",
+			"sounds/weapons/dynamo/dynamo_weapon_impacts_groupA_soft-006.vsnd",
+			"sounds/weapons/dynamo/dynamo_weapon_impacts_groupA_soft-007.vsnd",
+			"sounds/weapons/dynamo/dynamo_weapon_impacts_groupA_soft-008.vsnd",
+			"sounds/weapons/dynamo/dynamo_weapon_impacts_groupA_soft-009.vsnd",
+			"sounds/weapons/dynamo/dynamo_weapon_impacts_groupA_soft-010.vsnd",
+		]
+		vsnd_duration = 0.650998
+	}
+	Dynamo.ZoomIn = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = -5.000000
+		track_2.vsnd_track_vol_offset_db = -4.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/dynamo/zoom/in_1.vsnd",
+			"sounds/weapons/dynamo/zoom/in_2.vsnd",
+			"sounds/weapons/dynamo/zoom/in_3.vsnd",
+			"sounds/weapons/dynamo/zoom/in_4.vsnd",
+			"sounds/weapons/dynamo/zoom/in_5.vsnd",
+		]
+		track_2.track_vsnd_files = 
+		[
+			"sounds/player/movement/dynamo/light_01.vsnd",
+			"sounds/player/movement/dynamo/light_02.vsnd",
+			"sounds/player/movement/dynamo/light_03.vsnd",
+			"sounds/player/movement/dynamo/light_04.vsnd",
+			"sounds/player/movement/dynamo/light_05.vsnd",
+			"sounds/player/movement/dynamo/light_06.vsnd",
+			"sounds/player/movement/dynamo/light_07.vsnd",
+			"sounds/player/movement/dynamo/light_08.vsnd",
+			"sounds/player/movement/dynamo/light_09.vsnd",
+		]
+		vsnd_duration = 0.433667
+	}
+	Dynamo.ZoomOut = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = -5.000000
+		track_2.vsnd_track_vol_offset_db = -4.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/dynamo/zoom/out_1.vsnd",
+			"sounds/weapons/dynamo/zoom/out_2.vsnd",
+			"sounds/weapons/dynamo/zoom/out_3.vsnd",
+			"sounds/weapons/dynamo/zoom/out_4.vsnd",
+			"sounds/weapons/dynamo/zoom/out_5.vsnd",
+		]
+		track_2.track_vsnd_files = 
+		[
+			"sounds/player/movement/dynamo/light_01.vsnd",
+			"sounds/player/movement/dynamo/light_02.vsnd",
+			"sounds/player/movement/dynamo/light_03.vsnd",
+			"sounds/player/movement/dynamo/light_04.vsnd",
+			"sounds/player/movement/dynamo/light_05.vsnd",
+			"sounds/player/movement/dynamo/light_06.vsnd",
+			"sounds/player/movement/dynamo/light_07.vsnd",
+			"sounds/player/movement/dynamo/light_08.vsnd",
+			"sounds/player/movement/dynamo/light_09.vsnd",
+		]
+		vsnd_duration = 0.274687
+	}
+	Dynamo.Wpn.Reload.Start = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = -2.000000
+		mono_downmix_enabled = 0.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/dynamo/reload/dynamo_wpn_reload_start_01.vsnd",
+			"sounds/weapons/dynamo/reload/dynamo_wpn_reload_start_02.vsnd",
+			"sounds/weapons/dynamo/reload/dynamo_wpn_reload_start_03.vsnd",
+		]
+		vsnd_duration = 2.210975
+	}
+	Dynamo.Wpn.Reload.Mid = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = -2.000000
+		mono_downmix_enabled = 0.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/dynamo/reload/dynamo_wpn_reload_mid_01.vsnd",
+			"sounds/weapons/dynamo/reload/dynamo_wpn_reload_mid_02.vsnd",
+			"sounds/weapons/dynamo/reload/dynamo_wpn_reload_mid_03.vsnd",
+		]
+		vsnd_duration = 0.996440
+	}
+	Dynamo.Wpn.Reload.End = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = -2.000000
+		mono_downmix_enabled = 0.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/dynamo/reload/dynamo_wpn_reload_end_01.vsnd",
+			"sounds/weapons/dynamo/reload/dynamo_wpn_reload_end_02.vsnd",
+			"sounds/weapons/dynamo/reload/dynamo_wpn_reload_end_03.vsnd",
+		]
+		vsnd_duration = 0.805646
+	}
+	Dynamo.Wpn.Whizby = 
+	{
+		base = "Base.Bullet.Whizby"
+		volume = -1.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/dynamo/whizby/dynamo_weapon_whizby_groupB-001.vsnd",
+			"sounds/weapons/dynamo/whizby/dynamo_weapon_whizby_groupB-002.vsnd",
+			"sounds/weapons/dynamo/whizby/dynamo_weapon_whizby_groupB-003.vsnd",
+			"sounds/weapons/dynamo/whizby/dynamo_weapon_whizby_groupB-004.vsnd",
+			"sounds/weapons/dynamo/whizby/dynamo_weapon_whizby_groupB-005.vsnd",
+			"sounds/weapons/dynamo/whizby/dynamo_weapon_whizby_groupB-006.vsnd",
+			"sounds/weapons/dynamo/whizby/dynamo_weapon_whizby_groupB-007.vsnd",
+			"sounds/weapons/dynamo/whizby/dynamo_weapon_whizby_groupB-008.vsnd",
+			"sounds/weapons/dynamo/whizby/dynamo_weapon_whizby_groupB-009.vsnd",
+			"sounds/weapons/dynamo/whizby/dynamo_weapon_whizby_groupB-010.vsnd",
+		]
+		vsnd_duration = 0.439297
+	}
+	Dynamo.Footstep = 
+	{
+		base = "Base.Footsteps"
+		track_1.vsnd_track_vol_offset_db = -12.000000
+		track_2.vsnd_track_vol_offset_db = -20.000000
+		vsnd_files = 
+		[
+			"sounds/player/footsteps/dynamo/dynamo_step_01.vsnd",
+			"sounds/player/footsteps/dynamo/dynamo_step_02.vsnd",
+			"sounds/player/footsteps/dynamo/dynamo_step_03.vsnd",
+			"sounds/player/footsteps/dynamo/dynamo_step_04.vsnd",
+			"sounds/player/footsteps/dynamo/dynamo_step_05.vsnd",
+			"sounds/player/footsteps/dynamo/dynamo_step_06.vsnd",
+			"sounds/player/footsteps/dynamo/dynamo_step_07.vsnd",
+			"sounds/player/footsteps/dynamo/dynamo_step_08.vsnd",
+			"sounds/player/footsteps/dynamo/dynamo_step_09.vsnd",
+			"sounds/player/footsteps/dynamo/dynamo_step_10.vsnd",
+			"sounds/player/footsteps/dynamo/dynamo_step_11.vsnd",
+		]
+		track_2.track_vsnd_files = 
+		[
+			"sounds/player/movement/dynamo/dynamo_movement_foley_short_01.vsnd",
+			"sounds/player/movement/dynamo/dynamo_movement_foley_short_02.vsnd",
+			"sounds/player/movement/dynamo/dynamo_movement_foley_short_03.vsnd",
+			"sounds/player/movement/dynamo/dynamo_movement_foley_short_04.vsnd",
+			"sounds/player/movement/dynamo/dynamo_movement_foley_short_05.vsnd",
+			"sounds/player/movement/dynamo/dynamo_movement_foley_short_06.vsnd",
+			"sounds/player/movement/dynamo/dynamo_movement_foley_short_07.vsnd",
+			"sounds/player/movement/dynamo/dynamo_movement_foley_short_08.vsnd",
+			"sounds/player/movement/dynamo/dynamo_movement_foley_short_09.vsnd",
+			"sounds/player/movement/dynamo/dynamo_movement_foley_short_10.vsnd",
+			"sounds/player/movement/dynamo/dynamo_movement_foley_short_11.vsnd",
+		]
+		vsnd_duration = 0.802313
+	}
+	Dynamo.Movement.Short = 
+	{
+		base = "Base.Movement"
+		volume = -9.000000
+		vsnd_files = 
+		[
+			"sounds/player/movement/dynamo/dynamo_movement_foley_short_01.vsnd",
+			"sounds/player/movement/dynamo/dynamo_movement_foley_short_02.vsnd",
+			"sounds/player/movement/dynamo/dynamo_movement_foley_short_03.vsnd",
+			"sounds/player/movement/dynamo/dynamo_movement_foley_short_04.vsnd",
+			"sounds/player/movement/dynamo/dynamo_movement_foley_short_05.vsnd",
+			"sounds/player/movement/dynamo/dynamo_movement_foley_short_06.vsnd",
+			"sounds/player/movement/dynamo/dynamo_movement_foley_short_07.vsnd",
+			"sounds/player/movement/dynamo/dynamo_movement_foley_short_08.vsnd",
+			"sounds/player/movement/dynamo/dynamo_movement_foley_short_09.vsnd",
+			"sounds/player/movement/dynamo/dynamo_movement_foley_short_10.vsnd",
+			"sounds/player/movement/dynamo/dynamo_movement_foley_short_11.vsnd",
+		]
+		vsnd_duration = 0.321202
+	}
+	Dynamo.Movement.Long = 
+	{
+		base = "Base.Movement"
+		volume = 0.000000
+	}
+	Dynamo.JumpLand = 
+	{
+		base = "Base.Footsteps.JumpLand"
+		track_2.vsnd_track_vol_offset_db = -4.000000
+		vsnd_files = 
+		[
+			"sounds/player/footsteps/dynamo/dynamo_step_01.vsnd",
+			"sounds/player/footsteps/dynamo/dynamo_step_02.vsnd",
+			"sounds/player/footsteps/dynamo/dynamo_step_03.vsnd",
+			"sounds/player/footsteps/dynamo/dynamo_step_04.vsnd",
+			"sounds/player/footsteps/dynamo/dynamo_step_05.vsnd",
+			"sounds/player/footsteps/dynamo/dynamo_step_06.vsnd",
+			"sounds/player/footsteps/dynamo/dynamo_step_07.vsnd",
+			"sounds/player/footsteps/dynamo/dynamo_step_08.vsnd",
+			"sounds/player/footsteps/dynamo/dynamo_step_09.vsnd",
+			"sounds/player/footsteps/dynamo/dynamo_step_10.vsnd",
+			"sounds/player/footsteps/dynamo/dynamo_step_11.vsnd",
+		]
+		track_2.track_vsnd_files = 
+		[
+			"sounds/player/movement/generic/foley_light/default_foley_01.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_02.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_03.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_04.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_05.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_06.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_07.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_08.vsnd",
+			"sounds/player/movement/generic/foley_light/default_foley_09.vsnd",
+		]
+		vsnd_duration = 0.802313
+	}
+	Dynamo.Mantle = 
+	{
+		base = "Base.Movement"
+	}
+	Dynamo.Melee.Swing = 
+	{
+		base = "Base.Movement.Melee"
+		vsnd_files = 
+		[
+			"sounds/player/melee/shared/swing_short_01.vsnd",
+			"sounds/player/melee/shared/swing_short_02.vsnd",
+			"sounds/player/melee/shared/swing_short_03.vsnd",
+			"sounds/player/melee/shared/swing_short_04.vsnd",
+			"sounds/player/melee/shared/swing_short_05.vsnd",
+			"sounds/player/melee/shared/swing_short_06.vsnd",
+			"sounds/player/melee/shared/swing_short_07.vsnd",
+			"sounds/player/melee/shared/swing_short_08.vsnd",
+			"sounds/player/melee/shared/swing_short_09.vsnd",
+			"sounds/player/melee/shared/swing_short_10.vsnd",
+			"sounds/player/melee/shared/swing_short_11.vsnd",
+			"sounds/player/melee/shared/swing_short_12.vsnd",
+			"sounds/player/melee/shared/swing_short_13.vsnd",
+			"sounds/player/melee/shared/swing_short_14.vsnd",
+			"sounds/player/melee/shared/swing_short_15.vsnd",
+			"sounds/player/melee/shared/swing_short_16.vsnd",
+			"sounds/player/melee/shared/swing_short_17.vsnd",
+			"sounds/player/melee/shared/swing_short_18.vsnd",
+			"sounds/player/melee/shared/swing_short_19.vsnd",
+			"sounds/player/melee/shared/swing_short_20.vsnd",
+			"sounds/player/melee/shared/swing_short_21.vsnd",
+			"sounds/player/melee/shared/swing_short_22.vsnd",
+			"sounds/player/melee/shared/swing_short_23.vsnd",
+			"sounds/player/melee/shared/swing_short_24.vsnd",
+		]
+		vsnd_duration = 1.062208
+	}
+	Dynamo.Melee.Swing.Charged = 
+	{
+		base = "Base.Movement.Melee"
+		vsnd_files = 
+		[
+			"sounds/player/melee/shared/swing_long_01.vsnd",
+			"sounds/player/melee/shared/swing_long_02.vsnd",
+			"sounds/player/melee/shared/swing_long_03.vsnd",
+			"sounds/player/melee/shared/swing_long_04.vsnd",
+			"sounds/player/melee/shared/swing_long_05.vsnd",
+			"sounds/player/melee/shared/swing_long_06.vsnd",
+			"sounds/player/melee/shared/swing_long_07.vsnd",
+			"sounds/player/melee/shared/swing_long_08.vsnd",
+			"sounds/player/melee/shared/swing_long_09.vsnd",
+			"sounds/player/melee/shared/swing_long_10.vsnd",
+			"sounds/player/melee/shared/swing_long_11.vsnd",
+			"sounds/player/melee/shared/swing_long_12.vsnd",
+			"sounds/player/melee/shared/swing_long_13.vsnd",
+			"sounds/player/melee/shared/swing_long_14.vsnd",
+			"sounds/player/melee/shared/swing_long_15.vsnd",
+			"sounds/player/melee/shared/swing_long_16.vsnd",
+			"sounds/player/melee/shared/swing_long_17.vsnd",
+			"sounds/player/melee/shared/swing_long_18.vsnd",
+			"sounds/player/melee/shared/swing_long_19.vsnd",
+			"sounds/player/melee/shared/swing_long_20.vsnd",
+			"sounds/player/melee/shared/swing_long_21.vsnd",
+			"sounds/player/melee/shared/swing_long_22.vsnd",
+			"sounds/player/melee/shared/swing_long_23.vsnd",
+			"sounds/player/melee/shared/swing_long_24.vsnd",
+			"sounds/player/melee/shared/swing_long_25.vsnd",
+		]
+		vsnd_duration = 1.399792
+	}
+	Dynamo.A1.Stomp.Cast = 
+	{
+		base = "Base.Ability"
+		volume = 1.000000
+		vsnd_files = "sounds/abilities/dynamo/dynamo_a1_stomp_cast.vsnd"
+		vsnd_duration = 1.933674
+	}
+	Dynamo.A1.Stomp.PreCast = 
+	{
+		base = "Base.Ability"
+		volume = 1.000000
+		vsnd_files = "sounds/abilities/dynamo/dynamo_a1_stomp_prestomp.vsnd"
+		vsnd_duration = 0.377075
+	}
+	Dynamo.A1.Stomp.Hit = 
+	{
+		base = "Base.Ability.Hit"
+		volume = 0.000000
+		limiter_on = true
+		vsnd_files = 
+		[
+			"sounds/abilities/dynamo/dynamo_stomp_hit_confirm_01.vsnd",
+			"sounds/abilities/dynamo/dynamo_stomp_hit_confirm_02.vsnd",
+			"sounds/abilities/dynamo/dynamo_stomp_hit_confirm_03.vsnd",
+		]
+		vsnd_duration = 1.842562
+	}
+	Dynamo.A3.Heal.Cast = 
+	{
+		base = "Base.Ability"
+		volume = 6.000000
+		vsnd_files = "sounds/abilities/dynamo/a3_heal/dynamo_a3_heal_cast_01.vsnd"
+		vsnd_duration = 2.989751
+	}
+	Dynamo.A3.Heal.Loop = 
+	{
+		base = "Base.Ability"
+		volume = -3.000000
+		volume_offset_team = 5.000000
+		spread_max = 600.000000
+		spread_max_value_team = 0.700000
+		volume_fade_out = 0.200000
+		vsnd_files = "sounds/abilities/dynamo/dynamo_a3_heal_loop.vsnd"
+		vsnd_duration = 6.689433
+	}
+	Dynamo.A3.Heal.End = 
+	{
+		base = "Base.Ability"
+		volume = -7.000000
+		vsnd_files = "sounds/abilities/dynamo/dynamo_a3_heal_end.vsnd"
+		vsnd_duration = 1.412993
+	}
+	Dynamo.A4.Singularity.Cast = 
+	{
+		base = "Base.Ability.Ult.CC"
+		volume = 4.000000
+		vsnd_files = "sounds/abilities/dynamo/dynamo_singularity_cast.vsnd"
+		vsnd_duration = 4.925850
+	}
+	Dynamo.A4.Singularity.End = 
+	{
+		base = "Base.Ability.Ult.CC"
+		volume = 0.000000
+		vsnd_files = "sounds/abilities/dynamo/dynamo_singularity_end.vsnd"
+		vsnd_duration = 5.539909
+	}
+	Dynamo.Singularity.Lp = 
+	{
+		base = "Base.Ability.Ult.CC"
+		volume = 3.000000
+		volume_fade_in = 0.250000
+		volume_fade_out = 0.200000
+		delay_rand_max = 0.000000
+		param_envelope_enabled = 1.000000
+		param_envelope_duration = 10.000000
+		pitch_envelope_scale_min = 1.000000
+		pitch_envelope_scale_max = 1.500000
+		vsnd_files = "sounds/abilities/dynamo/dynamo_singularity_lp.vsnd"
+		vsnd_duration = 22.512835
+	}
+	Dynamo.A2.Quantum.Cast = 
+	{
+		base = "Base.Ability"
+		volume = 0.000000
+		volume_offset_opponent = -3.000000
+		vsnd_files = "sounds/abilities/dynamo/dyanmo_a2_quantum_cast.vsnd"
+		vsnd_duration = 4.448163
+	}
+	Dynamo.A2.Quantum.Select = 
+	{
+		base = "Base.Ability"
+		volume = -5.000000
+		vsnd_files = "sounds/abilities/dynamo/dyanmo_a2_quantum_select.vsnd"
+		vsnd_duration = 2.390952
+	}
+	Dynamo.A2.Quantum.End = 
+	{
+		base = "Base.Ability"
+		volume = -4.000000
+		vsnd_files = "sounds/abilities/dynamo/dyanmo_a2_quantum_end.vsnd"
+		vsnd_duration = 1.740227
+	}
+	Dynamo.A2.Quantum.Deselect = 
+	{
+		base = "Base.Ability"
+		volume = -3.000000
+		vsnd_files = "sounds/abilities/dynamo/dyanmo_a2_quantum_deselect.vsnd"
+		vsnd_duration = 0.810159
+	}
+	Dynamo.Progession.Page.Win.VO = 
+	{
+		base = "Base.VO.HeroVictory"
+		context_name = "dynamo"
+		vsnd_files = 
+		[
+			"sounds/vo/dynamo/dynamo_win_01.vsnd",
+			"sounds/vo/dynamo/dynamo_win_02.vsnd",
+			"sounds/vo/dynamo/dynamo_win_03.vsnd",
+			"sounds/vo/dynamo/dynamo_win_04.vsnd",
+			"sounds/vo/dynamo/dynamo_win_05.vsnd",
+			"sounds/vo/dynamo/dynamo_win_early_01.vsnd",
+			"sounds/vo/dynamo/dynamo_win_early_02.vsnd",
+			"sounds/vo/dynamo/dynamo_win_early_03.vsnd",
+			"sounds/vo/dynamo/dynamo_win_early_04.vsnd",
+			"sounds/vo/dynamo/dynamo_win_early_05.vsnd",
+			"sounds/vo/dynamo/dynamo_win_late_01.vsnd",
+			"sounds/vo/dynamo/dynamo_win_late_02.vsnd",
+			"sounds/vo/dynamo/dynamo_win_late_03.vsnd",
+			"sounds/vo/dynamo/dynamo_win_late_04.vsnd",
+			"sounds/vo/dynamo/dynamo_win_late_05.vsnd",
+		]
+		vsnd_duration = 3.381882
+	}
+	Dynamo.Progession.Page.Lose.VO = 
+	{
+		base = "Base.HeroPick.VO.2d"
+		context_name = "dynamo"
+		vsnd_files = 
+		[
+			"sounds/vo/dynamo/dynamo_lose_01.vsnd",
+			"sounds/vo/dynamo/dynamo_lose_02.vsnd",
+			"sounds/vo/dynamo/dynamo_lose_03.vsnd",
+			"sounds/vo/dynamo/dynamo_lose_04.vsnd",
+			"sounds/vo/dynamo/dynamo_lose_05.vsnd",
+			"sounds/vo/dynamo/dynamo_lose_early_01.vsnd",
+			"sounds/vo/dynamo/dynamo_lose_early_02.vsnd",
+			"sounds/vo/dynamo/dynamo_lose_early_03.vsnd",
+			"sounds/vo/dynamo/dynamo_lose_early_04.vsnd",
+			"sounds/vo/dynamo/dynamo_lose_early_05.vsnd",
+			"sounds/vo/dynamo/dynamo_lose_late_01.vsnd",
+			"sounds/vo/dynamo/dynamo_lose_late_02.vsnd",
+			"sounds/vo/dynamo/dynamo_lose_late_03.vsnd",
+			"sounds/vo/dynamo/dynamo_lose_late_04.vsnd",
+			"sounds/vo/dynamo/dynamo_lose_late_05.vsnd",
+		]
+		vsnd_duration = 3.825873
+	}
+}

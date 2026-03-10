@@ -1,0 +1,790 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	Unicorn.Wpn.Fire = 
+	{
+		base = "Base.Weapon"
+		volume = 5.000000
+		pitch = 1.100000
+		pitch_rand_min = -0.020000
+		pitch_rand_max = 0.020000
+		tail_vol_offset_db = -9.000000
+		tail_exterior_sky_exposure_floor_db = -14.000000
+		last_shot_vol_offset_db = 2.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/unicorn/unicorn_weapon_fire_main_01.vsnd",
+			"sounds/weapons/unicorn/unicorn_weapon_fire_main_02.vsnd",
+			"sounds/weapons/unicorn/unicorn_weapon_fire_main_03.vsnd",
+			"sounds/weapons/unicorn/unicorn_weapon_fire_main_04.vsnd",
+			"sounds/weapons/unicorn/unicorn_weapon_fire_main_05.vsnd",
+			"sounds/weapons/unicorn/unicorn_weapon_fire_main_06.vsnd",
+		]
+		vsnd_files_tail = 
+		[
+			"sounds/weapons/unicorn/unicorn_weapon_fire_tail_01.vsnd",
+			"sounds/weapons/unicorn/unicorn_weapon_fire_tail_02.vsnd",
+			"sounds/weapons/unicorn/unicorn_weapon_fire_tail_03.vsnd",
+			"sounds/weapons/unicorn/unicorn_weapon_fire_tail_04.vsnd",
+			"sounds/weapons/unicorn/unicorn_weapon_fire_tail_05.vsnd",
+			"sounds/weapons/unicorn/unicorn_weapon_fire_tail_06.vsnd",
+		]
+		vsnd_files_last_shot = 
+		[
+			"sounds/weapons/unicorn/unicorn_weapon_last_shot_01.vsnd",
+		]
+		vsnd_duration = 2.108798
+	}
+	Unicorn.Weapon.Loop = 
+	{
+		base = "Base.Weapon"
+		volume = 3.000000
+		delay_rand_min = -2.000000
+		volume_fade_in = 0.200000
+		volume_fade_out = 0.200000
+		pitch = 1.250000
+		vsnd_files = "sounds/weapons/unicorn/unicorn_weapon_lp.vsnd"
+		vsnd_duration = 5.731814
+	}
+	Unicorn.Weapon.Impact = 
+	{
+		base = "Base.Ability.Detached"
+		volume = -12.000000
+		pitch_rand_min = -0.060000
+		pitch_rand_max = 0.060000
+		limiter_max = 1.000000
+		block_duration = 0.100000
+		vsnd_files = 
+		[
+			"sounds/weapons/unicorn/impacts/unicorn_weapon_impact_01.vsnd",
+			"sounds/weapons/unicorn/impacts/unicorn_weapon_impact_02.vsnd",
+			"sounds/weapons/unicorn/impacts/unicorn_weapon_impact_03.vsnd",
+			"sounds/weapons/unicorn/impacts/unicorn_weapon_impact_04.vsnd",
+			"sounds/weapons/unicorn/impacts/unicorn_weapon_impact_05.vsnd",
+		]
+		vsnd_duration = 1.788889
+	}
+	Unicorn.Wpn.Whizby = 
+	{
+		base = "Base.Bullet.Whizby"
+		volume = -4.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/unicorn/unicorn_weapon_whizby_01.vsnd",
+			"sounds/weapons/unicorn/unicorn_weapon_whizby_02.vsnd",
+			"sounds/weapons/unicorn/unicorn_weapon_whizby_03.vsnd",
+			"sounds/weapons/unicorn/unicorn_weapon_whizby_04.vsnd",
+			"sounds/weapons/unicorn/unicorn_weapon_whizby_05.vsnd",
+			"sounds/weapons/unicorn/unicorn_weapon_whizby_06.vsnd",
+		]
+		vsnd_duration = 1.739478
+	}
+	Unicorn.Wpn.Reload.Start = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = 2.000000
+		mono_downmix_enabled = 0.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/unicorn/reload/unicorn_reload_start_01.vsnd",
+			"sounds/weapons/unicorn/reload/unicorn_reload_start_02.vsnd",
+			"sounds/weapons/unicorn/reload/unicorn_reload_start_03.vsnd",
+		]
+		vsnd_duration = 1.950658
+	}
+	Unicorn.Wpn.Reload.Mid = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = 1.000000
+		mono_downmix_enabled = 0.000000
+		block_duration = 1.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/unicorn/reload/unicorn_reload_mid_01.vsnd",
+			"sounds/weapons/unicorn/reload/unicorn_reload_mid_02.vsnd",
+			"sounds/weapons/unicorn/reload/unicorn_reload_mid_03.vsnd",
+		]
+		vsnd_duration = 1.009456
+	}
+	Unicorn.Wpn.Reload.End = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = 0.000000
+		mono_downmix_enabled = 0.000000
+		block_duration = 1.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/unicorn/reload/unicorn_reload_end_01.vsnd",
+			"sounds/weapons/unicorn/reload/unicorn_reload_end_02.vsnd",
+			"sounds/weapons/unicorn/reload/unicorn_reload_end_03.vsnd",
+		]
+		vsnd_duration = 1.474127
+	}
+	Unicorn.Radiant.Flare.Cast = 
+	{
+		base = "Base.Ability"
+		volume = 2.000000
+		volume_enemy_targeting_boost = 6.000000
+		pitch_rand_min = -0.010000
+		pitch_rand_max = 0.010000
+		vsnd_files = 
+		[
+			"sounds/abilities/unicorn/a1/unicorn_radiant_flare_cast_01.vsnd",
+			"sounds/abilities/unicorn/a1/unicorn_radiant_flare_cast_02.vsnd",
+			"sounds/abilities/unicorn/a1/unicorn_radiant_flare_cast_03.vsnd",
+		]
+		vsnd_duration = 2.309773
+	}
+	Unicorn.Radiant.Flare.Cast.Delay = 
+	{
+		base = "Base.Ability"
+		volume = 2.000000
+		pitch_rand_min = -0.010000
+		pitch_rand_max = 0.010000
+		volume_enemy_targeting_boost = 7.000000
+		vsnd_files = "sounds/abilities/unicorn/a1/unicorn_radiant_flare_cast_delay.vsnd"
+		vsnd_duration = 2.333696
+	}
+	Unicorn.Radiant.Flare.Hit = 
+	{
+		base = "Base.Ability.Hit"
+		volume = 6.000000
+		pitch_rand_min = -0.010000
+		pitch_rand_max = 0.010000
+		volume_offset_attacker_db = 3.000000
+		vsnd_files = 
+		[
+			"sounds/abilities/unicorn/a1/unicorn_radiant_flare_hit_01.vsnd",
+			"sounds/abilities/unicorn/a1/unicorn_radiant_flare_hit_02.vsnd",
+			"sounds/abilities/unicorn/a1/unicorn_radiant_flare_hit_03.vsnd",
+		]
+		vsnd_duration = 2.228254
+	}
+	Unicorn.Radiant.Flare.BuffedBullet.Hit = 
+	{
+		base = "Base.Ability.Hit"
+		volume = 5.000000
+		pitch = 1.100000
+		pitch_rand_min = -0.010000
+		pitch_rand_max = 0.010000
+		volume_offset_attacker_db = 3.000000
+		vsnd_files = 
+		[
+			"sounds/abilities/unicorn/a1/unicorn_radiant_flare_hit_sweetener_01.vsnd",
+			"sounds/abilities/unicorn/a1/unicorn_radiant_flare_hit_sweetener_02.vsnd",
+			"sounds/abilities/unicorn/a1/unicorn_radiant_flare_hit_sweetener_03.vsnd",
+			"sounds/abilities/unicorn/a1/unicorn_radiant_flare_hit_sweetener_04.vsnd",
+			"sounds/abilities/unicorn/a1/unicorn_radiant_flare_hit_sweetener_05.vsnd",
+			"sounds/abilities/unicorn/a1/unicorn_radiant_flare_hit_sweetener_06.vsnd",
+		]
+		vsnd_duration = 1.373039
+	}
+	Unicorn.Radiant.Flare.Debuff.Lp = 
+	{
+		base = "Base.Ability.StatusEffect"
+		volume = -10.000000
+		delay_rand_min = -6.000000
+		volume_fade_in = 0.300000
+		volume_fade_out = 0.400000
+		param_envelope_enabled = 1.000000
+		pitch_envelope_scale_min = 0.800000
+		pitch_envelope_scale_max = 1.300000
+		vsnd_files = "sounds/abilities/unicorn/a1/unicorn_radiant_flare_debuff_lp.vsnd"
+		vsnd_duration = 6.939705
+	}
+	Unicorn.Radiant.Flare.Debuff.Expire = 
+	{
+		base = "Base.Ability.StatusEffect"
+		volume = -8.000000
+		pitch = 0.800000
+		pitch_rand_min = -0.010000
+		pitch_rand_max = 0.010000
+		vsnd_files = 
+		[
+			"sounds/abilities/unicorn/a1/unicorn_radiant_flare_debuff_expire_01.vsnd",
+			"sounds/abilities/unicorn/a1/unicorn_radiant_flare_debuff_expire_02.vsnd",
+			"sounds/abilities/unicorn/a1/unicorn_radiant_flare_debuff_expire_03.vsnd",
+		]
+		vsnd_duration = 1.514875
+	}
+	Unicorn.Prismatic.Guard.Cast = 
+	{
+		base = "Base.Ability"
+		volume = 3.000000
+		pitch_rand_min = -0.010000
+		pitch_rand_max = 0.010000
+		vsnd_files = "sounds/abilities/unicorn/a2/unicorn_prismatic_guard_cast.vsnd"
+		vsnd_duration = 2.729637
+	}
+	Unicorn.Prismatic.Guard.Mod.Start = 
+	{
+		base = "Base.Ability.StatusEffect"
+		volume = -1.000000
+		pitch_rand_min = -0.010000
+		pitch_rand_max = 0.010000
+		vsnd_files = "sounds/abilities/unicorn/a2/unicorn_prismatic_guard_mod_start.vsnd"
+		vsnd_duration = 4.217188
+	}
+	Unicorn.Prismatic.Guard.Mod.Lp = 
+	{
+		base = "Base.Ability.StatusEffect"
+		volume = -6.000000
+		delay_rand_min = -7.000000
+		volume_fade_in = 0.300000
+		volume_fade_out = 0.400000
+		param_envelope_enabled = 1.000000
+		pitch_envelope_scale_min = 0.900000
+		pitch_envelope_scale_max = 1.100000
+		vsnd_files = "sounds/abilities/unicorn/a2/unicorn_prismatic_guard_lp.vsnd"
+		vsnd_duration = 8.070000
+	}
+	Unicorn.Prismatic.Guard.Cracking.Layer = 
+	{
+		base = "Base.Ability.StatusEffect"
+		volume = 5.000000
+		volume_offset_opponent = 7.000000
+		param_envelope_enabled = 1.000000
+		param_envelope_duration = 5.750000
+		pitch_envelope_scale_min = 1.000000
+		pitch_envelope_scale_max = 1.800000
+		volume_fade_out = 0.100000
+		vsnd_files = "sounds/abilities/unicorn/a2/unicorn_prismatic_guard_cracking.vsnd"
+		vsnd_duration = 4.190998
+	}
+	Unicorn.Prismatic.Guard.Explode = 
+	{
+		base = "Base.Ability.StatusEffect"
+		volume = 6.000000
+		pitch_rand_min = -0.010000
+		pitch_rand_max = 0.010000
+		vsnd_files = "sounds/abilities/unicorn/a2/unicorn_prismatic_guard_explode.vsnd"
+		vsnd_duration = 3.722222
+	}
+	Unicorn.Prismatic.Guard.Expired = 
+	{
+		base = "Base.Ability.StatusEffect"
+		volume = -3.000000
+		pitch_rand_min = -0.010000
+		pitch_rand_max = 0.010000
+		vsnd_files = "sounds/abilities/unicorn/a2/unicorn_prismatic_guard_expired.vsnd"
+		vsnd_duration = 3.709388
+	}
+	Unicorn.Prismatic.Guard.Proj.Impact = 
+	{
+		base = "Base.Ability.StatusEffect"
+		volume = 5.000000
+		pitch_rand_min = -0.010000
+		pitch_rand_max = 0.010000
+		vsnd_files = 
+		[
+			"sounds/abilities/unicorn/a2/unicorn_prismatic_guard_proj_impact_01.vsnd",
+			"sounds/abilities/unicorn/a2/unicorn_prismatic_guard_proj_impact_02.vsnd",
+			"sounds/abilities/unicorn/a2/unicorn_prismatic_guard_proj_impact_03.vsnd",
+		]
+		instance_attenuator_enabled = 1.000000
+		instance_count_offset_amount_db = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				-0.293897,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				-0.293897,
+				-3.243744,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				3.000000,
+				-3.000000,
+				-3.243744,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				6.000000,
+				-6.000000,
+				-3.243744,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		vsnd_duration = 3.709388
+	}
+	Unicorn.Prismatic.Guard.Proj.Lp = 
+	{
+		base = "Base.Ability.Projectile"
+		volume = 1.000000
+		volume_offset_opponent = 6.000000
+		volume_fade_in = 0.100000
+		volume_fade_out = 0.100000
+		pitch_rand_min = -0.100000
+		pitch_rand_max = 0.100000
+		delay_rand_min = -6.000000
+		vsnd_files = "sounds/abilities/unicorn/a2/unicorn_prismatic_guard_proj_lp.vsnd"
+		instance_attenuator_enabled = 1.000000
+		instance_count_offset_amount_db = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				-0.293897,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				-0.293897,
+				-3.243744,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				3.000000,
+				-3.000000,
+				-3.243744,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				6.000000,
+				-6.000000,
+				-3.243744,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		vsnd_duration = 6.446599
+	}
+	Unicorn.Dazzling.Orb.Cast = 
+	{
+		base = "Base.Ability.Ult"
+		volume = 4.000000
+		volume_offset_opponent = 3.000000
+		vsnd_files = "sounds/abilities/unicorn/a4/unicorn_dazzling_orb_cast.vsnd"
+		vsnd_duration = 4.093968
+	}
+	Unicorn.Dazzling.Orb.Cast.Delay = 
+	{
+		base = "Base.Ability.Ult"
+		volume = 3.000000
+		vsnd_files = "sounds/abilities/unicorn/a4/unicorn_dazzling_orb_cast_delay.vsnd"
+		vsnd_duration = 3.679569
+	}
+	Unicorn.Dazzling.Orb.Channel.Lp = 
+	{
+		base = "Base.Ability.Ult"
+		volume = 3.000000
+		volume_fade_in = 0.200000
+		volume_fade_out = 0.200000
+		volume_offset_opponent = 4.000000
+		vsnd_files = "sounds/abilities/unicorn/a4/unicorn_dazzling_orb_channel_lp.vsnd"
+		vsnd_duration = 4.971542
+	}
+	Unicorn.Dazzling.Orb.Hit = 
+	{
+		base = "Base.Ability.Hit"
+		filter_include_others = true
+		volume = 4.000000
+		limiter_max = 2.000000
+		volume_offset_attacker_db = 3.000000
+		volume_offset_victim_db = 2.000000
+		instance_attenuator_enabled = 0.000000
+		pitch_increment_count_max = 18.000000
+		incremental_pitch_offset = 0.057500
+		vsnd_files = 
+		[
+			"sounds/abilities/unicorn/a4/unicorn_dazzling_orb_bounce_01.vsnd",
+			"sounds/abilities/unicorn/a4/unicorn_dazzling_orb_bounce_02.vsnd",
+			"sounds/abilities/unicorn/a4/unicorn_dazzling_orb_bounce_03.vsnd",
+			"sounds/abilities/unicorn/a4/unicorn_dazzling_orb_bounce_04.vsnd",
+			"sounds/abilities/unicorn/a4/unicorn_dazzling_orb_bounce_05.vsnd",
+			"sounds/abilities/unicorn/a4/unicorn_dazzling_orb_bounce_06.vsnd",
+			"sounds/abilities/unicorn/a4/unicorn_dazzling_orb_bounce_07.vsnd",
+			"sounds/abilities/unicorn/a4/unicorn_dazzling_orb_bounce_08.vsnd",
+		]
+		vsnd_duration = 3.232245
+	}
+	Unicorn.Dazzling.Orb.Hit.Final = 
+	{
+		base = "Base.Ability.Hit"
+		filter_include_others = true
+		volume = 4.000000
+		vsnd_files = "sounds/abilities/unicorn/a4/unicorn_dazzling_orb_final_hit.vsnd"
+		vsnd_duration = 2.162177
+	}
+	Unicorn.Dazzling.Orb.World.Impact = 
+	{
+		base = "Base.Ability.Detached"
+		volume = 1.000000
+		vsnd_files = 
+		[
+			"sounds/abilities/unicorn/a4/unicorn_dazzling_orb_bounce_01.vsnd",
+			"sounds/abilities/unicorn/a4/unicorn_dazzling_orb_bounce_02.vsnd",
+			"sounds/abilities/unicorn/a4/unicorn_dazzling_orb_bounce_03.vsnd",
+			"sounds/abilities/unicorn/a4/unicorn_dazzling_orb_bounce_04.vsnd",
+			"sounds/abilities/unicorn/a4/unicorn_dazzling_orb_bounce_05.vsnd",
+			"sounds/abilities/unicorn/a4/unicorn_dazzling_orb_bounce_06.vsnd",
+			"sounds/abilities/unicorn/a4/unicorn_dazzling_orb_bounce_07.vsnd",
+			"sounds/abilities/unicorn/a4/unicorn_dazzling_orb_bounce_08.vsnd",
+		]
+		vsnd_duration = 3.232245
+	}
+	Unicorn.Dazzling.Orb.Whizby = 
+	{
+		base = "Base.Ability.Detached"
+		volume = 5.000000
+		volume_fade_out = 0.200000
+		volume_offset_player = -6.000000
+		vsnd_files = 
+		[
+			"sounds/abilities/unicorn/a4/unicorn_dazzling_orb_proj_whiz_01.vsnd",
+			"sounds/abilities/unicorn/a4/unicorn_dazzling_orb_proj_whiz_02.vsnd",
+			"sounds/abilities/unicorn/a4/unicorn_dazzling_orb_proj_whiz_03.vsnd",
+			"sounds/abilities/unicorn/a4/unicorn_dazzling_orb_proj_whiz_04.vsnd",
+			"sounds/abilities/unicorn/a4/unicorn_dazzling_orb_proj_whiz_05.vsnd",
+			"sounds/abilities/unicorn/a4/unicorn_dazzling_orb_proj_whiz_06.vsnd",
+		]
+		vsnd_duration = 3.249751
+	}
+	Unicorn.Dazzling.Orb.Proj.Lp = 
+	{
+		base = "Base.Ability.Projectile"
+		volume = 1.000000
+		volume_offset_opponent = 3.000000
+		volume_offset_player = -10.000000
+		doppler_factor = 1.000000
+		delay_rand_min = -7.000000
+		volume_fade_in = 0.100000
+		volume_fade_out = 0.750000
+		vsnd_files = "sounds/abilities/unicorn/a4/unicorn_dazzling_orb_proj_lp.vsnd"
+		vsnd_duration = 16.139999
+	}
+	Unicorn.Dazzling.Orb.Grace.Lp = 
+	{
+		base = "Base.Ability.StatusEffect"
+		volume = -9.000000
+		delay_rand_min = -7.000000
+		volume_fade_in = 0.150000
+		volume_fade_out = 0.600000
+		vsnd_files = "sounds/abilities/unicorn/a4/unicorn_dazzling_orb_grace_lp.vsnd"
+		vsnd_duration = 8.070000
+	}
+	Unicorn.Dazzling.Orb.Expire = 
+	{
+		base = "Base.Ability.StatusEffect"
+		volume = -9.000000
+		volume_fade_in = 0.100000
+		vsnd_files = "sounds/abilities/unicorn/a4/unicorn_dazzling_orb_expire.vsnd"
+		vsnd_duration = 2.907868
+	}
+	Unicorn.Luminous.Flux.Cast = 
+	{
+		base = "Base.Ability"
+		volume = 2.000000
+		volume_offset_opponent = 3.000000
+		vsnd_files = 
+		[
+			"sounds/abilities/unicorn/a3/unicorn_luminous_cast_01.vsnd",
+			"sounds/abilities/unicorn/a3/unicorn_luminous_cast_02.vsnd",
+			"sounds/abilities/unicorn/a3/unicorn_luminous_cast_03.vsnd",
+		]
+		vsnd_duration = 1.975782
+	}
+	Unicorn.Luminous.Flux.Buff = 
+	{
+		base = "Base.Ability.StatusEffect"
+		volume = 2.000000
+		incremental_pitch_offset = 0.070000
+		pitch_increment_count_max = 5.000000
+		vsnd_files = "sounds/abilities/unicorn/a3/unicorn_luminous_buff_01.vsnd"
+		vsnd_duration = 3.660272
+	}
+	Unicorn.Luminous.Flux.Buff.Max = 
+	{
+		base = "Base.Ability.StatusEffect"
+		volume = 1.000000
+		vsnd_files = "sounds/abilities/unicorn/a3/unicorn_luminous_buff_max.vsnd"
+		vsnd_duration = 3.660272
+	}
+	Unicorn.Luminous.Flux.Buff.Expire = 
+	{
+		base = "Base.Ability.StatusEffect"
+		volume = -7.000000
+		vsnd_files = "sounds/abilities/unicorn/a3/unicorn_luminous_buff_expire.vsnd"
+		vsnd_duration = 2.590068
+	}
+	Unicorn.Luminous.Flux.Buff.Lp = 
+	{
+		base = "Base.Ability.StatusEffect"
+		volume = -12.000000
+		volume_fade_in = 0.200000
+		volume_fade_out = 0.300000
+		delay_rand_min = -10.000000
+		vsnd_files = "sounds/abilities/unicorn/a3/unicorn_luminous_buff_lp.vsnd"
+		volume_fade_over_time_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				1.083000,
+				1.083000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				5.000000,
+				1.000000,
+				-0.040350,
+				-0.040350,
+				3.000000,
+				1.000000,
+			],
+			
+			[
+				12.500000,
+				0.650000,
+				-0.023581,
+				-0.023581,
+				2.000000,
+				3.000000,
+			],
+		]
+		vsnd_duration = 11.212676
+	}
+	Unicorn.Luminous.Strike.AOE.Warning = 
+	{
+		base = "Base.Ability.Detached"
+		volume = -1.000000
+		volume_offset_opponent = 6.000000
+		spread_min = 250.000000
+		spread_max_value_player = 0.700000
+		spread_max_value_opponent = 0.850000
+		spread_max_value_team = 0.700000
+		spread_max = 500.000000
+		spread_min_value = 0.000000
+		vsnd_files = "sounds/abilities/unicorn/a3/unicorn_luminous_aoe_warning.vsnd"
+		vsnd_duration = 3.015079
+	}
+	Unicorn.Luminous.Flux.Impact = 
+	{
+		base = "Base.Ability.Detached"
+		volume = 4.000000
+		volume_offset_opponent = 4.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		spread_min = 250.000000
+		spread_max_value_player = 0.600000
+		spread_max_value_opponent = 0.850000
+		spread_max_value_team = 0.600000
+		spread_max = 500.000000
+		spread_min_value = 0.000000
+		vsnd_files = 
+		[
+			"sounds/abilities/unicorn/a3/unicorn_luminous_explode_01.vsnd",
+			"sounds/abilities/unicorn/a3/unicorn_luminous_explode_02.vsnd",
+			"sounds/abilities/unicorn/a3/unicorn_luminous_explode_03.vsnd",
+		]
+		vsnd_duration = 2.500386
+	}
+	Unicorn.Luminous.Flux.Hit = 
+	{
+		base = "Base.Ability.Hit"
+		volume = 4.000000
+		volume_offset_victim_db = 3.000000
+		vsnd_files = 
+		[
+			"sounds/abilities/unicorn/a3/unicorn_luminous_hit_confirm_01.vsnd",
+			"sounds/abilities/unicorn/a3/unicorn_luminous_hit_confirm_02.vsnd",
+			"sounds/abilities/unicorn/a3/unicorn_luminous_hit_confirm_03.vsnd",
+		]
+		vsnd_duration = 2.989592
+	}
+	Unicorn.Footstep = 
+	{
+		base = "Base.Footsteps"
+		limiter_max = 3.000000
+		track_1.vsnd_track_vol_offset_db = -3.000000
+		track_2.vsnd_track_vol_offset_db = -9.500000
+		track_3.vsnd_track_vol_offset_db = -9.000000
+		track_2.track_percent_chance_to_play = 0.200000
+		vsnd_files = 
+		[
+			"sounds/player/footsteps/unicorn/unicorn_footstep_01.vsnd",
+			"sounds/player/footsteps/unicorn/unicorn_footstep_02.vsnd",
+			"sounds/player/footsteps/unicorn/unicorn_footstep_03.vsnd",
+			"sounds/player/footsteps/unicorn/unicorn_footstep_04.vsnd",
+			"sounds/player/footsteps/unicorn/unicorn_footstep_05.vsnd",
+			"sounds/player/footsteps/unicorn/unicorn_footstep_06.vsnd",
+			"sounds/player/footsteps/unicorn/unicorn_footstep_07.vsnd",
+			"sounds/player/footsteps/unicorn/unicorn_footstep_08.vsnd",
+			"sounds/player/footsteps/unicorn/unicorn_footstep_09.vsnd",
+			"sounds/player/footsteps/unicorn/unicorn_footstep_10.vsnd",
+			"sounds/player/footsteps/unicorn/unicorn_footstep_11.vsnd",
+			"sounds/player/footsteps/unicorn/unicorn_footstep_12.vsnd",
+			"sounds/player/footsteps/unicorn/unicorn_footstep_13.vsnd",
+			"sounds/player/footsteps/unicorn/unicorn_footstep_14.vsnd",
+			"sounds/player/footsteps/unicorn/unicorn_footstep_15.vsnd",
+			"sounds/player/footsteps/unicorn/unicorn_footstep_16.vsnd",
+			"sounds/player/footsteps/unicorn/unicorn_footstep_17.vsnd",
+		]
+		track_2.track_vsnd_files = 
+		[
+			"sounds/player/movement/unicorn/unicorn_sparkle_sweetener_01.vsnd",
+			"sounds/player/movement/unicorn/unicorn_sparkle_sweetener_02.vsnd",
+			"sounds/player/movement/unicorn/unicorn_sparkle_sweetener_03.vsnd",
+			"sounds/player/movement/unicorn/unicorn_sparkle_sweetener_04.vsnd",
+			"sounds/player/movement/unicorn/unicorn_sparkle_sweetener_05.vsnd",
+			"sounds/player/movement/unicorn/unicorn_sparkle_sweetener_06.vsnd",
+			"sounds/player/movement/unicorn/unicorn_sparkle_sweetener_07.vsnd",
+			"sounds/player/movement/unicorn/unicorn_sparkle_sweetener_08.vsnd",
+			"sounds/player/movement/unicorn/unicorn_sparkle_sweetener_09.vsnd",
+			"sounds/player/movement/unicorn/unicorn_sparkle_sweetener_10.vsnd",
+			"sounds/player/movement/unicorn/unicorn_sparkle_sweetener_11.vsnd",
+			"sounds/player/movement/unicorn/unicorn_sparkle_sweetener_12.vsnd",
+		]
+		track_3.track_vsnd_files = 
+		[
+			"sounds/player/movement/unicorn/unicorn_foley_short_01.vsnd",
+			"sounds/player/movement/unicorn/unicorn_foley_short_02.vsnd",
+			"sounds/player/movement/unicorn/unicorn_foley_short_03.vsnd",
+			"sounds/player/movement/unicorn/unicorn_foley_short_04.vsnd",
+			"sounds/player/movement/unicorn/unicorn_foley_short_05.vsnd",
+			"sounds/player/movement/unicorn/unicorn_foley_short_06.vsnd",
+			"sounds/player/movement/unicorn/unicorn_foley_short_07.vsnd",
+			"sounds/player/movement/unicorn/unicorn_foley_short_08.vsnd",
+			"sounds/player/movement/unicorn/unicorn_foley_short_09.vsnd",
+			"sounds/player/movement/unicorn/unicorn_foley_short_10.vsnd",
+		]
+		vsnd_duration = 0.352993
+	}
+	Unicorn.Movement.Short = 
+	{
+		base = "Base.Movement"
+		volume = -10.000000
+		vsnd_files = 
+		[
+			"sounds/player/movement/unicorn/unicorn_foley_short_01.vsnd",
+			"sounds/player/movement/unicorn/unicorn_foley_short_02.vsnd",
+			"sounds/player/movement/unicorn/unicorn_foley_short_03.vsnd",
+			"sounds/player/movement/unicorn/unicorn_foley_short_04.vsnd",
+			"sounds/player/movement/unicorn/unicorn_foley_short_05.vsnd",
+			"sounds/player/movement/unicorn/unicorn_foley_short_06.vsnd",
+			"sounds/player/movement/unicorn/unicorn_foley_short_07.vsnd",
+			"sounds/player/movement/unicorn/unicorn_foley_short_08.vsnd",
+			"sounds/player/movement/unicorn/unicorn_foley_short_09.vsnd",
+			"sounds/player/movement/unicorn/unicorn_foley_short_10.vsnd",
+		]
+		vsnd_duration = 0.527143
+	}
+	Unicorn.Idle.Twirl = 
+	{
+		base = "Base.Movement"
+		volume = 1.000000
+		volume_offset_opponent = -10.000000
+		vsnd_files = 
+		[
+			"sounds/player/movement/unicorn/unicorn_idle_twirl_01.vsnd",
+			"sounds/player/movement/unicorn/unicorn_idle_twirl_02.vsnd",
+			"sounds/player/movement/unicorn/unicorn_idle_twirl_03.vsnd",
+		]
+		vsnd_duration = 1.007551
+	}
+	Unicorn.Dash.Sweetener = 
+	{
+		base = "Base.Movement"
+		volume = -2.000000
+		volume_offset_opponent = -6.000000
+		volume_offset_team = -9.000000
+		vsnd_files = 
+		[
+			"sounds/player/movement/unicorn/unicorn_dash_sweetener_01.vsnd",
+			"sounds/player/movement/unicorn/unicorn_dash_sweetener_02.vsnd",
+			"sounds/player/movement/unicorn/unicorn_dash_sweetener_03.vsnd",
+			"sounds/player/movement/unicorn/unicorn_dash_sweetener_04.vsnd",
+			"sounds/player/movement/unicorn/unicorn_dash_sweetener_05.vsnd",
+			"sounds/player/movement/unicorn/unicorn_dash_sweetener_06.vsnd",
+			"sounds/player/movement/unicorn/unicorn_dash_sweetener_07.vsnd",
+			"sounds/player/movement/unicorn/unicorn_dash_sweetener_08.vsnd",
+			"sounds/player/movement/unicorn/unicorn_dash_sweetener_09.vsnd",
+			"sounds/player/movement/unicorn/unicorn_dash_sweetener_10.vsnd",
+			"sounds/player/movement/unicorn/unicorn_dash_sweetener_11.vsnd",
+			"sounds/player/movement/unicorn/unicorn_dash_sweetener_12.vsnd",
+			"sounds/player/movement/unicorn/unicorn_dash_sweetener_13.vsnd",
+			"sounds/player/movement/unicorn/unicorn_dash_sweetener_14.vsnd",
+		]
+		vsnd_duration = 1.807937
+	}
+	Unicorn.Melee.Swing.Charged = 
+	{
+		base = "Base.Movement.Melee"
+		track_2.vsnd_track_vol_offset_db = 2.000000
+		vsnd_files = 
+		[
+			"sounds/player/melee/shared/swing_long_01.vsnd",
+			"sounds/player/melee/shared/swing_long_02.vsnd",
+			"sounds/player/melee/shared/swing_long_03.vsnd",
+			"sounds/player/melee/shared/swing_long_04.vsnd",
+			"sounds/player/melee/shared/swing_long_05.vsnd",
+			"sounds/player/melee/shared/swing_long_06.vsnd",
+			"sounds/player/melee/shared/swing_long_07.vsnd",
+			"sounds/player/melee/shared/swing_long_08.vsnd",
+			"sounds/player/melee/shared/swing_long_09.vsnd",
+			"sounds/player/melee/shared/swing_long_10.vsnd",
+			"sounds/player/melee/shared/swing_long_11.vsnd",
+			"sounds/player/melee/shared/swing_long_12.vsnd",
+			"sounds/player/melee/shared/swing_long_13.vsnd",
+			"sounds/player/melee/shared/swing_long_14.vsnd",
+			"sounds/player/melee/shared/swing_long_15.vsnd",
+			"sounds/player/melee/shared/swing_long_16.vsnd",
+			"sounds/player/melee/shared/swing_long_17.vsnd",
+			"sounds/player/melee/shared/swing_long_18.vsnd",
+			"sounds/player/melee/shared/swing_long_19.vsnd",
+			"sounds/player/melee/shared/swing_long_20.vsnd",
+			"sounds/player/melee/shared/swing_long_21.vsnd",
+			"sounds/player/melee/shared/swing_long_22.vsnd",
+			"sounds/player/melee/shared/swing_long_23.vsnd",
+			"sounds/player/melee/shared/swing_long_24.vsnd",
+			"sounds/player/melee/shared/swing_long_25.vsnd",
+		]
+		track_2.track_vsnd_files = 
+		[
+			"sounds/player/movement/unicorn/unicorn_melee_sweetener_01.vsnd",
+			"sounds/player/movement/unicorn/unicorn_melee_sweetener_02.vsnd",
+			"sounds/player/movement/unicorn/unicorn_melee_sweetener_03.vsnd",
+		]
+		vsnd_duration = 1.399792
+	}
+	Unicorn.Progession.Page.Win.VO = 
+	{
+		base = "Base.VO.HeroVictory"
+		context_name = "unicorn"
+		vsnd_files = 
+		[
+			"sounds/vo/unicorn/ping/unicorn_ping_post_game_02.vsnd",
+			"sounds/vo/unicorn/ping/unicorn_ping_post_game_05.vsnd",
+		]
+		vsnd_duration = 1.746583
+	}
+}

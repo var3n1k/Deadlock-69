@@ -1,0 +1,653 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	Haze.Wpn.Fire.Main = 
+	{
+		base = "Base.Weapon.Pistol"
+		volume = 2.000000
+		volume_fade_out = 0.300000
+		fade_type = "equal_power"
+		low_ammo_threshold = 8.000000
+		tail_vol_offset_db = -2.000000
+		tail_interior_vol_offset_db = -12.000000
+		last_shot_vol_offset_db = 0.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/haze/haze_weapon_fire_01.vsnd",
+			"sounds/weapons/haze/haze_weapon_fire_02.vsnd",
+			"sounds/weapons/haze/haze_weapon_fire_03.vsnd",
+			"sounds/weapons/haze/haze_weapon_fire_04.vsnd",
+			"sounds/weapons/haze/haze_weapon_fire_05.vsnd",
+			"sounds/weapons/haze/haze_weapon_fire_06.vsnd",
+		]
+		vsnd_files_tail = 
+		[
+			"sounds/weapons/haze/haze_weapon_fire_tail_01.vsnd",
+			"sounds/weapons/haze/haze_weapon_fire_tail_02.vsnd",
+			"sounds/weapons/haze/haze_weapon_fire_tail_03.vsnd",
+			"sounds/weapons/haze/haze_weapon_fire_tail_04.vsnd",
+			"sounds/weapons/haze/haze_weapon_fire_tail_05.vsnd",
+			"sounds/weapons/haze/haze_weapon_fire_tail_06.vsnd",
+		]
+		fire_rate_percent_curve_db_offset = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				-0.059997,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				100.000000,
+				-5.999681,
+				-0.059997,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		continuous_fire_time_curve_db_offset = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				-1.001785,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				3.000000,
+				-2.003571,
+				-1.001785,
+				-1.001785,
+				0.000000,
+				1.000000,
+			],
+		]
+		vsnd_files_last_shot = 
+		[
+			"sounds/weapons/haze/haze_wpn_last_shot_01.vsnd",
+		]
+		vsnd_duration = 1.698753
+	}
+	Haze.Wpn.Fire.First = 
+	{
+		base = "Haze.Wpn.Fire.Main"
+		transient_offset_db = 3.000000
+		limiter_max = 0.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/haze/haze_weapon_fire_first_01.vsnd",
+			"sounds/weapons/haze/haze_weapon_fire_first_02.vsnd",
+			"sounds/weapons/haze/haze_weapon_fire_first_03.vsnd",
+			"sounds/weapons/haze/haze_weapon_fire_first_04.vsnd",
+			"sounds/weapons/haze/haze_weapon_fire_first_05.vsnd",
+			"sounds/weapons/haze/haze_weapon_fire_first_06.vsnd",
+		]
+		vsnd_duration = 0.519456
+	}
+	Haze.Wpn.Fire.Release = 
+	{
+		base = "Base.Weapon.Tail"
+		volume = -2.000000
+		vsnd_files_tail = 
+		[
+			"sounds/weapons/haze/haze_weapon_fire_release_01.vsnd",
+			"sounds/weapons/haze/haze_weapon_fire_release_02.vsnd",
+			"sounds/weapons/haze/haze_weapon_fire_release_03.vsnd",
+			"sounds/weapons/haze/haze_weapon_fire_release_04.vsnd",
+			"sounds/weapons/haze/haze_weapon_fire_release_05.vsnd",
+			"sounds/weapons/haze/haze_weapon_fire_release_06.vsnd",
+		]
+		fire_rate_percent_curve_db_offset = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				-0.059997,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				100.000000,
+				-5.999681,
+				-0.059997,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		continuous_fire_time_curve_db_offset = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		vsnd_duration = 1.698753
+	}
+	Haze.Wpn.Impact = 
+	{
+		base = "Base.Bullet.Impact"
+		vsnd_files = "sounds/common/null.vsnd"
+		vsnd_duration = 0.050023
+	}
+	Haze.Wpn.BulletWhizby = 
+	{
+		base = "Base.Bullet.Whizby"
+		volume = -3.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/haze/haze_weapon_whizby_groupA-001.vsnd",
+			"sounds/weapons/haze/haze_weapon_whizby_groupA-002.vsnd",
+			"sounds/weapons/haze/haze_weapon_whizby_groupA-003.vsnd",
+			"sounds/weapons/haze/haze_weapon_whizby_groupA-004.vsnd",
+			"sounds/weapons/haze/haze_weapon_whizby_groupA-005.vsnd",
+			"sounds/weapons/haze/haze_weapon_whizby_groupA-006.vsnd",
+			"sounds/weapons/haze/haze_weapon_whizby_groupA-007.vsnd",
+			"sounds/weapons/haze/haze_weapon_whizby_groupA-008.vsnd",
+			"sounds/weapons/haze/haze_weapon_whizby_groupA-009.vsnd",
+			"sounds/weapons/haze/haze_weapon_whizby_groupA-010.vsnd",
+			"sounds/weapons/haze/haze_weapon_whizby_groupB-001.vsnd",
+			"sounds/weapons/haze/haze_weapon_whizby_groupB-002.vsnd",
+			"sounds/weapons/haze/haze_weapon_whizby_groupB-003.vsnd",
+			"sounds/weapons/haze/haze_weapon_whizby_groupB-004.vsnd",
+			"sounds/weapons/haze/haze_weapon_whizby_groupB-005.vsnd",
+			"sounds/weapons/haze/haze_weapon_whizby_groupB-006.vsnd",
+			"sounds/weapons/haze/haze_weapon_whizby_groupB-007.vsnd",
+			"sounds/weapons/haze/haze_weapon_whizby_groupB-008.vsnd",
+			"sounds/weapons/haze/haze_weapon_whizby_groupB-009.vsnd",
+			"sounds/weapons/haze/haze_weapon_whizby_groupB-010.vsnd",
+		]
+		vsnd_duration = 0.675941
+	}
+	Haze.Wpn.ZoomIn = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = -26.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		vsnd_files = 
+		[
+			"sounds/weapons/haze/zoom/in_1.vsnd",
+		]
+		vsnd_duration = 0.584042
+	}
+	Haze.Wpn.ZoomOut = 
+	{
+		base = "Base.Weapon.Foley"
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		volume = -30.000000
+		vsnd_files = "sounds/weapons/haze/zoom/out_1.vsnd"
+		vsnd_duration = 1.033500
+	}
+	Haze.Wpn.Reload.Start = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = -2.000000
+		mono_downmix_enabled = 0.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/haze/reload/haze_wpn_reload_start_01.vsnd",
+			"sounds/weapons/haze/reload/haze_wpn_reload_start_02.vsnd",
+			"sounds/weapons/haze/reload/haze_wpn_reload_start_03.vsnd",
+		]
+		vsnd_duration = 1.047302
+	}
+	Haze.Wpn.Reload.Mid = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = -2.000000
+		mono_downmix_enabled = 0.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/haze/reload/haze_wpn_reload_mid_01.vsnd",
+			"sounds/weapons/haze/reload/haze_wpn_reload_mid_02.vsnd",
+			"sounds/weapons/haze/reload/haze_wpn_reload_mid_03.vsnd",
+		]
+		vsnd_duration = 0.736871
+	}
+	Haze.Wpn.Reload.End = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = -2.000000
+		mono_downmix_enabled = 0.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/haze/reload/haze_wpn_reload_end_01.vsnd",
+			"sounds/weapons/haze/reload/haze_wpn_reload_end_02.vsnd",
+			"sounds/weapons/haze/reload/haze_wpn_reload_end_03.vsnd",
+		]
+		vsnd_duration = 0.519796
+	}
+	Haze.Finesse.Dagger.Cast = 
+	{
+		base = "Base.Ability"
+		volume = 0.000000
+		vsnd_files = "sounds/abilities/haze/haze_sleep_dagger_cast.vsnd"
+		vsnd_duration = 1.674830
+	}
+	Haze.Finesse.Dagger.Projectile.Lp = 
+	{
+		base = "Base.Ability.Projectile"
+		volume = 2.000000
+		pitch = 1.200000
+		delay_rand_max = -6.000000
+		param_envelope_enabled = 1.000000
+		vsnd_files = "sounds/abilities/haze/haze_sleep_dagger_lp.vsnd"
+		vsnd_duration = 7.494376
+	}
+	Haze.Finesse.Dagger.Projectile.Whizby = 
+	{
+		base = "Base.Bullet.Whizby"
+		whizby_time_to_peak = 0.150000
+		volume = 5.000000
+		vsnd_files = 
+		[
+			"sounds/abilities/haze/haze_sleep_dagger_whizby_01.vsnd",
+			"sounds/abilities/haze/haze_sleep_dagger_whizby_02.vsnd",
+			"sounds/abilities/haze/haze_sleep_dagger_whizby_03.vsnd",
+			"sounds/abilities/haze/haze_sleep_dagger_whizby_04.vsnd",
+			"sounds/abilities/haze/haze_sleep_dagger_whizby_05.vsnd",
+			"sounds/abilities/haze/haze_sleep_dagger_whizby_06.vsnd",
+		]
+		vsnd_duration = 0.525079
+	}
+	Haze.Finesse.Dagger.Projectile.Hit = 
+	{
+		base = "Base.Ability.Hit"
+		filter_include_others = true
+		volume = 0.000000
+		vsnd_files = "sounds/abilities/haze/haze_sleep_dagger_hit.vsnd"
+		vsnd_duration = 3.344989
+	}
+	Haze.Finesse.Dagger.Detonate = 
+	{
+		base = "Base.Ability"
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		vsnd_files = "sounds/abilities/haze/a1_finesse_dagger/tier3_explosion.vsnd"
+		vsnd_duration = 3.595419
+	}
+	Haze.Smoke.Bomb.Cast = 
+	{
+		base = "Base.Ability"
+		volume = -6.000000
+		vsnd_files = "sounds/abilities/haze/haze_smoke_bomb_cast.vsnd"
+		vsnd_duration = 4.089683
+	}
+	Haze.Smoke.Bomb.End = 
+	{
+		base = "Base.Ability"
+		volume = -6.000000
+		vsnd_files = "sounds/abilities/haze/haze_smoke_bomb_end.vsnd"
+		vsnd_duration = 3.855918
+	}
+	Haze.Smoke.Bomb.Modifier.Lp = 
+	{
+		base = "Base.Ability"
+		volume = -12.000000
+		param_envelope_enabled = 1.000000
+		vsnd_files = "sounds/abilities/haze/haze_smoke_bomb_lp.vsnd"
+		vsnd_duration = 27.567755
+	}
+	Haze.Smoke.Bomb.Invis = 
+	{
+		base = "Base.Ability"
+		volume = 0.000000
+		vsnd_files = 
+		[
+			"sounds/abilities/haze/haze_sleep_dagger_whizby_01.vsnd",
+			"sounds/abilities/haze/haze_sleep_dagger_whizby_02.vsnd",
+			"sounds/abilities/haze/haze_sleep_dagger_whizby_03.vsnd",
+			"sounds/abilities/haze/haze_sleep_dagger_whizby_04.vsnd",
+			"sounds/abilities/haze/haze_sleep_dagger_whizby_05.vsnd",
+			"sounds/abilities/haze/haze_sleep_dagger_whizby_06.vsnd",
+		]
+		vsnd_duration = 0.525079
+	}
+	Haze.Foley.Invis.Holster = 
+	{
+		base = "Base.Movement"
+		volume = 0.000000
+		vsnd_files = "sounds/abilities/haze/a2_smoke_bomb/holster.vsnd"
+		vsnd_duration = 0.339500
+	}
+	Haze.Foley.Invis.Draw = 
+	{
+		base = "Base.Movement"
+		volume = 0.000000
+		vsnd_files = "sounds/abilities/haze/a2_smoke_bomb/draw.vsnd"
+		vsnd_duration = 0.415458
+	}
+	Haze.BulletFlurry.Modifier.Start = 
+	{
+		base = "Base.Ability.Ult"
+		volume = -2.000000
+		vsnd_files = "sounds/abilities/haze/haze_bullet_flurry_cast_start.vsnd"
+		vsnd_duration = 2.921565
+	}
+	Haze.BulletFlurry.Cast.Delay = 
+	{
+		base = "Base.Ability.Ult"
+		volume = 0.000000
+		vsnd_files = "sounds/abilities/haze/haze_bullet_flurry_cast_delay.vsnd"
+		vsnd_duration = 1.852698
+	}
+	Haze.BulletFlurry.Modifier.Lp = 
+	{
+		base = "Base.Ability.Ult"
+		volume = 2.000000
+		delay_rand_max = -10.000000
+		volume_fade_out = 0.250000
+		vsnd_files = "sounds/abilities/haze/haze_bullet_flurry_cast_lp.vsnd"
+		vsnd_duration = 12.049070
+	}
+	Haze.BulletFlurry.Modifier.End = 
+	{
+		base = "Base.Ability.Ult"
+		volume = -7.000000
+		vsnd_files = "sounds/abilities/haze/haze_bullet_flurry_cast_end.vsnd"
+		vsnd_duration = 1.595193
+	}
+	Haze.Footstep = 
+	{
+		base = "Base.Footsteps"
+		track_1.vsnd_track_vol_offset_db = -3.000000
+		track_2.vsnd_track_vol_offset_db = -9.000000
+		vsnd_files = 
+		[
+			"sounds/player/footsteps/haze/haze_step_01.vsnd",
+			"sounds/player/footsteps/haze/haze_step_02.vsnd",
+			"sounds/player/footsteps/haze/haze_step_03.vsnd",
+			"sounds/player/footsteps/haze/haze_step_04.vsnd",
+			"sounds/player/footsteps/haze/haze_step_05.vsnd",
+			"sounds/player/footsteps/haze/haze_step_06.vsnd",
+			"sounds/player/footsteps/haze/haze_step_07.vsnd",
+			"sounds/player/footsteps/haze/haze_step_08.vsnd",
+			"sounds/player/footsteps/haze/haze_step_09.vsnd",
+			"sounds/player/footsteps/haze/haze_step_10.vsnd",
+			"sounds/player/footsteps/haze/haze_step_11.vsnd",
+			"sounds/player/footsteps/haze/haze_step_12.vsnd",
+			"sounds/player/footsteps/haze/haze_step_13.vsnd",
+			"sounds/player/footsteps/haze/haze_step_14.vsnd",
+			"sounds/player/footsteps/haze/haze_step_15.vsnd",
+			"sounds/player/footsteps/haze/haze_step_16.vsnd",
+		]
+		track_2.track_vsnd_files = 
+		[
+			"sounds/player/movement/haze/haze_movement_foley_short_01.vsnd",
+			"sounds/player/movement/haze/haze_movement_foley_short_02.vsnd",
+			"sounds/player/movement/haze/haze_movement_foley_short_03.vsnd",
+			"sounds/player/movement/haze/haze_movement_foley_short_04.vsnd",
+			"sounds/player/movement/haze/haze_movement_foley_short_05.vsnd",
+			"sounds/player/movement/haze/haze_movement_foley_short_06.vsnd",
+			"sounds/player/movement/haze/haze_movement_foley_short_07.vsnd",
+			"sounds/player/movement/haze/haze_movement_foley_short_08.vsnd",
+			"sounds/player/movement/haze/haze_movement_foley_short_09.vsnd",
+			"sounds/player/movement/haze/haze_movement_foley_short_10.vsnd",
+			"sounds/player/movement/haze/haze_movement_foley_short_11.vsnd",
+			"sounds/player/movement/haze/haze_movement_foley_short_12.vsnd",
+			"sounds/player/movement/haze/haze_movement_foley_short_13.vsnd",
+			"sounds/player/movement/haze/haze_movement_foley_short_14.vsnd",
+			"sounds/player/movement/haze/haze_movement_foley_short_15.vsnd",
+			"sounds/player/movement/haze/haze_movement_foley_short_16.vsnd",
+		]
+		vsnd_duration = 0.566122
+	}
+	Haze.Movement.Long = 
+	{
+		base = "Base.Movement"
+		volume = -5.000000
+	}
+	Haze.Movement.Short = 
+	{
+		base = "Base.Movement"
+		volume = -1.000000
+		vsnd_files = 
+		[
+			"sounds/player/movement/haze/haze_movement_foley_short_01.vsnd",
+			"sounds/player/movement/haze/haze_movement_foley_short_02.vsnd",
+			"sounds/player/movement/haze/haze_movement_foley_short_03.vsnd",
+			"sounds/player/movement/haze/haze_movement_foley_short_04.vsnd",
+			"sounds/player/movement/haze/haze_movement_foley_short_05.vsnd",
+			"sounds/player/movement/haze/haze_movement_foley_short_06.vsnd",
+			"sounds/player/movement/haze/haze_movement_foley_short_07.vsnd",
+			"sounds/player/movement/haze/haze_movement_foley_short_08.vsnd",
+			"sounds/player/movement/haze/haze_movement_foley_short_09.vsnd",
+			"sounds/player/movement/haze/haze_movement_foley_short_10.vsnd",
+			"sounds/player/movement/haze/haze_movement_foley_short_11.vsnd",
+			"sounds/player/movement/haze/haze_movement_foley_short_12.vsnd",
+			"sounds/player/movement/haze/haze_movement_foley_short_13.vsnd",
+			"sounds/player/movement/haze/haze_movement_foley_short_14.vsnd",
+			"sounds/player/movement/haze/haze_movement_foley_short_15.vsnd",
+			"sounds/player/movement/haze/haze_movement_foley_short_16.vsnd",
+		]
+		vsnd_duration = 0.502676
+	}
+	Haze.JumpLand = 
+	{
+		base = "Base.Footsteps.JumpLand"
+		volume = 0.000000
+		vsnd_files = 
+		[
+			"sounds/player/footsteps/haze/haze_step_01.vsnd",
+			"sounds/player/footsteps/haze/haze_step_02.vsnd",
+			"sounds/player/footsteps/haze/haze_step_03.vsnd",
+			"sounds/player/footsteps/haze/haze_step_04.vsnd",
+			"sounds/player/footsteps/haze/haze_step_05.vsnd",
+			"sounds/player/footsteps/haze/haze_step_06.vsnd",
+			"sounds/player/footsteps/haze/haze_step_07.vsnd",
+			"sounds/player/footsteps/haze/haze_step_08.vsnd",
+			"sounds/player/footsteps/haze/haze_step_09.vsnd",
+			"sounds/player/footsteps/haze/haze_step_10.vsnd",
+			"sounds/player/footsteps/haze/haze_step_11.vsnd",
+			"sounds/player/footsteps/haze/haze_step_12.vsnd",
+			"sounds/player/footsteps/haze/haze_step_13.vsnd",
+			"sounds/player/footsteps/haze/haze_step_14.vsnd",
+			"sounds/player/footsteps/haze/haze_step_15.vsnd",
+			"sounds/player/footsteps/haze/haze_step_16.vsnd",
+		]
+		track_2.track_vsnd_files = 
+		[
+			"sounds/player/movement/haze/haze_jump_land_01.vsnd",
+			"sounds/player/movement/haze/haze_jump_land_02.vsnd",
+			"sounds/player/movement/haze/haze_jump_land_03.vsnd",
+			"sounds/player/movement/haze/haze_jump_land_04.vsnd",
+			"sounds/player/movement/haze/haze_jump_land_05.vsnd",
+			"sounds/player/movement/haze/haze_jump_land_06.vsnd",
+			"sounds/player/movement/haze/haze_jump_land_07.vsnd",
+			"sounds/player/movement/haze/haze_jump_land_08.vsnd",
+			"sounds/player/movement/haze/haze_jump_land_09.vsnd",
+		]
+		vsnd_duration = 0.566122
+	}
+	Haze.Mantle = 
+	{
+		base = "Base.Movement"
+	}
+	Haze.Melee.Swing = 
+	{
+		base = "Base.Movement.Melee"
+		vsnd_files = 
+		[
+			"sounds/player/melee/shared/swing_short_01.vsnd",
+			"sounds/player/melee/shared/swing_short_02.vsnd",
+			"sounds/player/melee/shared/swing_short_03.vsnd",
+			"sounds/player/melee/shared/swing_short_04.vsnd",
+			"sounds/player/melee/shared/swing_short_05.vsnd",
+			"sounds/player/melee/shared/swing_short_06.vsnd",
+			"sounds/player/melee/shared/swing_short_07.vsnd",
+			"sounds/player/melee/shared/swing_short_08.vsnd",
+			"sounds/player/melee/shared/swing_short_09.vsnd",
+			"sounds/player/melee/shared/swing_short_10.vsnd",
+			"sounds/player/melee/shared/swing_short_11.vsnd",
+			"sounds/player/melee/shared/swing_short_12.vsnd",
+			"sounds/player/melee/shared/swing_short_13.vsnd",
+			"sounds/player/melee/shared/swing_short_14.vsnd",
+			"sounds/player/melee/shared/swing_short_15.vsnd",
+			"sounds/player/melee/shared/swing_short_16.vsnd",
+			"sounds/player/melee/shared/swing_short_17.vsnd",
+			"sounds/player/melee/shared/swing_short_18.vsnd",
+			"sounds/player/melee/shared/swing_short_19.vsnd",
+			"sounds/player/melee/shared/swing_short_20.vsnd",
+			"sounds/player/melee/shared/swing_short_21.vsnd",
+			"sounds/player/melee/shared/swing_short_22.vsnd",
+			"sounds/player/melee/shared/swing_short_23.vsnd",
+			"sounds/player/melee/shared/swing_short_24.vsnd",
+		]
+		vsnd_duration = 1.062208
+	}
+	Haze.Melee.Swing.Charged = 
+	{
+		base = "Base.Movement.Melee"
+		vsnd_files = 
+		[
+			"sounds/player/melee/shared/swing_long_01.vsnd",
+			"sounds/player/melee/shared/swing_long_02.vsnd",
+			"sounds/player/melee/shared/swing_long_03.vsnd",
+			"sounds/player/melee/shared/swing_long_04.vsnd",
+			"sounds/player/melee/shared/swing_long_05.vsnd",
+			"sounds/player/melee/shared/swing_long_06.vsnd",
+			"sounds/player/melee/shared/swing_long_07.vsnd",
+			"sounds/player/melee/shared/swing_long_08.vsnd",
+			"sounds/player/melee/shared/swing_long_09.vsnd",
+			"sounds/player/melee/shared/swing_long_10.vsnd",
+			"sounds/player/melee/shared/swing_long_11.vsnd",
+			"sounds/player/melee/shared/swing_long_12.vsnd",
+			"sounds/player/melee/shared/swing_long_13.vsnd",
+			"sounds/player/melee/shared/swing_long_14.vsnd",
+			"sounds/player/melee/shared/swing_long_15.vsnd",
+			"sounds/player/melee/shared/swing_long_16.vsnd",
+			"sounds/player/melee/shared/swing_long_17.vsnd",
+			"sounds/player/melee/shared/swing_long_18.vsnd",
+			"sounds/player/melee/shared/swing_long_19.vsnd",
+			"sounds/player/melee/shared/swing_long_20.vsnd",
+			"sounds/player/melee/shared/swing_long_21.vsnd",
+			"sounds/player/melee/shared/swing_long_22.vsnd",
+			"sounds/player/melee/shared/swing_long_23.vsnd",
+			"sounds/player/melee/shared/swing_long_24.vsnd",
+			"sounds/player/melee/shared/swing_long_25.vsnd",
+		]
+		vsnd_duration = 1.399792
+	}
+	Haze.Reload.Twirl = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = -8.000000
+		pitch_rand_min = -0.100000
+		pitch_rand_max = 0.030000
+		pitch = 1.000000
+		vsnd_files = "sounds/weapons/haze/reload/twirl.vsnd"
+		vsnd_duration = 0.364490
+	}
+	Haze.Reload.End_01 = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = -7.000000
+		pitch_rand_min = -0.100000
+		pitch_rand_max = 0.030000
+		pitch = 1.000000
+		vsnd_files = "sounds/weapons/haze/reload/end_01.vsnd"
+		vsnd_duration = 0.125147
+	}
+	Haze.Reload.End_02 = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = -7.000000
+		pitch_rand_min = -0.100000
+		pitch_rand_max = 0.030000
+		pitch = 1.000000
+		vsnd_files = "sounds/weapons/haze/reload/end_02.vsnd"
+		vsnd_duration = 0.251315
+	}
+	Haze.Reload.Full = 
+	{
+		base = "Base.Weapon.Foley"
+		volume = -5.000000
+		pitch_rand_min = -0.100000
+		pitch_rand_max = 0.030000
+		pitch = 1.000000
+		delay = 0.600000
+		vsnd_files = "sounds/weapons/haze/reload/full.vsnd"
+	}
+	Haze.Finesse.Dagger.Sleep = 
+	{
+		base = "Base.Ability.StatusEffect"
+		volume = 0.000000
+		delay = 0.100000
+		volume_fade_in = 0.400000
+		volume_fade_out = 0.400000
+		vsnd_files = "sounds/gameplay/status_effects/sleep.vsnd"
+		vsnd_duration = 7.629932
+	}
+	Haze.Finesse.Dagger.Wake = 
+	{
+		base = "Base.Ability.StatusEffect"
+		volume = 0.000000
+		pitch = 1.000000
+		vsnd_files = "sounds/gameplay/status_effects/sleep_end.vsnd"
+		vsnd_duration = 0.530408
+	}
+	Haze.Progession.Page.Win.VO = 
+	{
+		base = "Base.VO.HeroVictory"
+		context_name = "haze"
+		vsnd_files = 
+		[
+			"sounds/vo/haze/haze_kill_anyhero_07.vsnd",
+			"sounds/vo/haze/haze_happy_02.vsnd",
+			"sounds/vo/haze/haze_happy_04.vsnd",
+			"sounds/vo/haze/haze_congrats_04.vsnd",
+			"sounds/vo/haze/haze_killstreak_high_02.vsnd",
+		]
+		vsnd_duration = 3.812767
+	}
+	Haze.Progession.Page.Lose.VO = 
+	{
+		base = "Base.VO.HeroVictory"
+		context_name = "haze"
+		vsnd_files = 
+		[
+			"sounds/vo/haze/haze_angry_03.vsnd",
+			"sounds/vo/haze/haze_angry_05.vsnd",
+			"sounds/vo/haze/haze_angry_08.vsnd",
+			"sounds/vo/haze/haze_close_call_03.vsnd",
+			"sounds/vo/haze/haze_near_miss_02.vsnd",
+		]
+		vsnd_duration = 3.885805
+	}
+}

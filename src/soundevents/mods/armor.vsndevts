@@ -1,0 +1,1062 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	Mods.Armor.TechDefender.End = 
+	{
+		base = "Base.Mod"
+		volume = 0.000000
+		vsnd_files = "sounds/mods/armor/tech_defender/unstoppable_end.vsnd"
+		vsnd_duration = 3.321837
+	}
+	Mods.Armor.TechDefender.Cast = 
+	{
+		base = "Base.Mod"
+		volume = 1.000000
+		pitch = 1.000000
+		vsnd_files = "sounds/mods/armor/tech_defender/unstoppable_cast.vsnd"
+		vsnd_duration = 2.742177
+	}
+	Mods.Armor.TechDefender.Lp = 
+	{
+		base = "Base.Mod.StatusEffect"
+		delay = 0.000000
+		delay_rand_min = -2.000000
+		volume_fade_out = 0.100000
+		volume_fade_in = 0.300000
+		volume = -14.000000
+		vsnd_files = "sounds/mods/armor/tech_defender/unstoppable_lp.vsnd"
+		vsnd_duration = 14.435511
+	}
+	Mods.Armor.RocketBoots.Cast = 
+	{
+		base = "Base.Mod"
+		volume = 0.000000
+		vsnd_files = "sounds/mods/armor/rocket_boots/cast.vsnd"
+		vsnd_duration = 3.033813
+	}
+	Mods.Armor.Cloak.Cast = 
+	{
+		base = "Base.Mod"
+		volume = 0.000000
+		pitch = 0.900000
+		vsnd_files = "sounds/mods/armor/cloak/shadowweave_cast.vsnd"
+		vsnd_duration = 3.965147
+	}
+	Mods.Armor.Cloak.Expire = 
+	{
+		base = "Base.Mod"
+		volume = -9.000000
+		vsnd_files = "sounds/mods/armor/cloak/shadowweave_end.vsnd"
+		vsnd_duration = 2.605057
+	}
+	Mods.Armor.Cloak.Mod.Lp = 
+	{
+		base = "Base.Mod.StatusEffect"
+		volume = -12.000000
+		volume_fade_in = 0.100000
+		volume_fade_out = 0.200000
+		param_envelope_enabled = 1.000000
+		pitch_envelope_scale_min = 0.800000
+		pitch_envelope_scale_max = 1.500000
+		vsnd_files = "sounds/mods/armor/cloak/shadowweave_mod_lp.vsnd"
+		vsnd_duration = 8.915420
+	}
+	Mods.Armor.Cloak.Ambush = 
+	{
+		base = "Base.Mod"
+		volume = 0.000000
+		vsnd_files = "sounds/mods/armor/cloak/shadowweave_ambush.vsnd"
+		vsnd_duration = 3.928776
+	}
+	Mods.Armor.Healing.Rite.Cast = 
+	{
+		base = "Base.Ability.Hit"
+		volume = -1.000000
+		volume_offset_attacker_db = 2.000000
+		volume_offset_other_db = 3.000000
+		filter_include_others = true
+		vsnd_files = "sounds/mods/armor/healing_rite/healingrite_cast.vsnd"
+		vsnd_duration = 3.383288
+	}
+	Mods.Armor.Healing.Rite.Select = 
+	{
+		base = "Base.Mod"
+		volume = -2.000000
+		vsnd_files = "sounds/mods/armor/healing_rite/healing_rite_select_01.vsnd"
+		vsnd_duration = 1.528027
+	}
+	Mods.Armor.Healing.Rite.Select.Lp = 
+	{
+		base = "Base.Mod"
+		volume = -1.000000
+		volume_fade_in = 0.300000
+		volume_fade_out = 0.300000
+		delay_rand_min = -5.000000
+		vsnd_files = "sounds/mods/armor/healing_rite/healing_rite_select_lp_01.vsnd"
+		vsnd_duration = 9.321179
+	}
+	Mods.Armor.Healing.Rite.Deselect = 
+	{
+		base = "Base.Mod"
+		volume = -3.000000
+		vsnd_files = "sounds/mods/armor/healing_rite/healing_rite_deselect_01.vsnd"
+		vsnd_duration = 1.680249
+	}
+	Mods.Armor.Healing.Rite.Buff.Lp = 
+	{
+		base = "Base.Mod.StatusEffect"
+		volume = -25.000000
+		volume_fade_in = 0.300000
+		volume_fade_out = 0.300000
+		vsnd_files = "sounds/player/heal_base_tick_a.vsnd"
+		vsnd_duration = 1.290816
+	}
+	Mods.Armor.Healing.Rite.Expire = 
+	{
+		base = "Base.Mod.StatusEffect"
+		volume = -14.000000
+		vsnd_files = "sounds/mods/armor/healing_rite/healingrite_end.vsnd"
+		vsnd_duration = 3.414762
+	}
+	Mods.Armor.MetalSkin.Cast = 
+	{
+		base = "Base.Mod"
+		volume = 2.000000
+		pitch = 1.000000
+		volume_offset_opponent = 2.000000
+		vsnd_files = "sounds/mods/armor/metal_skin/metalskin_cast.vsnd"
+		vsnd_duration = 2.037460
+	}
+	Mods.Armor.MetalSkin.Proc = 
+	{
+		base = "Base.Ability.Hit"
+		volume = 0.000000
+		vsnd_files = 
+		[
+			"sounds/mods/armor/metal_skin/metal_skin_proc_01.vsnd",
+			"sounds/mods/armor/metal_skin/metal_skin_proc_02.vsnd",
+			"sounds/mods/armor/metal_skin/metal_skin_proc_03.vsnd",
+			"sounds/mods/armor/metal_skin/metal_skin_proc_04.vsnd",
+			"sounds/mods/armor/metal_skin/metal_skin_proc_05.vsnd",
+			"sounds/mods/armor/metal_skin/metal_skin_proc_06.vsnd",
+			"sounds/mods/armor/metal_skin/metal_skin_proc_07.vsnd",
+			"sounds/mods/armor/metal_skin/metal_skin_proc_08.vsnd",
+			"sounds/mods/armor/metal_skin/metal_skin_proc_09.vsnd",
+			"sounds/mods/armor/metal_skin/metal_skin_proc_10.vsnd",
+			"sounds/mods/armor/metal_skin/metal_skin_proc_11.vsnd",
+			"sounds/mods/armor/metal_skin/metal_skin_proc_12.vsnd",
+		]
+		vsnd_duration = 1.478889
+	}
+	Mods.Armor.Cheat.Death.Mod.Start = 
+	{
+		base = "Base.Mod"
+		volume = 2.000000
+		pitch_rand_min = -0.025000
+		pitch_rand_max = 0.025000
+		limiter_on = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 0.000000
+		vsnd_files = "sounds/mods/armor/cheat_death/cheat_death_proc.vsnd"
+		vsnd_duration = 3.780998
+	}
+	Mods.Armor.Cheat.Death.Mod.Lp = 
+	{
+		base = "Base.Mod"
+		delay_rand_min = -2.000000
+		volume = -9.000000
+		volume_fade_in = 0.500000
+		volume_fade_out = 0.250000
+		vsnd_files = "sounds/mods/armor/cheat_death/cheat_death_lp.vsnd"
+		vsnd_duration = 3.062041
+	}
+	Mods.Armor.Cheat.Death.Mod.Expire = 
+	{
+		base = "Base.Mod"
+		volume = 3.000000
+		pitch_rand_min = -0.025000
+		pitch_rand_max = 0.025000
+		limiter_on = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 0.000000
+		vsnd_files = "sounds/mods/armor/cheat_death/cheat_death_expire.vsnd"
+		vsnd_duration = 4.854535
+	}
+	Mods.Armor.Cheat.Death.Mod.Expire.Timer = 
+	{
+		base = "Base.Mod"
+		volume = 1.000000
+		vsnd_files = "sounds/mods/armor/cheat_death/cheat_death_expire_timer.vsnd"
+		instance_attenuator_enabled = 1.000000
+		instance_count_offset_amount_db = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				-0.293897,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				-0.293897,
+				-3.243744,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				3.000000,
+				-8.000000,
+				-3.243744,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				6.000000,
+				-18.000000,
+				-3.243744,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		vsnd_duration = 6.432449
+	}
+	Mods.Armor.Meteor.Strike.Cast = 
+	{
+		base = "Base.Mod"
+		volume = -3.000000
+		vsnd_files = 
+		[
+			"sounds/mods/armor/majestic_leap/majestic_leap_jump_01.vsnd",
+			"sounds/mods/armor/majestic_leap/majestic_leap_jump_02.vsnd",
+			"sounds/mods/armor/majestic_leap/majestic_leap_jump_03.vsnd",
+			"sounds/mods/armor/majestic_leap/majestic_leap_jump_04.vsnd",
+			"sounds/mods/armor/majestic_leap/majestic_leap_jump_05.vsnd",
+			"sounds/mods/armor/majestic_leap/majestic_leap_jump_06.vsnd",
+		]
+		vsnd_duration = 3.511519
+	}
+	Mods.Armor.Meteor.Strike.Proj.Lp = 
+	{
+		base = "Base.Mod"
+		volume = -15.000000
+		param_envelope_enabled = 1.000000
+		vsnd_files = "sounds/mods/armor/majestic_leap/majestic_leap_lp.vsnd"
+		vsnd_duration = 23.344059
+	}
+	Mods.Armor.Meteor.Strike.Impact = 
+	{
+		base = "Base.Mod"
+		volume = -3.000000
+		vsnd_files = 
+		[
+			"sounds/mods/armor/majestic_leap/majestic_leap_land_01.vsnd",
+			"sounds/mods/armor/majestic_leap/majestic_leap_land_02.vsnd",
+			"sounds/mods/armor/majestic_leap/majestic_leap_land_03.vsnd",
+			"sounds/mods/armor/majestic_leap/majestic_leap_land_04.vsnd",
+			"sounds/mods/armor/majestic_leap/majestic_leap_land_05.vsnd",
+			"sounds/mods/armor/majestic_leap/majestic_leap_land_06.vsnd",
+		]
+		vsnd_duration = 3.530590
+	}
+	Mods.Armor.ReturnFire.Cast = 
+	{
+		base = "Base.Mod"
+		volume = -2.000000
+		pitch = 0.950000
+		vsnd_files = "sounds/mods/armor/return_fire/returnfire_cast.vsnd"
+		vsnd_duration = 3.823968
+	}
+	Mods.Armor.ReturnFire.Proc = 
+	{
+		base = "Base.Ability.Hit"
+		volume = -3.000000
+		limiter_max = 0.000000
+		vsnd_files = 
+		[
+			"sounds/mods/armor/return_fire/return_fire_proc_01.vsnd",
+			"sounds/mods/armor/return_fire/return_fire_proc_02.vsnd",
+			"sounds/mods/armor/return_fire/return_fire_proc_03.vsnd",
+			"sounds/mods/armor/return_fire/return_fire_proc_04.vsnd",
+			"sounds/mods/armor/return_fire/return_fire_proc_05.vsnd",
+			"sounds/mods/armor/return_fire/return_fire_proc_06.vsnd",
+			"sounds/mods/armor/return_fire/return_fire_proc_07.vsnd",
+			"sounds/mods/armor/return_fire/return_fire_proc_08.vsnd",
+			"sounds/mods/armor/return_fire/return_fire_proc_09.vsnd",
+			"sounds/mods/armor/return_fire/return_fire_proc_10.vsnd",
+			"sounds/mods/armor/return_fire/return_fire_proc_11.vsnd",
+			"sounds/mods/armor/return_fire/return_fire_proc_12.vsnd",
+			"sounds/mods/armor/return_fire/return_fire_proc_13.vsnd",
+			"sounds/mods/armor/return_fire/return_fire_proc_14.vsnd",
+			"sounds/mods/armor/return_fire/return_fire_proc_15.vsnd",
+		]
+		vsnd_duration = 1.312676
+	}
+	Mods.Armor.Savior.Start = 
+	{
+		base = "Base.Ability.Hit"
+		volume = 2.000000
+		pitch = 1.050000
+		vsnd_files = "sounds/mods/armor/divine_barrier/activate.vsnd"
+		vsnd_duration = 2.891451
+	}
+	Mods.Armor.Guardian.Ward.Cast = 
+	{
+		base = "Base.Mod"
+		volume = 0.000000
+		vsnd_files = 
+		[
+			"sounds/mods/armor/guardian_ward/guardian_ward_cast_01.vsnd",
+			"sounds/mods/armor/guardian_ward/guardian_ward_cast_02.vsnd",
+			"sounds/mods/armor/guardian_ward/guardian_ward_cast_03.vsnd",
+		]
+		vsnd_duration = 2.895011
+	}
+	Mods.Armor.Guardian.Ward.Select = 
+	{
+		base = "Base.Mod"
+		volume = -1.000000
+		vsnd_files = "sounds/mods/armor/guardian_ward/guardian_ward_select_01.vsnd"
+		vsnd_duration = 1.033379
+	}
+	Mods.Armor.Guardian.Ward.Deselect = 
+	{
+		base = "Base.Mod"
+		volume = -2.000000
+		vsnd_files = "sounds/mods/armor/guardian_ward/guardian_ward_deselect_01.vsnd"
+		vsnd_duration = 0.977052
+	}
+	Mods.Armor.Guardian.Ward.Select.Lp = 
+	{
+		base = "Base.Mod"
+		volume = -1.000000
+		volume_fade_in = 0.300000
+		volume_fade_out = 0.300000
+		delay_rand_min = -3.000000
+		vsnd_files = "sounds/mods/armor/guardian_ward/guardian_ward_select_lp_01.vsnd"
+		vsnd_duration = 7.464376
+	}
+	Mods.Armor.Divine.Barrier.Start = 
+	{
+		base = "Base.Ability.Hit"
+		volume = 2.000000
+		volume_offset_attacker_db = 3.000000
+		delay = 0.125000
+		vsnd_files = "sounds/mods/armor/divine_barrier/divine_barrier_buff_start_01.vsnd"
+		vsnd_duration = 3.124104
+	}
+	Mods.Armor.Divine.Barrier.Cast = 
+	{
+		base = "Base.Mod"
+		volume = -3.000000
+		vsnd_files = "sounds/mods/armor/divine_barrier/divine_barrier_cast_01.vsnd"
+		vsnd_duration = 3.371179
+	}
+	Mods.Armor.Divine.Barrier.Select = 
+	{
+		base = "Base.Mod"
+		volume = -4.000000
+		vsnd_files = "sounds/mods/armor/divine_barrier/divine_barrier_select_01.vsnd"
+		vsnd_duration = 1.396871
+	}
+	Mods.Armor.Divine.Barrier.Select.Lp = 
+	{
+		base = "Base.Mod"
+		volume = -4.000000
+		volume_fade_in = 0.300000
+		volume_fade_out = 0.300000
+		delay_rand_min = -3.000000
+		vsnd_files = "sounds/mods/armor/divine_barrier/divine_barrier_select_lp_01.vsnd"
+		vsnd_duration = 6.687710
+	}
+	Mods.Armor.Divine.Barrier.Deselect = 
+	{
+		base = "Base.Mod"
+		volume = -6.000000
+		vsnd_files = "sounds/mods/armor/divine_barrier/divine_barrier_deselect_01.vsnd"
+		vsnd_duration = 1.406463
+	}
+	Mods.Divine.Barrier.Purge = 
+	{
+		base = "Base.Mod.StatusEffect"
+		volume = 3.000000
+		volume_offset_player = 3.000000
+		vsnd_files = 
+		[
+			"sounds/mods/armor/celestial_blessing/celestial_blessing_purge_01.vsnd",
+			"sounds/mods/armor/celestial_blessing/celestial_blessing_purge_02.vsnd",
+			"sounds/mods/armor/celestial_blessing/celestial_blessing_purge_03.vsnd",
+		]
+		vsnd_duration = 3.723991
+	}
+	Mods.Armor.Rescue.Beam.Select = 
+	{
+		base = "Base.Mod"
+		volume = -1.000000
+		vsnd_files = "sounds/mods/armor/rescue_beam/rescue_beam_select_01.vsnd"
+		vsnd_duration = 1.401769
+	}
+	Mods.Armor.Rescue.Beam.Select.Lp = 
+	{
+		base = "Base.Mod"
+		volume = -1.000000
+		volume_fade_in = 0.300000
+		volume_fade_out = 0.300000
+		delay_rand_min = -3.000000
+		vsnd_files = "sounds/mods/armor/rescue_beam/rescue_beam_select_lp_01.vsnd"
+		vsnd_duration = 10.600409
+	}
+	Mods.Armor.Rescue.Beam.Deselect = 
+	{
+		base = "Base.Mod"
+		volume = -1.000000
+		vsnd_files = "sounds/mods/armor/rescue_beam/rescue_beam_deselect_01.vsnd"
+		vsnd_duration = 0.941134
+	}
+	Mods.Armor.Rescue.Beam.Pull = 
+	{
+		base = "Base.Mod"
+		volume = -4.000000
+		vsnd_files = "sounds/mods/armor/rescue_beam/rescue_beam_pull_01.vsnd"
+		vsnd_duration = 2.118957
+	}
+	Mods.Armor.Rescue.Beam.Heal.Lp = 
+	{
+		base = "Base.Mod.StatusEffect"
+		volume = -2.000000
+		volume_fade_out = 0.700000
+		vsnd_files = "sounds/mods/armor/rescue_beam/rescue_beam_heal_01.vsnd"
+		vsnd_duration = 6.805986
+	}
+	Mods.Armor.Rescue.Beam.Heal.Expire = 
+	{
+		base = "Base.Mod.StatusEffect"
+		volume = -3.000000
+		vsnd_files = "sounds/mods/armor/rescue_beam/rescue_beam_heal_expire_01.vsnd"
+		vsnd_duration = 2.158141
+	}
+	Mods.Armor.Rescue.Beam.Cast = 
+	{
+		base = "Base.Mod.StatusEffect"
+		volume = -2.000000
+		vsnd_files = "sounds/mods/armor/rescue_beam/rescue_beam_cast_01.vsnd"
+		vsnd_duration = 2.553016
+	}
+	Mods.Armor.Rebirth.Start = 
+	{
+		base = "Base.Ability.Ult"
+		volume = 3.000000
+		volume_offset_player = -4.000000
+		vsnd_files = "sounds/mods/armor/rebirth/rebirth_channel.vsnd"
+		vsnd_duration = 6.457732
+	}
+	Mods.Armor.Rebirth.Revive = 
+	{
+		base = "Base.Ability.Ult"
+		volume = 4.000000
+		volume_offset_player = -4.000000
+		vsnd_files = "sounds/mods/armor/rebirth/rebirth_revive.vsnd"
+		vsnd_duration = 4.914195
+	}
+	Mods.Armor.SpellShield.Regenerate = 
+	{
+		base = "Base.Mod"
+		volume = -5.000000
+		volume_offset_opponent = -60.000000
+		volume_offset_team = -10.000000
+		vsnd_files = "sounds/mods/armor/spell_shield/spellshield_regenerate.vsnd"
+		vsnd_duration = 2.007664
+	}
+	Mods.Armor.SpellShield.Break = 
+	{
+		base = "Base.Mod"
+		volume = 0.000000
+		pitch = 0.950000
+		vsnd_files = "sounds/mods/armor/spell_shield/spellshield_break.vsnd"
+		vsnd_duration = 2.769025
+	}
+	Mods.Armor.Colossus.Cast = 
+	{
+		base = "Base.Mod"
+		volume = -3.000000
+		vsnd_files = "sounds/mods/armor/colossus/colossus_cast.vsnd"
+		vsnd_duration = 3.573243
+	}
+	Mods.Armor.Colossus.Lp = 
+	{
+		base = "Base.Mod"
+		volume = -3.000000
+		volume_fade_in = 0.500000
+		delay = 0.300000
+		volume_fade_out = 0.500000
+		vsnd_files = "sounds/mods/armor/colossus/colossus_lp.vsnd"
+		vsnd_duration = 4.110000
+	}
+	Mods.Armor.Healing.Nova.Buff = 
+	{
+		base = "Base.Mod.StatusEffect"
+		volume = -4.000000
+		vsnd_files = "sounds/mods/armor/healing_nova/healingnova_cast.vsnd"
+		instance_count_offset_amount_db = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				-0.293897,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				-0.293897,
+				-3.243744,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				3.000000,
+				-3.000000,
+				-3.243744,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				6.000000,
+				-6.000000,
+				-3.243744,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		vsnd_duration = 5.215850
+	}
+	Mods.Armor.Healing.Nova.Cast = 
+	{
+		base = "Base.Mod"
+		volume = -4.000000
+		vsnd_files = "sounds/mods/armor/healing_nova/healing_nova_cast_01.vsnd"
+		vsnd_duration = 3.389206
+	}
+	Mods.Armor.RestorativeLocket.Cast = 
+	{
+		base = "Base.Mod.StatusEffect"
+		volume = 6.000000
+		pitch = 1.000000
+		vsnd_files = "sounds/mods/armor/restorative_locket/restorative_locket_cast.vsnd"
+		vsnd_duration = 3.034263
+	}
+	Mods.Armor.RestorativeLocket.Stack = 
+	{
+		base = "Base.Mod.StatusEffect"
+		volume = 2.000000
+		pitch = 1.000000
+		pitch_increment_count_max = 20.000000
+		incremental_pitch_offset = 0.030000
+		vsnd_files = "sounds/mods/armor/restorative_locket/restorative_locket_stack_01.vsnd"
+		vsnd_duration = 1.924807
+	}
+	Mods.Armor.RestorativeLocket.Max = 
+	{
+		base = "Base.Mod.StatusEffect"
+		volume = -4.000000
+		vsnd_files = "sounds/mods/armor/restorative_locket/restorative_locket_max.vsnd"
+		vsnd_duration = 2.764739
+	}
+	Mods.Armor.RestorativeLocket.Target = 
+	{
+		base = "Base.Mod.StatusEffect"
+		volume = 2.000000
+		delay = 0.100000
+		vsnd_files = "sounds/mods/armor/restorative_locket/restorative_locket_target.vsnd"
+		vsnd_duration = 2.520204
+	}
+	Mods.Armor.RestorativeLocket.Select = 
+	{
+		base = "Base.Mod"
+		volume = -3.000000
+		vsnd_files = "sounds/mods/armor/restorative_locket/restorative_locket_select.vsnd"
+		vsnd_duration = 1.531383
+	}
+	Mods.Armor.RestorativeLocket.Unselect = 
+	{
+		base = "Base.Mod"
+		volume = -4.000000
+		vsnd_files = "sounds/mods/armor/restorative_locket/restorative_locket_unselect.vsnd"
+		vsnd_duration = 1.579456
+	}
+	Mods.Armor.VeilWalker.Proc = 
+	{
+		base = "Base.Mod"
+		volume = -9.000000
+		vsnd_files = 
+		[
+			"sounds/mods/armor/veil_walker/veilwalker_proc_01.vsnd",
+			"sounds/mods/armor/veil_walker/veilwalker_proc_02.vsnd",
+			"sounds/mods/armor/veil_walker/veilwalker_proc_03.vsnd",
+		]
+		vsnd_duration = 2.406689
+	}
+	Mods.Armor.VeilWalker.Expire = 
+	{
+		base = "Base.Mod"
+		volume = -9.000000
+		vsnd_files = 
+		[
+			"sounds/mods/armor/veil_walker/veilwalker_expire_01.vsnd",
+			"sounds/mods/armor/veil_walker/veilwalker_expire_02.vsnd",
+			"sounds/mods/armor/veil_walker/veilwalker_expire_03.vsnd",
+		]
+		vsnd_duration = 3.335896
+	}
+	Mods.Armor.DebuffRemover.Cast = 
+	{
+		base = "Base.Mod"
+		volume = -3.000000
+		pitch = 0.870000
+		volume_offset_opponent = 2.000000
+		vsnd_files = "sounds/mods/armor/debuff_remover/debuffremover_cast.vsnd"
+		vsnd_duration = 2.936508
+	}
+	Mods.Armor.DebuffRemover.Buff = 
+	{
+		base = "Base.Mod.StatusEffect"
+		volume = -1.000000
+		volume_offset_opponent = 2.000000
+		vsnd_files = "sounds/mods/armor/debuff_remover/debuffremover_buff.vsnd"
+		vsnd_duration = 2.733243
+	}
+	Mods.Armor.Rebuttal.Proc = 
+	{
+		base = "Base.Mod"
+		volume = -2.000000
+		vsnd_files = "sounds/mods/armor/rebuttal/rebuttal_proc.vsnd"
+		vsnd_duration = 2.500408
+	}
+	Mods.Armor.Rebuttal.HeavyMelee.Sweetener = 
+	{
+		base = "Base.Mod"
+		volume = -2.000000
+		vsnd_files = "sounds/mods/armor/rebuttal/rebuttal_melee_impact_sweetener.vsnd"
+		vsnd_duration = 2.098073
+	}
+	Mods.Armor.Rebuttal.LightMelee.Sweetener = 
+	{
+		base = "Base.Mod"
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		pitch = 1.300000
+		volume = -5.000000
+		vsnd_files = "sounds/mods/armor/rebuttal/rebuttal_melee_impact_sweetener.vsnd"
+		vsnd_duration = 2.098073
+	}
+	Mods.Armor.Spellbreaker.Proc = 
+	{
+		base = "Base.Mod"
+		volume = -2.000000
+		block_duration = 0.500000
+		vsnd_files = "sounds/mods/armor/spellbreaker/spellbreaker_proc.vsnd"
+		volume_falloff_curve_db_opponent = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				201.149429,
+				0.000000,
+				0.000000,
+				-0.002173,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				2999.900879,
+				-6.080357,
+				-0.004735,
+				-0.004735,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3500.000000,
+				-20.000000,
+				-0.035318,
+				-0.035318,
+				2.000000,
+				3.000000,
+			],
+		]
+		vsnd_duration = 3.766258
+	}
+	Mods.Armor.Fury.Trance.Cast = 
+	{
+		base = "Base.Mod"
+		volume = -1.000000
+		vsnd_files = "sounds/mods/armor/fury_trance/fury_trance_cast.vsnd"
+		vsnd_duration = 3.552562
+	}
+	Mods.Armor.Fury.Trance.Mod.Lp = 
+	{
+		base = "Base.Mod.StatusEffect"
+		volume = -7.000000
+		volume_fade_in = 0.100000
+		volume_fade_out = 0.800000
+		delay_rand_min = -4.000000
+		vsnd_files = "sounds/mods/armor/fury_trance/fury_trance_mod_lp.vsnd"
+		vsnd_duration = 5.933877
+	}
+	Mods.Armor.Fury.Trance.Mod.End = 
+	{
+		base = "Base.Mod.StatusEffect"
+		volume = -2.000000
+		vsnd_files = "sounds/mods/armor/fury_trance/fury_trance_mod_end.vsnd"
+		vsnd_duration = 2.483220
+	}
+	Mods.Armor.Trophy.Collector.Proc = 
+	{
+		base = "Base.Mod"
+		volume = 0.000000
+		limiter_on = 1.000000
+		limiter_max = 2.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		vsnd_files = "sounds/mods/armor/trophy_collector/trophy_collector_proc.vsnd"
+		vsnd_duration = 3.899819
+	}
+	Mods.Armor.Healing.Tempo.Proc = 
+	{
+		base = "Base.Mod.StatusEffect"
+		volume = 3.000000
+		limiter_on = 1.000000
+		limiter_max = 5.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		block_npc_emitter = 1.000000
+		vsnd_files = 
+		[
+			"sounds/mods/armor/healing_tempo/healing_tempo_proc_01.vsnd",
+			"sounds/mods/armor/healing_tempo/healing_tempo_proc_02.vsnd",
+			"sounds/mods/armor/healing_tempo/healing_tempo_proc_03.vsnd",
+		]
+		instance_count_offset_amount_db = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				-0.293897,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				-0.293897,
+				-3.243744,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				3.000000,
+				-3.000000,
+				-3.243744,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		vsnd_duration = 3.128957
+	}
+	Mods.Armor.Healing.Tempo.End = 
+	{
+		base = "Base.Mod.StatusEffect"
+		volume = 4.000000
+		limiter_on = 1.000000
+		limiter_max = 2.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		block_team = true
+		block_opponent = true
+		vsnd_files = "sounds/mods/armor/healing_tempo/healing_tempo_end.vsnd"
+		block_npc_emitter = 1.000000
+		instance_attenuator_enabled = 1.000000
+		instance_count_offset_amount_db = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				-0.293897,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				-0.293897,
+				-3.243744,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				3.000000,
+				-4.000000,
+				-3.243744,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		vsnd_duration = 2.344671
+	}
+	Mods.Armor.Phantom.Strike.Select.Lp = 
+	{
+		base = "Base.Mod"
+		volume = -5.000000
+		volume_fade_in = 0.300000
+		volume_fade_out = 0.300000
+		delay_rand_min = -2.000000
+		vsnd_files = "sounds/mods/armor/phantom_strike/phantom_strike_select_lp_01.vsnd"
+		vsnd_duration = 9.874536
+	}
+	Mods.Armor.Phantom.Strike.Select = 
+	{
+		base = "Base.Mod"
+		volume = -1.000000
+		vsnd_files = "sounds/mods/armor/phantom_strike/phantom_strike_select_01.vsnd"
+		vsnd_duration = 0.988503
+	}
+	Mods.Armor.Phantom.Strike.Deselect = 
+	{
+		base = "Base.Mod"
+		volume = -2.000000
+		vsnd_files = "sounds/mods/armor/phantom_strike/phantom_strike_deselect_01.vsnd"
+		vsnd_duration = 0.852381
+	}
+	Mods.Armor.Phantom.Strike.Cast = 
+	{
+		base = "Base.Mod"
+		volume = -2.000000
+		volume_offset_opponent = 2.000000
+		volume_enemy_targeting_boost = 4.000000
+		vsnd_files = "sounds/mods/armor/phantom_strike/phantom_strike_cast_01.vsnd"
+		vsnd_duration = 2.267007
+	}
+	Mods.Armor.Phantom.Strike.Hit = 
+	{
+		base = "Base.Ability.Hit"
+		volume = 4.000000
+		filter_include_others = true
+		vsnd_files = "sounds/mods/armor/phantom_strike/phantom_strike_hit_01.vsnd"
+		vsnd_duration = 1.440408
+	}
+	Mods.Armor.Infuser.Cast = 
+	{
+		base = "Base.Mod"
+		volume = 0.000000
+		vsnd_files = "sounds/mods/armor/infuser/infuser_cast.vsnd"
+		vsnd_duration = 3.564512
+	}
+	Mods.Armor.Infuser.Mod.End = 
+	{
+		base = "Base.Mod.StatusEffect"
+		volume = -7.000000
+		vsnd_files = "sounds/mods/armor/infuser/infuser_mod_end.vsnd"
+		vsnd_duration = 3.265215
+	}
+	Mods.Armor.Infuser.Mod.Lp = 
+	{
+		base = "Base.Mod.StatusEffect"
+		volume = -9.000000
+		volume_fade_in = 0.250000
+		volume_fade_out = 0.600000
+		delay_rand_min = -4.000000
+		delay_rand_max = -0.500000
+		vsnd_files = "sounds/mods/armor/infuser/infuser_mod_lp.vsnd"
+		vsnd_duration = 5.705873
+	}
+	Mods.Armor.Witchmail.Proc = 
+	{
+		base = "Base.Mod.StatusEffect"
+		volume = 6.000000
+		track_1.vsnd_selection_type = "index"
+		volume_offset_team = -9.000000
+		vsnd_files = 
+		[
+			"sounds/mods/armor/witchmail/witchmail_proc_01.vsnd",
+			"sounds/mods/armor/witchmail/witchmail_proc_02.vsnd",
+			"sounds/mods/armor/witchmail/witchmail_proc_03.vsnd",
+			"sounds/mods/armor/witchmail/witchmail_proc_04.vsnd",
+		]
+		vsnd_duration = 1.647438
+	}
+	Mods.Shrink.Ray.Cast = 
+	{
+		base = "Base.Mod"
+		volume = 1.000000
+		vsnd_files = "sounds/mods/armor/shrink_ray/shrink_ray_cast.vsnd"
+		vsnd_duration = 2.348458
+	}
+	Mods.Shrink.Ray.Expire = 
+	{
+		base = "Base.Mod"
+		volume = 1.000000
+		vsnd_files = "sounds/mods/armor/shrink_ray/shrink_ray_expire.vsnd"
+		vsnd_duration = 2.387256
+	}
+	Mods.Electric.Slippers.Proc = 
+	{
+		base = "Base.Ability.Hit"
+		limiter_max = 2.000000
+		volume = 3.000000
+		pitch = 1.200000
+		volume_offset_other_db = -7.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		vsnd_files = 
+		[
+			"sounds/mods/armor/electric_slippers/electric_slippers_proc_01.vsnd",
+			"sounds/mods/armor/electric_slippers/electric_slippers_proc_02.vsnd",
+			"sounds/mods/armor/electric_slippers/electric_slippers_proc_03.vsnd",
+			"sounds/mods/armor/electric_slippers/electric_slippers_proc_04.vsnd",
+			"sounds/mods/armor/electric_slippers/electric_slippers_proc_05.vsnd",
+			"sounds/mods/armor/electric_slippers/electric_slippers_proc_06.vsnd",
+			"sounds/mods/armor/electric_slippers/electric_slippers_proc_07.vsnd",
+			"sounds/mods/armor/electric_slippers/electric_slippers_proc_08.vsnd",
+		]
+		instance_count_offset_amount_db = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				-0.293897,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				-0.293897,
+				-3.243744,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				3.000000,
+				-6.000000,
+				-3.243744,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		vsnd_duration = 1.398186
+	}
+	Mods.Electric.Slippers.Lp = 
+	{
+		base = "Base.Mod.StatusEffect"
+		volume = -7.000000
+		delay_rand_min = -5.000000
+		volume_fade_in = 0.100000
+		volume_fade_out = 0.300000
+		vsnd_files = "sounds/mods/armor/electric_slippers/electric_slippers_slide_lp.vsnd"
+		vsnd_duration = 7.575601
+	}
+	Mods.Celestial.Blessing.Cast = 
+	{
+		base = "Base.Ability.Ult.Global"
+		volume = 6.000000
+		volume_offset_team = 6.000000
+		volume_offset_opponent = -6.000000
+		vsnd_files = "sounds/mods/armor/celestial_blessing/celestial_blessing_cast.vsnd"
+		vsnd_duration = 5.851678
+	}
+	Mods.Celestial.Blessing.Purge = 
+	{
+		base = "Base.Ability.StatusEffect"
+		volume = 4.000000
+		limiter_on = 1.000000
+		limiter_max = 3.000000
+		vsnd_files = 
+		[
+			"sounds/mods/armor/celestial_blessing/celestial_blessing_purge_01.vsnd",
+			"sounds/mods/armor/celestial_blessing/celestial_blessing_purge_02.vsnd",
+			"sounds/mods/armor/celestial_blessing/celestial_blessing_purge_03.vsnd",
+		]
+		instance_attenuator_enabled = 0.000000
+		vsnd_duration = 3.723991
+	}
+	Mods.Seraphim.Wings.Lp = 
+	{
+		base = "Base.Ability.StatusEffect"
+		volume = 2.000000
+		delay_rand_min = -10.000000
+		volume_fade_out = 0.500000
+		volume_fade_in = 0.700000
+		volume_fade_over_time_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				1.083000,
+				1.083000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				7.000000,
+				1.000000,
+				-0.040350,
+				-0.040350,
+				3.000000,
+				1.000000,
+			],
+			
+			[
+				14.000000,
+				0.600000,
+				-0.023581,
+				-0.023581,
+				2.000000,
+				3.000000,
+			],
+		]
+		vsnd_files = "sounds/mods/armor/seraphim_wings/seraphim_wings_lp.vsnd"
+		vsnd_duration = 17.545555
+	}
+}

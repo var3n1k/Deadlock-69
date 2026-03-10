@@ -1,0 +1,160 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	Glass.Break = 
+	{
+		base = "Base.Breakable"
+		volume = 5.000000
+		vsnd_files = 
+		[
+			"sounds/physics_new/glass/glass_bottle_break1.vsnd",
+			"sounds/physics_new/glass/glass_bottle_break2.vsnd",
+			"sounds/physics_new/glass/glass_cup_break1.vsnd",
+			"sounds/physics_new/glass/glass_cup_break2.vsnd",
+		]
+		vsnd_duration = 1.430952
+	}
+	Pottery.Break = 
+	{
+		base = "Base.Breakable"
+		volume = 3.000000
+		vsnd_files = 
+		[
+			"sounds/physics_new/glass/glass_pottery_large_break2.vsnd",
+			"sounds/physics_new/glass/glass_pottery_large_break3.vsnd",
+			"sounds/physics_new/glass/glass_pottery_large_break4.vsnd",
+		]
+		vsnd_duration = 1.173810
+	}
+	Wood.Crate.Break = 
+	{
+		base = "Base.Breakable"
+		volume = 1.000000
+		pitch_rand_min = -0.010000
+		pitch_rand_max = 0.010000
+		vsnd_files = 
+		[
+			"sounds/physics/wood/wood_crate_break_01.vsnd",
+			"sounds/physics/wood/wood_crate_break_02.vsnd",
+			"sounds/physics/wood/wood_crate_break_03.vsnd",
+			"sounds/physics/wood/wood_crate_break_04.vsnd",
+			"sounds/physics/wood/wood_crate_break_05.vsnd",
+			"sounds/physics/wood/wood_crate_break_06.vsnd",
+		]
+		vsnd_duration = 2.443719
+	}
+	Wood.Crate.Spawn = 
+	{
+		base = "Base.Breakable"
+		volume = -2.000000
+		pitch_rand_min = -0.100000
+		pitch_rand_max = 0.100000
+		vsnd_files = 
+		[
+			"sounds/physics/wood/wood_crate_spawn_01.vsnd",
+			"sounds/physics/wood/wood_crate_spawn_02.vsnd",
+			"sounds/physics/wood/wood_crate_spawn_03.vsnd",
+			"sounds/physics/wood/wood_crate_spawn_04.vsnd",
+			"sounds/physics/wood/wood_crate_spawn_05.vsnd",
+		]
+		vsnd_duration = 0.867823
+	}
+	Pottery.Large.Break = 
+	{
+		base = "Base.Breakable"
+		volume = 0.000000
+		pitch = 0.960000
+		vsnd_files = 
+		[
+			"sounds/physics_new/glass/break_pottery_01.vsnd",
+			"sounds/physics_new/glass/break_pottery_02.vsnd",
+			"sounds/physics_new/glass/break_pottery_03.vsnd",
+			"sounds/physics_new/glass/break_pottery_04.vsnd",
+		]
+		vsnd_duration = 1.700000
+	}
+	Pumpkin.Smash_Large = 
+	{
+		base = "Base.Breakable"
+		volume = 7.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.150000
+		vsnd_files = 
+		[
+			"sounds/physics/pumpkin/halloween_pumpkin_smash_01.vsnd",
+			"sounds/physics/pumpkin/halloween_pumpkin_smash_02.vsnd",
+			"sounds/physics/pumpkin/halloween_pumpkin_smash_03.vsnd",
+			"sounds/physics/pumpkin/halloween_pumpkin_smash_01.vsnd",
+			"sounds/physics/pumpkin/halloween_pumpkin_smash_02.vsnd",
+			"sounds/physics/pumpkin/halloween_pumpkin_smash_03.vsnd",
+			"sounds/physics/pumpkin/halloween_pumpkin_smash_large_evil_01.vsnd",
+			"sounds/physics/pumpkin/halloween_pumpkin_smash_large_evil_02.vsnd",
+			"sounds/physics/pumpkin/halloween_pumpkin_smash_large_evil_03.vsnd",
+			"sounds/physics/pumpkin/halloween_pumpkin_smash_01.vsnd",
+			"sounds/physics/pumpkin/halloween_pumpkin_smash_02.vsnd",
+			"sounds/physics/pumpkin/halloween_pumpkin_smash_03.vsnd",
+			"sounds/physics/pumpkin/halloween_pumpkin_smash_01.vsnd",
+			"sounds/physics/pumpkin/halloween_pumpkin_smash_02.vsnd",
+			"sounds/physics/pumpkin/halloween_pumpkin_smash_03.vsnd",
+			"sounds/physics/pumpkin/halloween_pumpkin_smash_01.vsnd",
+			"sounds/physics/pumpkin/halloween_pumpkin_smash_02.vsnd",
+			"sounds/physics/pumpkin/halloween_pumpkin_smash_03.vsnd",
+			"sounds/physics/pumpkin/halloween_pumpkin_smash_01.vsnd",
+			"sounds/physics/pumpkin/halloween_pumpkin_smash_02.vsnd",
+			"sounds/physics/pumpkin/halloween_pumpkin_smash_03.vsnd",
+			"sounds/physics/pumpkin/halloween_pumpkin_smash_01.vsnd",
+			"sounds/physics/pumpkin/halloween_pumpkin_smash_02.vsnd",
+			"sounds/physics/pumpkin/halloween_pumpkin_smash_03.vsnd",
+		]
+		vsnd_duration = 3.074717
+	}
+	Pumpkin.Smash_Small = 
+	{
+		base = "Base.Breakable"
+		volume = 7.000000
+		pitch = 1.200000
+		pitch_rand_min = -0.150000
+		pitch_rand_max = 0.100000
+		delay_rand_max = 0.060000
+		vsnd_files = 
+		[
+			"sounds/physics/pumpkin/halloween_pumpkin_smash_small_01.vsnd",
+			"sounds/physics/pumpkin/halloween_pumpkin_smash_small_02.vsnd",
+			"sounds/physics/pumpkin/halloween_pumpkin_smash_small_03.vsnd",
+			"sounds/physics/pumpkin/halloween_pumpkin_smash_small_evil_01.vsnd",
+			"sounds/physics/pumpkin/halloween_pumpkin_smash_small_evil_02.vsnd",
+			"sounds/physics/pumpkin/halloween_pumpkin_smash_small_01.vsnd",
+			"sounds/physics/pumpkin/halloween_pumpkin_smash_small_02.vsnd",
+			"sounds/physics/pumpkin/halloween_pumpkin_smash_small_03.vsnd",
+			"sounds/physics/pumpkin/halloween_pumpkin_smash_small_01.vsnd",
+			"sounds/physics/pumpkin/halloween_pumpkin_smash_small_02.vsnd",
+			"sounds/physics/pumpkin/halloween_pumpkin_smash_small_03.vsnd",
+			"sounds/physics/pumpkin/halloween_pumpkin_smash_small_01.vsnd",
+			"sounds/physics/pumpkin/halloween_pumpkin_smash_small_02.vsnd",
+			"sounds/physics/pumpkin/halloween_pumpkin_smash_small_03.vsnd",
+			"sounds/physics/pumpkin/halloween_pumpkin_smash_small_01.vsnd",
+			"sounds/physics/pumpkin/halloween_pumpkin_smash_small_02.vsnd",
+			"sounds/physics/pumpkin/halloween_pumpkin_smash_small_03.vsnd",
+			"sounds/physics/pumpkin/halloween_pumpkin_smash_small_01.vsnd",
+			"sounds/physics/pumpkin/halloween_pumpkin_smash_small_02.vsnd",
+			"sounds/physics/pumpkin/halloween_pumpkin_smash_small_03.vsnd",
+		]
+		vsnd_duration = 3.074717
+	}
+	Present.Smash_Large = 
+	{
+		base = "Base.Breakable"
+		volume = 5.000000
+		pitch = 1.000000
+		pitch_rand_min = -0.120000
+		pitch_rand_max = 0.130000
+		delay_rand_max = 0.100000
+		vsnd_files = 
+		[
+			"sounds/physics/present/seasonal_present_smash_01.vsnd",
+			"sounds/physics/present/seasonal_present_smash_02.vsnd",
+			"sounds/physics/present/seasonal_present_smash_03.vsnd",
+			"sounds/physics/present/seasonal_present_smash_04.vsnd",
+		]
+		vsnd_duration = 2.320272
+	}
+}

@@ -1,0 +1,145 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	TrooperRifle.Fire = 
+	{
+		base = "Base.NPC.Trooper"
+		volume = -6.000000
+		limiter_global_event_distance_on = true
+		limiter_global_event_distance_max = 4.000000
+		limiter_on = 1.000000
+		limiter_max = 0.000000
+		volume_fade_out = 0.050000
+		vsnd_files = 
+		[
+			"sounds/npc/trooper/trooper_weapon_fire_01.vsnd",
+			"sounds/npc/trooper/trooper_weapon_fire_02.vsnd",
+			"sounds/npc/trooper/trooper_weapon_fire_03.vsnd",
+			"sounds/npc/trooper/trooper_weapon_fire_04.vsnd",
+			"sounds/npc/trooper/trooper_weapon_fire_05.vsnd",
+			"sounds/npc/trooper/trooper_weapon_fire_06.vsnd",
+			"sounds/npc/trooper/trooper_weapon_fire_07.vsnd",
+			"sounds/npc/trooper/trooper_weapon_fire_08.vsnd",
+			"sounds/npc/trooper/trooper_weapon_fire_09.vsnd",
+			"sounds/npc/trooper/trooper_weapon_fire_10.vsnd",
+			"sounds/npc/trooper/trooper_weapon_fire_11.vsnd",
+			"sounds/npc/trooper/trooper_weapon_fire_12.vsnd",
+			"sounds/npc/trooper/trooper_weapon_fire_13.vsnd",
+			"sounds/npc/trooper/trooper_weapon_fire_14.vsnd",
+			"sounds/npc/trooper/trooper_weapon_fire_15.vsnd",
+			"sounds/npc/trooper/trooper_weapon_fire_16.vsnd",
+		]
+		vsnd_duration = 2.400000
+	}
+	TrooperRifle.BulletImpact.Default = 
+	{
+		base = "Base.NPC.Trooper.Close"
+		volume = -15.000000
+		vsnd_files = 
+		[
+			"sounds/npc/trooper/weapons/impact/default_01.vsnd",
+			"sounds/npc/trooper/weapons/impact/default_02.vsnd",
+			"sounds/npc/trooper/weapons/impact/default_03.vsnd",
+			"sounds/npc/trooper/weapons/impact/default_04.vsnd",
+			"sounds/npc/trooper/weapons/impact/default_05.vsnd",
+			"sounds/npc/trooper/weapons/impact/default_07.vsnd",
+			"sounds/npc/trooper/weapons/impact/default_08.vsnd",
+			"sounds/npc/trooper/weapons/impact/default_09.vsnd",
+			"sounds/npc/trooper/weapons/impact/default_10.vsnd",
+			"sounds/npc/trooper/weapons/impact/default_11.vsnd",
+			"sounds/npc/trooper/weapons/impact/default_12.vsnd",
+			"sounds/npc/trooper/weapons/impact/default_13.vsnd",
+			"sounds/npc/trooper/weapons/impact/default_14.vsnd",
+			"sounds/npc/trooper/weapons/impact/default_15.vsnd",
+			"sounds/npc/trooper/weapons/impact/default_16.vsnd",
+			"sounds/npc/trooper/weapons/impact/default_17.vsnd",
+			"sounds/npc/trooper/weapons/impact/default_18.vsnd",
+			"sounds/npc/trooper/weapons/impact/default_19.vsnd",
+		]
+		vsnd_duration = 0.949354
+	}
+	Trooper.Ability.Grenade.Explode = 
+	{
+		base = "Base.NPC.Trooper"
+		volume = -13.000000
+		vsnd_files = "sounds/npc/trooper/grenade_explode.vsnd"
+		vsnd_duration = 4.232979
+	}
+	Trooper.Medic.Heal = 
+	{
+		base = "Base.NPC.Trooper"
+		volume = 1.000000
+		pitch = 0.850000
+		volume_offset_team = 6.000000
+		vsnd_files = "sounds/player/healing_overtime_start.vsnd"
+		vsnd_duration = 3.949796
+	}
+	Trooper.SelfDestruct_Start = 
+	{
+		base = "Base.NPC.Trooper"
+		volume = -1.000000
+		vsnd_files = 
+		[
+			"sounds/npc/trooper/self_destruct/voice_02.vsnd",
+			"sounds/npc/trooper/self_destruct/voice_03.vsnd",
+			"sounds/npc/trooper/self_destruct/voice_04.vsnd",
+			"sounds/npc/trooper/self_destruct/voice_05.vsnd",
+			"sounds/npc/trooper/self_destruct/voice_06.vsnd",
+			"sounds/npc/trooper/self_destruct/voice_07.vsnd",
+			"sounds/npc/trooper/self_destruct/voice_08.vsnd",
+			"sounds/npc/trooper/self_destruct/voice_09.vsnd",
+			"sounds/npc/trooper/self_destruct/voice_10.vsnd",
+		]
+		vsnd_duration = 1.608562
+	}
+	Trooper.Death = 
+	{
+		base = "Base.NPC.Trooper"
+		volume = -2.000000
+		position_force_static = 1.000000
+		vsnd_files = 
+		[
+			"sounds/npc/trooper/death/trooper_death_01.vsnd",
+			"sounds/npc/trooper/death/trooper_death_02.vsnd",
+			"sounds/npc/trooper/death/trooper_death_03.vsnd",
+			"sounds/npc/trooper/death/trooper_death_04.vsnd",
+			"sounds/npc/trooper/death/trooper_death_05.vsnd",
+			"sounds/npc/trooper/death/trooper_death_06.vsnd",
+			"sounds/npc/trooper/death/trooper_death_07.vsnd",
+			"sounds/npc/trooper/death/trooper_death_08.vsnd",
+			"sounds/npc/trooper/death/trooper_death_09.vsnd",
+			"sounds/npc/trooper/death/trooper_death_10.vsnd",
+			"sounds/npc/trooper/death/trooper_death_11.vsnd",
+			"sounds/npc/trooper/death/trooper_death_12.vsnd",
+		]
+		vsnd_duration = 1.883810
+	}
+	Trooper.Melee.Damage.Hit = 
+	{
+		base = "Base.NPC.Trooper.Close"
+		volume = -10.000000
+		vsnd_files = 
+		[
+			"sounds/physics/bullet_impacts/hit_shield_01.vsnd",
+			"sounds/physics/bullet_impacts/hit_shield_02.vsnd",
+			"sounds/physics/bullet_impacts/hit_shield_03.vsnd",
+		]
+		vsnd_duration = 0.489070
+	}
+	Trooper.Deploy.Impact = 
+	{
+		base = "Base.NPC.Trooper"
+		volume = -5.000000
+		pitch = 1.100000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		vsnd_files = 
+		[
+			"sounds/npc/trooper/foley/drop_01.vsnd",
+			"sounds/npc/trooper/foley/drop_02.vsnd",
+			"sounds/npc/trooper/foley/drop_03.vsnd",
+			"sounds/npc/trooper/foley/drop_04.vsnd",
+			"sounds/npc/trooper/foley/drop_05.vsnd",
+		]
+		vsnd_duration = 1.231746
+	}
+}
