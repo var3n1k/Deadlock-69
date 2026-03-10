@@ -35,15 +35,6 @@ const expectedSoundManifestEventMap = new globalThis.Map([
   ["Bebop.Hook.NPC", [[5]]],
   ["Bebop.HyperBeam.Windup", [[3]]],
   ["Bebop.HyperBeam.Loop", [[3]]],
-  ["bebop_upgrade_power2_01_hero_3d", [[0]]],
-  ["bebop_upgrade_power2_02_hero_3d", [[0]]],
-  ["bebop_upgrade_power2_04_hero_3d", [[0]]],
-  ["bebop_upgrade_power2_05_hero_3d", [[0]]],
-  ["bebop_upgrade_power2_06_hero_3d", [[0]]],
-  ["bebop_upgrade_power2_07_hero_3d", [[0]]],
-  ["bebop_upgrade_power2_08_hero_3d", [[0]]],
-  ["bebop_upgrade_power2_09_hero_3d", [[0]]],
-  ["bebop_upgrade_power2_10_hero_3d", [[0]]],
   ["bebop_upgrade_power3_01_hero_3d", [[0]]],
   ["bebop_upgrade_power3_02_hero_3d", [[0]]],
   ["bebop_upgrade_power3_03_hero_3d", [[0]]],
@@ -364,6 +355,10 @@ const expectedSoundManifestEventMap = new globalThis.Map([
   ["MidBoss.LowHealth", [[5]]],
   ["MidBoss.Death", [[5]]],
 ]);
+/**
+ * @type {Map<string, boolean>}
+ */
+const receivedSoundManifestEventMap = new globalThis.Map([]);
 
 /**
  * @param {string} domainPath
@@ -1223,6 +1218,8 @@ async function main(packageIndex) {
         }
 
         if (isSoundEvent) {
+          receivedSoundManifestEventMap.set(soundEventName, expectedSoundManifestEventMap.has(soundEventName));
+
           if (!expectedSoundManifestEventMap.has(soundEventName)) {
             logWarning(2, "Found unconfigured sound event", soundEventName);
           }
@@ -1327,6 +1324,12 @@ async function main(packageIndex) {
 
     return null;
   }))).filter((_el, _ind, _arr) => (_el !== null && _el !== void null));
+  globalThis.Array.from(expectedSoundManifestEventMap.keys())
+    .map((_el, _ind, _arr) => {
+      if (!receivedSoundManifestEventMap.has(_el) || !receivedSoundManifestEventMap.get(_el)) {
+        logWarning(3, "Found unused sound event", _el);
+      }
+    });
   logSuccess(1, "Generated sound manifest(-s)", `${newSoundManifestList.length}`);
   logSuccess(2, "Used sound file(-s)", `${newSoundFileList.length} / ${globalThis.Array.from(soundFileList.values()).reduce((_prev, [[, ], _curr], _currInd, _currArr) => [..._prev, ..._curr], []).length}`);
   globalThis.Array.from(soundFileList.values()).reduce((_prev, [[, ], _curr], _currInd, _currArr) => [..._prev, ..._curr], [])
