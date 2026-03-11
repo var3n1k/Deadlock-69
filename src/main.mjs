@@ -165,7 +165,7 @@ const expectedSoundManifestEventMap = new globalThis.Map([
   ["Haze.Finesse.Dagger.Wake", [[-3]]],
   ["Haze.Smoke.Bomb.Modifier.Lp", [[0]]],
   ["Haze.Smoke.Bomb.End", [[0]]],
-  ["Haze.BulletFlurry.Modifier.Lp", [[8]]],
+  ["Haze.BulletFlurry.Modifier.Lp", [[-5]]],
 
   ["Gigawatt.StormCloud.Lp", [[-5]]],
 
@@ -208,7 +208,7 @@ const expectedSoundManifestEventMap = new globalThis.Map([
   ["Priest.Witching.Hour.Fire", [[3]]],
 
   ["Ivy.StoneForm.Cast", [[0]]],
-  ["Ivy.AirDrop.Fly.Lp", [[0]]],
+  ["Ivy.AirDrop.Fly.Lp", [[-5]]],
   ["tengu_use_power4_01_ability_3d", [[0]]],
   ["tengu_use_power4_01_hero_announcer", [[0]]],
   ["tengu_use_power4_01_ult_3d", [[0]]],
