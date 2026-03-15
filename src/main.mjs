@@ -177,6 +177,7 @@ const expectedSoundManifestEventMap = new globalThis.Map([
 
   ["Ability.Hornet.Leap.Lp", [[-15]]],
 
+  ["MoKrill.Scorn.Cast", [[3]]],
   ["MoKrill.Burrow.Modifier.Start", [[0]]],
   ["MoKrill.Sandblast.Impact", [[0]]],
   ["MoKrill.Combo.Duration.Lp", [[15]]],
