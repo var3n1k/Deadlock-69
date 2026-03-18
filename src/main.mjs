@@ -271,9 +271,7 @@ const expectedSoundManifestEventMap = new globalThis.Map([
   ["tengu_use_power5_05_ability_3d", [[0]]],
   ["tengu_use_power5_05_ult_3d", [[0]]],
 
-  ["Shiv.Dive.Falling.Lp", [[-999]]],
-  ["Shiv.Ability.ShivFlash.Impact", [[-999]]],
-  ["Shiv.Ability.ShivFlash.Impact_Kill", [[5]]],
+  ["Shiv.Flash.Impact_Kill", [[5]]],
 
   ["Unicorn.Dazzling.Orb.Cast", [[0]]],
   ["Unicorn.Dazzling.Orb.World.Impact", [[-999]]],
@@ -303,9 +301,6 @@ const expectedSoundManifestEventMap = new globalThis.Map([
   ["Yamato.A2.FlyingStrike.Jump", [[-3]]],
   ["Yamato.A4.ShadowForm.Delay", [[-5]]],
   ["Yamato.A4.ShadowForm.Cast", [[-5]]],
-
-
-  ["Mods.Prism.Blast.Beam.Lp", [[3]]],
 
 
   ["Menu.Party.NewMember", [[-3]]],
