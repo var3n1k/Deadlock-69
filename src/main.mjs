@@ -293,6 +293,7 @@ const expectedSoundManifestEventMap = new globalThis.Map([
   ["Viper.A3.Slide.Lp", [[5]]],
   ["Viper.Petrify.Debuff_Lp", [[3]]],
 
+  ["VampireBat.Rake.Hit.Confirm", [[0]]],
   ["VampireBat.Blink.Travel.Lp", [[5]]],
   ["VampireBat.Nox.Nostra.Channel.Lp", [[5]]],
 
