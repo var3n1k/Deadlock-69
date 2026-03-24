@@ -1,4 +1,4 @@
-# <a id="Top"></a> @Deadlock/ [ø æ ø ø æ](https://www.youtube.com/shorts/PZIay6uKLtA) Edition <sup>a.k.a. `pak69` /`v1.4.0`</sup>
+# <a id="Top"></a> @Deadlock/ [ø æ ø ø æ](https://www.youtube.com/shorts/PZIay6uKLtA) Edition <sup>a.k.a. `pak69` /`v1.5.0`</sup>
 
 Небольшой нишевый аддончик для [~~самой позитивной~~ токсичного, ~~самой сбалансированной~~ неоптимизированного и ~~самой отполированной~~ забагованного в мире ~~игры~~ куска дерьма](https://store.steampowered.com/app/1422450/Deadlock/), чтобы сделать гейплей немного приятнее
 
