@@ -125,6 +125,7 @@ const expectedSoundManifestEventMap = new globalThis.Map([
 
   ["Fencer.Sigil.Cast.Delay", [[-3]]],
   ["Fencer.Riposte.Cast", [[-3]]],
+  ["Fencer.Lunge.Cast.Delay", [[-5]]],
   ["Fencer.Super.Slash.Cast", [[5]]],
   ["fencer_use_power4_start_01_ability_3d", [[0]]],
   ["fencer_use_power4_start_01_hero_announcer", [[0]]],
@@ -157,8 +158,11 @@ const expectedSoundManifestEventMap = new globalThis.Map([
   ["fencer_use_power4_start_10_hero_announcer", [[0]]],
   ["fencer_use_power4_start_10_ult_3d", [[0]]],
 
+  ["Frank.Reanimation.Start", [[5]]],
   ["Frank.Reanimation.Explosion", [[5]]],
 
+  ["Ghost.LifeDrain.Caster.Lp", [[0]]],
+  ["Ghost.LifeDrain.Victim.Lp", [[0]]],
   ["Ghost.Blood.Exchange.Cast", [[0]]],
 
   ["Haze.Finesse.Dagger.Sleep", [[-5]]],
@@ -170,6 +174,7 @@ const expectedSoundManifestEventMap = new globalThis.Map([
   ["Gigawatt.StormCloud.Lp", [[-5]]],
 
   ["Kelvin.IcePath.Dur.Lp", [[-8]]],
+  ["Kelvin.IceDome.Cast", [[5]]],
 
   ["Inferno.Incend.Cast", [[0]]],
   ["Inferno.FlameDash.Modifier.Start", [[0]]],
@@ -186,7 +191,7 @@ const expectedSoundManifestEventMap = new globalThis.Map([
   ["Lash.GroundStrike.Hit", [[-8]]],
   ["Lash.Grapple.Cast", [[-8]]],
   ["Lash.A3.Flog.Impact", [[-3]]],
-  ["Lash.A4.Death.Slam.Throw", [[-5]]],
+  ["Lash.A4.Death.Slam.Grab", [[0]]],
 
   ["Magician.CopyUlt.Copied_Lp", [[-8]]],
 
@@ -196,6 +201,8 @@ const expectedSoundManifestEventMap = new globalThis.Map([
   ["Mirage.A4.Teleport.Arrive", [[0]]],
 
   ["Calico.Ava.Cast", [[-8]]],
+
+  ["Necro.Decree.Cast", [[5]]],
 
   ["Orion.Charged.Shot.Cast", [[-8]]],
   ["Archer.GuidedArrow.Cast", [[0]]],
@@ -208,6 +215,11 @@ const expectedSoundManifestEventMap = new globalThis.Map([
   ["Priest.Slugshot.Hit", [[0]]],
   ["Priest.Witching.Hour.Fire", [[3]]],
 
+  ["Punkgoat.Sigil.Slam.Explosion", [[0]]],
+  ["Punkgoat.Rising.Ram.Cast.Delay", [[0]]],
+  ["Punkgoat.Blasted.Bottle.Smash", [[-5]]],
+
+  ["Ivy.Tether.Buff.Lp", [[-5]]],
   ["Ivy.StoneForm.Cast", [[0]]],
   ["Ivy.AirDrop.Fly.Lp", [[-5]]],
   ["tengu_use_power4_01_ability_3d", [[0]]],
@@ -271,6 +283,7 @@ const expectedSoundManifestEventMap = new globalThis.Map([
   ["tengu_use_power5_05_ability_3d", [[0]]],
   ["tengu_use_power5_05_ult_3d", [[0]]],
 
+  ["Shiv.Flash.Leap", [[0]]],
   ["Shiv.Flash.Impact_Kill", [[5]]],
 
   ["Unicorn.Dazzling.Orb.Cast", [[0]]],
@@ -286,6 +299,7 @@ const expectedSoundManifestEventMap = new globalThis.Map([
   ["Viscous.Cube.Cast", [[-8]]],
   ["Viscous.GooBowlingBall.Movement_Lp", [[-5]]],
 
+  ["Warden.LockDown.Hit", [[-5]]],
   ["Warden.RiotProtocol.PreCast", [[0]]],
   ["Warden.RiotProtocol.Lp", [[0]]],
 
