@@ -17,7 +17,7 @@ import * as url from "node:url"
 // list | index
 
 /**
- * @type {Map<string, [[number]]>}
+ * @type {Map<string, [[number | (null | undefined)]]>}
  */
 const expectedSoundManifestEventMap = new globalThis.Map([
   ["Abrams.Charge.Cast", [[-5]]],
@@ -1182,6 +1182,17 @@ async function main(packageIndex) {
                 typeof _el === "string"
                 && _el.startsWith(formatDomainPath([[...soundsDirectoryPath, globalThis.String()], null], "/")))
             ) {
+              if (expectedSoundManifestEventMap.has(soundEventName)) {
+                const [[soundEventVolume]] = expectedSoundManifestEventMap.get(soundEventName);
+                if (soundEventVolume === null || soundEventVolume === void null) {
+                  soundEvent[soundEventPropertyName] = [];
+
+                  isSoundEvent = true;
+
+                  continue;
+                }
+              }
+
               for (const [key, [[baseFileName, formatFileName], value]] of globalThis.Array.from(collectFileList(soundEventProperty.map((_el, _ind, _arr) => adjustDomainPath(_el))).entries())) {
                 const [directoryPath, [fileName, fileExtension]] = adjustDomainPath(key);
 
@@ -1256,7 +1267,7 @@ async function main(packageIndex) {
           if (expectedSoundManifestEventMap.has(soundEventName)) {
             const [[soundEventVolume]] = expectedSoundManifestEventMap.get(soundEventName);
 
-            soundEvent["volume"] += soundEventVolume;
+            soundEvent["volume"] += soundEventVolume ?? 0;
           }
 
           for (const soundEventPropertyName in soundEvent) {
