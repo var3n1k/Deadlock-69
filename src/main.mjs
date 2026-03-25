@@ -357,6 +357,16 @@ const expectedSoundManifestEventMap = new globalThis.Map([
   ["Vault.Active_Lp", [[-3]]],
 
 
+  ["UI.Shop.Mod.Activate", [[0]]],
+  ["UI.Shop.Mod.Activate.Weapon", [[null]]],
+  ["UI.Shop.Mod.Activate.Vitality", [[null]]],
+  ["UI.Shop.Mod.Activate.Spirit", [[null]]],
+  ["UI.Shop.Item.Destroy", [[0]]],
+
+  ["UI.Notify.ItemPurchase", [[0]]],
+  ["UI.Notify.QuickBuy", [[0]]],
+
+
   ["Rejuv.Pickup", [[5]]],
 
   ["Rejuv.Rebirth.Start", [[0]]],
