@@ -947,7 +947,13 @@ async function main(packageIndex) {
         ...expectedFileList
           .map(([fileName, fileExtension], _ind, _arr) => {
           return [
-            [directoryPath, [expectedFileNameList[_ind], fileExtension]],
+            [
+              directoryPath,
+              [
+                expectedFileNameList[_ind],
+                ((fileExtension !== null && fileExtension !== void null) && !audioFileExtensionList.includes(fileExtension)) ? null : fileExtension,
+              ],
+            ],
             [directoryPath, [fileName, fileExtension]],
           ];
         }),
