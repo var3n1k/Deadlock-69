@@ -996,6 +996,10 @@ function adjustFileName(fileName) {
    * @type {string | (null | undefined)}
    */
   const baseFileName = (() => {
+    fileName = (fileName ?? globalThis.String())
+      .replace(/(?:[_\-]+)(?:alt)(?:[_\-]+[\d]+$)/g, globalThis.String())
+      .replace(/(?:[_\-]+)(?:alt)(?:[\d]+$)/g, globalThis.String());
+
     {
       const fileNameExec = /(?<=^)([_\-]*[\d]+)(?=$)/g.exec(fileName);
       if (globalThis.Array.isArray(fileNameExec)) {
