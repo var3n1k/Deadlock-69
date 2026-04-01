@@ -758,6 +758,22 @@ async function main(packageIndex) {
     util.logSuccess(1, "Found installed compilation SDK", null);
   } else {
     util.logFailure(1, "None of compilation SDK found", null);
+
+    util.logWarning(1, "Required one of the following compilation SDK", null);
+    compilationSDKList.map(([
+      [steamGameId, steamGameName],
+      [receivedCompilationSDK, expectedCompilationSDK],
+      [receivedCompilationSDKDirectoryDomainPath, expectedCompilationSDKDirectoryDomainPath],
+    ], _ind, _arr) => {
+      const [
+        [steamGameURLStore, steamGameURLPurchase],
+        [steamGameURLNews, steamGameURLLibrary, steamGameURLSettings],
+        [steamGameURLPreload, steamGameURLInstall, steamGameURLUnInstall],
+        [steamGameURLLaunch],
+      ] = steam.hyperLink(steamGameId);
+
+      util.logWarning(2, `${steamGameName} [${steamGameId}] (${util.hyperLink(new globalThis.URL(steamGameURLStore), "Store")} | ${util.hyperLink(new globalThis.URL(steamGameURLLibrary), "Library")})`, null);
+    });
   }
 
   util.logPending("Searching for installed package SDK");
@@ -768,8 +784,6 @@ async function main(packageIndex) {
     [[243750, "Source SDK Base 2013 Multiplayer"], [[["bin", "x64"], ["vpk", "exe"]], null]],
     [[243750, "Source SDK Base 2013 Multiplayer"], [[["bin"], ["vpk", "exe"]], null]],
     [[243730, "Source SDK Base 2013 Singleplayer"], [[["bin"], ["vpk", "exe"]], null]],
-
-    [[745, "Counter-Strike: Global Offensive - SDK"], [[["bin"], ["vpk", "exe"]], [["game", "csgo", "import_scripts", "bin"], ["vpk", "exe"]]]],
 
     [[220, "Half-Life 2"], [[["bin"], ["vpk", "exe"]], null]],
   ];
@@ -792,6 +806,25 @@ async function main(packageIndex) {
     util.logSuccess(1, "Found installed package SDK", null);
   } else {
     util.logFailure(1, "None of package SDK found", null);
+
+    util.logWarning(1, "Required one of the following package SDK", null);
+    packageSDKList.map(([
+      [steamGameId, steamGameName],
+      [receivedPackageSDK, expectedPackageSDK],
+    ], _ind, _arr) => {
+      const [
+        [steamGameURLStore, steamGameURLPurchase],
+        [steamGameURLNews, steamGameURLLibrary, steamGameURLSettings],
+        [steamGameURLPreload, steamGameURLInstall, steamGameURLUnInstall],
+        [steamGameURLLaunch],
+      ] = steam.hyperLink(steamGameId);
+
+      util.logWarning(2, `${steamGameName} [${steamGameId}] (${util.hyperLink(new globalThis.URL(steamGameURLStore), "Store")} | ${util.hyperLink(new globalThis.URL(steamGameURLLibrary), "Library")})`, null);
+    });
+  }
+
+  if ((compilationSDK === null || compilationSDK === void null) || (packageSDK === null || packageSDK === void null)) {
+    return;
   }
 
   const [
