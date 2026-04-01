@@ -7,14 +7,9 @@ import * as fs from "node:fs"
 
 import * as url from "node:url"
 
-// execute | write | read | delete | clear
-// new | old | base
-// adjust | format
-// expected | received
-// required | optional
-// directory | file
-// path | domain | extension | name
-// list | index
+import * as util from "./util.mjs"
+
+import * as steam from "./steam.mjs"
 
 /**
  * @type {Map<string, [[number | (null | undefined)]]>}
@@ -727,352 +722,184 @@ const expectedSoundManifestEventMap = new globalThis.Map([
 const receivedSoundManifestEventMap = new globalThis.Map([]);
 
 /**
- * @param {string} domainPath
- * @returns {[string[], [string, string | (null | undefined)] | (null | undefined)]}
- */
-function adjustDomainPath(domainPath) {
-  const [file, ...directoryDomainPath] = [...domainPath.split(/[\\\/]+/g)].reverse();
-  const directoryPath = [...directoryDomainPath].reverse();
-
-  const fileDomainList = file.split(/[\.]+/g);
-
-  /**
-   * @type {string[][]}
-   */
-  const fileExtensionList = [].map((_el, _ind, _arr) => _el.split(/[\.]+/g));
-
-  /**
-   * @type {string | (null | undefined)}
-   */
-  let fileExtension;
-  /**
-   * @type {string}
-   */
-  let fileName;
-
-  fileExtensionList.map((_el, _ind, _arr) => {
-    if (_el.every((__el, __ind, __arr) => _el[__ind] === fileDomainList[(fileDomainList.length - _el.length) + __ind]) && fileDomainList.length > _el.length) {
-      fileExtension = _el.join(".");
-      fileName = fileDomainList.slice(0, fileDomainList.length - _el.length).join(".");
-    }
-  });
-
-  if ((fileExtension === null || fileExtension === void null) && (fileName === null || fileName === void null)) {
-    const [newFileExtension, ...newFileDomainList] = [...fileDomainList].reverse();
-    const newFileName = [...newFileDomainList].reverse().join(".");
-
-    fileExtension = newFileExtension;
-    fileName = newFileName;
-
-    if (newFileDomainList.length === 0) {
-      fileExtension = null;
-      fileName = newFileExtension;
-    }
-  }
-
-  const newDomainPath = [directoryPath, [fileName, fileExtension]];
-
-  if (fs.existsSync(formatDomainPath(newDomainPath, null))) {
-    const newDomainPathStat = fs.statSync(formatDomainPath(newDomainPath, null), {});
-
-    if (newDomainPathStat.isDirectory()) {
-      return [[...directoryPath, fileName], null];
-    }
-    if (newDomainPathStat.isFile()) {
-      return [directoryPath, [fileName, fileExtension]];
-    }
-  }
-
-  return newDomainPath;
-}
-
-/**
- * @param {[string[], [string, string | (null | undefined)] | (null | undefined)]} domainPath
- * @param {'\\' | '/' | (null | undefined)} pathSeparator
- * @returns {string}
- */
-function formatDomainPath(domainPath, pathSeparator) {
-  const [directoryPath, fileDomainPath] = domainPath;
-
-  /**
-   * @type {string[]}
-   */
-  const newDomainPath = [];
-
-  newDomainPath.push(...directoryPath);
-
-  if (fileDomainPath !== null && fileDomainPath !== void null) {
-    const [fileName, fileExtension] = fileDomainPath;
-
-    newDomainPath.push([
-      ...((fileName !== null && fileName !== void null) ? [fileName] : [globalThis.String()]),
-      ...((fileExtension !== null && fileExtension !== void null) ? [fileExtension] : []),
-    ].join("."));
-  }
-
-  return newDomainPath.join((pathSeparator !== null && pathSeparator !== void null) ? pathSeparator : path.sep);
-}
-
-/**
- * @param {string[]} directoryPath
- * @returns {Promise<[string[], [string, string | (null | undefined)]][]>}
- */
-async function readDirectory(directoryPath) {
-  return new globalThis.Promise((resolve, reject) => {
-    fs.readdir(formatDomainPath([directoryPath, null], null), {
-      recursive: false,
-    }, async (err, files) => {
-      if (err !== null && err !== void null) {
-        reject(err);
-
-        return;
-      }
-
-      /**
-       * @type {[string[], [string, string | (null | undefined)]][]}
-       */
-      const fileList = [];
-
-      for (const file of files.map((_el, _ind, _arr) => _el.toString())) {
-        const fileDomainPath = [directoryPath, [file, null]];
-
-        const fileStat = fs.statSync(formatDomainPath(fileDomainPath, null), {});
-        if (fileStat.isDirectory()) {
-          fileList.push(...(await readDirectory([...directoryPath, file])));
-
-          continue;
-        }
-
-        const [_, [fileName, fileExtension]] = adjustDomainPath(file);
-
-        fileList.push([directoryPath, [fileName, fileExtension]]);
-      }
-
-      resolve(fileList);
-
-      return;
-    });
-  });
-}
-/**
- * @param {string[]} directoryPath
- * @returns {Promise<void>}
- */
-async function writeDirectory(directoryPath) {
-  return new globalThis.Promise((resolve, reject) => {
-    for (let i = 0; i < directoryPath.length; i++) {
-      const expectedDirectoryPath = formatDomainPath([directoryPath.slice(0, i + 1), null], null);
-
-      if (!fs.existsSync(expectedDirectoryPath)) {
-        fs.mkdirSync(expectedDirectoryPath, {});
-      }
-    }
-
-    resolve();
-  });
-}
-
-/**
- * @param {string[]} directoryPath
- * @returns {Promise<void>}
- */
-async function clearDirectory(directoryPath) {
-  return new globalThis.Promise((resolve, reject) => {
-    fs.readdir(formatDomainPath([directoryPath, null], null), {
-      recursive: false,
-    }, async (err, files) => {
-      if (err !== null && err !== void null) {
-        reject(err);
-
-        return;
-      }
-
-      for (const file of files.map((_el, _ind, _arr) => _el.toString())) {
-        const fileDomainPath = [directoryPath, [file, null]];
-
-        const fileStat = fs.statSync(formatDomainPath(fileDomainPath, null), {});
-        if (fileStat.isDirectory()) {
-          await clearDirectory([...directoryPath, file]);
-
-          continue;
-        }
-      }
-
-      fs.readdir(formatDomainPath([directoryPath, null], null), {
-        recursive: false,
-      }, async (err, files) => {
-        if (err !== null && err !== void null) {
-          reject(err);
-
-          return;
-        }
-
-        if (files.length === 0) {
-          fs.rmdirSync(formatDomainPath([directoryPath, null], null), {});
-        }
-
-        resolve();
-
-        return;
-      });
-    });
-  });
-}
-
-/**
- * @param {[string[], [string, string | (null | undefined)]]} fileDomainPath
- * @returns {Promise<string>}
- */
-async function readFile(fileDomainPath) {
-  return new globalThis.Promise((resolve, reject) => {
-    fs.readFile(formatDomainPath(fileDomainPath, null), {
-      encoding: "utf-8",
-    }, (err, data) => {
-      if (err !== null && err !== void null) {
-        reject(err);
-
-        return;
-      }
-
-      resolve(data);
-
-      return;
-    });
-  });
-}
-/**
- * @param {[string[], [string, string | (null | undefined)]]} fileDomainPath
- * @param {string} fileContent
- * @returns {Promise<void>}
- */
-async function writeFile(fileDomainPath, fileContent) {
-  return new globalThis.Promise(async (resolve, reject) => {
-    const [directoryPath, [fileName, fileExtension]] = fileDomainPath;
-
-    await writeDirectory(directoryPath);
-
-    fs.writeFile(formatDomainPath(fileDomainPath, null), fileContent, {
-      encoding: "utf-8",
-    }, (err) => {
-      if (err !== null && err !== void null) {
-        reject(err);
-
-        return;
-      }
-
-      resolve();
-
-      return;
-    });
-  });
-}
-
-/**
- * @param {[string[], [string, string | (null | undefined)]]} fileDomainPath
- * @returns {Promise<void>}
- */
-async function deleteFile(fileDomainPath) {
-  return new globalThis.Promise((resolve, reject) => {
-    fs.rm(formatDomainPath(fileDomainPath, null), (err) => {
-      if (err !== null && err !== void null) {
-        reject(err);
-
-        return;
-      }
-
-      resolve();
-
-      return;
-    });
-  });
-}
-
-/**
- * @param {string} fileName
- * @returns {[string, (fileIndex: number, maxFileIndex: number) => string]}
- */
-function adjustFileName(fileName) {
-  /**
-   * @type {string | (null | undefined)}
-   */
-  const baseFileName = (() => {
-    fileName = (fileName ?? globalThis.String())
-      .replace(/(?:[_\-]+)(?:alt)(?:[_\-]+[\d]+$)/g, globalThis.String())
-      .replace(/(?:[_\-]+)(?:alt)(?:[\d]+$)/g, globalThis.String());
-
-    {
-      const fileNameExec = /(?<=^)([_\-]*[\d]+)(?=$)/g.exec(fileName);
-      if (globalThis.Array.isArray(fileNameExec)) {
-        return null;
-      }
-    }
-
-    {
-      const fileNameExec = /(?<=^)(.*(?:[^_\-]))(?=[_\-]+[\d]+$)/g.exec(fileName);
-      if (globalThis.Array.isArray(fileNameExec)) {
-        return fileNameExec[1];
-      }
-    }
-
-    {
-      const fileNameExec = /(?<=^)(.*(?:[^_\-\d]))(?=[\d]+$)/g.exec(fileName);
-      if (globalThis.Array.isArray(fileNameExec)) {
-        return fileNameExec[1];
-      }
-    }
-
-    return fileName;
-  })();
-
-  /**
-   * @param {number} fileIndex
-   * @param {number} maxFileIndex
-   * @returns {string}
-   */
-  const formatFileName = (fileIndex, maxFileIndex) => [
-    ...((baseFileName !== null && baseFileName !== void null) ? [baseFileName] : []),
-    fileIndex.toString().padStart(globalThis.Math.max(2, globalThis.Math.floor(globalThis.Math.log10(maxFileIndex)) + 1), 0..toString()),
-  ].join("_");
-
-  return [(baseFileName !== null && baseFileName !== void null) ? baseFileName : formatFileName(1, globalThis.Math.pow(10, 2) - 1), formatFileName];
-}
-
-/**
- * @param {[string[], [string, string | (null | undefined)]][]} fileList
- * @returns {Map<string, [[string, (fileIndex: number, maxFileIndex: number) => string], [string, string | (null | undefined)][]]>}
- */
-function collectFileList(fileList) {
-  /**
-   * @type {Map<string, [[string, (fileIndex: number, maxFileIndex: number) => string], [string, string | (null | undefined)][]]>}
-   */
-  const newFileList = new globalThis.Map();
-
-  for (const file of fileList) {
-    const [directoryPath, [fileName, fileExtension]] = file;
-    const [baseFileName, formatFileName] = adjustFileName(fileName);
-
-    const baseFile = formatDomainPath([directoryPath, [baseFileName, null]], null);
-
-    newFileList.set(baseFile, newFileList.has(baseFile) ? newFileList.get(baseFile) : [[baseFileName, formatFileName], []]);
-    newFileList.get(baseFile)[1].push([fileName, fileExtension]);
-  }
-
-  return newFileList;
-}
-
-/**
  * @param {number} packageIndex
  */
 async function main(packageIndex) {
-  const libDirectoryPath = ["lib"];
+  util.logPending("Searching for installed steam games");
+  const steamGameMap = await steam.getSteam();
+  util.logSuccess(1, "Found installed steam game(-s)", steamGameMap.size);
+
+  util.logPending("Searching for installed compilation SDK");
+  /**
+   * @type {[[number, string], [[string[], [string, string]], [string[], [string, string]] | (null | undefined)], [string[], string[]]][]}
+   */
+  const compilationSDKList = [
+    [[730, "Counter-Strike 2"], [[["game", "bin", "win64"], ["resourcecompiler", "exe"]], null], [["content", "csgo_addons"], ["game", "csgo_addons"]]],
+
+    [[570, "Dota 2"], [[["game", "bin", "win64"], ["resourcecompiler", "exe"]], null], [["content", "dota_addons"], ["game", "dota_addons"]]],
+  ];
+  const [compilationSDK] = compilationSDKList.filter(([
+    [steamGameId, steamGameName],
+    [receivedCompilationSDK, expectedCompilationSDK],
+    [receivedCompilationSDKDirectoryDomainPath, expectedCompilationSDKDirectoryDomainPath],
+  ], _ind, _arr) => {
+    if (steamGameMap.has(steamGameId)) {
+      const [[, ], [steamGameIsReady, steamGameLaunch], steamGameDirectoryDomainPath] = steamGameMap.get(steamGameId);
+      if (steamGameIsReady()) {
+        const [directoryPath, [fileName, fileExtension]] = receivedCompilationSDK;
+
+        return fs.existsSync(util.formatDomainPath([[...steamGameDirectoryDomainPath, ...directoryPath], [fileName, fileExtension]], null));
+      }
+    }
+
+    return steamGameMap.has(steamGameId);
+  });
+  if (compilationSDK !== null && compilationSDK !== void null) {
+    util.logSuccess(1, "Found installed compilation SDK", null);
+  } else {
+    util.logFailure(1, "None of compilation SDK found", null);
+  }
+
+  util.logPending("Searching for installed package SDK");
+  /**
+   * @type {[[number, string], [[string[], [string, string]], [string[], [string, string]] | (null | undefined)]][]}
+   */
+  const packageSDKList = [
+    [[243750, "Source SDK Base 2013 Multiplayer"], [[["bin", "x64"], ["vpk", "exe"]], null]],
+    [[243750, "Source SDK Base 2013 Multiplayer"], [[["bin"], ["vpk", "exe"]], null]],
+    [[243730, "Source SDK Base 2013 Singleplayer"], [[["bin"], ["vpk", "exe"]], null]],
+
+    [[745, "Counter-Strike: Global Offensive - SDK"], [[["bin"], ["vpk", "exe"]], [["game", "csgo", "import_scripts", "bin"], ["vpk", "exe"]]]],
+
+    [[220, "Half-Life 2"], [[["bin"], ["vpk", "exe"]], null]],
+  ];
+  const [packageSDK] = packageSDKList.filter(([
+    [steamGameId, steamGameName],
+    [receivedPackageSDK, expectedPackageSDK],
+  ], _ind, _arr) => {
+    if (steamGameMap.has(steamGameId)) {
+      const [[, ], [steamGameIsReady, steamGameLaunch], steamGameDirectoryDomainPath] = steamGameMap.get(steamGameId);
+      if (steamGameIsReady()) {
+        const [directoryPath, [fileName, fileExtension]] = receivedPackageSDK;
+
+        return fs.existsSync(util.formatDomainPath([[...steamGameDirectoryDomainPath, ...directoryPath], [fileName, fileExtension]], null));
+      }
+    }
+
+    return steamGameMap.has(steamGameId);
+  });
+  if (packageSDK !== null && packageSDK !== void null) {
+    util.logSuccess(1, "Found installed package SDK", null);
+  } else {
+    util.logFailure(1, "None of package SDK found", null);
+  }
+
+  const [
+    [compilationSDKSteamGameId, ],
+    [receivedCompilationSDK, expectedCompilationSDK],
+    [receivedCompilationSDKDirectoryDomainPath, expectedCompilationSDKDirectoryDomainPath],
+  ] = compilationSDK;
+  const [[, ], [, ], compilationSDKSteamGameDirectoryDomainPath] = steamGameMap.get(compilationSDKSteamGameId);
+  /**
+   * @type {[string[], [string, string]]}
+   */
+  let baseCompilationSDK = receivedCompilationSDK;
+  {
+    const [oldDirectoryPath, [oldFileName, oldFileExtension]] = baseCompilationSDK;
+    const oldCompilationSDK = [[...compilationSDKSteamGameDirectoryDomainPath, ...oldDirectoryPath], [oldFileName, oldFileExtension]];
+
+    if (expectedCompilationSDK !== null && expectedCompilationSDK !== void null) {
+      baseCompilationSDK = expectedCompilationSDK;
+    }
+
+    const [newDirectoryPath, [newFileName, newFileExtension]] = baseCompilationSDK;
+    const newCompilationSDK = [[...compilationSDKSteamGameDirectoryDomainPath, ...newDirectoryPath], [newFileName, newFileExtension]];
+
+    if (util.formatDomainPath(oldCompilationSDK, null) !== util.formatDomainPath(newCompilationSDK, null)) {
+      if (fs.existsSync(util.formatDomainPath(newCompilationSDK, null))) {
+        await util.deleteFile(newCompilationSDK);
+      }
+
+      await (new globalThis.Promise((resolve, reject) => {
+        fs.copyFile(
+          util.formatDomainPath(oldCompilationSDK, null),
+          util.formatDomainPath(newCompilationSDK, null),
+          (err) => {
+            if (err !== null && err !== void null) {
+              reject(err);
+
+              return;
+            }
+
+            resolve();
+
+            return;
+          },
+        );
+      }));
+    }
+
+    baseCompilationSDK = newCompilationSDK;
+  }
+
+  const [
+    [packageSDKSteamGameId, ],
+    [receivedPackageSDK, expectedPackageSDK],
+  ] = packageSDK;
+  const [[, ], [, ], packageSDKSteamGameDirectoryDomainPath] = steamGameMap.get(packageSDKSteamGameId);
+  /**
+   * @type {[string[], [string, string]]}
+   */
+  let basePackageSDK = receivedPackageSDK;
+  {
+    const [oldDirectoryPath, [oldFileName, oldFileExtension]] = basePackageSDK;
+    const oldPackageSDK = [[...packageSDKSteamGameDirectoryDomainPath, ...oldDirectoryPath], [oldFileName, oldFileExtension]];
+
+    if (expectedPackageSDK !== null && expectedPackageSDK !== void null) {
+      basePackageSDK = expectedPackageSDK;
+    }
+
+    const [newDirectoryPath, [newFileName, newFileExtension]] = basePackageSDK;
+    const newPackageSDK = [[...packageSDKSteamGameDirectoryDomainPath, ...newDirectoryPath], [newFileName, newFileExtension]];
+
+    if (util.formatDomainPath(oldPackageSDK, null) !== util.formatDomainPath(newPackageSDK, null)) {
+      if (fs.existsSync(util.formatDomainPath(newPackageSDK, null))) {
+        await util.deleteFile(newPackageSDK);
+      }
+
+      await (new globalThis.Promise((resolve, reject) => {
+        fs.copyFile(
+          util.formatDomainPath(oldPackageSDK, null),
+          util.formatDomainPath(newPackageSDK, null),
+          (err) => {
+            if (err !== null && err !== void null) {
+              reject(err);
+
+              return;
+            }
+
+            resolve();
+
+            return;
+          },
+        );
+      }));
+    }
+
+    basePackageSDK = newPackageSDK;
+  }
 
   /**
    * @param {boolean} isCompiled
    * @returns {string[]}
    */
-  const addonDirectoryPath = (isCompiled) => [...(isCompiled ? ["game"] : ["content"]), "csgo_addons", "build"];
+  const addonDirectoryPath = (isCompiled) => [
+    ...compilationSDKSteamGameDirectoryDomainPath,
+    ...(isCompiled ? expectedCompilationSDKDirectoryDomainPath : receivedCompilationSDKDirectoryDomainPath),
+    "build",
+  ];
 
-  const [sourceDirectoryPath, [sourceFileName, sourceFileExtension]] = adjustDomainPath(path.relative(process.cwd(), url.fileURLToPath(import.meta.url, {})));
+  const [sourceDirectoryPath, [sourceFileName, sourceFileExtension]] = util.adjustDomainPath(path.relative(process.cwd(), url.fileURLToPath(import.meta.url, {})));
   const buildDirectoryPath = ["build"];
 
   const soundeventsDirectoryPath = ["soundevents"];
@@ -1097,93 +924,52 @@ async function main(packageIndex) {
       ? "vsnd"
       : fileExtension;
 
-  /**
-   * @param {number} logLevel
-   * @param {string} logTag
-   * @param {string} logMessage
-   * @param {unknown} logPayload
-   * @returns {void}
-   */
-  const log = (logLevel, logTag, logMessage, logPayload) => console.log(`${`[${logTag}]`.padStart(10, " ")}${globalThis.String().padStart(logLevel * 3, " ")}${[
-    logMessage,
-    ...((logPayload !== null && logPayload !== void null) ? [globalThis.String(logPayload)] : []),
-  ].join(`:${globalThis.String().padStart(1, " ")}`)}`);
-
-  /**
-   * @param {string} logMessage
-   * @returns {void}
-   */
-  const logPending = (logMessage) => log(1, globalThis.String().padStart(3, "."), logMessage, null);
-
-  /**
-   * @param {number} logLevel
-   * @param {string} logMessage
-   * @param {unknown} logPayload
-   * @returns {void}
-   */
-  const logSuccess = (logLevel, logMessage, logPayload) => log(logLevel, globalThis.String().padStart(1, "✓"), logMessage, logPayload);
-  /**
-   * @param {number} logLevel
-   * @param {string} logMessage
-   * @param {unknown} logPayload
-   * @returns {void}
-   */
-  const logFailure = (logLevel, logMessage, logPayload) => log(logLevel, globalThis.String().padStart(1, "✗"), logMessage, logPayload);
-
-  /**
-   * @param {number} logLevel
-   * @param {string} logMessage
-   * @param {unknown} logPayload
-   * @returns {void}
-   */
-  const logWarning = (logLevel, logMessage, logPayload) => log(logLevel, globalThis.String().padStart(1, "!"), logMessage, logPayload);
-
   const refreshDirectory = async () => {
     await globalThis.Promise.all(
-      [addonDirectoryPath(false), addonDirectoryPath(true)].map((_el, _ind, _arr) => writeDirectory([...libDirectoryPath, ..._el]))
+      [addonDirectoryPath(false), addonDirectoryPath(true)].map((_el, _ind, _arr) => util.writeDirectory([..._el]))
     );
 
     await globalThis.Promise.all(
-      [soundeventsHeroDirectoryPath, soundsAbilitiesDirectoryPath].map((_el, _ind, _arr) => writeDirectory([...sourceDirectoryPath, ..._el]))
+      [soundeventsHeroDirectoryPath, soundsAbilitiesDirectoryPath].map((_el, _ind, _arr) => util.writeDirectory([...sourceDirectoryPath, ..._el]))
     );
 
     await globalThis.Promise.all(
-      [packageDirectoryPath].map((_el, _ind, _arr) => writeDirectory([...buildDirectoryPath, ..._el]))
+      [packageDirectoryPath].map((_el, _ind, _arr) => util.writeDirectory([...buildDirectoryPath, ..._el]))
     );
   };
 
-  logPending("Refreshing directory");
+  util.logPending("Refreshing directory");
   await refreshDirectory();
-  logSuccess(1, "Directory refreshed", null);
+  util.logSuccess(1, "Directory refreshed", null);
 
-  logPending("Searching for old build files");
+  util.logPending("Searching for old build files");
   const oldBuildFileList = [
-    ...(await readDirectory([...buildDirectoryPath])),
+    ...(await util.readDirectory([...buildDirectoryPath])),
 
-    ...(await readDirectory([...libDirectoryPath, ...addonDirectoryPath(false)])),
-    ...(await readDirectory([...libDirectoryPath, ...addonDirectoryPath(true)])),
+    ...(await util.readDirectory([...addonDirectoryPath(false)])),
+    ...(await util.readDirectory([...addonDirectoryPath(true)])),
   ];
-  logSuccess(1, "Found old build file(-s)", `${oldBuildFileList.length}`);
+  util.logSuccess(1, "Found old build file(-s)", `${oldBuildFileList.length}`);
 
-  logPending("Deleting old build files");
-  await globalThis.Promise.all(oldBuildFileList.map((_el, _ind, _arr) => deleteFile(_el)));
-  await clearDirectory([...buildDirectoryPath]);
-  logSuccess(1, "Deleted old build file(-s)", `${oldBuildFileList.length}`);
+  util.logPending("Deleting old build files");
+  await globalThis.Promise.all(oldBuildFileList.map((_el, _ind, _arr) => util.deleteFile(_el)));
+  await util.clearDirectory([...buildDirectoryPath]);
+  util.logSuccess(1, "Deleted old build file(-s)", `${oldBuildFileList.length}`);
 
-  logPending("Searching for hero sound manifests");
-  const heroFileList = (await readDirectory([...sourceDirectoryPath, ...soundeventsHeroDirectoryPath]))
+  util.logPending("Searching for hero sound manifests");
+  const heroFileList = (await util.readDirectory([...sourceDirectoryPath, ...soundeventsHeroDirectoryPath]))
     .filter(([heroDirectoryPath, [heroFileName, heroFileExtension]], _ind, _arr) => {
       const isShared =
-        formatDomainPath([heroDirectoryPath, null], null)
-          === formatDomainPath([[...sourceDirectoryPath, ...soundeventsHeroDirectoryPath], null], null)
+        util.formatDomainPath([heroDirectoryPath, null], null)
+          === util.formatDomainPath([[...sourceDirectoryPath, ...soundeventsHeroDirectoryPath], null], null)
           && heroFileName === "_shared";
 
       return !isShared;
     });
-  logSuccess(1, "Found hero sound manifest(-s)", `${heroFileList.length}`);
+  util.logSuccess(1, "Found hero sound manifest(-s)", `${heroFileList.length}`);
 
-  logPending("Reading hero sound manifests");
-  const heroFileContentList = (await globalThis.Promise.all(heroFileList.map((_el, _ind, _arr) => readFile(_el))))
+  util.logPending("Reading hero sound manifests");
+  const heroFileContentList = (await globalThis.Promise.all(heroFileList.map((_el, _ind, _arr) => util.readFile(_el))))
     .map((_el, _ind, _arr) => {
       /**
        * @type {string[]}
@@ -1206,44 +992,44 @@ async function main(packageIndex) {
       return heroSoundsAbilitiesList;
     }).filter((_el, _ind, _arr) => _el.length > 0);
   const heroFileContentSoundList = heroFileContentList.reduce((_prev, _curr, _currInd, _currArr) => [..._prev, ..._curr], []);
-  const heroFileContentSoundGroupList = collectFileList(heroFileContentSoundList.map((_el, _ind, _arr) => {
-    const [directoryPath, [fileName, fileExtension]] = adjustDomainPath(_el);
+  const heroFileContentSoundGroupList = util.collectFileList(heroFileContentSoundList.map((_el, _ind, _arr) => {
+    const [directoryPath, [fileName, fileExtension]] = util.adjustDomainPath(_el);
 
     return [[...sourceDirectoryPath, ...soundsAbilitiesDirectoryPath, ...directoryPath], [fileName, fileExtension]];
   }));
-  logSuccess(1, "Read hero sound manifest(-s)", `${heroFileList.length} (${heroFileContentList.length})`);
-  logSuccess(2, "Found hero sound file(-s)", `${heroFileContentSoundList.length} (${heroFileContentSoundGroupList.size})`);
+  util.logSuccess(1, "Read hero sound manifest(-s)", `${heroFileList.length} (${heroFileContentList.length})`);
+  util.logSuccess(2, "Found hero sound file(-s)", `${heroFileContentSoundList.length} (${heroFileContentSoundGroupList.size})`);
 
-  logPending("Searching for old (deprecated) hero sound files");
+  util.logPending("Searching for old (deprecated) hero sound files");
   /**
    * @type {[string[], [string, string | (null | undefined)]][]}
    */
-  const oldSoundsAbilitiesFileList = globalThis.Array.from(collectFileList(await readDirectory([...sourceDirectoryPath, ...soundsAbilitiesDirectoryPath])).entries())
+  const oldSoundsAbilitiesFileList = globalThis.Array.from(util.collectFileList(await util.readDirectory([...sourceDirectoryPath, ...soundsAbilitiesDirectoryPath])).entries())
     .filter(([key, [[baseFileName, formatFileName], value]], _ind, _arr) => !heroFileContentSoundGroupList.has(key))
     .map(([key, [[baseFileName, formatFileName], value]], _ind, _arr) => {
-      const [directoryPath, [, ]] = adjustDomainPath(key);
+      const [directoryPath, [, ]] = util.adjustDomainPath(key);
 
       return value.map(([fileName, fileExtension], _ind, _arr) => [directoryPath, [fileName, fileExtension]]);
     })
     .reduce((_prev, _curr, _currInd, _currArr) => [..._prev, ..._curr], []);
-  logSuccess(1, "Found old (deprecated) hero sound file(-s)", `${oldSoundsAbilitiesFileList.length}`);
+  util.logSuccess(1, "Found old (deprecated) hero sound file(-s)", `${oldSoundsAbilitiesFileList.length}`);
 
-  logPending("Deleting old (deprecated) hero sound files");
-  await globalThis.Promise.all(oldSoundsAbilitiesFileList.map((_el, _ind, _arr) => deleteFile(_el)));
-  await clearDirectory([...sourceDirectoryPath, ...soundsAbilitiesDirectoryPath]);
-  logSuccess(1, "Deleted old (deprecated) hero sound file(-s)", `${oldSoundsAbilitiesFileList.length}`);
+  util.logPending("Deleting old (deprecated) hero sound files");
+  await globalThis.Promise.all(oldSoundsAbilitiesFileList.map((_el, _ind, _arr) => util.deleteFile(_el)));
+  await util.clearDirectory([...sourceDirectoryPath, ...soundsAbilitiesDirectoryPath]);
+  util.logSuccess(1, "Deleted old (deprecated) hero sound file(-s)", `${oldSoundsAbilitiesFileList.length}`);
 
-  logPending("Refreshing directory");
+  util.logPending("Refreshing directory");
   await refreshDirectory();
-  logSuccess(1, "Directory refreshed", null);
+  util.logSuccess(1, "Directory refreshed", null);
 
-  logPending("Searching for existing sound files to rename (adjust)");
+  util.logPending("Searching for existing sound files to rename (adjust)");
   /**
    * @type {[[string[], [string, string | (null | undefined)]], [string[], [string, string | (null | undefined)]]][]}
    */
-  const expectedSoundsFileList = (await globalThis.Promise.all(globalThis.Array.from(collectFileList(await readDirectory([...sourceDirectoryPath, ...soundsDirectoryPath])).entries())
+  const expectedSoundsFileList = (await globalThis.Promise.all(globalThis.Array.from(util.collectFileList(await util.readDirectory([...sourceDirectoryPath, ...soundsDirectoryPath])).entries())
     .map(async ([key, [[baseFileName, formatFileName], value]], _ind, _arr) => {
-      const [directoryPath, [fileName, fileExtension]] = adjustDomainPath(key);
+      const [directoryPath, [fileName, fileExtension]] = util.adjustDomainPath(key);
 
       const isReal = value.some(([fileName, fileExtension], _ind, _arr) => audioFileExtensionList.includes(fileExtension));
 
@@ -1261,7 +1047,7 @@ async function main(packageIndex) {
           if (!audioFileExtensionList.includes(fileExtension)) {
             optionalFileList.push([fileName, fileExtension]);
 
-            await deleteFile([directoryPath, [fileName, fileExtension]]);
+            await util.deleteFile([directoryPath, [fileName, fileExtension]]);
 
             continue;
           }
@@ -1319,12 +1105,12 @@ async function main(packageIndex) {
       ];
     })))
     .reduce((_prev, _curr, _currInd, _currArr) => [..._prev, ..._curr], []);
-  logSuccess(1, "Found existing sound file(-s) to rename (adjust)", `${expectedSoundsFileList.length}`);
+  util.logSuccess(1, "Found existing sound file(-s) to rename (adjust)", `${expectedSoundsFileList.length}`);
 
-  logPending("Renaming (adjusting) existing sound files");
+  util.logPending("Renaming (adjusting) existing sound files");
   await globalThis.Promise.all(expectedSoundsFileList.map(([expected, received], _ind, _arr) => {
     return new globalThis.Promise((resolve, reject) => {
-      fs.rename(formatDomainPath(received, null), formatDomainPath(expected, null), (err) => {
+      fs.rename(util.formatDomainPath(received, null), util.formatDomainPath(expected, null), (err) => {
         if (err !== null && err !== void null) {
           reject(err);
 
@@ -1337,36 +1123,36 @@ async function main(packageIndex) {
       });
     });
   }));
-  logSuccess(1, "Renamed (adjusted) existing sound file(-s)", `${expectedSoundsFileList.length}`);
+  util.logSuccess(1, "Renamed (adjusted) existing sound file(-s)", `${expectedSoundsFileList.length}`);
 
-  logPending("Searching for hero sound files to create (synchronize)");
-  const soundsAbilitiesFileList = collectFileList(await readDirectory([...sourceDirectoryPath, ...soundsAbilitiesDirectoryPath]));
+  util.logPending("Searching for hero sound files to create (synchronize)");
+  const soundsAbilitiesFileList = util.collectFileList(await util.readDirectory([...sourceDirectoryPath, ...soundsAbilitiesDirectoryPath]));
   /**
    * @type {[string[], [string, string | (null | undefined)]][]}
    */
   const newSoundsAbilitiesFileList = globalThis.Array.from(heroFileContentSoundGroupList.entries())
     .filter(([key, [[baseFileName, formatFileName], value]], _ind, _arr) => !soundsAbilitiesFileList.has(key))
     .map(([key, [[baseFileName, formatFileName], value]], _ind, _arr) => {
-      const [directoryPath, [fileName, fileExtension]] = adjustDomainPath(key);
+      const [directoryPath, [fileName, fileExtension]] = util.adjustDomainPath(key);
 
       return [directoryPath, [formatFileName(1, globalThis.Math.pow(10, 2) - 1), fileExtension]];
     });
-  logSuccess(1, "Found hero sound file(-s) to create (synchronize)", `${newSoundsAbilitiesFileList.length}`);
+  util.logSuccess(1, "Found hero sound file(-s) to create (synchronize)", `${newSoundsAbilitiesFileList.length}`);
 
-  logPending("Creating new (synchronizing) hero sound files");
-  await globalThis.Promise.all(newSoundsAbilitiesFileList.map((_el, _ind, _arr) => writeFile(_el, globalThis.String())));
-  logSuccess(1, "Created new (synchronized) hero sound file(-s)", `${newSoundsAbilitiesFileList.length}`);
+  util.logPending("Creating new (synchronizing) hero sound files");
+  await globalThis.Promise.all(newSoundsAbilitiesFileList.map((_el, _ind, _arr) => util.writeFile(_el, globalThis.String())));
+  util.logSuccess(1, "Created new (synchronized) hero sound file(-s)", `${newSoundsAbilitiesFileList.length}`);
 
-  logPending("Searching for sound files");
+  util.logPending("Searching for sound files");
   /**
    * @type {Map<string, [[string, (fileIndex: number, maxFileIndex: number) => string], [string, string | (null | undefined)][]]>}
    */
-  const soundFileList = new globalThis.Map(globalThis.Array.from(collectFileList(await readDirectory([...sourceDirectoryPath, ...soundsDirectoryPath])).entries())
+  const soundFileList = new globalThis.Map(globalThis.Array.from(util.collectFileList(await util.readDirectory([...sourceDirectoryPath, ...soundsDirectoryPath])).entries())
     .map(([key, [[baseFileName, formatFileName], value]], _ind, _arr) => {
-      const [directoryPath, [fileName, fileExtension]] = adjustDomainPath(path.relative(formatDomainPath([sourceDirectoryPath, null], null), key));
+      const [directoryPath, [fileName, fileExtension]] = util.adjustDomainPath(path.relative(util.formatDomainPath([sourceDirectoryPath, null], null), key));
 
       return [
-        formatDomainPath([directoryPath, [baseFileName, null]], null),
+        util.formatDomainPath([directoryPath, [baseFileName, null]], null),
         [
           [baseFileName, formatFileName],
           value
@@ -1376,22 +1162,22 @@ async function main(packageIndex) {
       ];
     })
     .filter(([key, [[baseFileName, formatFileName], value]], _ind, _arr) => value.length > 0));
-  logSuccess(1, "Found sound file(-s)", `${globalThis.Array.from(soundFileList.values()).reduce((_prev, [[, ], _curr], _currInd, _currArr) => [..._prev, ..._curr], []).length} (${soundFileList.size})`);
+  util.logSuccess(1, "Found sound file(-s)", `${globalThis.Array.from(soundFileList.values()).reduce((_prev, [[, ], _curr], _currInd, _currArr) => [..._prev, ..._curr], []).length} (${soundFileList.size})`);
 
   /**
    * @type {[string[], [string, string]][]}
    */
   const newSoundFileList = [];
 
-  logPending("Generating sound manifests");
+  util.logPending("Generating sound manifests");
   /**
    * @type {[string[], [string, string]][]}
    */
-  const newSoundManifestList = (await globalThis.Promise.all((await readDirectory([...sourceDirectoryPath, ...soundeventsDirectoryPath])).filter(([directoryPath, [fileName, fileExtension]], _ind, _arr) => !["vrman"].includes(fileExtension)).map(async (_el, _ind, _arr) => {
+  const newSoundManifestList = (await globalThis.Promise.all((await util.readDirectory([...sourceDirectoryPath, ...soundeventsDirectoryPath])).filter(([directoryPath, [fileName, fileExtension]], _ind, _arr) => !["vrman"].includes(fileExtension)).map(async (_el, _ind, _arr) => {
     const [directoryPath, [fileName, fileExtension]] = _el;
-    const [baseFileName, formatFileName] = adjustFileName(fileName);
+    const [baseFileName, formatFileName] = util.adjustFileName(fileName);
 
-    const fileContent = await readFile(_el);
+    const fileContent = await util.readFile(_el);
 
     /**
      * @param {unknown} fileContentValue
@@ -1493,7 +1279,7 @@ async function main(packageIndex) {
           const [soundEventPropertyNameSuffix, ...soundEventPropertyNameDomainList] = [...soundEventPropertyName.split(/[\.]+/g)].reverse();
           const [soundEventPropertyNamePrefix, ...soundEventPropertyNameDomainPath] = [...soundEventPropertyNameDomainList].reverse();
 
-          const [baseSoundEventPropertyNamePrefix, formatSoundEventPropertyNamePrefix] = adjustFileName(soundEventPropertyNamePrefix);
+          const [baseSoundEventPropertyNamePrefix, formatSoundEventPropertyNamePrefix] = util.adjustFileName(soundEventPropertyNamePrefix);
 
           const soundEventProperty = soundEvent[soundEventPropertyName];
 
@@ -1519,7 +1305,7 @@ async function main(packageIndex) {
           const [soundEventPropertyNamePrefix, ...soundEventPropertyNameDomainPath] = [...soundEventPropertyNameDomainList].reverse();
 
           if (typeof soundEvent[soundEventPropertyName] === "string"
-            && soundEvent[soundEventPropertyName].startsWith(formatDomainPath([[...soundsDirectoryPath, globalThis.String()], null], "/"))) {
+            && soundEvent[soundEventPropertyName].startsWith(util.formatDomainPath([[...soundsDirectoryPath, globalThis.String()], null], "/"))) {
             soundEvent[soundEventPropertyName] = [soundEvent[soundEventPropertyName]];
           }
 
@@ -1529,7 +1315,7 @@ async function main(packageIndex) {
             if (
               soundEventProperty.every((_el, _ind, _arr) =>
                 typeof _el === "string"
-                && _el.startsWith(formatDomainPath([[...soundsDirectoryPath, globalThis.String()], null], "/")))
+                && _el.startsWith(util.formatDomainPath([[...soundsDirectoryPath, globalThis.String()], null], "/")))
             ) {
               if (expectedSoundManifestEventMap.has(soundEventName)) {
                 const [[soundEventVolume]] = expectedSoundManifestEventMap.get(soundEventName);
@@ -1542,16 +1328,16 @@ async function main(packageIndex) {
                 }
               }
 
-              for (const [key, [[baseFileName, formatFileName], value]] of globalThis.Array.from(collectFileList(soundEventProperty.map((_el, _ind, _arr) => adjustDomainPath(_el))).entries())) {
-                const [directoryPath, [fileName, fileExtension]] = adjustDomainPath(key);
+              for (const [key, [[baseFileName, formatFileName], value]] of globalThis.Array.from(util.collectFileList(soundEventProperty.map((_el, _ind, _arr) => util.adjustDomainPath(_el))).entries())) {
+                const [directoryPath, [fileName, fileExtension]] = util.adjustDomainPath(key);
 
                 /**
                  * @type {[string[], [string, string]][]}
                  */
                 const expectedNewSoundFileList = [];
 
-                if (soundFileList.has(formatDomainPath([directoryPath, [baseFileName, null]], null))) {
-                  const [[, ], [...expectedSoundFileList]] = soundFileList.get(formatDomainPath([directoryPath, [baseFileName, null]], null));
+                if (soundFileList.has(util.formatDomainPath([directoryPath, [baseFileName, null]], null))) {
+                  const [[, ], [...expectedSoundFileList]] = soundFileList.get(util.formatDomainPath([directoryPath, [baseFileName, null]], null));
                   const expectedSoundFileListCapacity = expectedSoundFileList.length;
 
                   while (expectedSoundFileList.length < value.length) {
@@ -1559,13 +1345,13 @@ async function main(packageIndex) {
                   }
 
                   value.map(([fileName, fileExtension], _ind, _arr) => {
-                    if (soundEventProperty.includes(formatDomainPath([directoryPath, [fileName, fileExtension]], "/"))) {
+                    if (soundEventProperty.includes(util.formatDomainPath([directoryPath, [fileName, fileExtension]], "/"))) {
                       const [expectedDirectoryPath, [expectedFileName, expectedFileExtension]] = expectedSoundFileList[_ind];
 
                       if (soundEventPropertyNameDynamicPrefixList.includes(soundEventPropertyNamePrefix)) {
                         soundEvent[soundEventPropertyName] = soundEventProperty.with(
-                          soundEventProperty.findIndex((__el, __ind, __arr) => __el === formatDomainPath([directoryPath, [fileName, fileExtension]], "/")),
-                          formatDomainPath([expectedDirectoryPath, [expectedFileName, fileExtensionMap(expectedFileExtension)]], "/"),
+                          soundEventProperty.findIndex((__el, __ind, __arr) => __el === util.formatDomainPath([directoryPath, [fileName, fileExtension]], "/")),
+                          util.formatDomainPath([expectedDirectoryPath, [expectedFileName, fileExtensionMap(expectedFileExtension)]], "/"),
                         );
 
                         expectedNewSoundFileList.push([expectedDirectoryPath, [expectedFileName, expectedFileExtension]]);
@@ -1574,7 +1360,7 @@ async function main(packageIndex) {
                       }
 
                       soundEventProperty.splice(
-                        soundEventProperty.findIndex((__el, __ind, __arr) => __el === formatDomainPath([directoryPath, [fileName, fileExtension]], "/")),
+                        soundEventProperty.findIndex((__el, __ind, __arr) => __el === util.formatDomainPath([directoryPath, [fileName, fileExtension]], "/")),
                         1,
                       );
                     }
@@ -1586,7 +1372,7 @@ async function main(packageIndex) {
                         .map(([expectedDirectoryPath, [expectedFileName, expectedFileExtension]], _ind, _arr) => {
                           expectedNewSoundFileList.push([expectedDirectoryPath, [expectedFileName, expectedFileExtension]]);
 
-                          return formatDomainPath([expectedDirectoryPath, [expectedFileName, fileExtensionMap(expectedFileExtension)]], "/");
+                          return util.formatDomainPath([expectedDirectoryPath, [expectedFileName, fileExtensionMap(expectedFileExtension)]], "/");
                         })
                     );
                   }
@@ -1597,7 +1383,7 @@ async function main(packageIndex) {
                 newSoundFileList.push(
                   ...expectedNewSoundFileList.filter((_el, _ind, _arr) =>
                     !newSoundFileList.map((__el, __ind, __arr) =>
-                      formatDomainPath(__el, null)).includes(formatDomainPath(_el, null)))
+                      util.formatDomainPath(__el, null)).includes(util.formatDomainPath(_el, null)))
                 );
               }
             }
@@ -1608,7 +1394,7 @@ async function main(packageIndex) {
           receivedSoundManifestEventMap.set(soundEventName, expectedSoundManifestEventMap.has(soundEventName));
 
           if (!expectedSoundManifestEventMap.has(soundEventName)) {
-            logWarning(2, "Found unconfigured sound event", soundEventName);
+            util.logWarning(2, "Found unconfigured sound event", soundEventName);
           }
 
           soundEvent["volume"] = globalThis.Math.max(0, soundEvent["volume"] ?? 0) + 5;
@@ -1668,7 +1454,7 @@ async function main(packageIndex) {
                 const [soundEventPropertyNameSuffix, ...soundEventPropertyNameDomainList] = [...soundEventPropertyName.split(/[\.]+/g)].reverse();
                 const [soundEventPropertyNamePrefix, ...soundEventPropertyNameDomainPath] = [...soundEventPropertyNameDomainList].reverse();
 
-                const [baseSoundEventPropertyNamePrefix, formatSoundEventPropertyNamePrefix] = adjustFileName(soundEventPropertyNamePrefix);
+                const [baseSoundEventPropertyNamePrefix, formatSoundEventPropertyNamePrefix] = util.adjustFileName(soundEventPropertyNamePrefix);
 
                 return baseSoundEventPropertyNamePrefix === _el.join("_");
               })
@@ -1678,7 +1464,7 @@ async function main(packageIndex) {
                 const [soundEventPropertyNameSuffix, ...soundEventPropertyNameDomainList] = [...soundEventPropertyName.split(/[\.]+/g)].reverse();
                 const [soundEventPropertyNamePrefix, ...soundEventPropertyNameDomainPath] = [...soundEventPropertyNameDomainList].reverse();
 
-                const [baseSoundEventPropertyNameSuffix, formatSoundEventPropertyNameSuffix] = adjustFileName(soundEventPropertyNameSuffix);
+                const [baseSoundEventPropertyNameSuffix, formatSoundEventPropertyNameSuffix] = util.adjustFileName(soundEventPropertyNameSuffix);
 
                 return baseSoundEventPropertyNameSuffix === _el.join("_");
               })
@@ -1698,12 +1484,12 @@ async function main(packageIndex) {
       if (isFileContentJSON) {
         const newFileContentValue = [fileContentPrefix, fileContentStringify(fileContentJSON), fileContentSuffix].join(globalThis.String());
 
-        const [newDirectoryPath, [, ]] = adjustDomainPath(path.relative(
-          formatDomainPath([sourceDirectoryPath, null], null),
-          formatDomainPath([directoryPath, [fileName, fileExtension]], null),
+        const [newDirectoryPath, [, ]] = util.adjustDomainPath(path.relative(
+          util.formatDomainPath([sourceDirectoryPath, null], null),
+          util.formatDomainPath([directoryPath, [fileName, fileExtension]], null),
         ));
 
-        await writeFile([[...libDirectoryPath, ...addonDirectoryPath(false), ...newDirectoryPath], [fileName, fileExtension]], newFileContentValue);
+        await util.writeFile([[...addonDirectoryPath(false), ...newDirectoryPath], [fileName, fileExtension]], newFileContentValue);
 
         return [newDirectoryPath, [fileName, fileExtension]];
       }
@@ -1714,30 +1500,30 @@ async function main(packageIndex) {
   globalThis.Array.from(expectedSoundManifestEventMap.keys())
     .map((_el, _ind, _arr) => {
       if (!receivedSoundManifestEventMap.has(_el) || !receivedSoundManifestEventMap.get(_el)) {
-        logWarning(3, "Found unused sound event", _el);
+        util.logWarning(3, "Found unused sound event", _el);
       }
     });
-  logSuccess(1, "Generated sound manifest(-s)", `${newSoundManifestList.length}`);
-  logSuccess(2, "Used sound file(-s)", `${newSoundFileList.length} / ${globalThis.Array.from(soundFileList.values()).reduce((_prev, [[, ], _curr], _currInd, _currArr) => [..._prev, ..._curr], []).length}`);
+  util.logSuccess(1, "Generated sound manifest(-s)", `${newSoundManifestList.length}`);
+  util.logSuccess(2, "Used sound file(-s)", `${newSoundFileList.length} / ${globalThis.Array.from(soundFileList.values()).reduce((_prev, [[, ], _curr], _currInd, _currArr) => [..._prev, ..._curr], []).length}`);
   globalThis.Array.from(soundFileList.values()).reduce((_prev, [[, ], _curr], _currInd, _currArr) => [..._prev, ..._curr], [])
     .map((_el, _ind, _arr) => {
-      if (!newSoundFileList.map((__el, __ind, __arr) => formatDomainPath(__el, null)).includes(formatDomainPath(_el, null))) {
-        logWarning(3, "Found unused sound file", formatDomainPath(_el, "/"));
+      if (!newSoundFileList.map((__el, __ind, __arr) => util.formatDomainPath(__el, null)).includes(util.formatDomainPath(_el, null))) {
+        util.logWarning(3, "Found unused sound file", util.formatDomainPath(_el, "/"));
       }
     });
 
-  logPending("Copying sound files");
+  util.logPending("Copying sound files");
   await globalThis.Promise.all(
     newSoundFileList.map(([directoryPath, [fileName, fileExtension]], _ind, _arr) => {
       return new globalThis.Promise(async (resolve, reject) => {
         const oldDirectoryPath = [...sourceDirectoryPath, ...directoryPath];
-        const newDirectoryPath = [...libDirectoryPath, ...addonDirectoryPath(false), ...directoryPath];
+        const newDirectoryPath = [...addonDirectoryPath(false), ...directoryPath];
 
-        await writeDirectory(newDirectoryPath);
+        await util.writeDirectory(newDirectoryPath);
 
         fs.copyFile(
-          formatDomainPath([oldDirectoryPath, [fileName, fileExtension]], null),
-          formatDomainPath([newDirectoryPath, [fileName, fileExtension]], null),
+          util.formatDomainPath([oldDirectoryPath, [fileName, fileExtension]], null),
+          util.formatDomainPath([newDirectoryPath, [fileName, fileExtension]], null),
           (err) => {
             if (err !== null && err !== void null) {
               reject(err);
@@ -1753,14 +1539,14 @@ async function main(packageIndex) {
       });
     })
   );
-  logSuccess(1, "Copied sound file(-s)", `${newSoundFileList.length}`);
+  util.logSuccess(1, "Copied sound file(-s)", `${newSoundFileList.length}`);
 
-  logPending("Compiling source files");
+  util.logPending("Compiling source files");
   await new globalThis.Promise((resolve, reject) => {
     child_process.spawn(
-      `"${path.join(process.cwd(), formatDomainPath([[...libDirectoryPath, "game", "bin", "win64"], ["resourcecompiler", "exe"]], null))}"`,
+      `"${util.formatDomainPath(baseCompilationSDK, null)}"`,
       [
-        ["i", [`"${path.join(process.cwd(), formatDomainPath([[...libDirectoryPath, ...addonDirectoryPath(false)], ["*", "*"]], null))}"`]],
+        ["i", [`"${util.formatDomainPath([[...addonDirectoryPath(false)], ["*", "*"]], null)}"`]],
         ["r", []],
         ["f", []],
       ].map(([optionName, optionParameterList], _ind, _arr) => [
@@ -1785,9 +1571,9 @@ async function main(packageIndex) {
         resolve();
       });
   });
-  logSuccess(1, "Compiled source file(-s)", null);
+  util.logSuccess(1, "Compiled source file(-s)", null);
 
-  logPending("Copying build files");
+  util.logPending("Copying build files");
   /**
    * @type {([string[], [string, string]]|[string[], [string, string]])[]}
    */
@@ -1796,14 +1582,14 @@ async function main(packageIndex) {
       return new globalThis.Promise(async (resolve, reject) => {
         fileExtension = [fileExtensionMap(fileExtension), "c"].join("_");
 
-        const oldDirectoryPath = [...libDirectoryPath, ...addonDirectoryPath(true), ...directoryPath];
+        const oldDirectoryPath = [...addonDirectoryPath(true), ...directoryPath];
         const newDirectoryPath = [...buildDirectoryPath, ...packageDirectoryPath, ...directoryPath];
 
-        await writeDirectory(newDirectoryPath);
+        await util.writeDirectory(newDirectoryPath);
 
         fs.copyFile(
-          formatDomainPath([oldDirectoryPath, [fileName, fileExtension]], null),
-          formatDomainPath([newDirectoryPath, [fileName, fileExtension]], null),
+          util.formatDomainPath([oldDirectoryPath, [fileName, fileExtension]], null),
+          util.formatDomainPath([newDirectoryPath, [fileName, fileExtension]], null),
           (err) => {
             if (err !== null && err !== void null) {
               reject(err);
@@ -1819,16 +1605,16 @@ async function main(packageIndex) {
       });
     })
   );
-  logSuccess(1, "Copied build file(-s)", `${newBuildFileList.length}`);
+  util.logSuccess(1, "Copied build file(-s)", `${newBuildFileList.length}`);
 
-  logPending("Packing build files");
+  util.logPending("Packing build files");
   await new globalThis.Promise((resolve, reject) => {
     child_process.spawn(
-      `"${path.join(process.cwd(), formatDomainPath([[...libDirectoryPath, "game", "csgo", "import_scripts", "bin"], ["vpk", "exe"]], null))}"`,
+      `"${util.formatDomainPath(basePackageSDK, null)}"`,
       [
         ["M", []],
         ["c", [100]],
-        [null, [`"${path.join(process.cwd(), formatDomainPath([[...buildDirectoryPath, ...packageDirectoryPath], null], null))}"`]],
+        [null, [`"${path.join(process.cwd(), util.formatDomainPath([[...buildDirectoryPath, ...packageDirectoryPath], null], null))}"`]],
       ].map(([optionName, optionParameterList], _ind, _arr) => [
         ...(((optionName !== null && optionName !== void null)) ? [`-${optionName}`] : []),
         ...optionParameterList,
@@ -1851,28 +1637,28 @@ async function main(packageIndex) {
         resolve();
       });
   });
-  logSuccess(1, "Packed build file(-s)", null);
+  util.logSuccess(1, "Packed build file(-s)", null);
 
   console.log(globalThis.String().padStart(3, "\n"));
 
   const newBuildSoundList = newBuildFileList.filter(([directoryPath, [fileName, fileExtension]], _ind, _arr) =>
-    formatDomainPath([directoryPath, null], null)
-      .startsWith(formatDomainPath([soundsDirectoryPath, null], null)));
+    util.formatDomainPath([directoryPath, null], null)
+      .startsWith(util.formatDomainPath([soundsDirectoryPath, null], null)));
   const newBuildHeroSoundList = newBuildSoundList.filter(([directoryPath, [fileName, fileExtension]], _ind, _arr) =>
-    formatDomainPath([directoryPath, null], null)
-      .startsWith(formatDomainPath([soundsAbilitiesDirectoryPath, null], null)));;
+    util.formatDomainPath([directoryPath, null], null)
+      .startsWith(util.formatDomainPath([soundsAbilitiesDirectoryPath, null], null)));;
 
   const newBuildSoundManifestList = newBuildFileList.filter(([directoryPath, [fileName, fileExtension]], _ind, _arr) =>
-    formatDomainPath([directoryPath, null], null)
-      .startsWith(formatDomainPath([soundeventsDirectoryPath, null], null)));
+    util.formatDomainPath([directoryPath, null], null)
+      .startsWith(util.formatDomainPath([soundeventsDirectoryPath, null], null)));
   const newBuildHeroSoundManifestList = newBuildSoundManifestList.filter(([directoryPath, [fileName, fileExtension]], _ind, _arr) =>
-    formatDomainPath([directoryPath, null], null)
-      .startsWith(formatDomainPath([soundeventsHeroDirectoryPath, null], null)));;
+    util.formatDomainPath([directoryPath, null], null)
+      .startsWith(util.formatDomainPath([soundeventsHeroDirectoryPath, null], null)));;
 
-  logSuccess(1, "Replaced sound file(-s)", `${newBuildSoundList.length} (${collectFileList(newBuildSoundList).size})`);
-  logSuccess(2, "Replaced hero sound file(-s)", `${newBuildHeroSoundList.length} (${collectFileList(newBuildHeroSoundList).size})`);
-  logSuccess(1, "Patched sound manifest(-s)", newBuildSoundManifestList.length);
-  logSuccess(2, "Patched hero sound manifest(-s)", `${newBuildHeroSoundManifestList.length} (${newBuildHeroSoundManifestList
+  util.logSuccess(1, "Replaced sound file(-s)", `${newBuildSoundList.length} (${util.collectFileList(newBuildSoundList).size})`);
+  util.logSuccess(2, "Replaced hero sound file(-s)", `${newBuildHeroSoundList.length} (${util.collectFileList(newBuildHeroSoundList).size})`);
+  util.logSuccess(1, "Patched sound manifest(-s)", newBuildSoundManifestList.length);
+  util.logSuccess(2, "Patched hero sound manifest(-s)", `${newBuildHeroSoundManifestList.length} (${newBuildHeroSoundManifestList
     .map(([directoryPath, [fileName, fileExtension]], _ind, _arr) =>
       fileName.split(/[]{0}/g).map((__el, __ind, __arr) => __ind === 0 ? __el.toUpperCase() : __el).join(globalThis.String())
     ).join(", ")})`
