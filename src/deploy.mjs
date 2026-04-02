@@ -896,4 +896,7 @@ main([
   ["var3n1k", "Deadlock-69"],
 
   ["KrolTryCode", "deadlock"],
-]);
+])
+  .finally(() => {
+    process.stdin.read();
+  });
