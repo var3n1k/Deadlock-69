@@ -986,7 +986,12 @@ async function main(packageIndex) {
 
   util.logPending("Deleting old build files");
   await globalThis.Promise.all(oldBuildFileList.map((_el, _ind, _arr) => util.deleteFile(_el)));
+
   await util.clearDirectory([...buildDirectoryPath]);
+
+  await util.clearDirectory([...addonDirectoryPath(false)]);
+  await util.clearDirectory([...addonDirectoryPath(true)]);
+
   util.logSuccess(1, "Deleted old build file(-s)", `${oldBuildFileList.length}`);
 
   util.logPending("Searching for hero sound manifests");
@@ -1009,17 +1014,25 @@ async function main(packageIndex) {
        */
       const heroSoundsAbilitiesList = [];
 
-      const heroSoundsAbilitiesRegExp = new globalThis.RegExp(`(?<=\")(?:${[...soundsAbilitiesDirectoryPath, "(.*)"].join("\\\/")})(?=\")`, "gm");
       /**
-       * @returns {RegExpExecArray | (null | undefined)}
+       * @param {unknown[]} valueList
+       * @returns {string}
        */
-      const heroSoundsAbilitiesExec = () => heroSoundsAbilitiesRegExp.exec(_el);
+      const escapeRegExp = (valueList) => valueList.map((_el, _ind, _arr) => `\\${globalThis.String(_el)}`).join(globalThis.String());
 
-      let receivedHeroSoundsAbilitiesExec = heroSoundsAbilitiesExec();
-      while (globalThis.Array.isArray(receivedHeroSoundsAbilitiesExec)) {
+      const spaceRegExp = new globalThis.RegExp(`[^${escapeRegExp(["S"])}]`, "gm");
+
+      /**
+       * @param {number} groupIndex
+       * @returns {RegExp}
+       */
+      const variableRegExp = (groupIndex) => new globalThis.RegExp(`((?:[${escapeRegExp(["\"", "\'"])}])?)([${escapeRegExp(["w", "-"])}]+)((?:${escapeRegExp([groupIndex])}))`, "gm");
+
+      const heroSoundsAbilitiesRegExp = new globalThis.RegExp(`(?<=${escapeRegExp(["\""])})(?:${[...soundsAbilitiesDirectoryPath, "(.*)"].join(`${escapeRegExp(["\/"])}`)})(?=${escapeRegExp(["\""])})`, "gm");
+
+      let receivedHeroSoundsAbilitiesExec;
+      while (globalThis.Array.isArray(receivedHeroSoundsAbilitiesExec = heroSoundsAbilitiesRegExp.exec(_el))) {
         heroSoundsAbilitiesList.push(receivedHeroSoundsAbilitiesExec[1]);
-
-        receivedHeroSoundsAbilitiesExec = heroSoundsAbilitiesExec();
       }
 
       return heroSoundsAbilitiesList;
@@ -1282,7 +1295,7 @@ async function main(packageIndex) {
      */
     const variableRegExp = (groupIndex) => new globalThis.RegExp(`((?:[${escapeRegExp(["\"", "\'"])}])?)([${escapeRegExp(["w", "-"])}]+)((?:${escapeRegExp([groupIndex])}))`, "gm");
 
-    const fileContentRegExp = new globalThis.RegExp(`^(\\{(?:(?:${spaceRegExp.source})|(?:${"."}))*\\})$`, "gm");
+    const fileContentRegExp = new globalThis.RegExp(`^(${escapeRegExp(["{"])}(?:(?:${spaceRegExp.source})|(?:${"."}))*${escapeRegExp(["}"])})$`, "gm");
 
     const fileContentExec = fileContentRegExp.exec(fileContent);
     if (globalThis.Array.isArray(fileContentExec)) {
@@ -1671,6 +1684,21 @@ async function main(packageIndex) {
       });
   });
   util.logSuccess(1, "Packed build file(-s)", null);
+
+  {
+    util.logPending("Searching for old build files");
+    const oldBuildFileList = [
+      ...(await util.readDirectory([...buildDirectoryPath, ...packageDirectoryPath])),
+    ];
+    util.logSuccess(1, "Found old build file(-s)", `${oldBuildFileList.length}`);
+
+    util.logPending("Deleting old build files");
+    await globalThis.Promise.all(oldBuildFileList.map((_el, _ind, _arr) => util.deleteFile(_el)));
+
+    await util.clearDirectory([...buildDirectoryPath, ...packageDirectoryPath]);
+
+    util.logSuccess(1, "Deleted old build file(-s)", `${oldBuildFileList.length}`);
+  }
 
   console.log(globalThis.String().padStart(3, "\n"));
 
