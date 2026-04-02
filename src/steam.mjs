@@ -57,12 +57,12 @@ export async function getSteam() {
 
       child_process.exec(
         [
-          [`reg`],
-          [`query`],
-          [`"${registryDomainPath}"`],
-          [`/v`],
-          [`${registryKeyName}`],
-          [`/reg:${64}`],
+          "reg",
+          "query",
+          `"${registryDomainPath}"`,
+          "/v",
+          `${registryKeyName}`,
+          ["/reg", 64].join(":"),
         ].join(globalThis.String().padStart(1, " ")),
         (error, stdout, stderr) => {
           if (error !== null && error !== void null) {

@@ -1700,6 +1700,45 @@ async function main(packageIndex) {
     util.logSuccess(1, "Deleted old build file(-s)", `${oldBuildFileList.length}`);
   }
 
+  util.logPending("Compiling deployment executable file");
+  await new globalThis.Promise((resolve, reject) => {
+    child_process.spawn(
+      "deno",
+      [
+        ...[
+          "compile"
+        ],
+        ...[
+          ...["env", "read", "write", "net", "run"].map((_el, _ind, _arr) => [["allow", _el].join("-"), []]),
+          ["target", ["x86_64-pc-windows-msvc"]],
+          ["icon", [`"${path.join(process.cwd(), util.formatDomainPath([[...sourceDirectoryPath], ["deploy", "ico"]], null))}"`]],
+          ["output", [`"${path.join(process.cwd(), util.formatDomainPath([[...buildDirectoryPath], ["deploy", "exe"]], null))}"`]],
+          [null, [`"${path.join(process.cwd(), util.formatDomainPath([[...sourceDirectoryPath], ["deploy", "mjs"]], null))}"`]],
+        ].map(([optionName, optionParameterList], _ind, _arr) => [
+          ...(((optionName !== null && optionName !== void null)) ? [`--${optionName}`] : []),
+          ...optionParameterList,
+        ].join(globalThis.String().padStart(1, " "))),
+      ],
+      {
+        shell: true,
+
+        cwd: process.cwd(),
+
+        stdio: [process.stdin, "ignore", process.stderr],
+      }
+    )
+      .once("error", (err) => {
+        reject(err);
+      })
+      .once("exit", (code, signal) => {
+        resolve();
+      })
+      .once("close", (code, signal) => {
+        resolve();
+      });
+  });
+  util.logSuccess(1, "Compiled deployment executable file", null);
+
   console.log(globalThis.String().padStart(3, "\n"));
 
   const newBuildSoundList = newBuildFileList.filter(([directoryPath, [fileName, fileExtension]], _ind, _arr) =>
